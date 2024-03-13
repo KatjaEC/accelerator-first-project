@@ -1,32 +1,234 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>SUPERGYM - фитнес центр в Омске</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Фитнес центр SUPERGYM - самый большой фитнес центр за Уралом.">
+  <link rel="stylesheet" href="sass/style.scss">
+  <link rel="preload" href="fonts/alumni-sans/alumnisans-semibold.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans/alumni-sans-extrabold.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-light.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-regular.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-bold.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+<body class="page-body">
+  <header class="header">
+    <div class="header__logo-wrapper">
+      <picture>
+        <source media="(min-width: 1366px)" srcset="img/site-logo.svg" type="image/svg+xml" width="130" height="26">
+        <source media="(min-width: 768px)" srcset="img/site-logo.svg" type="image/svg+xml" width="110" height="22">
+        <img class="header__logo logo" src="img/site-logo.svg" width="100" height="20" alt="Логотип фитнес центра.">
+      </picture>
+    </div>
+    <a class="header__phone" href="tel:+78005555555">8 800 555-55-55</a>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Фитнес центр Суперджим.</h1>
+    <section class="main__hero hero" data-test="hero">
+      <h2 class="visually-hidden">Наши услуги.</h2>
+      <div class="hero__wrapper">
+        <ul class="hero__list services-list">
+          <li class="services-list__item">Тренажёрный зал</li>
+          <li class="services-list__item">Групповые занятия</li>
+          <li class="services-list__item">Кардио-зона</li>
+        </ul>
+        <div class="hero__heading-wrapper">
+          <p class="hero__label">Омск</p>
+          <p class="hero__heading">Фитнес центр</p>
+        </div>
+        <a class="hero__button button button--primary" href="#prices">Купить абонемент</a>
+      </div>
+    </section>
+    <section class="main__about about" data-test="about">
+      <h2 class="about__heading section-heading">Тренажёрный зал</h2>
+      <p class="about__subheading">Просторный зал площадью 900 кв/м</p>
+      <p>
+        Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
+        зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+      </p>
+      <div class="about__image-wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 1366px)"
+            srcset="img/photos/about-photo-desktop@1x.webp 1x, img/photos/about-photo-desktop@2x.webp 2x" width="660"
+            height="400">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/photos/about-photo-tablet@1x.webp 1x, img/photos/about-photo-tablet@2x.webp 2x" width="678"
+            height="345">
+          <source type="image/webp"
+            srcset="img/photos/about-photo-mobile@1x.webp 1x, img/photos/about-photo-mobile@1x.webp 2x" width="320"
+            height="280">
+          <source media="(min-width: 1366px)"
+            srcset="img/photos/about-photo-desktop@1x.jpg 1x, img/photos/about-photo-desktop@2x.jpg 2x" type="image/png"
+            width="660" height="400">
+          <source media="(min-width: 768px)"
+            srcset="img/photos/about-photo-tablet@1x.jpg 1x, img/photos/about-photo-tablet@2x.jpg 2x" type="image/png"
+            width="678" height="345">
+          <img class="about__image" src="img/photos/about-photo-mobile@1x.jpg"
+            srcset="img/photos/about-photo-mobile@2x.jpg" width="320" height="280" alt="Фото нашего тренажерного зала.">
+        </picture>
+      </div>
+      <div class="about__video-wrapper">
+        <iframe width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=mQjLP-_5hAQ4JTLA&amp;controls=0" loading="lazy" title="Видео нашего тренажерного зала." frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section class="main__prices prices" data-test="price">
+      <h2 class="prices__heading section-heading" id="prices">Абонементы</h2>
+      <ul class="prices__tabs tabs-list">
+        <li class="tabs-list__item">
+          <button class="tabs-list__button tabs-list__button--active">1 месяц</button>
+        </li>
+        <li class="tabs-list__item">
+          <button class="tabs-list__button">6 месяцев</button>
+        </li>
+        <li class="tabs-list__item">
+          <button class="tabs-list__button">12 месяцев</button>
+        </li>
+      </ul>
+      <div class="prices__options-wrapper">
+        <ul class="prices__options options-list options-list--active">
+          <li class="options-list__item options-card">
+            <h3 class="options-card__heading">С тренером</h3>
+            <p class="options-card__text">12 занятий</p>
+            <p class="options-card__price">5000</p>
+            <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
+          </li>
+          <li class="options-list__item options-card">
+            <h3 class="options-card__heading">Дневной</h3>
+            <p class="options-card__text">с 8:00 до 17:00</p>
+            <p class="options-card__price">1700</p>
+            <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
+          </li>
+          <li class="options-list__item options-card">
+            <h3 class="options-card__heading">Полный день</h3>
+            <p class="options-card__text">с 8:00 до 22:00</p>
+            <p class="options-card__price">2700</p>
+            <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
+          </li>
+        </ul>
+        <ul class="prices__options options-list">
+          <li class="options-list__item options-card">
+            <h3 class="options-card__heading">С тренером</h3>
+            <p class="options-card__text">12 занятий</p>
+            <p class="options-card__price">30 000</p>
+            <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
+          </li>
+          <li class="options-list__item options-card">
+            <h3 class="options-card__heading">Дневной</h3>
+            <p class="options-card__text">с 8:00 до 17:00</p>
+            <p class="options-card__price">10 200</p>
+            <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
+          </li>
+          <li class="options-list__item options-card">
+            <h3 class="options-card__heading">Полный день</h3>
+            <p class="options-card__text">с 8:00 до 22:00</p>
+            <p class="options-card__price">16 200</p>
+            <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
+          </li>
+        </ul>
+        <ul class="prices__options options-list">
+          <li class="options-list__item options-card">
+            <h3 class="options-card__heading">С тренером</h3>
+            <p class="options-card__text">12 занятий</p>
+            <p class="options-card__price">60 000</p>
+            <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
+          </li>
+          <li class="options-list__item options-card">
+            <h3 class="options-card__heading">Дневной</h3>
+            <p class="options-card__text">с 8:00 до 17:00</p>
+            <p class="options-card__price">20 400</p>
+            <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
+          </li>
+          <li class="options-list__item options-card">
+            <h3 class="options-card__heading">Полный день</h3>
+            <p class="options-card__text">с 8:00 до 22:00</p>
+            <p class="options-card__price">32 400</p>
+            <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="main__games games" data-test="games">
+      <h2 class="games__heading section-heading">Super Games</h2>
+      <p class="games__description">Ежегодные соревнования по CrossFit</p>
+      <div class="games__schedule-wrapper">
+        <dl>
+          <dt class="games__schedule-heading">Дата</dt>
+          <dd class="games__schedule">7<span class="games__schedule-date">Марта 2019</span></dd>
+        </dl>
+        <dl>
+          <dt class="games__schedule-heading">Время</dt>
+          <dd class="games__schedule">12:00</dd>
+        </dl>
+      </div>
+      <a class="games__button button button--primary" href="#">Заполнить заявку</a>
+    </section>
+    <section class="main__slider slider" data-test="juri">
+      <h2 class="slider__heading section-heading">Жюри</h2>
+      <button class="slider__button slider-button slider-button--previous" type="button">
+        <svg class="slider-button__icon" width="16" height="32" role="img">
+          <use href="/__spritemap#button-arrow-next"></use>
+        </svg>
+        <span class="visually-hidden">Предыдущий слайд.</span>
+      </button>
+      <button class="slider__button slider-button slider-button--next" type="button">
+        <svg class="slider-button__icon" width="16" height="32" role="img">
+          <use href="/__spritemap#button-arrow-next"></use>
+        </svg>
+        <span class="visually-hidden">Следующий слайд.</span>
+      </button>
+      <ol class="slider__list slider-list">
+        <li class="slider-list__item slider-card">
+          <h3 class="slider-list__heading">Анна Павлова</h3>
+        </li>
+        <li class="slider-list__item slider-card">
+          <h3 class="slider-list__heading">Алексей Лавров</h3>
+        </li>
+        <li class="slider-list__item slider-card slider-card--active">
+          <h3 class="slider-list__heading">Александр Пашков</h3>
+        </li>
+        <li class="slider-list__item slider-card">
+          <h3 class="slider-list__heading">Мария Кетова</h3>
+        </li>
+        <li class="slider-list__item slider-card">
+          <h3 class="slider-list__heading">Эдик Пешин</h3>
+        </li>
+        <li class="slider-list__item slider-card">
+          <h3 class="slider-list__heading">Алена Фисунова</h3>
+        </li>
+        <li class="slider-list__item slider-card">
+          <h3 class="slider-list__heading">Влад Сушкин</h3>
+        </li>
+        <li class="slider-list__item slider-card">
+          <h3 class="slider-list__heading">Павел Кленов</h3>
+        </li>
+      </ol>
+    </section>
+  </main>
+  <!-- пример использования спрайта -->
+  <svg>
+    <use href="/__spritemap#sprite-user"></use>
+  </svg>
+  <!-- примеры требуемых атрибутов data-test="*" -->
+  <div data-test="hero">hero</div>
+  <div data-test="about">about</div>
+  <div data-test="price">price</div>
+  <div data-test="games">games</div>
+  <div data-test="juri">juri</div>
+  <div data-test="features">features</div>
+  <div data-test="offers">offers</div>
+  <div data-test="faq">faq</div>
+  <div data-test="reviews">reviews</div>
+  <div data-test="form">form</div>
+  <div data-test="footer">footer</div>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
