@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
+
 <head>
   <meta charset="UTF-8">
   <title>SUPERGYM - фитнес центр в Омске</title>
@@ -17,41 +18,43 @@
   <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-bold.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
 </head>
+
 <body class="page-body">
-  <header class="header">
-    <div class="header__logo-wrapper logo">
-      <picture>
-        <source media="(min-width: 1366px)" srcset="img/site-logo.svg" type="image/svg+xml" width="130" height="26">
-        <source media="(min-width: 768px)" srcset="img/site-logo.svg" type="image/svg+xml" width="110" height="22">
-        <img class="header__logo-image logo-image" src="img/site-logo.svg" width="100" height="20"
-          alt="Логотип фитнес центра.">
-      </picture>
-    </div>
-    <a class="header__phone" href="tel:+78005555555">8 800 555-55-55</a>
-  </header>
-  <main class="main">
-    <h1 class="visually-hidden">Фитнес центр Суперджим.</h1>
-    <section class="main__hero hero" data-test="hero">
-      <h2 class="visually-hidden">Наши услуги.</h2>
-      <div class="hero__wrapper">
-        <ul class="hero__list services-list">
-          <li class="services-list__item">Тренажёрный зал</li>
-          <li class="services-list__item">Групповые занятия</li>
-          <li class="services-list__item">Кардио-зона</li>
-        </ul>
-        <div class="hero__heading-wrapper">
-          <p class="hero__label">Омск</p>
-          <p class="hero__heading">Фитнес центр</p>
-        </div>
-        <a class="hero__button button button--primary" href="#prices">Купить абонемент</a>
+  <section class="hero" data-test="hero">
+    <h1 class="visually-hidden">Сайт фитнес центра Суперджим.</h1>
+    <header class="hero__header header">
+      <div class="header__logo-wrapper logo">
+        <picture>
+          <source media="(min-width: 1366px)" srcset="img/site-logo.svg" type="image/svg+xml" width="130" height="26">
+          <source media="(min-width: 768px)" srcset="img/site-logo.svg" type="image/svg+xml" width="110" height="22">
+          <img class="header__logo-image logo-image" src="img/site-logo.svg" width="100" height="20"
+            alt="Логотип фитнес центра.">
+        </picture>
       </div>
-    </section>
+      <a class="header__phone" href="tel:+78005555555">8 800 555-55-55</a>
+    </header>
+    <div class="hero__wrapper">
+      <h2 class="hero__heading">Фитнес центр</h2>
+      <p class="hero__label">Омск</p>
+      <ul class="hero__list services-list">
+        <li class="services-list__item">Тренажёрный зал</li>
+        <li class="services-list__item">Групповые занятия</li>
+        <li class="services-list__item">Кардио-зона</li>
+      </ul>
+      <a class="hero__button button button--primary" href="#prices">Купить абонемент</a>
+    </div>
+  </section>
+  <main class="main">
     <section class="main__about about" data-test="about">
       <h2 class="about__heading section-heading">Тренажёрный зал</h2>
       <p class="about__subheading">Просторный зал площадью 900 кв/м</p>
       <p>
         Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный
         зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+      </p>
+      <p>
+        В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
+        есть несколько оборудованных залов для различных видов групповых занятий.
       </p>
       <div class="about__image-wrapper">
         <picture>
@@ -354,30 +357,33 @@
             <h3 class="visually-hidden">Ответы на вопросы относительно фитнес центра.</h3>
             <ul class="faq__list faq-list">
               <li class="faq-list__item faq-card">
-                <h4>Как стать членом фитнес-центра?</h4>
-                <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке
+                <p>Как стать членом фитнес-центра?</p>
+                <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
+                  При покупке
                   абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
                 <button class="faq-card__button" type="button">
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </li>
               <li class="faq-list__item faq-card">
-                <h4>Где можно посмотреть расписание?</h4>
-                <p>Данная информация доступна на нашем сайте, а также по номеру телефона, который указан в контактах.</p>
+                <p>Где можно посмотреть расписание?</p>
+                <p>Данная информация доступна на нашем сайте, а также по номеру телефона, который указан в контактах.
+                </p>
                 <button class="faq-card__button" type="button">
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </li>
               <li class="faq-list__item faq-card">
-                <h4>Есть кулеры в центре? Предоставляются полотенца?</h4>
+                <p>Есть кулеры в центре? Предоставляются полотенца?</p>
                 <p>Да, есть. Полотенца также предоставляются при необходимости.</p>
                 <button class="faq-card__button" type="button">
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </li>
               <li class="faq-list__item faq-card">
-                <h4>Сколько тренеров работает в клубе и какова их квалификация?</h4>
-                <p>Информацию о нашех тренерах и их квалификации можно узнать в соответствующем разделе нашего сайта.</p>
+                <p>Сколько тренеров работает в клубе и какова их квалификация?</p>
+                <p>Информацию о нашех тренерах и их квалификации можно узнать в соответствующем разделе нашего сайта.
+                </p>
                 <button class="faq-card__button" type="button">
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
@@ -388,32 +394,34 @@
             <h3 class="visually-hidden">Ответы на вопросы относительно абонементов.</h3>
             <ul class="faq__list faq-list">
               <li class="faq-list__item faq-card">
-                <h4>Занятия с тренером входят в абонемент?</h4>
+                <p>Занятия с тренером входят в абонемент?</p>
                 <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
-                  присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру
+                  присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
+                  тренажеру
                   или технике выполнения упражнения.</p>
                 <button class="faq-card__button" type="button">
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </li>
               <li class="faq-list__item faq-card">
-                <h4>Можно ли заморозить абонемент?</h4>
+                <p>Можно ли заморозить абонемент?</p>
                 <p>К сожалению, данная услуга не предусматривается договором.</p>
                 <button class="faq-card__button" type="button">
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </li>
               <li class="faq-list__item faq-card">
-                <h4>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h4>
+                <p>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</p>
                 <p>Данный лимит зависит от типа абонемента.</p>
                 <button class="faq-card__button" type="button">
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </li>
               <li class="faq-list__item faq-card">
-                <h4>Что такое семейный доступ и доступ для друзей?</h4>
+                <p>Что такое семейный доступ и доступ для друзей?</p>
                 <p>При приобретении определенных видов абонемента Вам может быть предоставлена услуга доступа к занятиям
-                  для семьи и друзей. Более подробную информацию об этом можно узнать в соответствующем разделе сайта или
+                  для семьи и друзей. Более подробную информацию об этом можно узнать в соответствующем разделе сайта
+                  или
                   связавшись с нами по телефону.</p>
                 <button class="faq-card__button" type="button">
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
@@ -425,7 +433,7 @@
             <h3 class="visually-hidden">Ответы на вопросы относительно услуг фитнес центра.</h3>
             <ul class="faq__list faq-list">
               <li class="faq-list__item faq-card">
-                <h4>Предлагает ли клуб услуги по консультированию по вопросам питания?</h4>
+                <p>Предлагает ли клуб услуги по консультированию по вопросам питания?</p>
                 <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
                   данные, цели  и предложит программу питания.</p>
                 <button class="faq-card__button" type="button">
@@ -433,7 +441,7 @@
                 </button>
               </li>
               <li class="faq-list__item faq-card">
-                <h4>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h4>
+                <p>Проводятся ли в клубе какие-либо мероприятия или соревнования?</p>
                 <p>Да, в том числе Super Games - Ежегодные соревнования по CrossFit. Вы всегда можете найти актуальную
                   информацию о данном виде мероприятий на нашем сайте.</p>
                 <button class="faq-card__button" type="button">
@@ -441,14 +449,14 @@
                 </button>
               </li>
               <li class="faq-list__item faq-card">
-                <h4>Можно ли приобрести в центре спортивное питание?</h4>
+                <p>Можно ли приобрести в центре спортивное питание?</p>
                 <p>Можно. В центре есть буфет с большим асосртиментом спортивного питания и напитков.</p>
                 <button class="faq-card__button" type="button">
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </li>
               <li class="faq-list__item faq-card">
-                <h4>Есть ли в центре детская комната?</h4>
+                <p>Есть ли в центре детская комната?</p>
                 <p>В нашем центре есть специальная безопасная детская зона.</p>
                 <button class="faq-card__button" type="button">
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
@@ -460,9 +468,11 @@
             <h3 class="visually-hidden">Ответы на вопросы относительно правил фитнес центра.</h3>
             <ul class="faq__list faq-list">
               <li class="faq-list__item faq-card">
-                <h4>Есть в фитнес-центре дресс-код?</h4>
-                <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и
-                  нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки).
+                <p>Есть в фитнес-центре дресс-код?</p>
+                <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя
+                  и
+                  нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
+                  кроссовки).
                   В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п.,
                   исключения составляют специальные классы (например, йога, пилатес).</p>
                 <button class="faq-card__button" type="button">
@@ -470,14 +480,14 @@
                 </button>
               </li>
               <li class="faq-list__item faq-card">
-                <h4>Можно ли приводить с собой детей на тренировки?</h4>
+                <p>Можно ли приводить с собой детей на тренировки?</p>
                 <p>Да, можно.</p>
                 <button class="faq-card__button" type="button">
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </li>
               <li class="faq-list__item faq-card">
-                <h4>Какие дополнительные правила посещения центра?</h4>
+                <p>Какие дополнительные правила посещения центра?</p>
                 <p>В наш центр не допускаются люди в состоянии алкогольного опьянения и под действием каких-либо
                   препаратов.</p>
                 <button class="faq-card__button" type="button">
@@ -485,7 +495,7 @@
                 </button>
               </li>
               <li class="faq-list__item faq-card">
-                <h4>Нужна ли медицинская справка для посещения залов и бассейна?</h4>
+                <p>Нужна ли медицинская справка для посещения залов и бассейна?</p>
                 <p>Соответствующая справка нужна для посещения бассейна.</p>
                 <button class="faq-card__button" type="button">
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
@@ -673,4 +683,5 @@
   </footer>
   <script type="module" src="js/main.js"></script>
 </body>
+
 </html>
