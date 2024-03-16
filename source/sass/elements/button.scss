@@ -1,0 +1,17 @@
+.button {
+  display: block;
+  padding: 22px 40px;
+  min-width: 195px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--primary {
+    color: $color-secondary;
+    border: 2px solid $color-secondary;
+  }
+}

@@ -2,3 +2,20 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+// GLOBAL
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/visually-hidden.scss";
+
+// ELEMENTS
+@import "elements/button.scss";
+@import "elements/section-heading.scss";
+
+// BLOCKS
+@import "blocks/page.scss";
+@import "blocks/hero.scss";
+@import "blocks/header.scss";
+@import "blocks/services-list.scss";
+@import "blocks/about.scss";
