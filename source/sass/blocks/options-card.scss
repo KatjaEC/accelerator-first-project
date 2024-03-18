@@ -1,0 +1,58 @@
+.options-card {
+  padding: 51px 42px;
+  background-color: $color-secondary;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
+}
+
+.options-card__heading {
+  margin: 0 0 18px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.options-card__text {
+  margin: 0 0 18px;
+}
+
+.options-card__price-wrapper {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0 10px;
+}
+
+.options-card__price {
+  margin: 0 0 18px;
+  padding: 68px 0 9px;
+  max-width: 206px;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+  color: #103aae;
+  z-index: 5;
+
+  &::before {
+    content: attr(value);
+    position: absolute;
+    left: -10px;
+    bottom: 20px;
+    margin: 0 auto;
+    width: 226px;
+    height: 133px;
+    color: #e8e8e8;
+    font-size: 80px;
+    line-height: 120px;
+    opacity: 0.48;
+    z-index: -1;
+  }
+}
+
+.options-card__currency-icon {
+  z-index: 5;
+}
+

@@ -4,16 +4,20 @@
 
 .hero__header {
   padding: 15px 15px 18px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 320px;
 }
 
 .hero__wrapper {
   padding: 42px 15px 32px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 48px 20px;
+  width: 320px;
 }
 
 .hero__text-wrapper {
