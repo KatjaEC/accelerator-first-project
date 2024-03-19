@@ -1,0 +1,18 @@
+.slider-button {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 18px;
+  height: 34px;
+  background: url("../../../__spritemap#sprite-button-arrow-next") no-repeat center;
+  background-size: 18px 32px;
+  border: none;
+  cursor: pointer;
+  display: none;
+
+  &--previous {
+    transform: rotate(180deg);
+    left: auto;
+    left: 15px;
+  }
+}

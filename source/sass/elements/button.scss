@@ -1,7 +1,7 @@
 .button {
   display: block;
   padding: 22px 40px;
-  min-width: 195px;
+  min-width: 150px;
   text-decoration: none;
   cursor: pointer;
   font-size: 12px;
@@ -13,5 +13,13 @@
   &--primary {
     color: $color-secondary;
     border: 2px solid $color-secondary;
+  }
+
+  &--secondary {
+    padding: 25px 20px;
+    margin: 0 auto;
+    width: 195px;
+    color: $color-text;
+    border: 2px solid $color-text;
   }
 }

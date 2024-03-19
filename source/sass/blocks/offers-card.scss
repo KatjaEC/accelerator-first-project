@@ -1,0 +1,63 @@
+.offers-card {
+  padding: 20px;
+  text-align: center;
+
+  &--main {
+    padding: 30px 40px 390px;
+    background-color: #ed0233;
+    background-image: url("../../img/photos/offers-image-mobile@1x.jpg");
+    background-image: image-set(
+      url("../../img/photos/offers-image-mobile@1x.webp") type("image/webp") 1x,
+      url("../../img/photos/offers-image-mobile@2x.webp") type("image/webp") 2x,
+      url("../../img/photos/offers-image-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../img/photos/offers-image-mobile@2x.jpg") type("image/jpeg") 2x);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 320px 360px;
+    color: $color-secondary;
+  }
+}
+
+.offers-card--main h3 {
+  margin: 0 0 28px;
+  padding: 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.offers-card--main h3 > span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.offers-card--main h3 > b {
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.offers-card--main p {
+  margin: 0 0 23px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.offers-card__button {
+  display: inline-block;
+  padding: 5px 0;
+  line-height: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &--secondary {
+    color: #1c3374;
+    border-bottom: 1px solid #74819c;
+  }
+
+  &--primary {
+    color: $color-secondary;
+    border-bottom: 1px solid $color-secondary;
+  }
+}

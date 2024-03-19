@@ -4,7 +4,7 @@
   text-align: center;
 
   &:not(:last-child) {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
   }
 }
 
@@ -27,7 +27,7 @@
 }
 
 .options-card__price {
-  margin: 0 0 18px;
+  margin: 0 0 18px 5px;
   padding: 68px 0 9px;
   max-width: 206px;
   font-size: 48px;
@@ -35,24 +35,39 @@
   font-weight: 700;
   color: #103aae;
   z-index: 5;
-
-  &::before {
-    content: attr(value);
-    position: absolute;
-    left: -10px;
-    bottom: 20px;
-    margin: 0 auto;
-    width: 226px;
-    height: 133px;
-    color: #e8e8e8;
-    font-size: 80px;
-    line-height: 120px;
-    opacity: 0.48;
-    z-index: -1;
-  }
 }
 
-.options-card__currency-icon {
+.options-card__price-shadow {
+  position: absolute;
+  left: -10px;
+  bottom: 20px;
+  margin: 0 auto;
+  width: 226px;
+  height: 133px;
+  color: #e8e8e8;
+  font-size: 80px;
+  line-height: 120px;
+  font-weight: 700;
+  opacity: 0.48;
+}
+
+.options-card__currency {
+  position: relative;
+  font-size: 50px;
+  line-height: 33px;
+  font-weight: 400;
+  color: transparent;
   z-index: 5;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 24px;
+    height: 33px;
+    background: url("../../../__spritemap#sprite-ruble-sign-view") no-repeat center;
+    background-size: 24px 33px;
+    content: "";
+  }
 }
 
