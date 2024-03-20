@@ -1,0 +1,83 @@
+.faq-card {
+  position: relative;
+  padding: 20px 0;
+  min-height: 100%;
+  border-top: 1px solid #74819c;
+}
+
+.faq-card__nav-wrapper {
+  position: relative;
+}
+
+.faq-card__nav-wrapper p {
+  margin: 0;
+  padding: 0 52px 0 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #1c3374;
+}
+
+.faq-card > p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: $color-text;
+  display: none;
+}
+
+.faq-card--opened .faq-card__nav-wrapper > p {
+  margin-bottom: 20px;
+}
+
+.faq-card--opened > p {
+  display: block;
+}
+
+.faq-card__button {
+  position: absolute;
+  top: calc(50% - 15px);
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: $color-secondary;
+  border: 1px solid #1c3374;
+  border-radius: 50%;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 7px);
+    width: 14px;
+    height: 1px;
+    background-color: #1c3374;
+    content: "";
+    display: none;
+  }
+
+  &::after {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../../../__spritemap#sprite-button-plus-view");
+    background-size: 14px 14px;
+    content: "";
+  }
+
+  &--pressed {
+    background-color: #1c3374;
+
+    &::before {
+      display: block;
+      background-color: $color-secondary;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}

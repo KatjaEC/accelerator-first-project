@@ -1,6 +1,11 @@
 .offers-card {
   padding: 20px;
   text-align: center;
+  color: #1c3374;
+  border-width: 7px;
+  border-style: solid;
+  border-image: linear-gradient(143deg, #d10a42, #00359f);
+  border-image-slice: 1;
 
   &--main {
     padding: 30px 40px 390px;
@@ -15,7 +20,18 @@
     background-position: bottom center;
     background-size: 320px 360px;
     color: $color-secondary;
+    border: none;
   }
+}
+
+.offers-card h3 {
+  margin: 0 0 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.offers-card p {
+  margin: 0 0 15px;
 }
 
 .offers-card--main h3 {

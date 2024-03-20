@@ -1,0 +1,43 @@
+.form {
+  padding: 70px 15px;
+  background-color: $color-text;
+  color: $color-secondary;
+}
+
+.form__wrapper {
+  margin: 0 auto;
+  width: 290px;
+}
+
+.form__heading {
+  margin: 0 auto 36px;
+}
+
+.form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-bottom: 36px;
+}
+
+.form__input {
+  padding: 0 30px 4px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $color-secondary;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  outline: transparent;
+
+  &::placeholder {
+    color: $color-secondary;
+    opacity: 0.4;
+  }
+}
+
+.form__button {
+  width: 100%;
+}

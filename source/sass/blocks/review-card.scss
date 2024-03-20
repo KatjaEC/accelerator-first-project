@@ -1,0 +1,26 @@
+.review-card {
+  padding: 30px 25px;
+  background-color: #1c3374;
+  color: $color-secondary;
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
+}
+
+.review-card > div:first-of-type {
+  margin-bottom: 3px;
+}
+
+.review-card img {
+  border-radius: 50%;
+}
+
+.review-card span {
+  display: block;
+  margin-bottom: 17px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.review-card p {
+  margin: 0;
+}

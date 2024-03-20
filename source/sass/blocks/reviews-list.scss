@@ -1,0 +1,17 @@
+.reviews-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.reviews-list__item {
+  width: 240px;
+  margin: 0 auto;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}

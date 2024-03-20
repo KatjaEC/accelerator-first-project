@@ -506,7 +506,7 @@
     <section class="main__offers offers" data-test="offers">
       <h2 class="offers__heading section-heading">Акции</h2>
       <ul class="offers__list offers-list">
-        <li class="offers-list__card offers-card offers-card--main">
+        <li class="offers-list__card offers-list__card--main offers-card offers-card--main">
           <h3><span>Год</span> <b>4999</b></h3>
           <p>Безлимитный абонемент в тренажёрный зал</p>
           <a class="offers-card__button offers-card__button--primary" href="#">Подробнее</a>
@@ -533,142 +533,174 @@
           <button class="faq-tabs__button" type="button">Правила</button>
         </div>
         <div class="faq__lists-wrapper">
-          <ul class="faq__list faq-list faq-list--active">
-            <li class="faq-list__item faq-card">
-              <p>Как стать членом фитнес-центра?</p>
+          <ul class="faq__list faq-list faq__list--active">
+            <li class="faq-list__item faq-card faq-card--opened">
+              <div class="faq-card__nav-wrapper">
+                <p>Как стать членом фитнес&#8209;центра?</p>
+                <button class="faq-card__button faq-card__button--pressed" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
                 При покупке
                 абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
             <li class="faq-list__item faq-card">
-              <p>Где можно посмотреть расписание?</p>
+              <div class="faq-card__nav-wrapper">
+                <p>Где можно посмотреть расписание?</p>
+                <button class="faq-card__button" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>Данная информация доступна на нашем сайте, а также по номеру телефона, который указан в контактах.
               </p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
             <li class="faq-list__item faq-card">
-              <p>Есть кулеры в центре? Предоставляются полотенца?</p>
+              <div class="faq-card__nav-wrapper">
+                <p>Есть кулеры в центре? Предоставляются полотенца?</p>
+                <button class="faq-card__button" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>Да, есть. Полотенца также предоставляются при необходимости.</p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
             <li class="faq-list__item faq-card">
-              <p>Сколько тренеров работает в клубе и какова их квалификация?</p>
+              <div class="faq-card__nav-wrapper">
+                <p>Сколько тренеров работает в клубе и какова их квалификация?</p>
+                <button class="faq-card__button" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>Информацию о нашех тренерах и их квалификации можно узнать в соответствующем разделе нашего сайта.
               </p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
           </ul>
           <ul class="faq__list faq-list">
-            <li class="faq-list__item faq-card">
-              <p>Занятия с тренером входят в абонемент?</p>
+            <li class="faq-list__item faq-card faq-card--opened">
+              <div class="faq-card__nav-wrapper">
+                <p>Занятия с тренером входят в абонемент?</p>
+                <button class="faq-card__button faq-card__button--pressed" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
                 присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
                 тренажеру
                 или технике выполнения упражнения.</p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
             <li class="faq-list__item faq-card">
-              <p>Можно ли заморозить абонемент?</p>
+              <div class="faq-card__nav-wrapper">
+                <p>Можно ли заморозить абонемент?</p>
+                <button class="faq-card__button" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>К сожалению, данная услуга не предусматривается договором.</p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
             <li class="faq-list__item faq-card">
-              <p>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</p>
+              <div class="faq-card__nav-wrapper">
+                <p>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</p>
+                <button class="faq-card__button" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>Данный лимит зависит от типа абонемента.</p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
             <li class="faq-list__item faq-card">
-              <p>Что такое семейный доступ и доступ для друзей?</p>
+              <div class="faq-card__nav-wrapper">
+                <p>Что такое семейный доступ и доступ для друзей?</p>
+                <button class="faq-card__button" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>При приобретении определенных видов абонемента Вам может быть предоставлена услуга доступа к занятиям
                 для семьи и друзей. Более подробную информацию об этом можно узнать в соответствующем разделе сайта
                 или
                 связавшись с нами по телефону.</p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
           </ul>
           <ul class="faq__list faq-list">
-            <li class="faq-list__item faq-card">
-              <p>Предлагает ли клуб услуги по консультированию по вопросам питания?</p>
+            <li class="faq-list__item faq-card faq-card--opened">
+              <div class="faq-card__nav-wrapper">
+                <p>Предлагает ли клуб услуги по консультированию по вопросам питания?</p>
+                <button class="faq-card__button faq-card__button--pressed" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
                 данные, цели  и предложит программу питания.</p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
             <li class="faq-list__item faq-card">
-              <p>Проводятся ли в клубе какие-либо мероприятия или соревнования?</p>
+              <div class="faq-card__nav-wrapper">
+                <p>Проводятся ли в клубе какие-либо мероприятия или соревнования?</p>
+                <button class="faq-card__button" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>Да, в том числе Super Games - Ежегодные соревнования по CrossFit. Вы всегда можете найти актуальную
                 информацию о данном виде мероприятий на нашем сайте.</p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
             <li class="faq-list__item faq-card">
-              <p>Можно ли приобрести в центре спортивное питание?</p>
+              <div class="faq-card__nav-wrapper">
+                <p>Можно ли приобрести в центре спортивное питание?</p>
+                <button class="faq-card__button" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>Можно. В центре есть буфет с большим асосртиментом спортивного питания и напитков.</p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
             <li class="faq-list__item faq-card">
-              <p>Есть ли в центре детская комната?</p>
+              <div class="faq-card__nav-wrapper">
+                <p>Есть ли в центре детская комната?</p>
+                <button class="faq-card__button" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>В нашем центре есть специальная безопасная детская зона.</p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
           </ul>
           <ul class="faq__list faq-list">
-            <li class="faq-list__item faq-card">
-              <p>Есть в фитнес-центре дресс-код?</p>
+            <li class="faq-list__item faq-card faq-card--opened">
+              <div class="faq-card__nav-wrapper">
+                <p>Есть в фитнес-центре дресс-код?</p>
+                <button class="faq-card__button faq-card__button--pressed" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя
                 и
                 нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
                 кроссовки).
                 В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п.,
                 исключения составляют специальные классы (например, йога, пилатес).</p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
             <li class="faq-list__item faq-card">
-              <p>Можно ли приводить с собой детей на тренировки?</p>
+              <div class="faq-card__nav-wrapper">
+                <p>Можно ли приводить с собой детей на тренировки?</p>
+                <button class="faq-card__button" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>Да, можно.</p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
             <li class="faq-list__item faq-card">
-              <p>Какие дополнительные правила посещения центра?</p>
+              <div class="faq-card__nav-wrapper">
+                <p>Какие дополнительные правила посещения центра?</p>
+                <button class="faq-card__button" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>В наш центр не допускаются люди в состоянии алкогольного опьянения и под действием каких-либо
                 препаратов.</p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
             <li class="faq-list__item faq-card">
-              <p>Нужна ли медицинская справка для посещения залов и бассейна?</p>
+              <div class="faq-card__nav-wrapper">
+                <p>Нужна ли медицинская справка для посещения залов и бассейна?</p>
+                <button class="faq-card__button" type="button">
+                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
+                </button>
+              </div>
               <p>Соответствующая справка нужна для посещения бассейна.</p>
-              <button class="faq-card__button" type="button">
-                <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-              </button>
             </li>
           </ul>
         </div>
@@ -689,7 +721,7 @@
         <span class="visually-hidden">Следующий отзыв.</span>
       </button>
       <ul class="reviews__list reviews-list">
-        <li class="reviews-list__item review-card review-card--active">
+        <li class="reviews-list__item review-card reviews-list__item--active">
           <div>
             <picture>
               <source type="image/webp" media="(min-width: 768px)"
@@ -759,7 +791,7 @@
       <section class="main__form form">
         <div class="form__wrapper">
           <h2 class="form__heading section-heading section-heading--inverse">Бесплатное занятие</h2>
-          <form action="https://echo.htmlacademy.ru/" method="post">
+          <form class="form__body" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form__input-wrapper">
               <label for="name-input" class="visually-hidden">Введите ваше имя.</label>
               <input class="form__input" type="text" name="name-input" id="name-input" placeholder="Имя" required>
@@ -773,24 +805,24 @@
       </section>
       <section class="main__contacts contacts">
         <h2 class="contacts__heading section-heading">Контакты</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <p class="contacts__subheading">Адрес:</p>
-            <address class="contacts__text contacts__text--address">г. Омск, ул. 60 лет Октября, 7</address>
+        <ul class="contacts__list contacts-list">
+          <li class="contacts-list__item">
+            <p class="contacts-list__subheading">Адрес:</p>
+            <address class="contacts-list__text contacts-list__text--address">г. Омск, ул. 60 лет Октября, 7</address>
           </li>
-          <li class="contacts__item">
-            <p class="contacts__subheading">График работы:</p>
-            <p class="contacts__text contacts__text--schedule">Пн-Вс: с 8:00 до 22:00</p>
+          <li class="contacts-list__item">
+            <p class="contacts-list__subheading">График работы:</p>
+            <p class="contacts-list__text contacts-list__text--schedule">Пн-Вс: с 8:00 до 22:00</p>
           </li>
         </ul>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <p class="contacts__subheading">Телефон:</p>
-            <a class="contacts__text contacts__text--phone" href="tel:+78005555555">+8 800 555-55-55</a>
+        <ul class="contacts__list contacts-list">
+          <li class="contacts-list__item contacts-list__item--phone">
+            <p class="contacts-list__subheading contacts-list__subheading--phone">Телефон:</p>
+            <a class="contacts-list__text contacts-list__text--phone" href="tel:+78005555555">8 800 555-55-55</a>
           </li>
-          <li class="contacts__item">
-            <p class="contacts__subheading">Email:</p>
-            <a class="contacts__text contacts__text--email" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+          <li class="contacts-list__item contacts-list__item--email">
+            <p class="contacts-list__subheading contacts-list__subheading--email">Email:</p>
+            <a class="contacts-list__text contacts-list__text--email" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
           </li>
         </ul>
       </section>
@@ -825,7 +857,7 @@
     <ul class="footer__socials social-list">
       <li class="social-list__item">
         <a class="social-list__link" href="https://vk.com/">
-          <svg class="social-list__icon" width="25" height="25" role="img">
+          <svg class="social-list__icon" width="14" height="14" role="img">
             <use href="/__spritemap#sprite-social-vk"></use>
           </svg>
           <span class="visually-hidden">Мы ВКонтакте.</span>
@@ -833,7 +865,7 @@
       </li>
       <li class="social-list__item">
         <a class="social-list__link" href="https://ok.ru/">
-          <svg class="social-list__icon" width="25" height="25" role="img">
+          <svg class="social-list__icon" width="10" height="17" role="img">
             <use href="/__spritemap#sprite-social-ok"></use>
           </svg>
           <span class="visually-hidden">Мы в Одноклассниках.</span>
@@ -841,7 +873,7 @@
       </li>
       <li class="social-list__item">
         <a class="social-list__link" href="https://www.reddit.com/">
-          <svg class="social-list__icon" width="25" height="25" role="img">
+          <svg class="social-list__icon" width="15" height="15" role="img">
             <use href="/__spritemap#sprite-social-reddit"></use>
           </svg>
           <span class="visually-hidden">Мы на Реддит.</span>

@@ -1,0 +1,22 @@
+.faq {
+  padding: 70px 15px;
+}
+
+.faq__wrapper {
+  margin: 0 auto;
+  width: 290px;
+}
+
+.faq__heading {
+  margin: 0 auto 35px;
+  width: 290px;
+  text-align: center;
+}
+
+.faq__list {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
