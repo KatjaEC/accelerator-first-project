@@ -5,8 +5,6 @@
 
   &--main-feature {
     padding: 30px 15px 40px;
-    margin: 5px 0;
-    width: 100%;
     background-color: #1c3374;
     color: $color-secondary;
   }
@@ -64,4 +62,53 @@
   line-height: 22px;
   font-weight: 700;
   color: $color-secondary;
+}
+
+@media (min-width: $tablet-width) {
+  .features-card {
+    flex-direction: row;
+    gap: 15px;
+    text-align: left;
+
+    &--main-feature {
+      padding: 35px;
+      text-align: center;
+    }
+  }
+
+  .features-card__wrapper {
+    width: 100%;
+  }
+
+  .features-card b {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .features-card span {
+    padding: 0;
+    margin: 0;
+    line-height: 22px;
+  }
+
+  .features-card h3 {
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .features-card p {
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .features-card__wrapper b + span {
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .features-card--main-feature b {
+    margin-bottom: 25px;
+  }
 }

@@ -1,9 +1,12 @@
 .slider-list {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px 40px;
-  justify-content: center;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider-list__item {
+    width: 260px;
+    flex-shrink: 0;
+  }
 }

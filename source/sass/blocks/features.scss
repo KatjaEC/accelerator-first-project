@@ -8,3 +8,15 @@
   width: 320px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .features {
+    padding: 60px 43px;
+  }
+
+  .features__heading {
+    padding: 0;
+    margin-bottom: 50px;
+    width: 678px;
+  }
+}

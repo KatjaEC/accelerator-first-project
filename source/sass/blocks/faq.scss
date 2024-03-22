@@ -13,10 +13,33 @@
   text-align: center;
 }
 
+.faq__tabs {
+  margin-bottom: 35px;
+}
+
 .faq__list {
   display: none;
 
   &--active {
     display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .faq {
+    padding: 61px 45px;
+  }
+
+  .faq__wrapper {
+    width: 678px;
+  }
+
+  .faq__heading {
+    width: 678px;
+    margin-bottom: 44px;
+  }
+
+  .faq__tabs {
+    margin-bottom: 45px;
   }
 }

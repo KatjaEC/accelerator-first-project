@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(2, 140px);
   gap: 10px;
-  margin-bottom: 35px;
 }
 
 .faq-tabs__button {
@@ -20,5 +19,17 @@
     background: linear-gradient(130deg, rgb(237, 2, 51) 16.508%,rgb(0, 62, 183) 97.479%);
     color: $color-secondary;
     border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .faq-tabs {
+    grid-template-columns: repeat(4, 162px);
+  }
+
+  .faq-tabs__button {
+    padding: 17px 20px;
+    font-size: 18px;
+    line-height: 18px;
   }
 }

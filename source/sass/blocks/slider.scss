@@ -13,3 +13,43 @@
   margin-bottom: 20px;
   text-align: center;
 }
+
+.slider__list {
+  display: flex;
+  gap: 20px 40px;
+  justify-content: center;
+}
+
+.slider__button {
+  position: absolute;
+  bottom: 194px;
+  right: -1px;
+  display: none;
+
+  &--previous {
+    right: auto;
+    left: -1px;
+    bottom: 192px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__wrapper {
+    padding: 30px 59px 60px;
+    width: 678px;
+  }
+
+  .slider__heading {
+    margin-bottom: 46px;
+  }
+
+  .slider__list {
+    min-height: 300px;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+  .slider__button {
+    display: block;
+  }
+}

@@ -9,3 +9,15 @@
   width: 320px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .offers {
+    padding: 60px 45px;
+  }
+
+  .offers__heading {
+    width: 678px;
+    margin-bottom: 35px;
+    padding: 0;
+  }
+}

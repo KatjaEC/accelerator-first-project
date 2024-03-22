@@ -62,3 +62,63 @@
     display: block;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .prices {
+    padding: 61px 194px;
+    overflow: hidden;
+  }
+
+  .prices__heading {
+    margin-bottom: 36px;
+    width: 310px;
+  }
+
+  .prices__tabs {
+    margin-bottom: 45px;
+    width: 310px;
+    gap: 0 44px;
+    border-bottom-width: 2px;
+  }
+
+  .price-tabs__button {
+    font-size: 18px;
+    line-height: 18px;
+    padding-bottom: 6px;
+
+    &::before {
+      bottom: -2px;
+      border-bottom-width: 2px;
+    }
+  }
+
+  .prices__options-wrapper {
+    position: relative;
+    width: 380px;
+
+    &::before {
+      position: absolute;
+      bottom: -50px;
+      right: -208px;
+      width: 275px;
+      height: 336px;
+      background-image: url("../../img/photos/prices-image-tablet@1x.png");
+      background-image: image-set(
+        url("../../img/photos/prices-image-tablet@1x.webp") type("image/webp") 1x,
+        url("../../img/photos/prices-image-tablet@1x.jpg") type("image/png") 1x);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% auto;
+      z-index: -5;
+      transform: rotate(330deg);
+      content: "";
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/photos/prices-image-tablet@2x.jpg");
+        background-image: image-set(
+          url("../../img/photos/prices-image-tablet@2x.webp") type("image/webp") 2x,
+          url("../../img/photos/prices-image-tablet@2x.jpg") type("image/png") 2x);
+      }
+    }
+  }
+}

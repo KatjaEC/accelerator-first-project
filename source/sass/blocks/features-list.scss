@@ -12,4 +12,26 @@
   padding: 0 15px;
   margin: 0 auto;
   width: 320px;
+
+  &--main {
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features-list {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    gap: 40px 30px;
+  }
+
+  .features-list__item {
+    padding: 0;
+    &--main {
+      margin: 0 auto 0 181px;
+      width: 320px;
+      grid-column: 1/-1;
+    }
+  }
 }

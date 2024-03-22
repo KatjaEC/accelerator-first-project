@@ -81,3 +81,15 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .faq-card__nav-wrapper p {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .faq-card > p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

@@ -17,3 +17,23 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .offers-list {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    gap: 35px 30px;
+    align-items: flex-start;
+  }
+
+  .offers-list__card {
+    width: 324px;
+    min-height: 188px;
+    margin-bottom: 0;
+
+    &--main {
+      width: 678px;
+      grid-column: 1/-1;
+    }
+  }
+}

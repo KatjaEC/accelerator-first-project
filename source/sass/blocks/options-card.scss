@@ -20,6 +20,7 @@
 
 .options-card__price-wrapper {
   position: relative;
+  margin: 0 0 18px;
   display: flex;
   align-items: baseline;
   justify-content: center;
@@ -27,7 +28,7 @@
 }
 
 .options-card__price {
-  margin: 0 0 18px 5px;
+  margin: 0 0 0 5px;
   padding: 68px 0 9px;
   max-width: 206px;
   font-size: 48px;
@@ -40,7 +41,7 @@
 .options-card__price-shadow {
   position: absolute;
   left: -10px;
-  bottom: 20px;
+  bottom: 1px;
   margin: 0 auto;
   width: 226px;
   height: 133px;
@@ -68,6 +69,59 @@
     background: url("../../../__spritemap#sprite-ruble-sign-view") no-repeat center;
     background-size: 24px 33px;
     content: "";
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .options-card {
+    padding: 65px;
+
+    &:not(:last-child) {
+      margin-bottom: 41px;
+    }
+  }
+
+  .options-card__heading {
+    margin-bottom: 21px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .options-card__text {
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .options-card__price-wrapper {
+    margin: 0 0 22px;
+    column-gap: 14px;
+  }
+
+  .options-card__price {
+    margin: 0;
+    padding: 61px 0 0;
+    font-size: 60px;
+    line-height: 90px;
+  }
+
+  .options-card__price-shadow {
+    left: 12px;
+    bottom: 18px;
+    font-size: 100px;
+    line-height: 150px;
+  }
+
+  .options-card__currency {
+    &::before {
+      width: 30px;
+      height: 42px;
+      background-size: 30px 42px;
+    }
+  }
+
+  .options-card__button {
+    width: 100%;
   }
 }
 
