@@ -39,3 +39,23 @@
   text-decoration: none;
   color: $color-text;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts-list__subheading {
+    margin-bottom: 6px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .contacts-list__item {
+    margin-bottom: 14px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts-list__text {
+    line-height: 22px;
+  }
+}

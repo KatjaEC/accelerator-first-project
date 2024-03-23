@@ -12,6 +12,47 @@
 
 .reviews__list {
   margin: 0 auto;
-  width: 290px;
+  width: 240px;
   text-align: center;
+  overflow: hidden;
+}
+
+.reviews__button {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding: 60px 45px;
+  }
+
+  .reviews__heading {
+    width: 678px;
+    margin-bottom: 35px;
+  }
+
+  .reviews__wrapper {
+    position: relative;
+    width: 678px;
+  }
+
+  .reviews__button {
+    position: absolute;
+    top: 105px;
+    left: -1px;
+
+    &--next {
+      top: 103px;
+      left: auto;
+      right: -1px;
+    }
+
+    &--inactive {
+      opacity: 0.3;
+    }
+  }
+
+  .reviews__list {
+    width: 500px;
+  }
 }

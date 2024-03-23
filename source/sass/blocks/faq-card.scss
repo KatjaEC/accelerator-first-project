@@ -83,13 +83,47 @@
 }
 
 @media (min-width: $tablet-width) {
+  .faq-card {
+    padding: 25px 0;
+  }
+
   .faq-card__nav-wrapper p {
+    padding: 0 100px 0 0;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
     font-size: 22px;
     line-height: 22px;
   }
 
   .faq-card > p {
+    align-items: center;
+    padding:  0 118px 0 0;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .faq-card--opened .faq-card__nav-wrapper > p {
+    margin-bottom: 10px;
+  }
+
+  .faq-card__button {
+    top: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      width: 20px;
+      top: 18px;
+      left: calc(50% - 10px);
+    }
+
+    &::after {
+      top: 10px;
+      left: 9px;
+      width: 20px;
+      height: 20px;
+      background-size: 20px 20px;
+    }
   }
 }

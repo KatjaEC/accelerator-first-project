@@ -3,12 +3,35 @@
   background-color: #030a1a;
 }
 
-.footer__logo-wrapper {
+.footer__wrapper {
   width: 290px;
+}
+
+.footer__logo-wrapper {
   margin: 0 auto 24px;
 }
 
 .footer__menu {
-  width: 290px;
   margin: 0 auto 28px;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    padding: 45px 45px 48px;
+  }
+
+  .footer__wrapper {
+    width: 678px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+
+  .footer__logo-wrapper {
+    margin: 0;
+  }
+
+  .footer__menu {
+    margin: 0;
+  }
 }

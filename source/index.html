@@ -724,84 +724,86 @@
     </section>
     <section class="main__reviews reviews" data-test="reviews">
       <h2 class="reviews__heading section-heading section-heading--larger">Отзывы</h2>
-      <button class="reviews__button slider-button slider-button--previous" type="button">
-        <svg class="slider-button__icon" width="16" height="32" role="img">
-          <use href="/__spritemap#button-arrow-next"></use>
-        </svg>
-        <span class="visually-hidden">Предыдущий отзыв.</span>
-      </button>
-      <button class="reviews__button slider-button slider-button--next" type="button">
-        <svg class="slider-button__icon" width="16" height="32" role="img">
-          <use href="/__spritemap#button-arrow-next"></use>
-        </svg>
-        <span class="visually-hidden">Следующий отзыв.</span>
-      </button>
-      <ul class="reviews__list reviews-list">
-        <li class="reviews-list__item review-card reviews-list__item--active">
-          <div>
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/photos/reviews-avatar-1-tablet@1x.webp 1x, img/photos/reviews-avatar-1-tablet@2x.webp 2x"
-                width="80" height="80">
-              <source type="image/webp"
-                srcset="img/photos/reviews-avatar-1-mobile@1x.webp 1x, img/photos/reviews-avatar-1-mobile@2x.webp 2x"
-                width="68" height="68">
-              <source media="(min-width: 768px)"
-                srcset="img/photos/reviews-avatar-1-tablet@1x.jpg 1x, img/photos/reviews-avatar-1-tablet@2x.jpg 2x"
-                type="image/jpeg" width="80" height="80">
-              <img src="img/photos/reviews-avatar-1-mobile@1x.jpg" srcset="img/photos/reviews-avatar-1-mobile@2x.jpg"
-                width="68" height="68" alt="Аватар пользователя.">
-            </picture>
-          </div>
-          <div>
-            <span>Анна Орлова</span>
-            <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
-              дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-          </div>
-        </li>
-        <li class="reviews-list__item review-card">
-          <div>
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/photos/reviews-avatar-1-tablet@1x.webp 1x, img/photos/reviews-avatar-1-tablet@2x.webp 2x"
-                width="80" height="80">
-              <source type="image/webp"
-                srcset="img/photos/reviews-avatar-1-mobile@1x.webp 1x, img/photos/reviews-avatar-1-mobile@2x.webp 2x"
-                width="68" height="68">
-              <source media="(min-width: 768px)"
-                srcset="img/photos/reviews-avatar-1-tablet@1x.jpg 1x, img/photos/reviews-avatar-1-tablet@2x.jpg 2x"
-                type="image/jpeg" width="80" height="80">
-              <img src="img/photos/reviews-avatar-1-mobile@1x.jpg" srcset="img/photos/reviews-avatar-1-mobile@2x.jpg"
-                width="68" height="68" alt="Аватар пользователя.">
-            </picture>
-          </div>
-          <div>
-            <span>Виктор Скороходов</span>
-            <p>«Зал просторный, даже в вечернее время нет очередей»</p>
-          </div>
-        </li>
-        <li class="reviews-list__item review-card">
-          <div>
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/photos/reviews-avatar-1-tablet@1x.webp 1x, img/photos/reviews-avatar-1-tablet@2x.webp 2x"
-                width="80" height="80">
-              <source type="image/webp"
-                srcset="img/photos/reviews-avatar-1-mobile@1x.webp 1x, img/photos/reviews-avatar-1-mobile@2x.webp 2x"
-                width="68" height="68">
-              <source media="(min-width: 768px)"
-                srcset="img/photos/reviews-avatar-1-tablet@1x.jpg 1x, img/photos/reviews-avatar-1-tablet@2x.jpg 2x"
-                type="image/jpeg" width="80" height="80">
-              <img src="img/photos/reviews-avatar-1-mobile@1x.jpg" srcset="img/photos/reviews-avatar-1-mobile@2x.jpg"
-                width="68" height="68" alt="Аватар пользователя.">
-            </picture>
-          </div>
-          <div>
-            <span>Ольга Малинская</span>
-            <p>«Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.»</p>
-          </div>
-        </li>
-      </ul>
+      <div class="reviews__wrapper">
+        <button class="reviews__button slider-button slider-button--previous reviews__button--previous reviews__button--inactive" type="button">
+          <svg class="reviews__button-icon" width="16" height="32" role="img">
+            <use href="/__spritemap#button-arrow-next"></use>
+          </svg>
+          <span class="visually-hidden">Предыдущий отзыв.</span>
+        </button>
+        <button class="reviews__button slider-button slider-button--next reviews__button--next" type="button">
+          <svg class="reviews__button-icon" width="16" height="32" role="img">
+            <use href="/__spritemap#button-arrow-next"></use>
+          </svg>
+          <span class="visually-hidden">Следующий отзыв.</span>
+        </button>
+        <ul class="reviews__list reviews-list">
+          <li class="reviews-list__item review-card reviews-list__item--active">
+            <div>
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photos/reviews-avatar-1-tablet@1x.webp 1x, img/photos/reviews-avatar-1-tablet@2x.webp 2x"
+                  width="80" height="80">
+                <source type="image/webp"
+                  srcset="img/photos/reviews-avatar-1-mobile@1x.webp 1x, img/photos/reviews-avatar-1-mobile@2x.webp 2x"
+                  width="68" height="68">
+                <source media="(min-width: 768px)"
+                  srcset="img/photos/reviews-avatar-1-tablet@1x.jpg 1x, img/photos/reviews-avatar-1-tablet@2x.jpg 2x"
+                  type="image/jpeg" width="80" height="80">
+                <img src="img/photos/reviews-avatar-1-mobile@1x.jpg" srcset="img/photos/reviews-avatar-1-mobile@2x.jpg"
+                  width="68" height="68" alt="Аватар пользователя.">
+              </picture>
+            </div>
+            <div>
+              <span>Анна Орлова</span>
+              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
+                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+          </li>
+          <li class="reviews-list__item review-card">
+            <div>
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photos/reviews-avatar-1-tablet@1x.webp 1x, img/photos/reviews-avatar-1-tablet@2x.webp 2x"
+                  width="80" height="80">
+                <source type="image/webp"
+                  srcset="img/photos/reviews-avatar-1-mobile@1x.webp 1x, img/photos/reviews-avatar-1-mobile@2x.webp 2x"
+                  width="68" height="68">
+                <source media="(min-width: 768px)"
+                  srcset="img/photos/reviews-avatar-1-tablet@1x.jpg 1x, img/photos/reviews-avatar-1-tablet@2x.jpg 2x"
+                  type="image/jpeg" width="80" height="80">
+                <img src="img/photos/reviews-avatar-1-mobile@1x.jpg" srcset="img/photos/reviews-avatar-1-mobile@2x.jpg"
+                  width="68" height="68" alt="Аватар пользователя.">
+              </picture>
+            </div>
+            <div>
+              <span>Виктор Скороходов</span>
+              <p>«Зал просторный, даже в вечернее время нет очередей»</p>
+            </div>
+          </li>
+          <li class="reviews-list__item review-card">
+            <div>
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photos/reviews-avatar-1-tablet@1x.webp 1x, img/photos/reviews-avatar-1-tablet@2x.webp 2x"
+                  width="80" height="80">
+                <source type="image/webp"
+                  srcset="img/photos/reviews-avatar-1-mobile@1x.webp 1x, img/photos/reviews-avatar-1-mobile@2x.webp 2x"
+                  width="68" height="68">
+                <source media="(min-width: 768px)"
+                  srcset="img/photos/reviews-avatar-1-tablet@1x.jpg 1x, img/photos/reviews-avatar-1-tablet@2x.jpg 2x"
+                  type="image/jpeg" width="80" height="80">
+                <img src="img/photos/reviews-avatar-1-mobile@1x.jpg" srcset="img/photos/reviews-avatar-1-mobile@2x.jpg"
+                  width="68" height="68" alt="Аватар пользователя.">
+              </picture>
+            </div>
+            <div>
+              <span>Ольга Малинская</span>
+              <p>«Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.»</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <div class="main__form-contacts-wrapper" data-test="form">
       <section class="main__form form">
@@ -821,81 +823,85 @@
       </section>
       <section class="main__contacts contacts">
         <h2 class="contacts__heading section-heading section-heading--larger">Контакты</h2>
-        <ul class="contacts__list contacts-list">
-          <li class="contacts-list__item">
-            <p class="contacts-list__subheading">Адрес:</p>
-            <address class="contacts-list__text contacts-list__text--address">г. Омск, ул. 60 лет Октября, 7</address>
-          </li>
-          <li class="contacts-list__item">
-            <p class="contacts-list__subheading">График работы:</p>
-            <p class="contacts-list__text contacts-list__text--schedule">Пн-Вс: с 8:00 до 22:00</p>
-          </li>
-        </ul>
-        <ul class="contacts__list contacts-list">
-          <li class="contacts-list__item contacts-list__item--phone">
-            <p class="contacts-list__subheading contacts-list__subheading--phone">Телефон:</p>
-            <a class="contacts-list__text contacts-list__text--phone" href="tel:+78005555555">8 800 555-55-55</a>
-          </li>
-          <li class="contacts-list__item contacts-list__item--email">
-            <p class="contacts-list__subheading contacts-list__subheading--email">Email:</p>
-            <a class="contacts-list__text contacts-list__text--email" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
-          </li>
-        </ul>
+        <div class="contacts__wrapper">
+          <ul class="contacts__list contacts-list">
+            <li class="contacts-list__item">
+              <p class="contacts-list__subheading">Адрес:</p>
+              <address class="contacts-list__text contacts-list__text--address">г. Омск, ул. 60 лет Октября, 7</address>
+            </li>
+            <li class="contacts-list__item">
+              <p class="contacts-list__subheading">График работы:</p>
+              <p class="contacts-list__text contacts-list__text--schedule">Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+          </ul>
+          <ul class="contacts__list contacts-list">
+            <li class="contacts-list__item contacts-list__item--phone">
+              <p class="contacts-list__subheading contacts-list__subheading--phone">Телефон:</p>
+              <a class="contacts-list__text contacts-list__text--phone" href="tel:+78005555555">8 800 555-55-55</a>
+            </li>
+            <li class="contacts-list__item contacts-list__item--email">
+              <p class="contacts-list__subheading contacts-list__subheading--email">Email:</p>
+              <a class="contacts-list__text contacts-list__text--email" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   </main>
   <footer class="footer" data-test="footer">
-    <div class="footer__logo-wrapper logo">
-      <picture>
-        <source media="(min-width: 1366px)" srcset="img/site-logo.svg" type="image/svg+xml" width="130" height="26">
-        <source media="(min-width: 768px)" srcset="img/site-logo.svg" type="image/svg+xml" width="110" height="22">
-        <img class="footer__logo-image logo-image" src="img/site-logo.svg" width="100" height="20"
-          alt="Логотип фитнес центра.">
-      </picture>
+    <div class="footer__wrapper">
+      <div class="footer__logo-wrapper logo">
+        <picture>
+          <source media="(min-width: 1366px)" srcset="img/site-logo.svg" type="image/svg+xml" width="130" height="26">
+          <source media="(min-width: 768px)" srcset="img/site-logo.svg" type="image/svg+xml" width="110" height="22">
+          <img class="footer__logo-image logo-image" src="img/site-logo.svg" width="100" height="20"
+            alt="Логотип фитнес центра.">
+        </picture>
+      </div>
+      <ul class="footer__menu footer-nav">
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Услуги</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Абонементы</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Акции</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Тренеры</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#">Расписание</a>
+        </li>
+      </ul>
+      <ul class="footer__socials social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://vk.com/">
+            <svg class="social-list__icon" width="14" height="14" role="img">
+              <use href="/__spritemap#sprite-social-vk"></use>
+            </svg>
+            <span class="visually-hidden">Мы ВКонтакте.</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://ok.ru/">
+            <svg class="social-list__icon" width="10" height="17" role="img">
+              <use href="/__spritemap#sprite-social-ok"></use>
+            </svg>
+            <span class="visually-hidden">Мы в Одноклассниках.</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.reddit.com/">
+            <svg class="social-list__icon" width="15" height="15" role="img">
+              <use href="/__spritemap#sprite-social-reddit"></use>
+            </svg>
+            <span class="visually-hidden">Мы на Реддит.</span>
+          </a>
+        </li>
+      </ul>
     </div>
-    <ul class="footer__menu footer-nav">
-      <li class="footer-nav__item">
-        <a class="footer-nav__link" href="#">Услуги</a>
-      </li>
-      <li class="footer-nav__item">
-        <a class="footer-nav__link" href="#">Абонементы</a>
-      </li>
-      <li class="footer-nav__item">
-        <a class="footer-nav__link" href="#">Акции</a>
-      </li>
-      <li class="footer-nav__item">
-        <a class="footer-nav__link" href="#">Тренеры</a>
-      </li>
-      <li class="footer-nav__item">
-        <a class="footer-nav__link" href="#">Расписание</a>
-      </li>
-    </ul>
-    <ul class="footer__socials social-list">
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://vk.com/">
-          <svg class="social-list__icon" width="14" height="14" role="img">
-            <use href="/__spritemap#sprite-social-vk"></use>
-          </svg>
-          <span class="visually-hidden">Мы ВКонтакте.</span>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://ok.ru/">
-          <svg class="social-list__icon" width="10" height="17" role="img">
-            <use href="/__spritemap#sprite-social-ok"></use>
-          </svg>
-          <span class="visually-hidden">Мы в Одноклассниках.</span>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="https://www.reddit.com/">
-          <svg class="social-list__icon" width="15" height="15" role="img">
-            <use href="/__spritemap#sprite-social-reddit"></use>
-          </svg>
-          <span class="visually-hidden">Мы на Реддит.</span>
-        </a>
-      </li>
-    </ul>
   </footer>
   <script type="module" src="js/main.js"></script>
 </body>

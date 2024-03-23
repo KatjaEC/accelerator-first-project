@@ -13,3 +13,13 @@
   color: $color-secondary;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .footer-nav {
+    gap: 20px 31px;
+  }
+
+  .footer-nav__link {
+    line-height: 22px;
+  }
+}

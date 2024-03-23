@@ -12,3 +12,37 @@
   width: 290px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 59px 100px;
+  }
+
+  .contacts__heading {
+    width: 440px;
+    margin-bottom: 36px;
+    text-align: center;
+  }
+
+  .contacts__wrapper {
+    position: relative;
+    width: 440px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      background-color: #74819c;
+      content: "";
+    }
+  }
+
+  .contacts__list {
+    width: 190px;
+  }
+}

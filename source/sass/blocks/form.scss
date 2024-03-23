@@ -21,7 +21,7 @@
 }
 
 .form__input {
-  padding: 0 30px 4px 0;
+  padding: 0 0 4px 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 22px;
@@ -40,4 +40,28 @@
 
 .form__button {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding: 60px 100px;
+  }
+
+  .form__wrapper {
+    width: 440px;
+    text-align: center;
+  }
+
+  .form__input-wrapper {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .form__input {
+    width: 205px;
+  }
+
+  .form__button {
+    padding: 25px 54px;
+  }
 }

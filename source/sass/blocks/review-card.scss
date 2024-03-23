@@ -1,11 +1,12 @@
 .review-card {
   padding: 30px 25px;
+  flex-shrink: 0;
   background-color: #1c3374;
   color: $color-secondary;
-  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
 }
 
 .review-card > div:first-of-type {
+  flex-shrink: 0;
   margin-bottom: 3px;
 }
 
@@ -23,4 +24,28 @@
 
 .review-card p {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .review-card {
+    padding: 40px 30px;
+    display: flex;
+    gap: 20px 40px;
+    text-align: left;
+  }
+
+  .review-card > div:first-of-type {
+    margin-bottom: 0;
+  }
+
+  .review-card span {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .review-card p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

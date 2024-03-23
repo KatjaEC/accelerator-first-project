@@ -93,10 +93,7 @@
         background-image: image-set(
           url("../../img/photos/hero-image-tablet@2x.webp") type("image/webp") 2x,
           url("../../img/photos/hero-image-tablet@2x.jpg") type("image/jpeg") 2x);
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: 100% auto;
-  }
+      }
     }
   }
 
@@ -125,5 +122,64 @@
     padding: 20px;
     width: 185px;
     margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__header {
+    padding: 29px 103px;
+    width: $desktop-width;
+  }
+
+  .hero__wrapper {
+    padding: 77px 731px 172px 250px;
+    width: $desktop-width;
+    gap: 40px 0;
+
+    &::before {
+      position: absolute;
+      top: 24px;
+      right: 175px;
+      width: 500px;
+      height: 524px;
+      background-image: url("../../img/photos/hero-image-desktop@1x.jpg");
+      background-image: image-set(
+        url("../../img/photos/hero-image-desktop@1x.webp") type("image/webp") 1x,
+        url("../../img/photos/hero-image-desktop@1x.jpg") type("image/jpeg") 1x);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/photos/hero-image-desktop@2x.jpg");
+        background-image: image-set(
+          url("../../img/photos/hero-image-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/photos/hero-image-desktop@2x.jpg") type("image/jpeg") 2x);
+      }
+    }
+  }
+
+  .hero__text-wrapper {
+    width: 270px;
+  }
+
+  .hero__label {
+    margin-bottom: 40px;
+    font-size: 54px;
+    line-height: 54px;
+  }
+
+  .hero__heading {
+    margin: 0;
+    font-size: 92px;
+    line-height: 110px;
+    letter-spacing: 4px;
+  }
+
+  .hero__list {
+    width: 115px;
+    margin-bottom: 71px;
+  }
+
+  .hero__button {
+    width: 270px;
+    padding: 25px 20px;
   }
 }
