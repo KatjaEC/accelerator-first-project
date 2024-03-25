@@ -19,4 +19,22 @@
     margin-bottom: 50px;
     width: 678px;
   }
+
+  .features__list {
+    width: 678px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    padding: 100px 103px;
+  }
+
+  .features__heading {
+    width: 1160px;
+  }
+
+  .features__list {
+    width: 1160px;
+  }
 }

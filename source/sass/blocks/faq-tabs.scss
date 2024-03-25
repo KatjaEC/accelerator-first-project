@@ -33,3 +33,18 @@
     line-height: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .faq-tabs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-tabs__button {
+    padding: 18px 20px 16px;
+
+    &--active {
+      padding: 20px 20px 16px;
+    }
+  }
+}

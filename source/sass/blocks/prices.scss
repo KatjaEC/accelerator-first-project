@@ -122,3 +122,48 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .prices {
+    padding: 100px 103px;
+  }
+
+  .prices__heading {
+    margin-bottom: 21px;
+    width: 1160px;
+  }
+
+  .prices__tabs {
+    margin-bottom: 40px;
+    width: 350px;
+    gap: 0 51px;
+  }
+
+  .price-tabs__button {
+    padding-bottom: 7px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .prices__options-wrapper {
+    width: 1160px;
+
+    &::before {
+      bottom: -90px;
+      right: -195px;
+      width: 321px;
+      height: 384px;
+      background-image: url("../../img/photos/prices-image-desktop@1x.png");
+      background-image: image-set(
+        url("../../img/photos/prices-image-desktop@1x.webp") type("image/webp") 1x,
+        url("../../img/photos/prices-image-desktop@1x.jpg") type("image/png") 1x);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/photos/prices-image-desktop@2x.jpg");
+        background-image: image-set(
+          url("../../img/photos/prices-image-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/photos/prices-image-desktop@2x.jpg") type("image/png") 2x);
+      }
+    }
+  }
+}

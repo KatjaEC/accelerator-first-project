@@ -17,3 +17,10 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .section-heading {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}

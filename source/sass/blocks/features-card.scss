@@ -112,3 +112,50 @@
     margin-bottom: 25px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features-card {
+    position: relative;
+    justify-content: space-between;
+
+    &--main-feature {
+      padding: 58px 40px;
+    }
+
+    &::before {
+      position: absolute;
+      bottom: -41px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(209, 10, 66, 0.2);
+      content: "";
+    }
+
+    &:nth-last-of-type(1)::before,
+    &:nth-last-of-type(2)::before,
+    &--main-feature::before {
+      display: none;
+    }
+  }
+
+  .features-card div + div {
+    width: 210px;
+  }
+
+  .features-card--main-feature b {
+    margin-bottom: 10px;
+  }
+
+  .features-card h3 {
+    margin-bottom: 8px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .features-card__wrapper b + span {
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}

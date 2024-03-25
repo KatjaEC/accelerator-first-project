@@ -3,6 +3,11 @@
   flex-shrink: 0;
   background-color: #1c3374;
   color: $color-secondary;
+  display: none;
+
+  &--active {
+    display: block;
+  }
 }
 
 .review-card > div:first-of-type {
@@ -29,9 +34,12 @@
 @media (min-width: $tablet-width) {
   .review-card {
     padding: 40px 30px;
-    display: flex;
-    gap: 20px 40px;
     text-align: left;
+
+    &--active {
+      display: flex;
+      gap: 20px 40px;
+    }
   }
 
   .review-card > div:first-of-type {
@@ -47,5 +55,12 @@
   .review-card p {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-card {
+    padding: 60px;
+    gap: 20px 30px;
   }
 }

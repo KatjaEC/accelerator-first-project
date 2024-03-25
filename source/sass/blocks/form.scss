@@ -65,3 +65,19 @@
     padding: 25px 54px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding: 60px 103px 59px;
+  }
+
+  .form__wrapper {
+    margin: 0;
+    width: 477px;
+    text-align: left;
+  }
+
+  .form__input {
+    width: 223px;
+  }
+}

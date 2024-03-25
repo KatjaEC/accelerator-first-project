@@ -43,3 +43,22 @@
     margin-bottom: 45px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .faq {
+    padding: 100px 103px;
+  }
+
+  .faq__wrapper {
+    width: 1160px;
+    display: grid;
+    grid-template-columns: 260px 860px;
+    gap: 40px;
+  }
+
+  .faq__heading {
+    width: 1160px;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+}

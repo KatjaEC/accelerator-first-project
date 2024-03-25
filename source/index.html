@@ -53,51 +53,53 @@
       </div>
     </section>
     <section class="main__about about" data-test="about">
-      <div class="about__text-wrapper">
-        <h2 class="about__heading section-heading">Тренажёрный зал</h2>
-        <p class="about__subheading">Просторный зал площадью 900 кв/м</p>
-        <div class="about__content-wrapper">
-          <p>
-            Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
-            Тренажёрный
-            зал оснащён всем необходимым современным оборудованием для всех спортсменов.
-          </p>
-          <p>
-            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
-            есть несколько оборудованных залов для различных видов групповых занятий.
-          </p>
+      <div class="about__wrapper">
+        <div class="about__text-wrapper">
+          <h2 class="about__heading section-heading">Тренажёрный зал</h2>
+          <p class="about__subheading">Просторный зал площадью 900 кв/м</p>
+          <div class="about__content-wrapper">
+            <p>
+              Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+              Тренажёрный
+              зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p>
+              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре
+              есть несколько оборудованных залов для различных видов групповых занятий.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="about__image-wrapper">
-        <picture>
-          <source type="image/webp" media="(min-width: 1366px)"
-            srcset="img/photos/about-photo-desktop@1x.webp 1x, img/photos/about-photo-desktop@2x.webp 2x" width="660"
-            height="400">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/photos/about-photo-tablet@1x.webp 1x, img/photos/about-photo-tablet@2x.webp 2x" width="678"
-            height="345">
-          <source type="image/webp"
-            srcset="img/photos/about-photo-mobile@1x.webp 1x, img/photos/about-photo-mobile@2x.webp 2x" width="320"
-            height="280">
-          <source media="(min-width: 1366px)"
-            srcset="img/photos/about-photo-desktop@1x.jpg 1x, img/photos/about-photo-desktop@2x.jpg 2x"
-            type="image/jpeg" width="660" height="400">
-          <source media="(min-width: 768px)"
-            srcset="img/photos/about-photo-tablet@1x.jpg 1x, img/photos/about-photo-tablet@2x.jpg 2x" type="image/jpeg"
-            width="678" height="345">
-          <img class="about__image" src="img/photos/about-photo-mobile@1x.jpg"
-            srcset="img/photos/about-photo-mobile@2x.jpg" width="320" height="280" alt="Фото нашего тренажерного зала.">
-        </picture>
-      </div>
-      <div class="about__video-wrapper">
-        <iframe class="about__video" width="320" height="170"
-          src="https://www.youtube.com/embed/9TZXsZItgdw?si=mQjLP-_5hAQ4JTLA&amp;controls=0" loading="lazy"
-          title="Видео нашего тренажерного зала."
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-        <button class="about__video-button" type="button">
-          <span class="visually-hidden">Воспроизвести видео.</span>
-        </button>
+        <div class="about__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="img/photos/about-photo-desktop@1x.webp 1x, img/photos/about-photo-desktop@2x.webp 2x" width="660"
+              height="400">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/photos/about-photo-tablet@1x.webp 1x, img/photos/about-photo-tablet@2x.webp 2x" width="678"
+              height="345">
+            <source type="image/webp"
+              srcset="img/photos/about-photo-mobile@1x.webp 1x, img/photos/about-photo-mobile@2x.webp 2x" width="320"
+              height="280">
+            <source media="(min-width: 1366px)"
+              srcset="img/photos/about-photo-desktop@1x.jpg 1x, img/photos/about-photo-desktop@2x.jpg 2x"
+              type="image/jpeg" width="660" height="400">
+            <source media="(min-width: 768px)"
+              srcset="img/photos/about-photo-tablet@1x.jpg 1x, img/photos/about-photo-tablet@2x.jpg 2x" type="image/jpeg"
+              width="678" height="345">
+            <img class="about__image" src="img/photos/about-photo-mobile@1x.jpg"
+              srcset="img/photos/about-photo-mobile@2x.jpg" width="320" height="280" alt="Фото нашего тренажерного зала.">
+          </picture>
+        </div>
+        <div class="about__video-wrapper">
+          <iframe class="about__video" width="320" height="170"
+            src="https://www.youtube.com/embed/9TZXsZItgdw?si=mQjLP-_5hAQ4JTLA&amp;controls=0" loading="lazy"
+            title="Видео нашего тренажерного зала."
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <button class="about__video-button" type="button">
+            <span class="visually-hidden">Воспроизвести видео.</span>
+          </button>
+        </div>
       </div>
     </section>
     <section class="main__prices prices" data-test="price">
@@ -221,11 +223,16 @@
         <div class="games__schedule-wrapper">
           <dl class="games__schedule-list">
             <dt class="games__schedule-heading">Дата</dt>
-            <dd class="games__schedule">7<span class="games__schedule-date">Марта 2019</span></dd>
+            <dd class="games__schedule">
+              <span class="games__schedule-day">7</span>
+              <span class="games__schedule-date">Марта 2019</span>
+            </dd>
           </dl>
           <dl class="games__schedule-list">
             <dt class="games__schedule-heading">Время</dt>
-            <dd class="games__schedule">12:00</dd>
+            <dd class="games__schedule">
+              <span class="games__schedule-time">12:00</span>
+            </dd>
           </dl>
         </div>
         <p class="games__description">Ежегодные соревнования по CrossFit</p>
@@ -470,7 +477,7 @@
     <section class="main__features features" data-test="features">
       <h2 class="features__heading section-heading">Наши преимущества</h2>
       <ul class="features__list features-list">
-        <li class="features-list__item features-card">
+        <li class="features-list__item features-card features-card--area features-list__item--area">
           <div>
             <b>900</b>
             <span>кв/м</span>
@@ -480,7 +487,7 @@
             <p>Занимайтесь без очередей и толкучки</p>
           </div>
         </li>
-        <li class="features-list__item features-card">
+        <li class="features-list__item features-card features-card--parking features-list__item--parking">
           <div>
             <b>70</b>
             <span>машин</span>
@@ -497,7 +504,7 @@
             <p>Современные тренажёры на все группы мышц</p>
           </div>
         </li>
-        <li class="features-list__item features-card">
+        <li class="features-list__item features-card features-card--comfort features-list__item--comfort">
           <div>
             <b>350</b>
             <span>мест</span>
@@ -507,7 +514,7 @@
             <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
           </div>
         </li>
-        <li class="features-list__item features-card">
+        <li class="features-list__item features-card features-card--experience features-list__item--experience">
           <div>
             <b>5+</b>
             <span>лет</span>
@@ -540,8 +547,8 @@
       </ul>
     </section>
     <section class="main__faq faq" data-test="faq">
+      <h2 class="faq__heading section-heading">Вопросы и ответы</h2>
       <div class="faq__wrapper">
-        <h2 class="faq__heading section-heading">Вопросы и ответы</h2>
         <div class="faq__tabs faq-tabs">
           <button class="faq-tabs__button faq-tabs__button--active" type="button">Центр</button>
           <button class="faq-tabs__button" type="button">Абонемент</button>
@@ -557,7 +564,7 @@
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
-              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор.
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.
                 При покупке
                 абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
             </li>
@@ -738,7 +745,7 @@
           <span class="visually-hidden">Следующий отзыв.</span>
         </button>
         <ul class="reviews__list reviews-list">
-          <li class="reviews-list__item review-card reviews-list__item--active">
+          <li class="reviews-list__item review-card review-card--active reviews-list__item--active">
             <div>
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
@@ -805,7 +812,7 @@
         </ul>
       </div>
     </section>
-    <div class="main__form-contacts-wrapper" data-test="form">
+    <div class="main__form-contacts form-contacts" data-test="form">
       <section class="main__form form">
         <div class="form__wrapper">
           <h2 class="form__heading section-heading section-heading--inverse section-heading--larger">Бесплатное занятие</h2>

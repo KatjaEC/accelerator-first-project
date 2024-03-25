@@ -23,3 +23,9 @@
     line-height: 22px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer-nav {
+    gap: 20px 83px;
+  }
+}

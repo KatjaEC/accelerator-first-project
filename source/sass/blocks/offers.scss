@@ -10,6 +10,10 @@
   text-align: center;
 }
 
+.offers__list {
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .offers {
     padding: 60px 45px;
@@ -19,5 +23,25 @@
     width: 678px;
     margin-bottom: 35px;
     padding: 0;
+  }
+
+  .offers__list {
+    margin: 0 auto;
+    width: 678px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offers {
+    padding: 100px 103px;
+  }
+
+  .offers__heading {
+    width: 1160px;
+    margin-bottom: 70px;
+  }
+
+  .offers__list {
+    width: 1160px;
   }
 }

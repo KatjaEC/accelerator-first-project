@@ -37,3 +37,23 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .offers-list {
+    grid-template-columns: repeat(2, 560px);
+    grid-template-rows: 256px min-content;
+    grid-auto-rows: min-content;
+    gap: 30px 40px;
+    align-items: flex-end;
+  }
+
+  .offers-list__card {
+    width: 560px;
+    grid-row: auto/span 1;
+
+    &--main {
+      grid-column: auto;
+      grid-row: auto/span 2;
+    }
+  }
+}

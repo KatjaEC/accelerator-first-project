@@ -1,0 +1,19 @@
+@media (min-width: $desktop-width) {
+  .form-contacts {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 683px);
+    justify-content: center;
+    background: linear-gradient(to right, $color-text 0%, $color-text 50%, $color-secondary 50%, $color-secondary 100%);
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 1px;
+      width: 50%;
+      background-color: #74819c;
+      content: "";
+    }
+  }
+}

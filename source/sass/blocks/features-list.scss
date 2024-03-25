@@ -35,3 +35,22 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features-list {
+    grid-template-columns: repeat(3, 360px);
+    gap: 80px 40px;
+    grid-auto-flow: dense;
+  }
+
+  .features-list__item {
+    width: 360px;
+
+    &--main {
+      margin: 0 auto;
+      grid-column: 2/3;
+      grid-row: span 2;
+      order: -1;
+    }
+  }
+}

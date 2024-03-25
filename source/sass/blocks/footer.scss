@@ -35,3 +35,20 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 40px 103px;
+  }
+
+  .footer__wrapper {
+    width: 1160px;
+    display: grid;
+    grid-template-columns: 130px 606px 95px;
+    gap: 35px 165px;
+  }
+
+  .footer__menu {
+    padding-left: 2px;
+  }
+}

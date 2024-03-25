@@ -3,3 +3,32 @@
   padding: 0;
   list-style: none;
 }
+
+.options-list__item {
+  &:not(:last-child) {
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .options-list__item {
+    &:not(:last-child) {
+      margin-bottom: 41px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .options-list__item {
+    width: 360px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}

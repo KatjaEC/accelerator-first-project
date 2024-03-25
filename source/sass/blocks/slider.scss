@@ -53,3 +53,25 @@
     display: block;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider__wrapper {
+    padding: 100px 103px;
+    width: $desktop-width;
+  }
+
+  .slider__heading {
+    text-align: left;
+  }
+
+  .slider__button {
+    bottom: 237px;
+    right: 46px;
+
+    &--previous {
+      right: auto;
+      left: 46px;
+      bottom: 235px;
+    }
+  }
+}
