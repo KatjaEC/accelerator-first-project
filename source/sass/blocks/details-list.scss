@@ -1,4 +1,26 @@
 .details-list {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.details-list__item {
+  position: relative;
+  padding-left: 16px;
+  font-weight: 400;
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background-color: $color-secondary;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 12px;
+  }
 }

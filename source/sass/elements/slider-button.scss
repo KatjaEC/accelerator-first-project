@@ -1,13 +1,44 @@
 .slider-button {
-  width: 18px;
-  height: 34px;
+  position: relative;
+  width: 56px;
+  height: 56px;
   padding: 0;
-  background: url("../../../__spritemap#sprite-button-arrow-next") no-repeat center;
+  background-color: transparent;
   background-size: 18px 32px;
-  border: none;
+  color: $color-text;
+  border: 1px solid transparent;
+  border-radius: 50%;
   cursor: pointer;
 
   &--previous {
     transform: rotate(180deg);
   }
+
+  &:hover {
+    border: 1px solid $color-text;
+  }
+
+  &:focus {
+    background-color: #e8e8e8;
+    border: 1px solid $color-text;
+    outline: transparent;
+  }
+
+  &:active {
+    background-color: $color-text;
+    color: $color-secondary;
+  }
+
+  &:disabled {
+    color: $color-text;
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }
+
+.slider-button__icon {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+

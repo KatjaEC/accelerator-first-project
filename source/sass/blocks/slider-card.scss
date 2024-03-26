@@ -39,15 +39,28 @@
 }
 
 .slider-card__curtain-name {
-  margin: 0;
+  margin: 0 0 9px;
   font-size: 22px;
   font-weight: 400;
   text-align: center;
 }
 
 .slider-card__curtain-label {
+  margin: 0 auto 11px;
+  display: block;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
+  color: #b6bdcc;
+}
+
+.slider-card__curtain-list {
+  width: 160px;
+  margin: 0 auto;
+}
+
+.slider-card:hover .slider-card__curtain {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {

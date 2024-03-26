@@ -17,7 +17,7 @@
 
 @media (min-width: $tablet-width) {
   .footer {
-    padding: 45px 45px 48px;
+    padding: 45px 45px 42px;
   }
 
   .footer__wrapper {
@@ -38,17 +38,14 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 40px 103px;
+    padding: 41px 103px 33px;
   }
 
   .footer__wrapper {
     width: 1160px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 130px 606px 95px;
-    gap: 35px 165px;
-  }
-
-  .footer__menu {
-    padding-left: 2px;
+    grid-template-columns: 130px 602px 95px;
+    gap: 35px 167px;
   }
 }

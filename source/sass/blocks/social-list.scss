@@ -10,8 +10,6 @@
 .social-list__item {
   width: 25px;
   height: 25px;
-  background-color: $color-secondary;
-  border-radius: 50%;
 }
 
 .social-list__link {
@@ -20,6 +18,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $color-secondary;
+  color: #030a1a;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: #74819c;
+    color: $color-secondary;
+  }
+
+  &:focus {
+    background-color: #103aae;
+    color: $color-secondary;
+    outline: transparent;
+  }
+
+  &:active {
+    background-color: $color-text;
+    color: $color-secondary;
+  }
+
+  &--disabled {
+    background-color: rgb(255, 255, 255, 0.3);
+    color: #030a1a;
+  }
 }
 
 @media (min-width: $tablet-width) {

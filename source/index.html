@@ -119,7 +119,7 @@
               <div class="options-card__price-wrapper">
                 <p class="options-card__price">5000</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow">5000</span>
+                <span class="options-card__price-shadow" aria-hidden="true">5000</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -129,7 +129,7 @@
               <div class="options-card__price-wrapper">
                 <p class="options-card__price">1700</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow">1700</span>
+                <span class="options-card__price-shadow" aria-hidden="true">1700</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -139,7 +139,7 @@
               <div class="options-card__price-wrapper">
                 <p class="options-card__price">2700</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow">2700</span>
+                <span class="options-card__price-shadow" aria-hidden="true">2700</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -154,7 +154,7 @@
               <div class="options-card__price-wrapper">
                 <p class="options-card__price">30 000</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow">30 000</span>
+                <span class="options-card__price-shadow" aria-hidden="true">30 000</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -164,7 +164,7 @@
               <div class="options-card__price-wrapper">
                 <p class="options-card__price">10 200</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow">10 200</span>
+                <span class="options-card__price-shadow" aria-hidden="true">10 200</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -174,7 +174,7 @@
               <div class="options-card__price-wrapper">
                 <p class="options-card__price">16 200</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow">16 200</span>
+                <span class="options-card__price-shadow" aria-hidden="true">16 200</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -189,7 +189,7 @@
               <div class="options-card__price-wrapper">
                 <p class="options-card__price">60 000</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow">60 000</span>
+                <span class="options-card__price-shadow" aria-hidden="true">60 000</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -199,7 +199,7 @@
               <div class="options-card__price-wrapper">
                 <p class="options-card__price">20 400</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow">20 400</span>
+                <span class="options-card__price-shadow" aria-hidden="true">20 400</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -209,7 +209,7 @@
               <div class="options-card__price-wrapper">
                 <p class="options-card__price">32 400</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow">32 400</span>
+                <span class="options-card__price-shadow" aria-hidden="true">32 400</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -243,14 +243,14 @@
       <div class="slider__wrapper">
         <h2 class="slider__heading section-heading section-heading--larger">Жюри</h2>
         <button class="slider__button slider-button slider-button--previous slider__button--previous" type="button">
-          <svg class="slider-button__icon" width="16" height="32" role="img">
-            <use href="/__spritemap#button-arrow-next"></use>
+          <svg class="slider-button__icon slider-button__icon--previous" width="16" height="32" role="img">
+            <use href="/__spritemap#sprite-button-arrow-next"></use>
           </svg>
           <span class="visually-hidden">Предыдущая карточка.</span>
         </button>
         <button class="slider__button slider-button slider-button--next slider__button--next" type="button">
-          <svg class="slider-button__icon" width="16" height="32" role="img">
-            <use href="/__spritemap#button-arrow-next"></use>
+          <svg class="slider-button__icon slider-button__icon--next" width="16" height="32" role="img">
+            <use href="/__spritemap#sprite-button-arrow-next"></use>
           </svg>
           <span class="visually-hidden">Следующая карточка.</span>
         </button>
@@ -561,6 +561,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Как стать членом фитнес&#8209;центра?</p>
                 <button class="faq-card__button faq-card__button--pressed" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -572,6 +575,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Где можно посмотреть расписание?</p>
                 <button class="faq-card__button" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -582,6 +588,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Есть кулеры в центре? Предоставляются полотенца?</p>
                 <button class="faq-card__button" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -591,6 +600,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Сколько тренеров работает в клубе и какова их квалификация?</p>
                 <button class="faq-card__button" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -603,6 +615,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Занятия с тренером входят в абонемент?</p>
                 <button class="faq-card__button faq-card__button--pressed" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -615,6 +630,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Можно ли заморозить абонемент?</p>
                 <button class="faq-card__button" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -624,6 +642,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</p>
                 <button class="faq-card__button" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -633,6 +654,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Что такое семейный доступ и доступ для друзей?</p>
                 <button class="faq-card__button" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -647,6 +671,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Предлагает ли клуб услуги по консультированию по вопросам питания?</p>
                 <button class="faq-card__button faq-card__button--pressed" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -657,6 +684,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Проводятся ли в клубе какие-либо мероприятия или соревнования?</p>
                 <button class="faq-card__button" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -667,6 +697,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Можно ли приобрести в центре спортивное питание?</p>
                 <button class="faq-card__button" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -676,6 +709,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Есть ли в центре детская комната?</p>
                 <button class="faq-card__button" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -687,6 +723,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Есть в фитнес-центре дресс-код?</p>
                 <button class="faq-card__button faq-card__button--pressed" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -701,6 +740,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Можно ли приводить с собой детей на тренировки?</p>
                 <button class="faq-card__button" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -710,6 +752,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Какие дополнительные правила посещения центра?</p>
                 <button class="faq-card__button" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -720,6 +765,9 @@
               <div class="faq-card__nav-wrapper">
                 <p>Нужна ли медицинская справка для посещения залов и бассейна?</p>
                 <button class="faq-card__button" type="button">
+                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
+                    <use href="/__spritemap#sprite-button-plus"></use>
+                  </svg>
                   <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
                 </button>
               </div>
@@ -733,14 +781,14 @@
       <h2 class="reviews__heading section-heading section-heading--larger">Отзывы</h2>
       <div class="reviews__wrapper">
         <button class="reviews__button slider-button slider-button--previous reviews__button--previous reviews__button--inactive" type="button">
-          <svg class="reviews__button-icon" width="16" height="32" role="img">
-            <use href="/__spritemap#button-arrow-next"></use>
+          <svg class="reviews__button-icon" width="18" height="34" role="img">
+            <use href="/__spritemap#sprite-button-arrow-next"></use>
           </svg>
           <span class="visually-hidden">Предыдущий отзыв.</span>
         </button>
         <button class="reviews__button slider-button slider-button--next reviews__button--next" type="button">
-          <svg class="reviews__button-icon" width="16" height="32" role="img">
-            <use href="/__spritemap#button-arrow-next"></use>
+          <svg class="reviews__button-icon" width="18" height="34" role="img">
+            <use href="/__spritemap#sprite-button-arrow-next"></use>
           </svg>
           <span class="visually-hidden">Следующий отзыв.</span>
         </button>

@@ -3,6 +3,10 @@
   padding: 20px 0;
   min-height: 100%;
   border-top: 1px solid #74819c;
+
+  &:last-of-type {
+    border-bottom: 1px solid #74819c;
+  }
 }
 
 .faq-card__nav-wrapper {
@@ -42,9 +46,12 @@
   right: 0;
   width: 30px;
   height: 30px;
-  background-color: $color-secondary;
+  padding: 4px 0 0;
+  background-color: transparent;
+  color: #1c3374;
   border: 1px solid #1c3374;
   border-radius: 50%;
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -57,17 +64,6 @@
     display: none;
   }
 
-  &::after {
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    width: 14px;
-    height: 14px;
-    background-image: url("../../../__spritemap#sprite-button-plus-view");
-    background-size: 14px 14px;
-    content: "";
-  }
-
   &--pressed {
     background-color: #1c3374;
 
@@ -75,10 +71,26 @@
       display: block;
       background-color: $color-secondary;
     }
+  }
 
-    &::after {
-      display: none;
-    }
+  &--pressed .faq-card__button-icon {
+    display: none;
+  }
+
+  &:hover {
+    background-color: #1c3374;
+    color: $color-secondary;
+  }
+
+  &:focus {
+    background-color: #74819c;
+    color: $color-secondary;
+    outline: transparent;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 }
 
@@ -105,6 +117,11 @@
 
   .faq-card--opened .faq-card__nav-wrapper > p {
     margin-bottom: 10px;
+  }
+
+  .faq-card__button-icon {
+    width: 20px;
+    height: 20px;
   }
 
   .faq-card__button {

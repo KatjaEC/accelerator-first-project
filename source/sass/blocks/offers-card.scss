@@ -25,9 +25,6 @@
       background-image: image-set(
         url("../../img/photos/offers-image-mobile@2x.webp") type("image/webp") 2x,
         url("../../img/photos/offers-image-mobile@2x.jpg") type("image/jpeg") 2x);
-      // background-repeat: no-repeat;
-      // background-position: bottom center;
-      // background-size: 320px 360px;
     }
   }
 }
@@ -68,6 +65,7 @@
 }
 
 .offers-card__button {
+  position: relative;
   display: inline-block;
   padding: 5px 0;
   line-height: 14px;
@@ -75,14 +73,122 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &::before {
+    position: absolute;
+    top: -6px;
+    left: -10px;
+    width: calc(100% + 21px);
+    height: calc(100% + 10px);
+    border: 1px solid $color-secondary;
+    content: "";
+    display: none;
+  }
+
   &--secondary {
     color: #1c3374;
     border-bottom: 1px solid #74819c;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      outline: transparent;
+      opacity: 1;
+
+      &::before {
+        display: block;
+        border: 1px solid #1c3374;
+      }
+    }
+
+    &:focus:not(:focus-visible) {
+      outline: transparent;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &:focus-visible {
+      outline: transparent;
+      opacity: 1;
+
+      &::before {
+        display: block;
+        border: 1px solid #1c3374;
+      }
+    }
+
+    &:active {
+      color: #1c3374;
+      border-bottom: 1px solid #74819c;
+      opacity: 1;
+    }
+  }
+
+  &--secondary-disabled,
+  &--secondary-disabled:focus {
+    opacity: 0.3;
+    pointer-events: none;
+
+    &::before {
+      display: none;
+    }
   }
 
   &--primary {
     color: $color-secondary;
     border-bottom: 1px solid $color-secondary;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      outline: transparent;
+      opacity: 1;
+
+      &::before {
+        display: block;
+        width: calc(100% + 27px);
+        border: 1px solid $color-secondary;
+      }
+    }
+
+    &:focus:not(:focus-visible) {
+      outline: transparent;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &:focus-visible {
+      outline: transparent;
+      opacity: 1;
+
+      &::before {
+        display: block;
+        border: 1px solid $color-secondary;
+      }
+    }
+
+    &:active {
+      color: $color-secondary;
+      border-bottom: 1px solid $color-secondary;
+      opacity: 1;
+    }
+  }
+
+  &--primary-disabled,
+  &--primary-disabled:focus {
+    opacity: 0.5;
+    pointer-events: none;
+
+    &::before {
+      display: none;
+    }
   }
 }
 

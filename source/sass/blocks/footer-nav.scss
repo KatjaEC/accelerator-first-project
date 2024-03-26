@@ -28,4 +28,61 @@
   .footer-nav {
     gap: 20px 83px;
   }
+
+  .footer-nav__link {
+    position: relative;
+    padding: 5px 0;
+
+    &::before {
+      position: absolute;
+      top: -3px;
+      left: -10px;
+      width: calc(100% + 20px);
+      height: calc(100% + 5px);
+      border: 1px solid $color-secondary;
+      content: "";
+      display: none;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $color-secondary;
+    }
+
+    &:focus {
+      outline: transparent;
+
+      &::before {
+        display: block;
+      }
+    }
+
+    &:focus:not(:focus-visible) {
+      outline: transparent;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &:focus-visible {
+      outline: transparent;
+
+      &::before {
+        display: block;
+      }
+    }
+
+    &:active {
+      border-color: transparent;
+    }
+
+    &--disabled {
+      opacity: 0.4;
+      pointer-events: none;
+
+      &:focus::before {
+        display: none;
+      }
+    }
+  }
 }
