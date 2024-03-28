@@ -5,7 +5,7 @@
 }
 
 .reviews__heading {
-  margin: 0 auto 38px;
+  margin: 0 auto 40px;
   width: 290px;
   text-align: center;
 }
@@ -47,10 +47,6 @@
       left: auto;
       right: -20px;
     }
-
-    &--inactive {
-      opacity: 0.3;
-    }
   }
 
   .reviews__list {
@@ -60,12 +56,12 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding: 100px 103px 101px;
+    padding: 100px 103px;
   }
 
   .reviews__heading {
     width: 1160px;
-    margin-bottom: 74px;
+    margin-bottom: 75px;
   }
 
   .reviews__wrapper {

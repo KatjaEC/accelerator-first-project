@@ -84,10 +84,11 @@
               srcset="img/photos/about-photo-desktop@1x.jpg 1x, img/photos/about-photo-desktop@2x.jpg 2x"
               type="image/jpeg" width="660" height="400">
             <source media="(min-width: 768px)"
-              srcset="img/photos/about-photo-tablet@1x.jpg 1x, img/photos/about-photo-tablet@2x.jpg 2x" type="image/jpeg"
-              width="678" height="345">
+              srcset="img/photos/about-photo-tablet@1x.jpg 1x, img/photos/about-photo-tablet@2x.jpg 2x"
+              type="image/jpeg" width="678" height="345">
             <img class="about__image" src="img/photos/about-photo-mobile@1x.jpg"
-              srcset="img/photos/about-photo-mobile@2x.jpg" width="320" height="280" alt="Фото нашего тренажерного зала.">
+              srcset="img/photos/about-photo-mobile@2x.jpg" width="320" height="280"
+              alt="Фото нашего тренажерного зала.">
           </picture>
         </div>
         <div class="about__video-wrapper">
@@ -95,7 +96,30 @@
             src="https://www.youtube.com/embed/9TZXsZItgdw?si=mQjLP-_5hAQ4JTLA&amp;controls=0" loading="lazy"
             title="Видео нашего тренажерного зала."
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+            allowfullscreen>
+          </iframe>
+          <a class="about__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)"
+                srcset="img/photos/video-preview-image-desktop@1x.webp 1x, img/photos/video-preview-image-desktop@2x.webp 2x"
+                width="360" height="230">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/photos/video-preview-image-tablet@1x.webp 1x, img/photos/video-preview-image-tablet@2x.webp 2x"
+                width="270" height="170">
+              <source type="image/webp"
+                srcset="img/photos/video-preview-image-mobile@1x.webp 1x, img/photos/video-preview-image-mobile@2x.webp 2x"
+                width="320" height="170">
+              <source media="(min-width: 1366px)"
+                srcset="img/photos/video-preview-image-desktop@1x.jpg 1x, img/photos/video-preview-image-desktop@2x.jpg 2x"
+                type="image/jpeg" width="360" height="230">
+              <source media="(min-width: 768px)"
+                srcset="img/photos/video-preview-image-tablet@1x.jpg 1x, img/photos/video-preview-image-tablet@2x.jpg 2x"
+                type="image/jpeg" width="270" height="170">
+              <img class="about__video-image" src="img/photos/video-preview-image-mobile@1x.jpg"
+                srcset="img/photos/video-preview-image-mobile@2x.jpg" width="320" height="170"
+                alt="Видео нашего тренажерного зала.">
+            </picture>
+          </a>
           <button class="about__video-button" type="button">
             <span class="visually-hidden">Воспроизвести видео.</span>
           </button>
@@ -557,221 +581,162 @@
         </div>
         <div class="faq__lists-wrapper">
           <ul class="faq__list faq-list faq__list--active">
-            <li class="faq-list__item faq-card faq-card--opened">
-              <div class="faq-card__nav-wrapper">
-                <p>Как стать членом фитнес&#8209;центра?</p>
-                <button class="faq-card__button faq-card__button--pressed" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+            <li class="faq-list__item faq-card">
+              <input class="visually-hidden" type="checkbox" id="membership" name="membership" checked>
+              <label for="membership">Как стать членом фитнес&#8209;центра?</label>
+              <div>
+                <p>
+                  При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.
+                  При покупке
+                  абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
+                </p>
               </div>
-              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.
-                При покупке
-                абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
             </li>
             <li class="faq-list__item faq-card">
-              <div class="faq-card__nav-wrapper">
-                <p>Где можно посмотреть расписание?</p>
-                <button class="faq-card__button" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+              <input class="visually-hidden" type="checkbox" id="schedule" name="schedule">
+              <label for="schedule">Где можно посмотреть расписание?</label>
+              <div>
+                <p>
+                  Данная информация доступна на нашем сайте, а также по номеру телефона, который указан в контактах.
+                </p>
               </div>
-              <p>Данная информация доступна на нашем сайте, а также по номеру телефона, который указан в контактах.
-              </p>
             </li>
             <li class="faq-list__item faq-card">
-              <div class="faq-card__nav-wrapper">
-                <p>Есть кулеры в центре? Предоставляются полотенца?</p>
-                <button class="faq-card__button" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+              <input class="visually-hidden" type="checkbox" id="additional" name="additional">
+              <label for="additional">Есть кулеры в центре? Предоставляются полотенца?</label>
+              <div>
+                <p>Да, есть. Полотенца также предоставляются при необходимости.</p>
               </div>
-              <p>Да, есть. Полотенца также предоставляются при необходимости.</p>
             </li>
             <li class="faq-list__item faq-card">
-              <div class="faq-card__nav-wrapper">
-                <p>Сколько тренеров работает в клубе и какова их квалификация?</p>
-                <button class="faq-card__button" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+              <input class="visually-hidden" type="checkbox" id="instructors" name="instructors">
+              <label for="instructors">Сколько тренеров работает в клубе и какова их квалификация?</label>
+              <div>
+                <p>
+                  Информацию о нашех тренерах и их квалификации можно узнать в соответствующем разделе нашего сайта.
+                </p>
               </div>
-              <p>Информацию о нашех тренерах и их квалификации можно узнать в соответствующем разделе нашего сайта.
-              </p>
             </li>
           </ul>
           <ul class="faq__list faq-list">
-            <li class="faq-list__item faq-card faq-card--opened">
-              <div class="faq-card__nav-wrapper">
-                <p>Занятия с тренером входят в абонемент?</p>
-                <button class="faq-card__button faq-card__button--pressed" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+            <li class="faq-list__item faq-card">
+              <input class="visually-hidden" type="checkbox" id="season-ticket-program" name="season-ticket-program"
+                checked>
+              <label for="season-ticket-program">Занятия с тренером входят в абонемент?</label>
+              <div>
+                <p>
+                  При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
+                  присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
+                  тренажеру
+                  или технике выполнения упражнения.
+                </p>
               </div>
-              <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
-                присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по
-                тренажеру
-                или технике выполнения упражнения.</p>
             </li>
             <li class="faq-list__item faq-card">
-              <div class="faq-card__nav-wrapper">
-                <p>Можно ли заморозить абонемент?</p>
-                <button class="faq-card__button" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+              <input class="visually-hidden" type="checkbox" id="season-ticket-pause" name="season-ticket-pause">
+              <label for="season-ticket-pause">Можно ли заморозить абонемент?</label>
+              <div>
+                <p>К сожалению, данная услуга не предусматривается договором.</p>
               </div>
-              <p>К сожалению, данная услуга не предусматривается договором.</p>
             </li>
             <li class="faq-list__item faq-card">
-              <div class="faq-card__nav-wrapper">
-                <p>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</p>
-                <button class="faq-card__button" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+              <input class="visually-hidden" type="checkbox" id="season-ticket-limits" name="season-ticket-limits">
+              <label for="season-ticket-limits">Есть ли лимит по посещениям тренажерного зала и групповых
+                занятий?
+              </label>
+              <div>
+                <p>Данный лимит зависит от типа абонемента.</p>
               </div>
-              <p>Данный лимит зависит от типа абонемента.</p>
             </li>
             <li class="faq-list__item faq-card">
-              <div class="faq-card__nav-wrapper">
-                <p>Что такое семейный доступ и доступ для друзей?</p>
-                <button class="faq-card__button" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+              <input class="visually-hidden" type="checkbox" id="family-access" name="family-access">
+              <label for="family-access">Что такое семейный доступ и доступ для друзей?</label>
+              <div>
+                <p>
+                  При приобретении определенных видов абонемента Вам может быть предоставлена услуга доступа к
+                  занятиям
+                  для семьи и друзей. Более подробную информацию об этом можно узнать в соответствующем разделе сайта
+                  или
+                  связавшись с нами по телефону.
+                </p>
               </div>
-              <p>При приобретении определенных видов абонемента Вам может быть предоставлена услуга доступа к занятиям
-                для семьи и друзей. Более подробную информацию об этом можно узнать в соответствующем разделе сайта
-                или
-                связавшись с нами по телефону.</p>
             </li>
           </ul>
           <ul class="faq__list faq-list">
-            <li class="faq-list__item faq-card faq-card--opened">
-              <div class="faq-card__nav-wrapper">
-                <p>Предлагает ли клуб услуги по консультированию по вопросам питания?</p>
-                <button class="faq-card__button faq-card__button--pressed" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+            <li class="faq-list__item faq-card">
+              <input class="visually-hidden" type="checkbox" id="diet" name="diet" checked>
+              <label for="diet">Предлагает ли клуб услуги по консультированию по вопросам питания?</label>
+              <div>
+                <p>
+                  Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
+                  данные, цели  и предложит программу питания.
+                </p>
               </div>
-              <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
-                данные, цели  и предложит программу питания.</p>
             </li>
             <li class="faq-list__item faq-card">
-              <div class="faq-card__nav-wrapper">
-                <p>Проводятся ли в клубе какие-либо мероприятия или соревнования?</p>
-                <button class="faq-card__button" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+              <input class="visually-hidden" type="checkbox" id="events" name="events">
+              <label for="events">Проводятся ли в клубе какие-либо мероприятия или соревнования?</label>
+              <div>
+                <p>
+                  Да, в том числе Super Games - Ежегодные соревнования по CrossFit. Вы всегда можете найти актуальную
+                  информацию о данном виде мероприятий на нашем сайте.
+                </p>
               </div>
-              <p>Да, в том числе Super Games - Ежегодные соревнования по CrossFit. Вы всегда можете найти актуальную
-                информацию о данном виде мероприятий на нашем сайте.</p>
             </li>
             <li class="faq-list__item faq-card">
-              <div class="faq-card__nav-wrapper">
-                <p>Можно ли приобрести в центре спортивное питание?</p>
-                <button class="faq-card__button" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+              <input class="visually-hidden" type="checkbox" id="store" name="store">
+              <label for="store">Можно ли приобрести в центре спортивное питание?</label>
+              <div>
+                <p>Можно. В центре есть буфет с большим асосртиментом спортивного питания и напитков.</p>
               </div>
-              <p>Можно. В центре есть буфет с большим асосртиментом спортивного питания и напитков.</p>
             </li>
             <li class="faq-list__item faq-card">
-              <div class="faq-card__nav-wrapper">
-                <p>Есть ли в центре детская комната?</p>
-                <button class="faq-card__button" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+              <input class="visually-hidden" type="checkbox" id="kidzone" name="kidzone">
+              <label for="kidzone">Есть ли в центре детская комната?</label>
+              <div>
+                <p>В нашем центре есть специальная безопасная детская зона.</p>
               </div>
-              <p>В нашем центре есть специальная безопасная детская зона.</p>
             </li>
           </ul>
           <ul class="faq__list faq-list">
-            <li class="faq-list__item faq-card faq-card--opened">
-              <div class="faq-card__nav-wrapper">
-                <p>Есть в фитнес-центре дресс-код?</p>
-                <button class="faq-card__button faq-card__button--pressed" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+            <li class="faq-list__item faq-card">
+              <input class="visually-hidden" type="checkbox" id="dress-code" name="dress-code" checked>
+              <label for="dress-code">Есть в фитнес-центре дресс-код?</label>
+              <div>
+                <p>
+                  Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
+                  Верхняя
+                  и
+                  нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
+                  кроссовки).
+                  В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п.,
+                  исключения составляют специальные классы (например, йога, пилатес).
+                </p>
               </div>
-              <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя
-                и
-                нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты,
-                кроссовки).
-                В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п.,
-                исключения составляют специальные классы (например, йога, пилатес).</p>
             </li>
             <li class="faq-list__item faq-card">
-              <div class="faq-card__nav-wrapper">
-                <p>Можно ли приводить с собой детей на тренировки?</p>
-                <button class="faq-card__button" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+              <input class="visually-hidden" type="checkbox" id="bringing-children" name="bringing-children">
+              <label for="bringing-children">Можно ли приводить с собой детей на тренировки?</label>
+              <div>
+                <p>Да, можно.</p>
               </div>
-              <p>Да, можно.</p>
             </li>
             <li class="faq-list__item faq-card">
-              <div class="faq-card__nav-wrapper">
-                <p>Какие дополнительные правила посещения центра?</p>
-                <button class="faq-card__button" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+              <input class="visually-hidden" type="checkbox" id="additional-rules" name="additional-rules">
+              <label for="additional-rules">Какие дополнительные правила посещения центра?</label>
+              <div>
+                <p>
+                  В наш центр не допускаются люди в состоянии алкогольного опьянения и под действием каких-либо
+                  препаратов.
+                </p>
               </div>
-              <p>В наш центр не допускаются люди в состоянии алкогольного опьянения и под действием каких-либо
-                препаратов.</p>
             </li>
             <li class="faq-list__item faq-card">
-              <div class="faq-card__nav-wrapper">
-                <p>Нужна ли медицинская справка для посещения залов и бассейна?</p>
-                <button class="faq-card__button" type="button">
-                  <svg class="faq-card__button-icon" width="14" height="14" role="img">
-                    <use href="/__spritemap#sprite-button-plus"></use>
-                  </svg>
-                  <span class="visually-hidden">Показать-скрыть ответ на вопрос.</span>
-                </button>
+              <input class="visually-hidden" type="checkbox" id="medical-certificate" name="medical-certificate">
+              <label for="medical-certificate">Нужна ли медицинская справка для посещения залов и бассейна?</label>
+              <div>
+                <p>Соответствующая справка нужна для посещения бассейна.</p>
               </div>
-              <p>Соответствующая справка нужна для посещения бассейна.</p>
             </li>
           </ul>
         </div>
@@ -780,7 +745,8 @@
     <section class="main__reviews reviews" data-test="reviews">
       <h2 class="reviews__heading section-heading section-heading--larger">Отзывы</h2>
       <div class="reviews__wrapper">
-        <button class="reviews__button slider-button slider-button--previous reviews__button--previous reviews__button--inactive" type="button">
+        <button class="reviews__button slider-button slider-button--previous reviews__button--previous" type="button"
+          disabled>
           <svg class="reviews__button-icon" width="18" height="34" role="img">
             <use href="/__spritemap#sprite-button-arrow-next"></use>
           </svg>
@@ -863,14 +829,21 @@
     <div class="main__form-contacts form-contacts" data-test="form">
       <section class="main__form form">
         <div class="form__wrapper">
-          <h2 class="form__heading section-heading section-heading--inverse section-heading--larger">Бесплатное занятие</h2>
+          <h2 class="form__heading section-heading section-heading--inverse section-heading--larger">Бесплатное занятие
+          </h2>
           <form class="form__body" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="form__input-wrapper">
-              <label for="name-input" class="visually-hidden">Введите ваше имя.</label>
-              <input class="form__input" type="text" name="name-input" id="name-input" placeholder="Имя" required>
-              <label for="telephone-input" class="visually-hidden">Введите ваш номер телефона.</label>
-              <input class="form__input" type="tel" name="telephone-input" id="telephone-input" placeholder="Телефон"
-                required>
+            <div class="form__inputs">
+              <div class="form__input-wrapper">
+                <label for="name-input" class="visually-hidden">Введите ваше имя.</label>
+                <input class="form__input" type="text" name="name-input" id="name-input" placeholder="Имя" required>
+                <span class="form__error-message">Ошибка</span>
+              </div>
+              <div class="form__input-wrapper">
+                <label for="telephone-input" class="visually-hidden">Введите ваш номер телефона.</label>
+                <input class="form__input" type="tel" name="telephone-input" id="telephone-input" placeholder="Телефон"
+                  required>
+                <span class="form__error-message">Ошибка</span>
+              </div>
             </div>
             <button class="form__button button button--primary" type="submit">Отправить</button>
           </form>
@@ -896,7 +869,8 @@
             </li>
             <li class="contacts-list__item contacts-list__item--email">
               <p class="contacts-list__subheading contacts-list__subheading--email">Email:</p>
-              <a class="contacts-list__text contacts-list__text--email" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+              <a class="contacts-list__text contacts-list__text--email"
+                href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
             </li>
           </ul>
         </div>

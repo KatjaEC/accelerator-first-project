@@ -3,7 +3,7 @@
 }
 
 .hero__header {
-  padding: 15px 15px 18px;
+  padding: 10px 15px 17px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -61,7 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .hero__header {
-    padding: 30px 45px 25px;
+    padding: 25px 45px 24px;
     width: $tablet-width;
   }
 
@@ -134,7 +134,7 @@
   .hero__wrapper {
     padding: 77px 731px 172px 250px;
     width: $desktop-width;
-    gap: 40px 0;
+    gap: 38px 0;
 
     &::before {
       position: absolute;

@@ -1,5 +1,5 @@
 .about {
-  padding: 40px 0 33px;
+  padding: 40px 0;
   background-color: $color-secondary;
 }
 
@@ -37,38 +37,25 @@
   position: relative;
   margin: 0 auto;
   width: 320px;
-
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 170px;
-    background-image: url("../../img/photos/video-preview-image-mobile@1x.jpg");
-    background-image: image-set(
-      url("../../img/photos/video-preview-image-mobile@1x.webp") type("image/webp") 1x,
-      url("../../img/photos/video-preview-image-mobile@1x.jpg") type("image/jpeg") 1x);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% auto;
-    content: "";
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/photos/video-preview-image-mobile@2x.jpg");
-      background-image: image-set(
-        url("../../img/photos/video-preview-image-mobile@2x.webp") type("image/webp") 2x,
-        url("../../img/photos/video-preview-image-mobile@2x.jpg") type("image/jpeg") 2x);
-    }
-  }
+  height: 170px;
 }
 
 .about__video {
   border: none;
+  display: none;
+}
+
+.about__video-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .about__video-button {
   position: absolute;
-  top: calc(50% - 39px);
+  top: calc(50% - 36px);
   left: calc(50% - 36px);
   display: block;
   width: 72px;
@@ -99,6 +86,64 @@
     border: 5px solid transparent;
 	  border-left: 9px solid $color-secondary;
     content: "";
+  }
+}
+
+.about__video-link:hover + .about__video-button,
+.about__video-button:hover {
+  border-color: rgba(16, 38, 84, 0.6);
+
+  &::before {
+    background: $color-secondary;
+  }
+
+  &::after {
+    border-left-color: rgba(16, 38, 84, 0.6);
+  }
+}
+
+.about__video-link:focus + .about__video-button,
+.about__video-button:focus {
+  border-color: $color-text;
+  outline: transparent;
+
+  &::before {
+    background: #c8c9cc;
+  }
+
+  &::after {
+    border-left-color: $color-text;
+  }
+}
+
+.about__video-link:active + .about__video-button,
+.about__video-button:active {
+  border-color: $color-text;
+
+  &::before {
+    background: $color-secondary;
+  }
+
+  &::after {
+    border-left-color: $color-text;
+  }
+}
+
+.about__video-link--inactive {
+  pointer-events: none;
+}
+
+.about__video-link--inactive + .about__video-button,
+.about__video-button:disabled {
+  border-color: rgba(16, 38, 84, 0.4);
+  pointer-events: none;
+
+  &::before {
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  &::after {
+    border-left-color: rgba(16, 38, 84, 0.4);
   }
 }
 
@@ -137,22 +182,8 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 29px;
+    bottom: 35px;
     width: 270px;
-
-    &::before {
-      background-image: url("../../img/photos/video-preview-image-tablet@1x.jpg");
-      background-image: image-set(
-        url("../../img/photos/video-preview-image-tablet@1x.webp") type("image/webp") 1x,
-        url("../../img/photos/video-preview-image-tablet@1x.jpg") type("image/jpeg") 1x);
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/photos/video-preview-image-tablet@2x.jpg");
-      background-image: image-set(
-        url("../../img/photos/video-preview-image-tablet@2x.webp") type("image/webp") 2x,
-        url("../../img/photos/video-preview-image-tablet@2x.jpg") type("image/jpeg") 2x);
-      }
-    }
   }
 
   .about__video {
@@ -208,24 +239,9 @@
   }
 
   .about__video-wrapper {
-    bottom: 118px;
+    bottom: 125px;
     width: 360px;
-
-    &::before {
-      height: 230px;
-      background-image: url("../../img/photos/video-preview-image-desktop@1x.jpg");
-      background-image: image-set(
-        url("../../img/photos/video-preview-image-desktop@1x.webp") type("image/webp") 1x,
-        url("../../img/photos/video-preview-image-desktop@1x.jpg") type("image/jpeg") 1x);
-      background-size: 360px 230px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/photos/video-preview-image-desktop@2x.jpg");
-      background-image: image-set(
-        url("../../img/photos/video-preview-image-desktop@2x.webp") type("image/webp") 2x,
-        url("../../img/photos/video-preview-image-desktop@2x.jpg") type("image/jpeg") 2x);
-      }
-    }
+    height: 230px;
   }
 
   .about__video {
@@ -234,7 +250,7 @@
   }
 
   .about__video-button {
-    top: calc(50% - 54px);
+    top: calc(50% - 50px);
     left: calc(50% - 49px);
     width: 100px;
     height: 100px;

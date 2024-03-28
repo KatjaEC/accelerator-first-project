@@ -1,7 +1,14 @@
 .options-card {
-  padding: 51px 42px;
+  padding: 44px 35px;
   background-color: $color-secondary;
   text-align: center;
+  border: 7px solid transparent;
+
+  &:hover,
+  &:focus-within {
+    border-image: linear-gradient(143deg, #d10a42, #00359f);
+    border-image-slice: 1;
+  }
 }
 
 .options-card__heading {
@@ -70,7 +77,7 @@
 
 @media (min-width: $tablet-width) {
   .options-card {
-    padding: 65px;
+    padding: 58px;
   }
 
   .options-card__heading {
@@ -119,7 +126,7 @@
 
 @media (min-width: $desktop-width) {
   .options-card {
-    padding: 65px 78px;
+    padding: 58px 71px;
   }
 
   .options-card__heading {
