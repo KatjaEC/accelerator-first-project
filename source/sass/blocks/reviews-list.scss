@@ -2,18 +2,16 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: rgba(28, 51, 116, 0.2);
-  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
 }
 
 .reviews-list__item {
-  width: 240px;
+  width: 320px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .reviews-list__item {
-    width: 100%;
+    width: 580px;
   }
 }
 
@@ -23,6 +21,6 @@
   }
 
   .reviews-list__item {
-    width: 560px;
+    width: 640px;
   }
 }

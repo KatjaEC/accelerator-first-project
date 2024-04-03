@@ -1,18 +1,23 @@
 .reviews {
   position: relative;
-  padding: 42px 15px 40px;
+  padding: 40px 0 0;
   background-color: $color-secondary;
 }
 
 .reviews__heading {
-  margin: 0 auto 40px;
+  margin: 0 auto;
   width: 290px;
   text-align: center;
 }
 
+.reviews__inner {
+  width: 320px;
+  overflow: hidden;
+}
+
 .reviews__list {
   margin: 0 auto;
-  width: 240px;
+  display: flex;
   text-align: center;
 }
 
@@ -22,12 +27,11 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding: 60px 45px;
+    padding: 60px 45px 20px;
   }
 
   .reviews__heading {
     width: 678px;
-    margin-bottom: 34px;
   }
 
   .reviews__wrapper {
@@ -38,30 +42,32 @@
 
   .reviews__button {
     position: absolute;
-    top: 91px;
+    top: calc(50% - 30px);
     left: -21px;
     display: block;
+    z-index: 5;
 
     &--next {
-      top: 95px;
+      top: calc(50% - 26px);
       left: auto;
       right: -20px;
     }
   }
 
-  .reviews__list {
-    width: 500px;
+  .reviews__inner {
+    width: 580px;
+    margin-top: -6px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding: 100px 103px;
+    padding: 100px 103px 60px;
   }
 
   .reviews__heading {
     width: 1160px;
-    margin-bottom: 75px;
+    margin-bottom: 35px;
   }
 
   .reviews__wrapper {
@@ -69,17 +75,16 @@
   }
 
   .reviews__button {
-    top: 99px;
     left: 224px;
 
     &--next {
-      top: 103px;
       left: auto;
       right: 224px;
     }
   }
 
-  .reviews__list {
-    width: 560px;
+  .reviews__inner {
+    width: 640px;
+    margin-top: 0;
   }
 }

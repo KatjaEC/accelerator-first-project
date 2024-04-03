@@ -4,9 +4,13 @@
   list-style: none;
 }
 
+.slider-list__item {
+  max-width: 227px;
+}
+
 @media (min-width: $tablet-width) {
   .slider-list__item {
-    width: 260px;
+    max-width: 260px;
     flex-shrink: 0;
   }
 }

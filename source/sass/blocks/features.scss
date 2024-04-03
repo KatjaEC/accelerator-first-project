@@ -9,6 +9,10 @@
   text-align: center;
 }
 
+.features__list {
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .features {
     padding: 60px 43px;

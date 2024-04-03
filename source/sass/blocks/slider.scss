@@ -14,10 +14,12 @@
   text-align: center;
 }
 
+.slider__inner {
+  width: 227px;
+}
+
 .slider__list {
   display: flex;
-  gap: 20px 40px;
-  justify-content: center;
 }
 
 .slider__button {
@@ -43,10 +45,14 @@
     margin-bottom: 46px;
   }
 
+  .slider__inner {
+    width: 560px;
+    overflow: hidden;
+  }
+
   .slider__list {
     min-height: 300px;
-    justify-content: flex-start;
-    overflow: hidden;
+    gap: 20px 40px;
   }
 
   .slider__button {
@@ -62,6 +68,10 @@
 
   .slider__heading {
     text-align: left;
+  }
+
+  .slider__inner {
+    width: 1160px;
   }
 
   .slider__button {

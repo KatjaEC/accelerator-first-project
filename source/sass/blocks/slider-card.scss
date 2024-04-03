@@ -1,10 +1,6 @@
 .slider-card {
   position: relative;
   display: none;
-
-  &--active {
-    display: block;
-  }
 }
 
 .slider-card__image {
@@ -59,8 +55,10 @@
   margin: 0 auto;
 }
 
-.slider-card:hover .slider-card__curtain {
+.slider-card:hover .slider-card__curtain,
+.slider-card:focus .slider-card__curtain {
   display: block;
+  outline: transparent;
 }
 
 @media (min-width: $tablet-width) {

@@ -63,7 +63,7 @@
 .faq-card > div {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .faq-card > div > p {
@@ -74,7 +74,7 @@
 }
 
 .faq-card input:checked ~ div {
-  max-height: 700px;
+  max-height: 900px;
 }
 
 .faq-card input {

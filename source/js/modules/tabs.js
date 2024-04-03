@@ -2,7 +2,6 @@ const tabs = document.querySelector('.price-tabs');
 const tabButtons = [...tabs.querySelectorAll('.price-tabs__button')];
 const optionsGroup = [...document.querySelectorAll('.prices__options-group')];
 
-
 if (tabs) {
   tabs.addEventListener('click', (evt) => {
     if (evt.target.classList.contains('price-tabs__button') && !evt.target.classList.contains('price-tabs__button--active')) {

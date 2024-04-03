@@ -266,21 +266,23 @@
     <section class="main__slider slider" data-test="juri">
       <div class="slider__wrapper">
         <h2 class="slider__heading section-heading section-heading--larger">Жюри</h2>
-        <button class="slider__button slider-button slider-button--previous slider__button--previous" type="button">
+        <button class="slider__button slider-button slider-button--previous slider__button--previous swiper-button-prev"
+          type="button">
           <svg class="slider-button__icon slider-button__icon--previous" width="16" height="32" role="img">
             <use href="/__spritemap#sprite-button-arrow-next"></use>
           </svg>
           <span class="visually-hidden">Предыдущая карточка.</span>
         </button>
-        <button class="slider__button slider-button slider-button--next slider__button--next" type="button">
+        <button class="slider__button slider-button slider-button--next slider__button--next swiper-button-next"
+          type="button">
           <svg class="slider-button__icon slider-button__icon--next" width="16" height="32" role="img">
             <use href="/__spritemap#sprite-button-arrow-next"></use>
           </svg>
           <span class="visually-hidden">Следующая карточка.</span>
         </button>
-        <ol class="slider__list slider-list">
-          <li class="slider-list__item slider-card">
-            <div class="slider-card__wrapper">
+        <div class="slider__inner swiper">
+          <ol class="slider__list slider-list swiper-wrapper">
+            <li class="slider-list__item slider-card swiper-slide" tabindex="0">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/photos/slider-card-1-tablet@1x.webp 1x, img/photos/slider-card-1-tablet@2x.webp 2x"
@@ -304,10 +306,8 @@
                   <li class="details-list__item">Опыт — 5 лет</li>
                 </ul>
               </div>
-            </div>
-          </li>
-          <li class="slider-list__item slider-card">
-            <div class="slider-card__wrapper">
+            </li>
+            <li class="slider-list__item slider-card swiper-slide" tabindex="0">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/photos/slider-card-2-tablet@1x.webp 1x, img/photos/slider-card-2-tablet@2x.webp 2x"
@@ -331,10 +331,8 @@
                   <li class="details-list__item">Опыт — 12 лет</li>
                 </ul>
               </div>
-            </div>
-          </li>
-          <li class="slider-list__item slider-card slider-card--active">
-            <div class="slider-card__wrapper">
+            </li>
+            <li class="slider-list__item slider-card swiper-slide slider-card--active" tabindex="0">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/photos/slider-card-3-tablet@1x.webp 1x, img/photos/slider-card-3-tablet@2x.webp 2x"
@@ -358,10 +356,8 @@
                   <li class="details-list__item">Опыт — 6 лет</li>
                 </ul>
               </div>
-            </div>
-          </li>
-          <li class="slider-list__item slider-card">
-            <div class="slider-card__wrapper">
+            </li>
+            <li class="slider-list__item slider-card swiper-slide" tabindex="0">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/photos/slider-card-4-tablet@1x.webp 1x, img/photos/slider-card-4-tablet@2x.webp 2x"
@@ -385,10 +381,8 @@
                   <li class="details-list__item">Опыт — 7 лет</li>
                 </ul>
               </div>
-            </div>
-          </li>
-          <li class="slider-list__item slider-card">
-            <div class="slider-card__wrapper">
+            </li>
+            <li class="slider-list__item slider-card swiper-slide" tabindex="0">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/photos/slider-card-3-tablet@1x.webp 1x, img/photos/slider-card-3-tablet@2x.webp 2x"
@@ -412,10 +406,8 @@
                   <li class="details-list__item">Опыт — 11 лет</li>
                 </ul>
               </div>
-            </div>
-          </li>
-          <li class="slider-list__item slider-card">
-            <div class="slider-card__wrapper">
+            </li>
+            <li class="slider-list__item slider-card swiper-slide" tabindex="0">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/photos/slider-card-1-tablet@1x.webp 1x, img/photos/slider-card-1-tablet@2x.webp 2x"
@@ -439,10 +431,8 @@
                   <li class="details-list__item">Опыт — 10 лет</li>
                 </ul>
               </div>
-            </div>
-          </li>
-          <li class="slider-list__item slider-card">
-            <div class="slider-card__wrapper">
+            </li>
+            <li class="slider-list__item slider-card swiper-slide" tabindex="0">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/photos/slider-card-3-tablet@1x.webp 1x, img/photos/slider-card-3-tablet@2x.webp 2x"
@@ -466,10 +456,8 @@
                   <li class="details-list__item">Опыт — 7 лет</li>
                 </ul>
               </div>
-            </div>
-          </li>
-          <li class="slider-list__item slider-card">
-            <div class="slider-card__wrapper">
+            </li>
+            <li class="slider-list__item slider-card swiper-slide" tabindex="0">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/photos/slider-card-2-tablet@1x.webp 1x, img/photos/slider-card-2-tablet@2x.webp 2x"
@@ -493,9 +481,9 @@
                   <li class="details-list__item">Опыт — 10 лет</li>
                 </ul>
               </div>
-            </div>
-          </li>
-        </ol>
+            </li>
+          </ol>
+        </div>
       </div>
     </section>
     <section class="main__features features" data-test="features">
@@ -745,85 +733,93 @@
     <section class="main__reviews reviews" data-test="reviews">
       <h2 class="reviews__heading section-heading section-heading--larger">Отзывы</h2>
       <div class="reviews__wrapper">
-        <button class="reviews__button slider-button slider-button--previous reviews__button--previous" type="button"
+        <button class="reviews__button slider-button slider-button--previous reviews__button--previous swiper-button-prev" type="button"
           disabled>
           <svg class="reviews__button-icon" width="18" height="34" role="img">
             <use href="/__spritemap#sprite-button-arrow-next"></use>
           </svg>
           <span class="visually-hidden">Предыдущий отзыв.</span>
         </button>
-        <button class="reviews__button slider-button slider-button--next reviews__button--next" type="button">
+        <button class="reviews__button slider-button slider-button--next reviews__button--next swiper-button-next" type="button">
           <svg class="reviews__button-icon" width="18" height="34" role="img">
             <use href="/__spritemap#sprite-button-arrow-next"></use>
           </svg>
           <span class="visually-hidden">Следующий отзыв.</span>
         </button>
-        <ul class="reviews__list reviews-list">
-          <li class="reviews-list__item review-card review-card--active reviews-list__item--active">
-            <div>
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/photos/reviews-avatar-1-tablet@1x.webp 1x, img/photos/reviews-avatar-1-tablet@2x.webp 2x"
-                  width="80" height="80">
-                <source type="image/webp"
-                  srcset="img/photos/reviews-avatar-1-mobile@1x.webp 1x, img/photos/reviews-avatar-1-mobile@2x.webp 2x"
-                  width="68" height="68">
-                <source media="(min-width: 768px)"
-                  srcset="img/photos/reviews-avatar-1-tablet@1x.jpg 1x, img/photos/reviews-avatar-1-tablet@2x.jpg 2x"
-                  type="image/jpeg" width="80" height="80">
-                <img src="img/photos/reviews-avatar-1-mobile@1x.jpg" srcset="img/photos/reviews-avatar-1-mobile@2x.jpg"
-                  width="68" height="68" alt="Аватар пользователя.">
-              </picture>
-            </div>
-            <div>
-              <span>Анна Орлова</span>
-              <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
-                дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </div>
-          </li>
-          <li class="reviews-list__item review-card">
-            <div>
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/photos/reviews-avatar-1-tablet@1x.webp 1x, img/photos/reviews-avatar-1-tablet@2x.webp 2x"
-                  width="80" height="80">
-                <source type="image/webp"
-                  srcset="img/photos/reviews-avatar-1-mobile@1x.webp 1x, img/photos/reviews-avatar-1-mobile@2x.webp 2x"
-                  width="68" height="68">
-                <source media="(min-width: 768px)"
-                  srcset="img/photos/reviews-avatar-1-tablet@1x.jpg 1x, img/photos/reviews-avatar-1-tablet@2x.jpg 2x"
-                  type="image/jpeg" width="80" height="80">
-                <img src="img/photos/reviews-avatar-1-mobile@1x.jpg" srcset="img/photos/reviews-avatar-1-mobile@2x.jpg"
-                  width="68" height="68" alt="Аватар пользователя.">
-              </picture>
-            </div>
-            <div>
-              <span>Виктор Скороходов</span>
-              <p>«Зал просторный, даже в вечернее время нет очередей»</p>
-            </div>
-          </li>
-          <li class="reviews-list__item review-card">
-            <div>
-              <picture>
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/photos/reviews-avatar-1-tablet@1x.webp 1x, img/photos/reviews-avatar-1-tablet@2x.webp 2x"
-                  width="80" height="80">
-                <source type="image/webp"
-                  srcset="img/photos/reviews-avatar-1-mobile@1x.webp 1x, img/photos/reviews-avatar-1-mobile@2x.webp 2x"
-                  width="68" height="68">
-                <source media="(min-width: 768px)"
-                  srcset="img/photos/reviews-avatar-1-tablet@1x.jpg 1x, img/photos/reviews-avatar-1-tablet@2x.jpg 2x"
-                  type="image/jpeg" width="80" height="80">
-                <img src="img/photos/reviews-avatar-1-mobile@1x.jpg" srcset="img/photos/reviews-avatar-1-mobile@2x.jpg"
-                  width="68" height="68" alt="Аватар пользователя.">
-              </picture>
-            </div>
-            <div>
-              <span>Ольга Малинская</span>
-              <p>«Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.»</p>
-            </div>
-          </li>
-        </ul>
+        <div class="reviews__inner swiper">
+          <ul class="reviews__list reviews-list swiper-wrapper">
+            <li class="reviews-list__item review-card swiper-slide">
+              <div class="review-card__wrapper">
+                <div>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photos/reviews-avatar-1-tablet@1x.webp 1x, img/photos/reviews-avatar-1-tablet@2x.webp 2x"
+                      width="80" height="80">
+                    <source type="image/webp"
+                      srcset="img/photos/reviews-avatar-1-mobile@1x.webp 1x, img/photos/reviews-avatar-1-mobile@2x.webp 2x"
+                      width="68" height="68">
+                    <source media="(min-width: 768px)"
+                      srcset="img/photos/reviews-avatar-1-tablet@1x.jpg 1x, img/photos/reviews-avatar-1-tablet@2x.jpg 2x"
+                      type="image/jpeg" width="80" height="80">
+                    <img src="img/photos/reviews-avatar-1-mobile@1x.jpg" srcset="img/photos/reviews-avatar-1-mobile@2x.jpg"
+                      width="68" height="68" alt="Аватар пользователя.">
+                  </picture>
+                </div>
+                <div>
+                  <span>Анна Орлова</span>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
+                    дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews-list__item review-card swiper-slide">
+              <div class="review-card__wrapper">
+                <div>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photos/reviews-avatar-1-tablet@1x.webp 1x, img/photos/reviews-avatar-1-tablet@2x.webp 2x"
+                      width="80" height="80">
+                    <source type="image/webp"
+                      srcset="img/photos/reviews-avatar-1-mobile@1x.webp 1x, img/photos/reviews-avatar-1-mobile@2x.webp 2x"
+                      width="68" height="68">
+                    <source media="(min-width: 768px)"
+                      srcset="img/photos/reviews-avatar-1-tablet@1x.jpg 1x, img/photos/reviews-avatar-1-tablet@2x.jpg 2x"
+                      type="image/jpeg" width="80" height="80">
+                    <img src="img/photos/reviews-avatar-1-mobile@1x.jpg" srcset="img/photos/reviews-avatar-1-mobile@2x.jpg"
+                      width="68" height="68" alt="Аватар пользователя.">
+                  </picture>
+                </div>
+                <div>
+                  <span>Виктор Скороходов</span>
+                  <p>«Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews-list__item review-card swiper-slide">
+              <div class="review-card__wrapper">
+                <div>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photos/reviews-avatar-1-tablet@1x.webp 1x, img/photos/reviews-avatar-1-tablet@2x.webp 2x"
+                      width="80" height="80">
+                    <source type="image/webp"
+                      srcset="img/photos/reviews-avatar-1-mobile@1x.webp 1x, img/photos/reviews-avatar-1-mobile@2x.webp 2x"
+                      width="68" height="68">
+                    <source media="(min-width: 768px)"
+                      srcset="img/photos/reviews-avatar-1-tablet@1x.jpg 1x, img/photos/reviews-avatar-1-tablet@2x.jpg 2x"
+                      type="image/jpeg" width="80" height="80">
+                    <img src="img/photos/reviews-avatar-1-mobile@1x.jpg" srcset="img/photos/reviews-avatar-1-mobile@2x.jpg"
+                      width="68" height="68" alt="Аватар пользователя.">
+                  </picture>
+                </div>
+                <div>
+                  <span>Ольга Малинская</span>
+                  <p>«Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.»</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <div class="main__form-contacts form-contacts" data-test="form">
@@ -934,4 +930,5 @@
   </footer>
   <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

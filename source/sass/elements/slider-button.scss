@@ -9,6 +9,7 @@
   border: 1px solid transparent;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 5;
 
   &--previous {
     transform: rotate(180deg);
