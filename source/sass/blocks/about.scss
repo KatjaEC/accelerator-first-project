@@ -40,9 +40,12 @@
   height: 170px;
 }
 
+.about__video-link {
+  cursor: pointer;
+}
+
 .about__video {
   border: none;
-  display: none;
 }
 
 .about__video-image {

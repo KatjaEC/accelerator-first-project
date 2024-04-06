@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
-import { DEFAULT_SPEED, SliderWidthJudges, SliderPerViewJudges, InitialSlide } from './constants';
+import { DEFAULT_SPEED, SLIDES_GAP, SliderWidthJudges, SliderPerViewJudges, InitialSlide } from './constants';
 
 const swiperJudges = document.querySelector('.slider__inner');
 
@@ -13,14 +13,15 @@ const judgesSlider = new Swiper(swiperJudges, {
     nextEl: '.slider__button.swiper-button-next',
   },
   loop: true,
-  resizeObserver: true,
   watchSlidesProgress: true,
+  allowTouchMove: true,
+  updateOnWindowResize: true,
+  spaceBetween: SLIDES_GAP,
   breakpoints: {
     320: {
       width: SliderWidthJudges.MOBILE,
       initialSlide: InitialSlide.MOBILE,
       slidesPerView: SliderPerViewJudges.MOBILE,
-      spaceBetween: 20,
     },
     768: {
       width: SliderWidthJudges.TABLET,
@@ -31,6 +32,7 @@ const judgesSlider = new Swiper(swiperJudges, {
       width: SliderWidthJudges.DESKTOP,
       initialSlide: InitialSlide.DEFAULT,
       slidesPerView: SliderPerViewJudges.DESKTOP,
+      allowTouchMove: false,
     },
   },
 });

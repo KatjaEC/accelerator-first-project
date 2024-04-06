@@ -5,8 +5,13 @@ const scrollToPrices = () => {
   element.scrollIntoView({ behavior: 'smooth'});
 };
 
-heroButton.addEventListener('click', (evt) => {
-  evt.preventDefault();
-  scrollToPrices();
-});
+const onHeroButtonClick = () => {
+  if (heroButton) {
+    heroButton.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      scrollToPrices();
+    });
+  }
+};
 
+export { onHeroButtonClick };

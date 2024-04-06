@@ -75,6 +75,10 @@
   }
 }
 
+.options-card__button {
+  z-index: 5;
+}
+
 @media (min-width: $tablet-width) {
   .options-card {
     padding: 58px 20px;
