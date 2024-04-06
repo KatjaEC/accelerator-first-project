@@ -12,11 +12,11 @@
 }
 
 .hero__wrapper {
-  padding: 42px 15px 32px;
+  padding: 43px 15px 32px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 20px;
+  gap: 47px 18px;
   width: 320px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .hero__heading {
-  margin: 0 -2px 0 0;
+  margin: 0 -4px 0 0;
   color: $color-secondary;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 62px;
@@ -37,7 +37,7 @@
 }
 
 .hero__label {
-  margin: 0 0 14px;
+  margin: 0 -2px 14px;
   color: $color-secondary;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 32px;
@@ -47,7 +47,8 @@
 }
 
 .hero__list {
-  width: 113px;
+  width: 114px;
+  margin-left: -1px;
   align-self: flex-end;
   color: $color-secondary;
   line-height: 20px;
@@ -79,20 +80,20 @@
       right: 45px;
       width: 324px;
       height: 390px;
-      background-image: url("../../img/photos/hero-image-tablet@1x.jpg");
-      background-image: image-set(
-        url("../../img/photos/hero-image-tablet@1x.webp") type("image/webp") 1x,
-        url("../../img/photos/hero-image-tablet@1x.jpg") type("image/jpeg") 1x);
+      background-image:
+        image-set(
+          url("../../img/photos/hero-image-tablet@1x.webp") type("image/webp") 1x,
+          url("../../img/photos/hero-image-tablet@1x.jpg") type("image/jpeg") 1x);
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100% auto;
       content: "";
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/photos/hero-image-tablet@2x.jpg");
-        background-image: image-set(
-          url("../../img/photos/hero-image-tablet@2x.webp") type("image/webp") 2x,
-          url("../../img/photos/hero-image-tablet@2x.jpg") type("image/jpeg") 2x);
+      @media (resolution >= 2dppx) {
+        background-image:
+          image-set(
+            url("../../img/photos/hero-image-tablet@2x.webp") type("image/webp") 2x,
+            url("../../img/photos/hero-image-tablet@2x.jpg") type("image/jpeg") 2x);
       }
     }
   }
@@ -142,16 +143,16 @@
       right: 175px;
       width: 500px;
       height: 524px;
-      background-image: url("../../img/photos/hero-image-desktop@1x.jpg");
-      background-image: image-set(
-        url("../../img/photos/hero-image-desktop@1x.webp") type("image/webp") 1x,
-        url("../../img/photos/hero-image-desktop@1x.jpg") type("image/jpeg") 1x);
+      background-image:
+        image-set(
+          url("../../img/photos/hero-image-desktop@1x.webp") type("image/webp") 1x,
+          url("../../img/photos/hero-image-desktop@1x.jpg") type("image/jpeg") 1x);
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/photos/hero-image-desktop@2x.jpg");
-        background-image: image-set(
-          url("../../img/photos/hero-image-desktop@2x.webp") type("image/webp") 2x,
-          url("../../img/photos/hero-image-desktop@2x.jpg") type("image/jpeg") 2x);
+      @media (resolution >= 2dppx) {
+        background-image:
+          image-set(
+            url("../../img/photos/hero-image-desktop@2x.webp") type("image/webp") 2x,
+            url("../../img/photos/hero-image-desktop@2x.jpg") type("image/jpeg") 2x);
       }
     }
   }

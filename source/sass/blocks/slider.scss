@@ -4,7 +4,7 @@
 
 .slider__wrapper {
   position: relative;
-  padding: 40px 15px;
+  padding: 41px 15px 39px;
   margin: 0 auto;
   width: 320px;
 }
@@ -16,6 +16,7 @@
 
 .slider__inner {
   width: 227px;
+  overflow: hidden;
 }
 
 .slider__list {

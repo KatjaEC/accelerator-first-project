@@ -67,21 +67,21 @@
 
     &:hover {
       padding: 27px 22px;
-      background: linear-gradient(151.36deg, rgb(237, 2, 51) 16.953%,rgb(0, 62, 183) 96.592%);
+      background: linear-gradient(151.36deg, rgb(237, 2, 51) 16.95%, rgb(0, 62, 183) 96.59%);
       color: $color-secondary;
       border: none;
     }
 
     &:focus {
       padding: 25px 20px;
-      background: linear-gradient(151.36deg, rgb(237, 2, 51, 0.8) 16.953%,rgb(0, 62, 183, 0.8) 96.592%);
+      background: linear-gradient(151.36deg, rgb(237, 2, 51, 0.8) 16.95%, rgb(0, 62, 183, 0.8) 96.59%);
       border: 2px solid #000000;
       outline: transparent;
     }
 
     &:focus:not(:focus-visible) {
       padding: 27px 22px;
-      background: linear-gradient(151.36deg, rgb(237, 2, 51) 16.953%,rgb(0, 62, 183) 96.592%);
+      background: linear-gradient(151.36deg, rgb(237, 2, 51) 16.95%, rgb(0, 62, 183) 96.59%);
       color: rgb(255, 255, 255, 0.7);
       border: none;
       outline: transparent;
@@ -90,14 +90,14 @@
     &:focus-visible {
       padding: 25px 20px;
       color: $color-secondary;
-      background: linear-gradient(151.36deg, rgb(237, 2, 51, 0.8) 16.953%,rgb(0, 62, 183, 0.8) 96.592%);
+      background: linear-gradient(151.36deg, rgb(237, 2, 51, 0.8) 16.95%, rgb(0, 62, 183, 0.8) 96.59%);
       border: 2px solid #000000;
       outline: transparent;
     }
 
     &:active {
       padding: 27px 22px;
-      background: linear-gradient(151.36deg, rgb(237, 2, 51) 16.953%,rgb(0, 62, 183) 96.592%);
+      background: linear-gradient(151.36deg, rgb(237, 2, 51) 16.95%, rgb(0, 62, 183) 96.59%);
       color: rgb(255, 255, 255, 0.7);
       border: none;
     }

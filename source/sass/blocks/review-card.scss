@@ -1,9 +1,9 @@
 .review-card {
-  padding: 40px;
+  padding: 39px 40px 40px;
 }
 
 .review-card__wrapper {
-  padding: 30px 25px;
+  padding: 30px 25px 29px;
   width: 240px;
   flex-shrink: 0;
   height: 100%;
@@ -14,7 +14,7 @@
 
 .review-card__wrapper > div:first-of-type {
   flex-shrink: 0;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 .review-card__wrapper img {

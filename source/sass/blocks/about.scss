@@ -1,20 +1,20 @@
 .about {
-  padding: 40px 0;
+  padding: 41px 0 40px;
   background-color: $color-secondary;
 }
 
 .about__text-wrapper {
   padding: 0 15px;
-  margin: 0 auto 36px;
+  margin: 0 auto 35px;
   width: 320px;
 }
 
 .about__heading {
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 .about__subheading {
-  margin: 0 0 36px;
+  margin: 0 0 37px -1px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
@@ -29,7 +29,7 @@
 }
 
 .about__image-wrapper {
-  margin: 0 auto 29px;
+  margin: 0 auto 30px;
   width: 320px;
 }
 
@@ -87,7 +87,7 @@
     width: 18px;
     height: 10px;
     border: 5px solid transparent;
-	  border-left: 9px solid $color-secondary;
+    border-left: 9px solid $color-secondary;
     content: "";
   }
 }
@@ -271,7 +271,7 @@
       width: 18px;
       height: 14px;
       border: 7px solid transparent;
-	    border-left: 13px solid $color-secondary;
+      border-left: 13px solid $color-secondary;
     }
   }
 }

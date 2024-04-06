@@ -1,5 +1,5 @@
 .form {
-  padding: 70px 15px;
+  padding: 71px 15px 70px;
   background-color: $color-text;
   color: $color-secondary;
 }
@@ -10,14 +10,14 @@
 }
 
 .form__heading {
-  margin: 0 auto 26px;
+  margin: 0 auto 25px;
 }
 
 .form__inputs {
   display: flex;
   flex-direction: column;
-  gap: 27px;
-  margin-bottom: 35px;
+  gap: 26px;
+  margin-bottom: 36px;
 }
 
 .form__input-wrapper {
@@ -85,11 +85,16 @@
   &--error:focus-within {
     border-color: transparent;
     border-bottom-color: #ff121f;
-
-    & + .form__error-message {
-      display: block;
-    }
   }
+}
+
+.form__input:not(:empty):invalid + .form__error-message,
+.form__input:not(:empty):invalid:hover + .form__error-message,
+.form__input:not(:empty):invalid:focus-within + .form__error-message,
+.form__input--error + .form__error-message,
+.form__input--error:hover + .form__error-message,
+.form__input--error:focus-within + .form__error-message {
+  display: block;
 }
 
 .form__button {

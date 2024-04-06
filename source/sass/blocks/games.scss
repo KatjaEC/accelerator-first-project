@@ -1,30 +1,30 @@
 .games {
-  padding: 23px 15px 25px;
+  padding: 24px 15px 25px;
   background-color: $color-secondary;
 }
 
 .games__wrapper {
   display: grid;
   grid-template-columns: 117px 56px;
-  gap: 16px 37px;
+  gap: 15px 37px;
   width: 290px;
-  padding: 41px 40px 329px;
+  padding: 41px 38px 330px 40px;
   margin: 0 auto;
   background-color: #ed0233;
-  background-image: url("../../img/photos/games-image-mobile@1x.jpg");
-  background-image: image-set(
-    url("../../img/photos/games-image-mobile@1x.webp") type("image/webp") 1x,
-    url("../../img/photos/games-image-mobile@1x.jpg") type("image/jpeg") 1x);
+  background-image:
+    image-set(
+      url("../../img/photos/games-image-mobile@1x.webp") type("image/webp") 1x,
+      url("../../img/photos/games-image-mobile@1x.jpg") type("image/jpeg") 1x);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 290px 290px;
   color: $color-secondary;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/photos/games-image-mobile@2x.jpg");
-    background-image: image-set(
-      url("../../img/photos/games-image-mobile@2x.webp") type("image/webp") 2x,
-      url("../../img/photos/games-image-mobile@2x.jpg") type("image/jpeg") 2x);
+  @media (resolution >= 2dppx) {
+    background-image:
+      image-set(
+        url("../../img/photos/games-image-mobile@2x.webp") type("image/webp") 2x,
+        url("../../img/photos/games-image-mobile@2x.jpg") type("image/jpeg") 2x);
   }
 }
 
@@ -35,7 +35,7 @@
 }
 
 .games__schedule-list {
-  margin: 0 0 4px;
+  margin: 0 0 5px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -77,6 +77,7 @@
 }
 
 .games__button {
+  margin-top: 2px;
   grid-column: 1/-1;
 }
 
@@ -90,18 +91,18 @@
     padding: 40px 378px 40px 40px;
     grid-template-columns: repeat(2, 100px);
     gap: 9px 20px;
-    background-image: url("../../img/photos/games-image-tablet@1x.jpg");
-    background-image: image-set(
-      url("../../img/photos/games-image-tablet@1x.webp") type("image/webp") 1x,
-      url("../../img/photos/games-image-tablet@1x.jpg") type("image/jpeg") 1x);
+    background-image:
+      image-set(
+        url("../../img/photos/games-image-tablet@1x.webp") type("image/webp") 1x,
+        url("../../img/photos/games-image-tablet@1x.jpg") type("image/jpeg") 1x);
     background-size: 378px 348px;
     background-position: center right;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/photos/games-image-tablet@2x.jpg");
-      background-image: image-set(
-        url("../../img/photos/games-image-tablet@2x.webp") type("image/webp") 2x,
-        url("../../img/photos/games-image-tablet@2x.jpg") type("image/jpeg") 2x);
+    @media (resolution >= 2dppx) {
+      background-image:
+        image-set(
+          url("../../img/photos/games-image-tablet@2x.webp") type("image/webp") 2x,
+          url("../../img/photos/games-image-tablet@2x.jpg") type("image/jpeg") 2x);
     }
   }
 
@@ -147,17 +148,17 @@
     width: 1160px;
     grid-template-columns: 168px 95px;
     gap: 30px 77px;
-    background-image: url("../../img/photos/games-image-desktop@1x.jpg");
-    background-image: image-set(
-      url("../../img/photos/games-image-desktop@1x.webp") type("image/webp") 1x,
-      url("../../img/photos/games-image-desktop@1x.jpg") type("image/jpeg") 1x);
+    background-image:
+      image-set(
+        url("../../img/photos/games-image-desktop@1x.webp") type("image/webp") 1x,
+        url("../../img/photos/games-image-desktop@1x.jpg") type("image/jpeg") 1x);
     background-size: 660px 500px;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../img/photos/games-image-desktop@2x.jpg");
-      background-image: image-set(
-        url("../../img/photos/games-image-desktop@2x.webp") type("image/webp") 2x,
-        url("../../img/photos/games-image-desktop@2x.jpg") type("image/jpeg") 2x);
+    @media (resolution >= 2dppx) {
+      background-image:
+        image-set(
+          url("../../img/photos/games-image-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/photos/games-image-desktop@2x.jpg") type("image/jpeg") 2x);
     }
   }
 

@@ -1,5 +1,5 @@
 .prices {
-  padding: 41px 15px;
+  padding: 40px 15px;
 }
 
 .prices__heading {
@@ -14,72 +14,6 @@
   width: 290px;
   margin: 0 auto 30px;
   border-bottom: 1px solid rgba(120, 120, 120, 0.2);
-}
-
-.price-tabs__button {
-  position: relative;
-  display: inline-block;
-  padding: 0 0 17px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
-  background-color: transparent;
-  color: $color-text;
-  border: none;
-  opacity: 0.5;
-  cursor: pointer;
-
-  &::before {
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 2px;
-    background-color: #d10a42;
-    content: "";
-    display: none;
-  }
-
-  &:hover {
-    opacity: 0.7;
-
-    &::before {
-      display: block;
-      background-color: #787878;
-    }
-  }
-
-  &:focus {
-    opacity: 1;
-    outline: transparent;
-
-    &::before {
-      display: block;
-      background-color: $color-text;
-    }
-  }
-
-  &--active,
-  &:active {
-    opacity: 1;
-
-    &::before {
-      display: block;
-    }
-  }
-
-  &:disabled {
-    opacity: 0.3;
-    pointer-events: none;
-    outline: transparent;
-
-    &::before {
-      display: block;
-      background-color: $color-text;
-      opacity: 0.5;
-    }
-  }
 }
 
 .prices__options-wrapper {
@@ -114,17 +48,6 @@
     border-bottom-width: 2px;
   }
 
-  .price-tabs__button {
-    font-size: 18px;
-    line-height: 18px;
-    padding-bottom: 6px;
-
-    &::before {
-      bottom: -2px;
-      border-bottom-width: 2px;
-    }
-  }
-
   .prices__options-wrapper {
     position: relative;
     width: 380px;
@@ -135,10 +58,10 @@
       right: -208px;
       width: 275px;
       height: 336px;
-      background-image: url("../../img/photos/prices-image-tablet@1x.png");
-      background-image: image-set(
-        url("../../img/photos/prices-image-tablet@1x.webp") type("image/webp") 1x,
-        url("../../img/photos/prices-image-tablet@1x.jpg") type("image/png") 1x);
+      background-image:
+        image-set(
+          url("../../img/photos/prices-image-tablet@1x.webp") type("image/webp") 1x,
+          url("../../img/photos/prices-image-tablet@1x.jpg") type("image/png") 1x);
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100% auto;
@@ -146,11 +69,11 @@
       transform: rotate(330deg);
       content: "";
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/photos/prices-image-tablet@2x.jpg");
-        background-image: image-set(
-          url("../../img/photos/prices-image-tablet@2x.webp") type("image/webp") 2x,
-          url("../../img/photos/prices-image-tablet@2x.jpg") type("image/png") 2x);
+      @media (resolution >= 2dppx) {
+        background-image:
+          image-set(
+            url("../../img/photos/prices-image-tablet@2x.webp") type("image/webp") 2x,
+            url("../../img/photos/prices-image-tablet@2x.jpg") type("image/png") 2x);
       }
     }
   }
@@ -173,12 +96,6 @@
     gap: 0 51px;
   }
 
-  .price-tabs__button {
-    padding-bottom: 7px;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
   .prices__options-wrapper {
     width: 1160px;
 
@@ -187,16 +104,16 @@
       right: -195px;
       width: 321px;
       height: 384px;
-      background-image: url("../../img/photos/prices-image-desktop@1x.png");
-      background-image: image-set(
-        url("../../img/photos/prices-image-desktop@1x.webp") type("image/webp") 1x,
-        url("../../img/photos/prices-image-desktop@1x.jpg") type("image/png") 1x);
+      background-image:
+        image-set(
+          url("../../img/photos/prices-image-desktop@1x.webp") type("image/webp") 1x,
+          url("../../img/photos/prices-image-desktop@1x.jpg") type("image/png") 1x);
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../img/photos/prices-image-desktop@2x.jpg");
-        background-image: image-set(
-          url("../../img/photos/prices-image-desktop@2x.webp") type("image/webp") 2x,
-          url("../../img/photos/prices-image-desktop@2x.jpg") type("image/png") 2x);
+      @media (resolution >= 2dppx) {
+        background-image:
+          image-set(
+            url("../../img/photos/prices-image-desktop@2x.webp") type("image/webp") 2x,
+            url("../../img/photos/prices-image-desktop@2x.jpg") type("image/png") 2x);
       }
     }
   }

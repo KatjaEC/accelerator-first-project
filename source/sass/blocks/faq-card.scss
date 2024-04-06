@@ -46,18 +46,16 @@
   }
 }
 
-.faq-card input:checked {
-  & + label::before {
-    background-color: #1c3374;
-  }
+.faq-card input:checked + label::before {
+  background-color: #1c3374;
+}
 
-  & + label::after {
-    mask: url("../../../__spritemap#sprite-button-minus-view");
-    mask-size: 14px 2px;
-    mask-repeat: no-repeat;
-    mask-position: center;
-    background-color: $color-secondary;
-  }
+.faq-card input:checked + label::after {
+  mask: url("../../../__spritemap#sprite-button-minus-view");
+  mask-size: 14px 2px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $color-secondary;
 }
 
 .faq-card > div {
@@ -78,46 +76,46 @@
 }
 
 .faq-card input {
-  &:hover {
-    & + label::before {
-      background-color: #1c3374;
-    }
+  &:hover + label::before {
+    background-color: #1c3374;
+  }
 
-    & + label::after {
-      background-color: $color-secondary;
-    }
+  &:hover + label::after {
+    background-color: $color-secondary;
   }
 
   &:focus {
     outline: transparent;
-    & + label::before {
-      background-color: #74819c;
-      border-color: #1c3374;
-    }
-
-    & + label::after {
-      background-color: $color-secondary;
-    }
   }
 
-  &:disabled,
-  &:checked:disabled,
-  &:checked:disabled:hover {
-    & + label {
-      cursor: default;
-    }
+  &:focus + label::before {
+    background-color: #74819c;
+    border-color: #1c3374;
+  }
 
-    & + label::before {
-      background-color: transparent;
-      border-color: rgba(28, 51, 116, 0.3);
-    }
+  &:focus + label::after {
+    background-color: $color-secondary;
+  }
 
-    & + label::after {
-      background-color: rgba(28, 51, 116, 0.3);
-    }
+  &:disabled + label,
+  &:checked:disabled + label,
+  &:checked:disabled:hover + label {
+    cursor: default;
+  }
+
+  &:disabled + label::before,
+  &:checked:disabled + label::before,
+  &:checked:disabled:hover + label::before {
+    background-color: transparent;
+    border-color: rgba(28, 51, 116, 0.3);
+  }
+
+  &:disabled + label::after,
+  &:checked:disabled + label::after,
+  &:checked:disabled:hover + label::after {
+    background-color: rgba(28, 51, 116, 0.3);
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .faq-card {
@@ -153,7 +151,7 @@
   }
 
   .faq-card > div > p {
-    padding:  0 118px 0 0;
+    padding: 0 118px 0 0;
     margin-bottom: 0;
     margin-top: 10px;
     font-size: 18px;
