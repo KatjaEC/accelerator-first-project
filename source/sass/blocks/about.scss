@@ -153,7 +153,7 @@
 @media (min-width: $tablet-width) {
   .about {
     position: relative;
-    padding: 60px 45px 113px;
+    padding: 61px 45px 113px;
   }
 
   .about__text-wrapper {
@@ -169,6 +169,7 @@
 
   .about__subheading {
     font-size: 20px;
+    margin-bottom: 35px;
   }
 
   .about__content-wrapper {
@@ -185,7 +186,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 35px;
+    bottom: 34px;
     width: 270px;
   }
 
@@ -216,11 +217,12 @@
   }
 
   .about__heading {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 
   .about__subheading {
     margin-bottom: 94px;
+    padding-left: 1px;
     font-size: 22px;
     line-height: 22px;
   }

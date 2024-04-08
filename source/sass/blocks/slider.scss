@@ -62,11 +62,12 @@
 
 @media (min-width: $desktop-width) {
   .slider__wrapper {
-    padding: 100px 103px;
+    padding: 100px 103px 101px;
     width: $desktop-width;
   }
 
   .slider__heading {
+    margin-bottom: 47px;
     text-align: left;
   }
 
@@ -75,13 +76,13 @@
   }
 
   .slider__button {
-    bottom: 226px;
+    bottom: 227px;
     right: 27px;
 
     &--previous {
       right: auto;
       left: 27px;
-      bottom: 224px;
+      bottom: 225px;
     }
   }
 }

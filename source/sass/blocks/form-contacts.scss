@@ -11,8 +11,9 @@
       top: 0;
       right: 0;
       height: 1px;
-      width: 50%;
+      width: 100%;
       background-color: #74819c;
+      background: linear-gradient(to right, $color-text 0%, $color-text 50%, #74819c 50%, #74819c 100%);
       content: "";
     }
   }

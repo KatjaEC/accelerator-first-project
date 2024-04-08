@@ -50,6 +50,7 @@
   &--active::before,
   &:active::before {
     display: block;
+    background-color: #d10a42;
   }
 
   &:disabled {
@@ -73,7 +74,7 @@
 
     &::before {
       bottom: -2px;
-      border-bottom-width: 2px;
+      height: 2px;
     }
   }
 }

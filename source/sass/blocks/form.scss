@@ -112,17 +112,18 @@
   }
 
   .form__inputs {
-    margin-bottom: 35px;
+    margin-bottom: 36px;
     flex-direction: row;
     gap: 30px;
   }
 
   .form__input {
+    padding: 10px 0 3px;
     width: 205px;
   }
 
   .form__button {
-    padding: 25px 54px;
+    padding: 26px 54px 24px;
   }
 }
 

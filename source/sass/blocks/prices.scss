@@ -31,7 +31,7 @@
 
 @media (min-width: $tablet-width) {
   .prices {
-    padding: 61px 194px;
+    padding: 60px 194px 58px;
     overflow: hidden;
   }
 
@@ -41,7 +41,7 @@
   }
 
   .prices__tabs {
-    margin-bottom: 45px;
+    margin-bottom: 46px;
     min-width: 310px;
     max-width: 600px;
     gap: 0 44px;
@@ -55,7 +55,7 @@
     &::before {
       position: absolute;
       bottom: -50px;
-      right: -208px;
+      right: -209px;
       width: 275px;
       height: 336px;
       background-image:
@@ -81,11 +81,11 @@
 
 @media (min-width: $desktop-width) {
   .prices {
-    padding: 100px 103px;
+    padding: 101px 103px 99px;
   }
 
   .prices__heading {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     width: 1160px;
   }
 

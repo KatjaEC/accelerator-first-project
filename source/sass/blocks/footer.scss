@@ -15,13 +15,17 @@
   margin: 0 auto 28px;
 }
 
+.footer__socials {
+  width: 136px;
+}
+
 @media (min-width: $tablet-width) {
   .footer {
     padding: 45px 45px 42px;
   }
 
   .footer__wrapper {
-    width: 678px;
+    width: 682px;
     display: flex;
     flex-wrap: wrap;
     gap: 35px;
@@ -29,10 +33,17 @@
 
   .footer__logo-wrapper {
     margin: 0;
+    width: 110px;
   }
 
   .footer__menu {
     margin: 0;
+    width: 394px;
+  }
+
+  .footer__socials {
+    width: 106px;
+    margin-left: -1px;
   }
 }
 
@@ -47,5 +58,17 @@
     display: grid;
     grid-template-columns: 130px 602px 95px;
     gap: 35px 167px;
+  }
+
+  .footer__logo-wrapper {
+    width: 130px;
+  }
+
+  .footer__menu {
+    width: 602px;
+  }
+
+  .footer__socials {
+    width: 100px;
   }
 }

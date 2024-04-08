@@ -81,7 +81,7 @@
 
 @media (min-width: $tablet-width) {
   .options-card {
-    padding: 58px 20px;
+    padding: 59px 20px 58px 19px;
   }
 
   .options-card__heading {
@@ -98,7 +98,7 @@
 
   .options-card__price-wrapper {
     margin: 0 0 22px;
-    column-gap: 14px;
+    column-gap: 13px;
   }
 
   .options-card__price {
@@ -116,7 +116,7 @@
 
   .options-card__currency {
     &::before {
-      width: 30px;
+      width: 32px;
       height: 42px;
       background-size: 30px 42px;
     }
@@ -124,12 +124,14 @@
 
   .options-card__button {
     width: 250px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .options-card__heading {
-    margin-bottom: 18px;
+    margin-bottom: 17px;
+    padding-left: 1px;
     font-size: 26px;
     line-height: 26px;
   }

@@ -34,8 +34,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .review-card {
+    padding: 40px 40px 39px;
+  }
+
   .review-card__wrapper {
-    padding: 40px 30px;
+    padding: 41px 30px;
     width: 500px;
     display: flex;
     gap: 20px 40px;
@@ -47,7 +51,7 @@
   }
 
   .review-card__wrapper span {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     font-size: 22px;
     line-height: 22px;
   }
@@ -60,7 +64,7 @@
 
 @media (min-width: $desktop-width) {
   .review-card__wrapper {
-    padding: 60px;
+    padding: 61px 60px;
     width: 560px;
     gap: 20px 30px;
   }

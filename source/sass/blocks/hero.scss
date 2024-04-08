@@ -68,7 +68,7 @@
 
   .hero__wrapper {
     position: relative;
-    padding: 31px 399px 131px 45px;
+    padding: 31px 401px 131px 45px;
     width: $tablet-width;
     min-height: 390px;
     justify-content: space-between;
@@ -123,6 +123,7 @@
     padding: 20px;
     width: 185px;
     margin-left: auto;
+    margin-right: -2px;
   }
 }
 
@@ -133,13 +134,13 @@
   }
 
   .hero__wrapper {
-    padding: 77px 731px 172px 250px;
+    padding: 75px 730px 172px 250px;
     width: $desktop-width;
-    gap: 38px 0;
+    gap: 39px 0;
 
     &::before {
       position: absolute;
-      top: 24px;
+      top: 23px;
       right: 175px;
       width: 500px;
       height: 524px;
@@ -162,25 +163,27 @@
   }
 
   .hero__label {
-    margin-bottom: 40px;
+    margin: 0 1px 41px;
     font-size: 54px;
     line-height: 54px;
   }
 
   .hero__heading {
     margin: 0;
+    padding-right: 1px;
     font-size: 92px;
     line-height: 110px;
     letter-spacing: 4px;
   }
 
   .hero__list {
-    width: 115px;
+    width: 116px;
     margin-bottom: 71px;
   }
 
   .hero__button {
     width: 270px;
-    padding: 25px 20px;
+    padding: 26px 20px 24px;
+    margin-right: 1px;
   }
 }
