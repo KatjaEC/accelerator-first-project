@@ -19,6 +19,8 @@
 
 .review-card__wrapper img {
   border-radius: 50%;
+  width: 68px;
+  height: 68px;
 }
 
 .review-card__wrapper span {
@@ -48,6 +50,11 @@
 
   .review-card__wrapper > div:first-of-type {
     margin-bottom: 0;
+  }
+
+  .review-card__wrapper img {
+    width: 80px;
+    height: 80px;
   }
 
   .review-card__wrapper span {

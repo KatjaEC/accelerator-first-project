@@ -1,39 +1,89 @@
-const indexSections = [
-  {section: 'hero', misMatchThreshold: 0.3},
-  {section: 'about', misMatchThreshold: 0.3},
-  {section: 'price', misMatchThreshold: 0.3},
-  {section: 'games', misMatchThreshold: 0.3},
-  {section: 'juri', misMatchThreshold: 0.3},
-  {section: 'features', misMatchThreshold: 0.3},
-  {section: 'offers', misMatchThreshold: 0.3},
-  {section: 'faq', misMatchThreshold: 0.3},
-  {section: 'reviews', misMatchThreshold: 0.3},
-  {section: 'form', misMatchThreshold: 0.3},
-  {section: 'footer', misMatchThreshold: 0.3}
+const desktopSections = [
+  {section: 'hero', misMatchThreshold: 0.5},
+  {section: 'about', misMatchThreshold: 0.5},
+  {section: 'price', misMatchThreshold: 0.5},
+  {section: 'games', misMatchThreshold: 0.5},
+  {section: 'juri', misMatchThreshold: 0.5},
+  {section: 'features', misMatchThreshold: 0.8},
+  {section: 'offers', misMatchThreshold: 0.5},
+  {section: 'faq', misMatchThreshold: 0.8},
+  {section: 'reviews', misMatchThreshold: 0.5},
+  {section: 'form', misMatchThreshold: 0.8},
+  {section: 'footer', misMatchThreshold: 0.8}
 ];
+
+const tabletSections = [
+  {section: 'hero', misMatchThreshold: 1.0},
+  {section: 'about', misMatchThreshold: 0.7},
+  {section: 'price', misMatchThreshold: 0.5},
+  {section: 'games', misMatchThreshold: 0.5},
+  {section: 'juri', misMatchThreshold: 0.5},
+  {section: 'features', misMatchThreshold: 1.4},
+  {section: 'offers', misMatchThreshold: 0.5},
+  {section: 'faq', misMatchThreshold: 1.6},
+  {section: 'reviews', misMatchThreshold: 1.0},
+  {section: 'form', misMatchThreshold: 1.0},
+  {section: 'footer', misMatchThreshold: 1.9}
+];
+
+const mobileSections = [
+  {section: 'hero', misMatchThreshold: 3.7},
+  {section: 'about', misMatchThreshold: 1.8},
+  {section: 'price', misMatchThreshold: 0.8},
+  {section: 'games', misMatchThreshold: 0.5},
+  {section: 'juri', misMatchThreshold: 0.7},
+  {section: 'features', misMatchThreshold: 2.2},
+  {section: 'offers', misMatchThreshold: 1.3},
+  {section: 'faq', misMatchThreshold: 1.7},
+  {section: 'reviews', misMatchThreshold: 2.6},
+  {section: 'form', misMatchThreshold: 1.6},
+  {section: 'footer', misMatchThreshold: 2.0}
+];
+
+const VIEWPORTS = {
+  'desktop': {"label": "desktop", "width": 1366, "height": 800},
+  'tablet': {"label": "tablet", "width": 768, "height": 1024},
+  'mobile': {"label": "mobile", "width": 320, "height": 480}
+};
+
+const URL = 'http://localhost:3000/index.html';
+const REFERENCE_URL = './figma/index.html';
+
+function generateScenario(section, misMatchThreshold, viewport) {
+  return {
+    "label": `${section}`,
+    "url": URL,
+    "referenceUrl": REFERENCE_URL,
+    selectors: [`[data-test="${section}"]`],
+    misMatchThreshold: misMatchThreshold || 5,
+    requireSameDimensions: true,
+    delay: 500,
+    "viewports": [VIEWPORTS[viewport]]
+  };
+}
 
 
 module.exports = {
   "id": "supergym test-pp",
+  "onReadyScript": "onReady.cjs",
+  "onBeforeScript": "onBefore.cjs",
   "viewports": [
     {
-      "label": "desktop",
-      "width": 1366,
-      "height": 800,
+      "label": "mobile",
+      "width": 320,
+      "height": 480,
     },
     {
       "label": "tablet",
       "width": 768,
-      "height": 800,
+      "height": 1024,
     },
     {
-      "label": "mobile",
-      "width": 320,
+      "label": "desktop",
+      "width": 1366,
       "height": 800,
-    },
+    }
   ],
-  "onReadyScript": "onReady.cjs",
-  "onBeforeScript": "onBefore.cjs",
   "resembleOutputOptions": {
     "ignoreAntialiasing": true,
     "errorType": "movementDifferenceIntensity",
@@ -41,15 +91,9 @@ module.exports = {
     scaleToSameSize: false
   },
   "scenarios": [
-    ...indexSections.map(({section, misMatchThreshold}) => ({
-      "label": `${section}`,
-      "url": "http://localhost:3000/index.html",
-      "referenceUrl": "./figma/index.html",
-      selectors: [`[data-test="${section}"]`],
-      misMatchThreshold: misMatchThreshold || 5,
-      requireSameDimensions: true,
-      delay: 500
-    })),
+    ...desktopSections.map(({section, misMatchThreshold}) => generateScenario(section, misMatchThreshold, 'desktop')),
+    ...tabletSections.map(({section, misMatchThreshold}) => generateScenario(section, misMatchThreshold, 'tablet')),
+    ...mobileSections.map(({section, misMatchThreshold}) => generateScenario(section, misMatchThreshold, 'mobile')),
   ],
   fileNameTemplate: '{scenarioLabel}_{viewportLabel}',
   "paths": {

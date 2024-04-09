@@ -5,6 +5,8 @@
 }
 
 .options-list__item {
+  width: 290px;
+
   &:not(:last-child) {
     margin-bottom: 34px;
   }
@@ -12,8 +14,10 @@
 
 @media (min-width: $tablet-width) {
   .options-list__item {
+    width: 380px;
+
     &:not(:last-child) {
-      margin-bottom: 39px;
+      margin-bottom: 40px;
     }
   }
 }

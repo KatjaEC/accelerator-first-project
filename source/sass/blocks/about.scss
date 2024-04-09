@@ -14,7 +14,7 @@
 }
 
 .about__subheading {
-  margin: 0 0 37px -1px;
+  margin: 0 0 37px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
@@ -153,26 +153,29 @@
 @media (min-width: $tablet-width) {
   .about {
     position: relative;
-    padding: 61px 45px 113px;
+    padding: 60px 45px 114px;
   }
 
   .about__text-wrapper {
-    padding: 0 88px;
-    margin: 0 auto 36px;
+    padding: 0 86px 0 88px;
+    margin: 0 auto 37px;
     width: 678px;
     text-align: center;
   }
 
   .about__heading {
     margin-bottom: 20px;
+    padding-right: 3px;
   }
 
   .about__subheading {
     font-size: 20px;
     margin-bottom: 35px;
+    padding-right: 2px;
   }
 
   .about__content-wrapper {
+    padding-right: 2px;
     font-size: 16px;
     line-height: 24px;
   }

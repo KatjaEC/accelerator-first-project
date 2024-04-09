@@ -15,11 +15,12 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    padding: 60px 43px;
+    padding: 59px 40px 61px 44px;
   }
 
   .features__heading {
     padding: 0;
+    padding-right: 4px;
     margin-bottom: 50px;
     width: 678px;
   }
@@ -31,11 +32,12 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    padding: 101px 103px 99px;
+    padding: 100px 103px 101px;
   }
 
   .features__heading {
     width: 1160px;
+    padding-left: 4px;
   }
 
   .features__list {

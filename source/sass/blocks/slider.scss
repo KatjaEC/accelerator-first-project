@@ -4,7 +4,7 @@
 
 .slider__wrapper {
   position: relative;
-  padding: 41px 15px 39px;
+  padding: 40px 15px;
   margin: 0 auto;
   width: 320px;
 }
@@ -62,7 +62,7 @@
 
 @media (min-width: $desktop-width) {
   .slider__wrapper {
-    padding: 100px 103px 101px;
+    padding: 100px 103px;
     width: $desktop-width;
   }
 

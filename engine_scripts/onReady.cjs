@@ -31,4 +31,6 @@ module.exports = async (page, scenario, vp) => {
         })
       );
     }
+
+    await page.waitForTimeout(scenario.delay || 0);
   };

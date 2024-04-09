@@ -24,14 +24,16 @@
 .options-card__price-wrapper {
   position: relative;
   margin: 0 0 18px;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   justify-content: center;
   gap: 0 10px;
 }
 
 .options-card__price {
-  margin: 0 0 0 5px;
+  margin: 0 0 0 2px;
   padding: 68px 0 9px;
   max-width: 206px;
   font-size: 48px;
@@ -57,6 +59,7 @@
 
 .options-card__currency {
   position: relative;
+  width: 26px;
   font-size: 50px;
   line-height: 33px;
   font-weight: 400;
@@ -76,16 +79,19 @@
 }
 
 .options-card__button {
+  position: relative;
+  margin: 0 auto;
   z-index: 5;
 }
 
 @media (min-width: $tablet-width) {
   .options-card {
-    padding: 59px 20px 58px 19px;
+    padding: 58px 20px 58px 19px;
   }
 
   .options-card__heading {
     margin-bottom: 21px;
+    padding-left: 1px;
     font-size: 24px;
     line-height: 24px;
   }
@@ -103,6 +109,7 @@
 
   .options-card__price {
     margin: 0;
+    margin-left: -4px;
     padding: 61px 0 0;
     font-size: 60px;
     line-height: 90px;
@@ -129,6 +136,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .options-card {
+    padding-top: 59px;
+  }
+
   .options-card__heading {
     margin-bottom: 17px;
     padding-left: 1px;
@@ -138,13 +149,19 @@
 
   .options-card__text {
     margin-bottom: 18px;
+    padding-left: 1px;
   }
 
   .options-card__price-wrapper {
     margin-bottom: 17px;
   }
 
+  .options-card__price {
+    margin-left: -5px;
+  }
+
   .options-card__button {
     width: 195px;
+    padding: 26px 20px 24px;
   }
 }

@@ -10,7 +10,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="sass/style.scss">
   <link rel="preload" href="fonts/alumni-sans/alumnisans-semibold.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans/alumni-sans-extrabold.woff2" as="font" type="font/woff2"
@@ -21,6 +20,7 @@
     crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed/roboto-condensed-bold.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="sass/style.scss">
 </head>
 
 <body class="page__body">
@@ -30,9 +30,9 @@
       <header class="hero__header header">
         <div class="header__logo-wrapper logo">
           <picture>
-            <source media="(min-width: 1366px)" srcset="img/site-logo.svg" type="image/svg+xml" width="130" height="26">
-            <source media="(min-width: 768px)" srcset="img/site-logo.svg" type="image/svg+xml" width="110" height="22">
-            <img class="header__logo-image logo-image" src="img/site-logo.svg" width="100" height="20"
+            <source media="(min-width: 1366px)" srcset="./img/site-logo.svg" type="image/svg+xml" width="130" height="26">
+            <source media="(min-width: 768px)" srcset="./img/site-logo.svg" type="image/svg+xml" width="110" height="22">
+            <img class="header__logo-image logo-image" src="./img/site-logo.svg" width="100" height="20"
               alt="Логотип фитнес центра.">
           </picture>
         </div>
@@ -170,9 +170,9 @@
               <h4 class="options-card__heading">С тренером</h4>
               <p class="options-card__text">12 занятий</p>
               <div class="options-card__price-wrapper">
-                <p class="options-card__price">30 000</p>
+                <p class="options-card__price">30000</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow" aria-hidden="true">30 000</span>
+                <span class="options-card__price-shadow" aria-hidden="true">30000</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -180,9 +180,9 @@
               <h4 class="options-card__heading">Дневной</h4>
               <p class="options-card__text">с 8:00 до 17:00</p>
               <div class="options-card__price-wrapper">
-                <p class="options-card__price">10 200</p>
+                <p class="options-card__price">10200</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow" aria-hidden="true">10 200</span>
+                <span class="options-card__price-shadow" aria-hidden="true">10200</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -190,9 +190,9 @@
               <h4 class="options-card__heading">Полный день</h4>
               <p class="options-card__text">с 8:00 до 22:00</p>
               <div class="options-card__price-wrapper">
-                <p class="options-card__price">16 200</p>
+                <p class="options-card__price">16200</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow" aria-hidden="true">16 200</span>
+                <span class="options-card__price-shadow" aria-hidden="true">16200</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -205,9 +205,9 @@
               <h4 class="options-card__heading">С тренером</h4>
               <p class="options-card__text">12 занятий</p>
               <div class="options-card__price-wrapper">
-                <p class="options-card__price">60 000</p>
+                <p class="options-card__price">60000</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow" aria-hidden="true">60 000</span>
+                <span class="options-card__price-shadow" aria-hidden="true">60000</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -215,9 +215,9 @@
               <h4 class="options-card__heading">Дневной</h4>
               <p class="options-card__text">с 8:00 до 17:00</p>
               <div class="options-card__price-wrapper">
-                <p class="options-card__price">20 400</p>
+                <p class="options-card__price">20400</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow" aria-hidden="true">20 400</span>
+                <span class="options-card__price-shadow" aria-hidden="true">20400</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -225,9 +225,9 @@
               <h4 class="options-card__heading">Полный день</h4>
               <p class="options-card__text">с 8:00 до 22:00</p>
               <div class="options-card__price-wrapper">
-                <p class="options-card__price">32 400</p>
+                <p class="options-card__price">32400</p>
                 <span class="options-card__currency">₽</span>
-                <span class="options-card__price-shadow" aria-hidden="true">32 400</span>
+                <span class="options-card__price-shadow" aria-hidden="true">32400</span>
               </div>
               <a class="options-card__button button button--secondary" href="#">Купить абонемент</a>
             </li>
@@ -288,7 +288,7 @@
                   srcset="img/photos/slider-card-1-tablet@1x.jpg 1x, img/photos/slider-card-1-tablet@2x.jpg 2x"
                   type="image/jpeg" width="260" height="300">
                 <img class="slider-card__image" src="img/photos/slider-card-1-mobile@1x.jpg"
-                  srcset="img/photos/slider-card-1-mobile@2x.jpg" width="227" height="280" alt="Анна Павлова.">
+                  srcset="img/photos/slider-card-1-mobile@2x.jpg" width="227" height="280" alt="Фотография тренера.">
               </picture>
               <h3 class="slider-card__heading">Анна Павлова</h3>
               <div class="slider-card__curtain slider-card__curtain--hidden">
@@ -313,7 +313,7 @@
                   srcset="img/photos/slider-card-2-tablet@1x.jpg 1x, img/photos/slider-card-2-tablet@2x.jpg 2x"
                   type="image/jpeg" width="260" height="300">
                 <img class="slider-card__image" src="img/photos/slider-card-2-mobile@1x.jpg"
-                  srcset="img/photos/slider-card-2-mobile@2x.jpg" width="227" height="280" alt="Алексей Лавров.">
+                  srcset="img/photos/slider-card-2-mobile@2x.jpg" width="227" height="280" alt="Фотография тренера.">
               </picture>
               <h3 class="slider-card__heading">Алексей Лавров</h3>
               <div class="slider-card__curtain slider-card__curtain--hidden">
@@ -338,7 +338,7 @@
                   srcset="img/photos/slider-card-3-tablet@1x.jpg 1x, img/photos/slider-card-3-tablet@2x.jpg 2x"
                   type="image/jpeg" width="260" height="300">
                 <img class="slider-card__image" src="img/photos/slider-card-3-mobile@1x.jpg"
-                  srcset="img/photos/slider-card-3-mobile@2x.jpg" width="227" height="280" alt="Александр Пашков.">
+                  srcset="img/photos/slider-card-3-mobile@2x.jpg" width="227" height="280" alt="Фотография тренера.">
               </picture>
               <h3 class="slider-card__heading">Александр Пашков</h3>
               <div class="slider-card__curtain slider-card__curtain--hidden">
@@ -363,7 +363,7 @@
                   srcset="img/photos/slider-card-4-tablet@1x.jpg 1x, img/photos/slider-card-4-tablet@2x.jpg 2x"
                   type="image/jpeg" width="260" height="300">
                 <img class="slider-card__image" src="img/photos/slider-card-4-mobile@1x.jpg"
-                  srcset="img/photos/slider-card-4-mobile@2x.jpg" width="227" height="280" alt="Мария Кетова.">
+                  srcset="img/photos/slider-card-4-mobile@2x.jpg" width="227" height="280" alt="Фотография тренера.">
               </picture>
               <h3 class="slider-card__heading">Мария Кетова</h3>
               <div class="slider-card__curtain slider-card__curtain--hidden">
@@ -379,20 +379,20 @@
             <li class="slider-list__item slider-card swiper-slide" tabindex="0">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/photos/slider-card-3-tablet@1x.webp 1x, img/photos/slider-card-3-tablet@2x.webp 2x"
+                  srcset="img/photos/slider-card-5-tablet@1x.webp 1x, img/photos/slider-card-5-tablet@2x.webp 2x"
                   width="260" height="300">
                 <source type="image/webp"
-                  srcset="img/photos/slider-card-3-mobile@1x.webp 1x, img/photos/slider-card-3-mobile@2x.webp 2x"
+                  srcset="img/photos/slider-card-5-mobile@1x.webp 1x, img/photos/slider-card-5-mobile@2x.webp 2x"
                   width="227" height="280">
                 <source media="(min-width: 768px)"
-                  srcset="img/photos/slider-card-3-tablet@1x.jpg 1x, img/photos/slider-card-3-tablet@2x.jpg 2x"
+                  srcset="img/photos/slider-card-5-tablet@1x.jpg 1x, img/photos/slider-card-5-tablet@2x.jpg 2x"
                   type="image/jpeg" width="260" height="300">
-                <img class="slider-card__image" src="img/photos/slider-card-3-mobile@1x.jpg"
-                  srcset="img/photos/slider-card-3-mobile@2x.jpg" width="227" height="280" alt="Эдик Пешин.">
+                <img class="slider-card__image" src="img/photos/slider-card-5-mobile@1x.jpg"
+                  srcset="img/photos/slider-card-5-mobile@2x.jpg" width="227" height="280" alt="Фотография тренера.">
               </picture>
-              <h3 class="slider-card__heading">Эдик Пешин</h3>
+              <h3 class="slider-card__heading">Анна Павлова</h3>
               <div class="slider-card__curtain slider-card__curtain--hidden">
-                <p class="slider-card__curtain-name">Эдик Пешин</p>
+                <p class="slider-card__curtain-name">Анна Павлова</p>
                 <span class="slider-card__curtain-label">CrossFit</span>
                 <ul class="slider-card__curtain-list details-list">
                   <li class="details-list__item">Certified Level 3 Trainer</li>
@@ -413,7 +413,7 @@
                   srcset="img/photos/slider-card-1-tablet@1x.jpg 1x, img/photos/slider-card-1-tablet@2x.jpg 2x"
                   type="image/jpeg" width="260" height="300">
                 <img class="slider-card__image" src="img/photos/slider-card-1-mobile@1x.jpg"
-                  srcset="img/photos/slider-card-1-mobile@2x.jpg" width="227" height="280" alt="Алена Фисунова.">
+                  srcset="img/photos/slider-card-1-mobile@2x.jpg" width="227" height="280" alt="Фотография тренера.">
               </picture>
               <h3 class="slider-card__heading">Алена Фисунова</h3>
               <div class="slider-card__curtain slider-card__curtain--hidden">
@@ -438,7 +438,7 @@
                   srcset="img/photos/slider-card-3-tablet@1x.jpg 1x, img/photos/slider-card-3-tablet@2x.jpg 2x"
                   type="image/jpeg" width="260" height="300">
                 <img class="slider-card__image" src="img/photos/slider-card-3-mobile@1x.jpg"
-                  srcset="img/photos/slider-card-3-mobile@2x.jpg" width="227" height="280" alt="Влад Сушкин.">
+                  srcset="img/photos/slider-card-3-mobile@2x.jpg" width="227" height="280" alt="Фотография тренера.">
               </picture>
               <h3 class="slider-card__heading">Влад Сушкин</h3>
               <div class="slider-card__curtain slider-card__curtain--hidden">
@@ -454,20 +454,20 @@
             <li class="slider-list__item slider-card swiper-slide" tabindex="0">
               <picture>
                 <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/photos/slider-card-2-tablet@1x.webp 1x, img/photos/slider-card-2-tablet@2x.webp 2x"
+                  srcset="img/photos/slider-card-8-tablet@1x.webp 1x, img/photos/slider-card-8-tablet@2x.webp 2x"
                   width="260" height="300">
                 <source type="image/webp"
-                  srcset="img/photos/slider-card-2-mobile@1x.webp 1x, img/photos/slider-card-2-mobile@2x.webp 2x"
+                  srcset="img/photos/slider-card-8-mobile@1x.webp 1x, img/photos/slider-card-8-mobile@2x.webp 2x"
                   width="227" height="280">
                 <source media="(min-width: 768px)"
-                  srcset="img/photos/slider-card-2-tablet@1x.jpg 1x, img/photos/slider-card-2-tablet@2x.jpg 2x"
+                  srcset="img/photos/slider-card-8-tablet@1x.jpg 1x, img/photos/slider-card-8-tablet@2x.jpg 2x"
                   type="image/jpeg" width="260" height="300">
-                <img class="slider-card__image" src="img/photos/slider-card-2-mobile@1x.jpg"
-                  srcset="img/photos/slider-card-2-mobile@2x.jpg" width="227" height="280" alt="Павел Кленов.">
+                <img class="slider-card__image" src="img/photos/slider-card-8-mobile@1x.jpg"
+                  srcset="img/photos/slider-card-8-mobile@2x.jpg" width="227" height="280" alt="Фотография тренера.">
               </picture>
-              <h3 class="slider-card__heading">Павел Кленов</h3>
+              <h3 class="slider-card__heading">Мария Кетова</h3>
               <div class="slider-card__curtain slider-card__curtain--hidden">
-                <p class="slider-card__curtain-name">Павел Кленов</p>
+                <p class="slider-card__curtain-name">Мария Кетова</p>
                 <span class="slider-card__curtain-label">CrossFit</span>
                 <ul class="slider-card__curtain-list details-list">
                   <li class="details-list__item">Certified Level 3 Trainer</li>
@@ -500,14 +500,14 @@
           </div>
           <div>
             <h3>Собственная парковка</h3>
-            <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
+            <p>Вы всегда найдёте место для&nbsp;своей машины на&nbsp;нашей парковке</p>
           </div>
         </li>
         <li class="features-list__item features-card features-card--main-feature features-list__item--main">
-          <div class="features-card__wrapper">
+          <div class="features-card__wrapper features-card__wrapper--main">
             <b>100</b>
             <span>Тренажёров</span>
-            <p>Современные тренажёры на все группы мышц</p>
+            <p>Современные тренажёры на&nbsp;все&nbsp;группы мышц</p>
           </div>
         </li>
         <li class="features-list__item features-card features-card--comfort features-list__item--comfort">
@@ -527,7 +527,7 @@
           </div>
           <div>
             <h3>Тренерский опыт</h3>
-            <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+            <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
           </div>
         </li>
       </ul>
@@ -565,7 +565,7 @@
           <ul class="faq__list faq-list faq__list--active">
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="membership" name="membership" checked>
-              <label for="membership">Как стать членом фитнес&#8209;центра?</label>
+              <label for="membership" data-test="toggle">Как стать членом фитнес&#8209;центра?</label>
               <div>
                 <p>
                   При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор.
@@ -576,7 +576,7 @@
             </li>
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="schedule" name="schedule">
-              <label for="schedule">Где можно посмотреть расписание?</label>
+              <label for="schedule" data-test="toggle">Где можно посмотреть расписание?</label>
               <div>
                 <p>
                   Данная информация доступна на нашем сайте, а также по номеру телефона, который указан в контактах.
@@ -585,14 +585,14 @@
             </li>
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="additional" name="additional">
-              <label for="additional">Есть кулеры в центре? Предоставляются полотенца?</label>
+              <label for="additional" data-test="toggle">Есть кулеры в центре? Предоставляются полотенца?</label>
               <div>
                 <p>Да, есть. Полотенца также предоставляются при необходимости.</p>
               </div>
             </li>
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="instructors" name="instructors">
-              <label for="instructors">Сколько тренеров работает в клубе и какова их квалификация?</label>
+              <label for="instructors" data-test="toggle">Сколько тренеров работает в клубе и какова их квалификация?</label>
               <div>
                 <p>
                   Информацию о нашех тренерах и их квалификации можно узнать в соответствующем разделе нашего сайта.
@@ -604,7 +604,7 @@
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="season-ticket-program" name="season-ticket-program"
                 checked>
-              <label for="season-ticket-program">Занятия с тренером входят в абонемент?</label>
+              <label for="season-ticket-program" data-test="toggle">Занятия с тренером входят в абонемент?</label>
               <div>
                 <p>
                   При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда
@@ -616,14 +616,14 @@
             </li>
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="season-ticket-pause" name="season-ticket-pause">
-              <label for="season-ticket-pause">Можно ли заморозить абонемент?</label>
+              <label for="season-ticket-pause" data-test="toggle">Можно ли заморозить абонемент?</label>
               <div>
                 <p>К сожалению, данная услуга не предусматривается договором.</p>
               </div>
             </li>
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="season-ticket-limits" name="season-ticket-limits">
-              <label for="season-ticket-limits">Есть ли лимит по посещениям тренажерного зала и групповых
+              <label for="season-ticket-limits" data-test="toggle">Есть ли лимит по посещениям тренажерного зала и групповых
                 занятий?
               </label>
               <div>
@@ -632,7 +632,7 @@
             </li>
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="family-access" name="family-access">
-              <label for="family-access">Что такое семейный доступ и доступ для друзей?</label>
+              <label for="family-access" data-test="toggle">Что такое семейный доступ и доступ для друзей?</label>
               <div>
                 <p>
                   При приобретении определенных видов абонемента Вам может быть предоставлена услуга доступа к
@@ -647,7 +647,7 @@
           <ul class="faq__list faq-list">
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="diet" name="diet" checked>
-              <label for="diet">Предлагает ли клуб услуги по консультированию по вопросам питания?</label>
+              <label for="diet" data-test="toggle">Предлагает ли клуб услуги по консультированию по вопросам питания?</label>
               <div>
                 <p>
                   Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши
@@ -657,7 +657,7 @@
             </li>
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="events" name="events">
-              <label for="events">Проводятся ли в клубе какие-либо мероприятия или соревнования?</label>
+              <label for="events" data-test="toggle">Проводятся ли в клубе какие-либо мероприятия или соревнования?</label>
               <div>
                 <p>
                   Да, в том числе Super Games - Ежегодные соревнования по CrossFit. Вы всегда можете найти актуальную
@@ -667,14 +667,14 @@
             </li>
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="store" name="store">
-              <label for="store">Можно ли приобрести в центре спортивное питание?</label>
+              <label for="store" data-test="toggle">Можно ли приобрести в центре спортивное питание?</label>
               <div>
                 <p>Можно. В центре есть буфет с большим асосртиментом спортивного питания и напитков.</p>
               </div>
             </li>
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="kidzone" name="kidzone">
-              <label for="kidzone">Есть ли в центре детская комната?</label>
+              <label for="kidzone" data-test="toggle">Есть ли в центре детская комната?</label>
               <div>
                 <p>В нашем центре есть специальная безопасная детская зона.</p>
               </div>
@@ -683,7 +683,7 @@
           <ul class="faq__list faq-list">
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="dress-code" name="dress-code" checked>
-              <label for="dress-code">Есть в фитнес-центре дресс-код?</label>
+              <label for="dress-code" data-test="toggle">Есть в фитнес-центре дресс-код?</label>
               <div>
                 <p>
                   Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
@@ -698,14 +698,14 @@
             </li>
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="bringing-children" name="bringing-children">
-              <label for="bringing-children">Можно ли приводить с собой детей на тренировки?</label>
+              <label for="bringing-children" data-test="toggle">Можно ли приводить с собой детей на тренировки?</label>
               <div>
-                <p>Да, можно.</p>
+                <p>Да, можно. В рамках комплексов прекрасные детские комнаты и тренеры со специальным образованием.</p>
               </div>
             </li>
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="additional-rules" name="additional-rules">
-              <label for="additional-rules">Какие дополнительные правила посещения центра?</label>
+              <label for="additional-rules" data-test="toggle">Какие дополнительные правила посещения центра?</label>
               <div>
                 <p>
                   В наш центр не допускаются люди в состоянии алкогольного опьянения и под действием каких-либо
@@ -715,7 +715,7 @@
             </li>
             <li class="faq-list__item faq-card">
               <input class="visually-hidden" type="checkbox" id="medical-certificate" name="medical-certificate">
-              <label for="medical-certificate">Нужна ли медицинская справка для посещения залов и бассейна?</label>
+              <label for="medical-certificate" data-test="toggle">Нужна ли медицинская справка для посещения залов и бассейна?</label>
               <div>
                 <p>Соответствующая справка нужна для посещения бассейна.</p>
               </div>
@@ -771,21 +771,21 @@
                 <div>
                   <picture>
                     <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/photos/reviews-avatar-1-tablet@1x.webp 1x, img/photos/reviews-avatar-1-tablet@2x.webp 2x"
+                      srcset="img/photos/reviews-avatar-2-tablet@1x.webp 1x, img/photos/reviews-avatar-2-tablet@2x.webp 2x"
                       width="80" height="80">
                     <source type="image/webp"
-                      srcset="img/photos/reviews-avatar-1-mobile@1x.webp 1x, img/photos/reviews-avatar-1-mobile@2x.webp 2x"
+                      srcset="img/photos/reviews-avatar-2-mobile@1x.webp 1x, img/photos/reviews-avatar-2-mobile@2x.webp 2x"
                       width="68" height="68">
                     <source media="(min-width: 768px)"
-                      srcset="img/photos/reviews-avatar-1-tablet@1x.jpg 1x, img/photos/reviews-avatar-1-tablet@2x.jpg 2x"
+                      srcset="img/photos/reviews-avatar-2-tablet@1x.jpg 1x, img/photos/reviews-avatar-2-tablet@2x.jpg 2x"
                       type="image/jpeg" width="80" height="80">
-                    <img src="img/photos/reviews-avatar-1-mobile@1x.jpg" srcset="img/photos/reviews-avatar-1-mobile@2x.jpg"
+                    <img src="img/photos/reviews-avatar-2-mobile@1x.jpg" srcset="img/photos/reviews-avatar-2-mobile@2x.jpg"
                       width="68" height="68" alt="Аватар пользователя.">
                   </picture>
                 </div>
                 <div>
-                  <span>Виктор Скороходов</span>
-                  <p>«Зал просторный, даже в вечернее время нет очередей»</p>
+                  <span>Кристина Смирнова</span>
+                  <p>«Много лет посещаю данный зал. Отличные тренажёры, талантливые тренеры, есть детская комната. Часто проводят акции, цены доступные.»</p>
                 </div>
               </div>
             </li>
@@ -922,7 +922,7 @@
       </ul>
     </div>
   </footer>
-  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/main.js" async></script>
 </body>
 
 </html>

@@ -49,26 +49,30 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 41px 103px 33px;
+    padding: 40px 103px 33px;
   }
 
   .footer__wrapper {
     width: 1160px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 130px 602px 95px;
-    gap: 35px 167px;
+    grid-template-columns: 130px 602px 96px;
+    grid-auto-flow: dense;
+    gap: 0 167px;
   }
 
   .footer__logo-wrapper {
     width: 130px;
+    grid-column: 1/2;
   }
 
   .footer__menu {
     width: 602px;
+    grid-column: 2/3;
   }
 
   .footer__socials {
-    width: 100px;
+    width: 96px;
+    grid-column: 3/-1;
   }
 }
