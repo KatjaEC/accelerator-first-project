@@ -1,18 +1,44 @@
-const indexSections = [
-  {section: 'header', misMatchThreshold: 0.3},
-  {section: 'hero', misMatchThreshold: 0.3},
-  {section: 'tours', misMatchThreshold: 0.3},
-  {section: 'training', misMatchThreshold: 0.3},
-  {section: 'about', misMatchThreshold: 0.3},
-  {section: 'reviews', misMatchThreshold: 0.3},
-  {section: 'adv', misMatchThreshold: 0.3},
-  {section: 'gallery', misMatchThreshold: 0.3},
-  {section: 'form', misMatchThreshold: 0.3},
-  {section: 'footer', misMatchThreshold: 0.3}
+const desktopSections = [
+  {section: 'header', misMatchThreshold: 1.1},
+  {section: 'hero', misMatchThreshold: 0.4},
+  {section: 'tours', misMatchThreshold: 0.7},
+  {section: 'training', misMatchThreshold: 2.1},
+  {section: 'about', misMatchThreshold: 1.5},
+  {section: 'reviews', misMatchThreshold: 2.4},
+  {section: 'adv', misMatchThreshold: 1.2},
+  {section: 'gallery', misMatchThreshold: 0.4},
+  {section: 'form', misMatchThreshold: 0.6},
+  {section: 'footer', misMatchThreshold: 1.2}
+]
+
+const tabletSections = [
+  {section: 'header', misMatchThreshold: 1.3},
+  {section: 'hero', misMatchThreshold: 0.8},
+  {section: 'tours', misMatchThreshold: 1.1},
+  {section: 'training', misMatchThreshold: 3.5},
+  {section: 'about', misMatchThreshold: 3.5},
+  {section: 'reviews', misMatchThreshold: 2.5},
+  {section: 'adv', misMatchThreshold: 0.8},
+  {section: 'gallery', misMatchThreshold: 0.7},
+  {section: 'form', misMatchThreshold: 1.2},
+  {section: 'footer', misMatchThreshold: 1.1},
+]
+
+const mobileSections = [
+  {section: 'header', misMatchThreshold: 2.2},
+  {section: 'hero', misMatchThreshold: 1.2},
+  {section: 'tours', misMatchThreshold: 2.2},
+  {section: 'training', misMatchThreshold: 4.3},
+  {section: 'about', misMatchThreshold: 3.5},
+  {section: 'reviews', misMatchThreshold: 2.6},
+  {section: 'adv', misMatchThreshold: 1.2},
+  {section: 'gallery', misMatchThreshold: 0.7},
+  {section: 'form', misMatchThreshold: 1.1},
+  {section: 'footer', misMatchThreshold: 1.1},
 ]
 
 const VIEWPORTS = {
-  'desktop': {"label": "desktop", "width": 1366, "height": 800},
+  'desktop': {"label": "desktop", "width": 1440, "height": 800},
   'tablet': {"label": "tablet", "width": 768, "height": 1024},
   'mobile': {"label": "mobile", "width": 320, "height": 480}
 };
@@ -50,7 +76,7 @@ module.exports = {
     },
     {
       "label": "desktop",
-      "width": 1366,
+      "width": 1440,
       "height": 800,
     }
   ],
@@ -61,7 +87,9 @@ module.exports = {
     scaleToSameSize: false
   },
   "scenarios": [
-    ...indexSections.map(({section, misMatchThreshold}) => generateScenario(section, misMatchThreshold)),
+    ...desktopSections.map(({section, misMatchThreshold}) => generateScenario(section, misMatchThreshold, 'desktop')),
+    ...tabletSections.map(({section, misMatchThreshold}) => generateScenario(section, misMatchThreshold, 'tablet')),
+    ...mobileSections.map(({section, misMatchThreshold}) => generateScenario(section, misMatchThreshold, 'mobile')),
   ],
   fileNameTemplate: '{scenarioLabel}_{viewportLabel}',
   "paths": {
