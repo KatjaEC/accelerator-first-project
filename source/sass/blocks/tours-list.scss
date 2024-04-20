@@ -1,0 +1,12 @@
+.tours-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.tours-list__item {
+  position: relative;
+  width: 290px;
+  flex-shrink: 0;
+}

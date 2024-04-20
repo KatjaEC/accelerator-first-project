@@ -1,0 +1,29 @@
+.header {
+  position: relative;
+  padding: 15px 15px 13px;
+  background-color: $color-secondary;
+}
+
+.header__logo {
+  display: block;
+  padding-left: 148px;
+  margin-bottom: 11px;
+}
+
+.header__nav {
+  position: absolute;
+  top: calc(100% - 17px);
+  left: 0;
+  z-index: 5;
+}
+
+.header__phone {
+  display: block;
+  margin-left: auto;
+  width: 142px;
+  line-height: 14px;
+  font-weight: 600;
+  color: $color-primary;
+  text-decoration: none;
+  text-align: right;
+}

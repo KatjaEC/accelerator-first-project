@@ -21,7 +21,7 @@
       <img class="logo__image" src="img/logos/logo-header.svg" width="142" height="42" alt="Логотип компании Лайфтур.">
     </a>
     <nav class="header__nav nav-menu">
-      <button class="nav-menu__toggle nav-menu__toggle--closed">
+      <button class="nav-menu__toggle">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
       <ul class="nav-menu__list">
@@ -76,14 +76,19 @@
                   alt="Вид на вершины гор Кавказа.">
               </picture>
             </div>
-            <h3>Захватывающие вершины Кавказа</h3>
-            <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы
-              Чегет.</p>
-            <a class="hero-slider__button button button--primary" href="#">Смотреть тур</a>
-            <ul class="hero-slider__details details-list">
-              <li class="details-list__item details-list__item--duration">6 дней/5 ночей</li>
-              <li class="details-list__item details-list__item--difficulty">Высокая сложность</li>
-            </ul>
+            <div class="hero-slider__content-wrapper">
+              <div class="hero-slider__text-wrapper">
+                <h3>Захватывающие вершины Кавказа</h3>
+                <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на&nbsp;вершину
+                  горы
+                  Чегет.</p>
+              </div>
+              <a class="hero-slider__button button button--primary" href="#">Смотреть тур</a>
+              <ul class="hero-slider__details details-list">
+                <li class="details-list__item details-list__item--duration">6 дней/5 ночей</li>
+                <li class="details-list__item details-list__item--difficulty">Высокая сложность</li>
+              </ul>
+            </div>
           </li>
           <li class="hero-slider__item">
             <div class="hero-slider__image-wrapper">
@@ -107,14 +112,18 @@
                   srcset="img/photos/hero-slide-2-mobile@2x.jpg" width="320" height="568" alt="Вид на горы Камчатки.">
               </picture>
             </div>
-            <h3>Невероятная природа Камчатки</h3>
-            <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых
-              уголков дикой природы в мире.</p>
-            <a class="hero-slider__button button button--primary" href="#">Смотреть тур</a>
-            <ul class="hero-slider__details details-list">
-              <li class="details-list__item details-list__item--duration">9 дней/10 ночей</li>
-              <li class="details-list__item details-list__item--difficulty">Средняя сложность</li>
-            </ul>
+            <div class="hero-slider__content-wrapper">
+              <div class="hero-slider__text-wrapper">
+                <h3>Невероятная природа Камчатки</h3>
+                <p>Незабываемое приключение, во&nbsp;время которого вы отправитесь в&nbsp;путешествие по одному из самых нетронутых
+                  уголков дикой природы в мире.</p>
+              </div>
+              <a class="hero-slider__button button button--primary" href="#">Смотреть тур</a>
+              <ul class="hero-slider__details details-list">
+                <li class="details-list__item details-list__item--duration">9 дней/10 ночей</li>
+                <li class="details-list__item details-list__item--difficulty">Средняя сложность</li>
+              </ul>
+            </div>
           </li>
           <li class="hero-slider__item">
             <div class="hero-slider__image-wrapper">
@@ -138,14 +147,18 @@
                   srcset="img/photos/hero-slide-3-mobile@2x.jpg" width="320" height="568" alt="Пейзаж Алтайского Края.">
               </picture>
             </div>
-            <h3>Магические пейзажи Алтайского Края</h3>
-            <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух
-              ландшафтов Алтайских гор.</p>
-            <a class="hero-slider__button button button--primary" href="#">Смотреть тур</a>
-            <ul class="hero-slider__details details-list">
-              <li class="details-list__item details-list__item--duration">8 дней/7 ночей</li>
-              <li class="details-list__item details-list__item--difficulty">Лёгкая сложность</li>
-            </ul>
+            <div class="hero-slider__content-wrapper">
+              <div class="hero-slider__text-wrapper">
+                <h3>Магические пейзажи Алтайского Края</h3>
+                <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух
+                  ландшафтов Алтайских гор.</p>
+              </div>
+              <a class="hero-slider__button button button--primary" href="#">Смотреть тур</a>
+              <ul class="hero-slider__details details-list">
+                <li class="details-list__item details-list__item--duration">8 дней/7 ночей</li>
+                <li class="details-list__item details-list__item--difficulty">Лёгкая сложность</li>
+              </ul>
+            </div>
           </li>
         </ol>
         <ol class="hero-slider__pagination slider-pagination">
@@ -209,16 +222,18 @@
               </picture>
             </div>
             <div class="tours-card__info-wrapper">
-              <h3 class="tours-card__title">Кавказ</h3>
-              <p class="tours-card__duration">
-                <span class="tours-card__days">4 дня</span>
-                <span class="tours-card__nights">3 ночи</span>
-              </p>
+              <div class="tours-card__info">
+                <h3 class="tours-card__title">Кавказ</h3>
+                <p class="tours-card__duration-info">
+                  <span class="tours-card__duration tours-card__duration--days">4 дня</span>
+                  <span class="tours-card__duration tours-card__duration--nights">3 ночи</span>
+                </p>
+              </div>
               <p class="tours-card__description">Путешествие вокруг Эльбруса</p>
               <div class="tours-card__details-wrapper">
                 <dl class="tours-card__details">
-                  <dt class="tours-card__details-heading">Сложность:</dt>
-                  <dd class="tours-card__details-info">
+                  <dt class="tours-card__details-heading tours-card__details-heading--difficulty">Сложность:</dt>
+                  <dd class="tours-card__details-stars tours-card__details-stars--four">
                     <span class="visually-hidden">4 звезды.</span>
                   </dd>
                 </dl>
@@ -256,16 +271,18 @@
               </picture>
             </div>
             <div class="tours-card__info-wrapper">
-              <h3 class="tours-card__title">Алтай</h3>
-              <p class="tours-card__duration">
-                <span class="tours-card__days">14 дней</span>
-                <span class="tours-card__nights">13 ночей</span>
-              </p>
+              <div class="tours-card__info">
+                <h3 class="tours-card__title">Алтай</h3>
+                <p class="tours-card__duration-info ">
+                  <span class="tours-card__duration tours-card__duration--days">14 дней</span>
+                  <span class="tours-card__duration tours-card__duration--nights">13 ночей</span>
+                </p>
+              </div>
               <p class="tours-card__description">Путь к подножию Белухи</p>
               <div class="tours-card__details-wrapper">
                 <dl class="tours-card__details">
-                  <dt class="tours-card__details-heading">Сложность:</dt>
-                  <dd class="tours-card__details-info">
+                  <dt class="tours-card__details-heading tours-card__details-heading--difficulty">Сложность:</dt>
+                  <dd class="tours-card__details-stars tours-card__details-stars--three">
                     <span class="visually-hidden">3 звезды.</span>
                   </dd>
                 </dl>
@@ -303,16 +320,18 @@
               </picture>
             </div>
             <div class="tours-card__info-wrapper">
-              <h3 class="tours-card__title">Адыгея</h3>
-              <p class="tours-card__duration">
-                <span class="tours-card__days">7 дней</span>
-                <span class="tours-card__nights">6 ночей</span>
-              </p>
+              <div class="tours-card__info">
+                <h3 class="tours-card__title">Адыгея</h3>
+                <p class="tours-card__duration-info">
+                  <span class="tours-card__duration tours-card__duration--days">7 дней</span>
+                  <span class="tours-card__duration tours-card__duration--nights">6 ночей</span>
+                </p>
+              </div>
               <p class="tours-card__description">Через Фишт к Чёрному морю и обратно</p>
               <div class="tours-card__details-wrapper">
                 <dl class="tours-card__details">
-                  <dt class="tours-card__details-heading">Сложность:</dt>
-                  <dd class="tours-card__details-info">
+                  <dt class="tours-card__details-heading tours-card__details-heading--difficulty">Сложность:</dt>
+                  <dd class="tours-card__details-stars tours-card__details-stars--four">
                     <span class="visually-hidden">4 звезды.</span>
                   </dd>
                 </dl>
@@ -350,16 +369,18 @@
               </picture>
             </div>
             <div class="tours-card__info-wrapper">
-              <h3 class="tours-card__title">Урал</h3>
-              <p class="tours-card__duration">
-                <span class="tours-card__days">9 дней</span>
-                <span class="tours-card__nights">10 ночей</span>
-              </p>
+              <div class="tours-card__info">
+                <h3 class="tours-card__title">Урал</h3>
+                <p class="tours-card__duration-info">
+                  <span class="tours-card__duration tours-card__duration--days">9 дней</span>
+                  <span class="tours-card__duration tours-card__duration--nights">10 ночей</span>
+                </p>
+              </div>
               <p class="tours-card__description">Восхождение Манарага</p>
               <div class="tours-card__details-wrapper">
                 <dl class="tours-card__details">
-                  <dt class="tours-card__details-heading">Сложность:</dt>
-                  <dd class="tours-card__details-info">
+                  <dt class="tours-card__details-heading tours-card__details-heading--difficulty">Сложность:</dt>
+                  <dd class="tours-card__details-stars tours-card__details-stars--five">
                     <span class="visually-hidden">5 звезд.</span>
                   </dd>
                 </dl>
@@ -848,7 +869,7 @@
                 type="image/jpeg" width="253" height="418">
               <img class="gallery-card__image" src="img/photos/gallery-photo-1-desktop@1x.jpg"
                 srcset="img/photos/gallery-photo-1-desktop@2x.jpg 2x" width="158" height="266"
-                alt="Мужчина на вершине горы.">
+                alt="Мужчина на вершине горы." loading="lazy">
             </picture>
           </div>
           <div class="gallery-card__image-wrapper">
@@ -869,8 +890,8 @@
                 srcset="img/photos/gallery-photo-2-desktop@1x.jpg 1x, img/photos/gallery-photo-2-desktop@2x.jpg 2x"
                 type="image/jpeg" width="252" height="209">
               <img class="gallery-card__image" src="img/photos/gallery-photo-2-desktop@1x.jpg"
-                srcset="img/photos/gallery-photo-2-desktop@2x.jpg 2x"
-                width="157" height="134" alt="Группа людей у огня.">
+                srcset="img/photos/gallery-photo-2-desktop@2x.jpg 2x" width="157" height="134"
+                alt="Группа людей у огня." loading="lazy">
             </picture>
           </div>
           <div class="gallery-card__image-wrapper">
@@ -891,8 +912,8 @@
                 srcset="img/photos/gallery-photo-3-desktop@1x.jpg 1x, img/photos/gallery-photo-3-desktop@2x.jpg 2x"
                 type="image/jpeg" width="252" height="201">
               <img class="gallery-card__image" src="img/photos/gallery-photo-3-desktop@1x.jpg"
-                srcset="img/photos/gallery-photo-3-desktop@2x.jpg 2x"
-                width="157" height="124" alt="Рука, держащая компас.">
+                srcset="img/photos/gallery-photo-3-desktop@2x.jpg 2x" width="157" height="124"
+                alt="Рука, держащая компас." loading="lazy">
             </picture>
           </div>
         </li>
@@ -915,8 +936,8 @@
                 srcset="img/photos/gallery-photo-4-desktop@1x.jpg 1x, img/photos/gallery-photo-4-desktop@2x.jpg 2x"
                 type="image/jpeg" width="253" height="418">
               <img class="gallery-card__image" src="img/photos/gallery-photo-4-desktop@1x.jpg"
-                srcset="img/photos/gallery-photo-4-desktop@2x.jpg 2x"
-                width="158" height="266" alt="Группа людей в горах.">
+                srcset="img/photos/gallery-photo-4-desktop@2x.jpg 2x" width="158" height="266"
+                alt="Группа людей в горах." loading="lazy">
             </picture>
           </div>
           <div class="gallery-card__image-wrapper">
@@ -937,8 +958,8 @@
                 srcset="img/photos/gallery-photo-5-desktop@1x.jpg 1x, img/photos/gallery-photo-5-desktop@2x.jpg 2x"
                 type="image/jpeg" width="252" height="209">
               <img class="gallery-card__image" src="img/photos/gallery-photo-5-desktop@1x.jpg"
-                srcset="img/photos/gallery-photo-5-desktop@2x.jpg 2x"
-                width="157" height="134" alt="Группа людей идет по льду.">
+                srcset="img/photos/gallery-photo-5-desktop@2x.jpg 2x" width="157" height="134"
+                alt="Группа людей идет по льду." loading="lazy">
             </picture>
           </div>
           <div class="gallery-card__image-wrapper">
@@ -959,8 +980,8 @@
                 srcset="img/photos/gallery-photo-6-desktop@1x.jpg 1x, img/photos/gallery-photo-6-desktop@2x.jpg 2x"
                 type="image/jpeg" width="252" height="201">
               <img class="gallery-card__image" src="img/photos/gallery-photo-6-desktop@1x.jpg"
-                srcset="img/photos/gallery-photo-6-desktop@2x.jpg 2x"
-                width="157" height="124" alt="Палатка под звездным небом.">
+                srcset="img/photos/gallery-photo-6-desktop@2x.jpg 2x" width="157" height="124"
+                alt="Палатка под звездным небом." loading="lazy">
             </picture>
           </div>
         </li>
@@ -983,8 +1004,8 @@
                 srcset="img/photos/gallery-photo-7-desktop@1x.jpg 1x, img/photos/gallery-photo-7-desktop@2x.jpg 2x"
                 type="image/jpeg" width="253" height="418">
               <img class="gallery-card__image" src="img/photos/gallery-photo-7-desktop@1x.jpg"
-                srcset="img/photos/gallery-photo-7-desktop@2x.jpg 2x"
-                width="158" height="266" alt="Двое мужчин разводят костер на привале.">
+                srcset="img/photos/gallery-photo-7-desktop@2x.jpg 2x" width="158" height="266"
+                alt="Двое мужчин разводят костер на привале." loading="lazy">
             </picture>
           </div>
         </li>
@@ -1019,16 +1040,16 @@
         </p>
         <ul class="contacts__list contacts-list">
           <li class="contacts-list__item">
-            <h3 class="contacts-list__subheading">Телефон</h3>
+            <p class="contacts-list__subheading">Телефон</p>
             <a class="contacts-list__text contacts-list__text--phone" href="tel:+79837454545">+7 983 745-45-45</a>
           </li>
           <li class="contacts-list__item">
-            <h3 class="contacts-list__subheading">Email</h3>
+            <p class="contacts-list__subheading">Email</p>
             <a class="contacts-list__text contacts-list__text--email"
               href="mailto:info@lifetour.com">info@lifetour.com</a>
           </li>
           <li class="contacts-list__item">
-            <h3 class="contacts-list__subheading">Адрес</h3>
+            <p class="contacts-list__subheading">Адрес</p>
             <address class="contacts-list__text contacts-list__text--address">г. Москва, пр-т Мира, д. 14, офис 101
             </address>
           </li>
@@ -1046,7 +1067,7 @@
             <source media="(min-width: 768px)" srcset="img/maps/map-tablet@1x.jpg 1x, img/maps/map-tablet@2x.jpg 2x"
               type="image/jpeg" width="768" height="340">
             <img class="contacts__image" src="img/maps/map-mobile@1x.jpg" srcset="img/maps/map-mobile@2x.jpg 2x"
-              width="320" height="343" alt="Наше местоположение на карте.">
+              width="320" height="343" alt="Наше местоположение на карте." loading="lazy">
           </picture>
         </div>
       </section>

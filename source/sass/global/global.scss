@@ -8,6 +8,10 @@ body {
   min-width: 320px;
   min-height: 100%;
   margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
   background-color: $color-primary;
   color: $color-text;
 }
@@ -17,9 +21,9 @@ main {
 }
 
 img {
-  object-fit: scale-down;
   max-width: 100%;
   height: auto;
+  object-fit: scale-down;
 }
 
 *,

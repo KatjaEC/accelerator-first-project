@@ -1,0 +1,21 @@
+.section-title {
+  position: relative;
+  margin: 0;
+  padding: 16px 0;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+  z-index: 5;
+}
+
+.section-title[data-shadow]::before {
+  position: absolute;
+  left: 2px;
+  top: 7px;
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 800;
+  color: $color-text;
+  opacity: 0.1;
+  content: attr(data-shadow);
+}

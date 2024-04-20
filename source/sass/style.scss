@@ -9,5 +9,16 @@
 @import "global/visually-hidden";
 
 // ELEMENTS
+@import "elements/button.scss";
+@import "elements/section-title.scss";
 
 // BLOCKS
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/nav-menu.scss";
+@import "blocks/slider-pagination.scss";
+@import "blocks/hero-slider.scss";
+@import "blocks/hero.scss";
+@import "blocks/tours.scss";
+@import "blocks/tours-list.scss";
+@import "blocks/tours-card.scss";

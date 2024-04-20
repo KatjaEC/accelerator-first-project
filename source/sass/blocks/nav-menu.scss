@@ -1,0 +1,45 @@
+.nav-menu__list {
+  display: none;
+  margin: 0;
+  width: 100%;
+  padding: 30px 188px 50px 15px;
+  background-color: $color-secondary;
+  list-style: none;
+}
+
+.nav-menu__item:not(:last-of-type) {
+  margin-bottom: 22px;
+}
+
+.nav-menu__link {
+  display: block;
+  line-height: 14px;
+  font-weight: 700;
+  color: $color-primary;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-menu__toggle {
+  position: absolute;
+  top: -68px;
+  left: 15px;
+  display: block;
+  width: 26px;
+  height: 26px;
+  mask: url("../../__spritemap#sprite-menu-icon-open-view");
+  mask-size: 26px 26px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $color-primary;
+  border: none;
+  cursor: pointer;
+
+  &--opened {
+    mask: url("../../__spritemap#sprite-menu-icon-close-view");
+    mask-size: 26px 26px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+}
