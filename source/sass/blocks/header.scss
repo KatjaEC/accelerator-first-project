@@ -1,7 +1,12 @@
 .header {
-  position: relative;
-  padding: 15px 15px 13px;
   background-color: $color-secondary;
+}
+
+.header__wrapper {
+  position: relative;
+  margin: 0 auto;
+  padding: 15px 15px 13px;
+  width: 320px;
 }
 
 .header__logo {
