@@ -1,10 +1,14 @@
 .nav-menu__list {
   display: none;
   margin: 0;
-  width: 100%;
-  padding: 30px 188px 50px 15px;
+  width: 320px;
+  padding: 15px 188px 50px 15px;
   background-color: $color-secondary;
   list-style: none;
+
+  &--opened {
+    display: block;
+  }
 }
 
 .nav-menu__item:not(:last-of-type) {
@@ -23,7 +27,7 @@
 
 .nav-menu__toggle {
   position: absolute;
-  top: -68px;
+  top: -85px;
   left: 15px;
   display: block;
   width: 26px;
