@@ -1,0 +1,68 @@
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.advantages-list__item {
+  position: relative;
+  padding: 82px 10px 20px;
+  background-color: $color-primary;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+
+  &:not(:last-of-type) {
+    margin-bottom: 13px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 42px;
+    height: 42px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 42px 42px;
+    content: "";
+  }
+
+  &--safety::before {
+    background-image: url("../../__spritemap#sprite-advantages-icon-safety-view");
+  }
+
+  &--expertise::before {
+    background-image: url("../../__spritemap#sprite-advantages-icon-expertise-view");
+  }
+
+  &--equipment::before {
+    background-image: url("../../__spritemap#sprite-advantages-icon-equipment-view");
+  }
+
+  &--routes::before {
+    background-image: url("../../__spritemap#sprite-advantages-icon-routes-view");
+  }
+
+  &--environment::before {
+    background-image: url("../../__spritemap#sprite-advantages-icon-environment-view");
+  }
+}
+
+.advantages-list__item > h3 {
+  margin: 0 0 15px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+}
+
+.advantages-list__item--environment > h3 {
+  padding: 0 16px 0 12px;
+}
+
+.advantages-list__item > p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+}

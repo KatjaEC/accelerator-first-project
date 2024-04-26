@@ -1,4 +1,33 @@
+.tours {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 10px;
+    right: -179px;
+    width: 100%;
+    height: 595px;
+    background-image:
+      image-set(
+        url("../../img/backgrounds/tours-training-mobile-background@1x.webp") type("image/webp") 1x,
+        url("../../img/backgrounds/tours-training-mobile-background@1x.jpg") type("image/jpeg") 1x);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    content: "";
+
+    @media (resolution >= 2dppx) {
+      background-image:
+        image-set(
+          url("../../img/backgrounds/tours-training-mobile-background@2x.webp") type("image/webp") 2x,
+          url("../../img/backgrounds/tours-training-mobile-background@2x.jpg") type("image/jpeg") 2x);
+    }
+  }
+}
+
 .tours__wrapper {
+  position: relative;
   margin: 0 auto;
   padding: 22px 15px 20px;
   width: 320px;
@@ -40,5 +69,65 @@
     background: url("../../__spritemap#sprite-arrow-button-next-view") no-repeat center;
     background-size: 10px 14px;
     content: "";
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tours {
+    overflow: visible;
+
+    &::before {
+      top: 41px;
+      right: 0;
+      height: 1364px;
+      background-image:
+        image-set(
+          url("../../img/backgrounds/tours-training-tablet-background@1x.webp") type("image/webp") 1x,
+          url("../../img/backgrounds/tours-training-tablet-background@1x.jpg") type("image/jpeg") 1x);
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 422px 1630px;
+      z-index: -1;
+
+      @media (resolution >= 2dppx) {
+        background-image:
+          image-set(
+            url("../../img/backgrounds/tours-training-tablet-background@2x.webp") type("image/webp") 2x,
+            url("../../img/backgrounds/tours-training-tablet-background@2x.jpg") type("image/jpeg") 2x);
+      }
+    }
+  }
+
+  .tours__wrapper {
+    padding: 40px 45px;
+    width: 768px;
+  }
+
+  .tours__title {
+    margin-bottom: 25px;
+  }
+
+  .tours__slider-nav {
+    position: absolute;
+    top: 60px;
+    right: 45px;
+    display: flex;
+  }
+
+  .tours__list-wrapper {
+    width: 678px;
+  }
+
+  .tours__button {
+    width: 240px;
+    font-size: 16px;
+    line-height: 16px;
+
+    &::before {
+      top: calc(50% - 8px);
+      left: calc(100% - 20px);
+      width: 12px;
+      height: 16px;
+    }
   }
 }

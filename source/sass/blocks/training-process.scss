@@ -1,0 +1,65 @@
+.training-process {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 29px;
+  list-style: none;
+
+  &::before {
+    position: absolute;
+    top: 12px;
+    left: 6px;
+    width: 2px;
+    height: calc(100% - 24px);
+    background-color: $color-secondary;
+    content: "";
+  }
+}
+
+.training-process__item {
+  position: relative;
+  padding-left: 34px;
+  font-size: 12px;
+  line-height: 18px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 6px);
+    left: -29px;
+    width: 14px;
+    height: 14px;
+    background-color: $color-secondary;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    content: "";
+  }
+
+  &--route::after {
+    background-image: url("../../__spritemap#sprite-map-icon-view");
+  }
+
+  &--equipment::after {
+    background-image: url("../../__spritemap#sprite-boots-icon-view");
+  }
+
+  &--environment::after {
+    background-image: url("../../__spritemap#sprite-pine-tree-icon-view");
+  }
+
+  &--mountains::after {
+    background-image: url("../../__spritemap#sprite-mountain-icon-view");
+  }
+}

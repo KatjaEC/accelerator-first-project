@@ -1,0 +1,27 @@
+.gallery-card__image-wrapper {
+
+  &--bigger {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+  }
+
+  &--smaller {
+    grid-column: 2/-1;
+  }
+}
+
+.gallery-card__image {
+  object-fit: cover;
+
+  &--bigger {
+    height: 266px;
+  }
+
+  &--smaller:first-of-type {
+    height: 134px;
+  }
+
+  &--smaller:nth-of-type(2n) {
+    height: 124px;
+  }
+}

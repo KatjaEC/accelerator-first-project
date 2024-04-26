@@ -6,16 +6,49 @@
   line-height: 22px;
   font-weight: 800;
   z-index: 5;
+
+  &--shadow-top::before {
+    top: 0;
+  }
 }
 
 .section-title[data-shadow]::before {
   position: absolute;
-  left: 2px;
+  left: 0;
   top: 7px;
   font-size: 26px;
   line-height: 26px;
   font-weight: 800;
   color: $color-text;
-  opacity: 0.1;
+  opacity: 0.03;
   content: attr(data-shadow);
+}
+
+.section-title--shadow-top[data-shadow]::before {
+  top: 0;
+}
+
+.section-title--shadow-top-center[data-shadow]::before {
+  top: 3px;
+  left: 15px;
+}
+
+.section-title--shadow-center[data-shadow]::before {
+  top: 3px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .section-title {
+    padding: 20px 160px 10px 0;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .section-title[data-shadow]::before {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }

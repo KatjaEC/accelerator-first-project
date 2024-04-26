@@ -5,14 +5,14 @@
 .header__wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 15px 15px 18px;
+  padding: 15px 15px 13px 54px;
   width: 320px;
 }
 
 .header__logo {
   display: block;
-  padding-left: 148px;
-  margin-bottom: 11px;
+  margin: 0 0 16px auto;
+  width: 142px;
 }
 
 .header__nav {
@@ -34,3 +34,24 @@
   text-decoration: none;
   text-align: right;
 }
+
+@media (min-width: $tablet-width) {
+  .header__wrapper {
+    padding: 20px 45px 16px 80px;
+    width: 768px;
+    display: grid;
+    grid-template-columns: 375px 1fr;
+  }
+
+  .header__logo {
+    margin-bottom: 0;
+  }
+
+  .header__phone {
+    padding: 15px 0;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {}

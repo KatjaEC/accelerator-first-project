@@ -8,3 +8,9 @@
   width: 320px;
   overflow: hidden;
 }
+
+@media (min-width: $tablet-width) {
+  .hero__slider-wrapper {
+    width: 768px;
+  }
+}

@@ -1,0 +1,16 @@
+.reviews-list {
+  margin: 0;
+  padding: 16px 15px 20px;
+  display: flex;
+  list-style: none;
+}
+
+.reviews-list__item {
+  width: 290px;
+  max-height: 484px;
+  flex-shrink: 0;
+
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
+}

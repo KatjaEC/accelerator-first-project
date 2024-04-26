@@ -47,3 +47,25 @@
     mask-position: center;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .nav-menu__list {
+    padding: 31px 45px 70px;
+    width: 768px;
+  }
+
+  .nav-menu__item:not(:last-of-type) {
+    margin-bottom: 26px;
+  }
+
+  .nav-menu__link {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.6px;
+  }
+
+  .nav-menu__toggle {
+    top: -54px;
+    left: 45px;
+  }
+}

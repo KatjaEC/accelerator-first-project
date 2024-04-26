@@ -1,7 +1,7 @@
 .tours-list {
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
   list-style: none;
 }
 
@@ -9,4 +9,18 @@
   position: relative;
   width: 290px;
   flex-shrink: 0;
+
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tours-list__item {
+    width: 330px;
+
+    &:not(:last-of-type) {
+      margin-right: 18px;
+    }
+  }
 }

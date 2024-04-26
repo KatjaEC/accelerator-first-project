@@ -1,0 +1,13 @@
+.slider-nav-buttons {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider-nav-buttons {
+    width: 126px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+}

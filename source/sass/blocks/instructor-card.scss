@@ -1,0 +1,39 @@
+.instructor-card {
+  padding: 14px;
+  background-color: $color-primary;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  order: 1;
+
+  &--active {
+    order: 0;
+  }
+}
+
+.instructor-card__image-wrapper {
+  margin-bottom: 16px;
+}
+
+.instructor-card__image {
+  width: 260px;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+}
+
+.instructor-card__name-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.instructor-card__name-wrapper > h4 {
+  margin: 0 0 14px;
+  width: 150px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.instructor-card__social-link {
+  margin-top: -1px;
+  width: 24px;
+  height: 24px;
+}

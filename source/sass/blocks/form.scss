@@ -1,0 +1,74 @@
+.form {
+  background-color: $color-text;
+  background-image:
+    image-set(
+      url("../../img/backgrounds/form-background-mobile@1x.webp") type("image/webp") 1x,
+      url("../../img/backgrounds/form-background-mobile@1x.jpg") type("image/jpeg") 1x);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (resolution >= 2dppx) {
+    background-image:
+      image-set(
+        url("../../img/backgrounds/form-background-mobile@2x.webp") type("image/webp") 2x,
+        url("../../img/backgrounds/form-background-mobile@2x.jpg") type("image/jpeg") 2x);
+  }
+}
+
+.form__wrapper {
+  padding: 174px 31px;
+  margin: 0 auto;
+  width: 320px;
+  text-align: center;
+}
+
+.form__wrapper > p {
+  margin: 0 0 20px;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 800;
+  color: $color-primary;
+}
+
+.form__wrapper > p + p {
+  padding: 0 20px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.form__input-wrapper {
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.form__label {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 15px;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(45, 56, 63, 0.5);
+}
+
+.form__input {
+  padding: 14px;
+  width: 258px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: rgba(45, 56, 63, 0.5);
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  appearance: none;
+
+  &::placeholder {
+    color: rgba(45, 56, 63, 0.5);
+  }
+}
+
+.form__button {
+  padding: 19px 20px 20px;
+  width: 258px;
+}

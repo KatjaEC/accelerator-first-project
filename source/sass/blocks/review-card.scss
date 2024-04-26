@@ -1,0 +1,38 @@
+.review-card {
+  padding: 19px 19px;
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  box-shadow: 0px 0px 20px 0px rgba(28, 51, 116, 0.1);
+}
+
+.review-card__image-wrapper {
+  margin-bottom: 19px;
+}
+
+.review-card__text-wrapper {
+  margin-bottom: 16px;
+}
+
+.review-card__text-wrapper > p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+
+.review-card__user-name {
+  margin-bottom: 3px;
+  display: block;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+}
+
+.review-card__user-info {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+}
