@@ -63,3 +63,62 @@
     background-image: url("../../__spritemap#sprite-mountain-icon-view");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .training-process {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-auto-flow: dense;
+    gap: 104px 135px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .training-process__item {
+    padding-right: 40px;
+    width: 272px;
+    font-size: 14px;
+    line-height: 22px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      top: 2px;
+    }
+
+    &--route {
+      padding-left: 35px;
+    }
+
+    &--equipment {
+      grid-column: 1/2;
+    }
+
+    &--equipment::after {
+      background-size: 24px 24px;
+    }
+
+    &--environment {
+      padding-left: 32px;
+      order: 3;
+    }
+
+    &--environment::after {
+      left: -1px;
+      background-size: 23px 23px;
+    }
+
+    &--mountains::after {
+      left: -1px;
+    }
+  }
+}

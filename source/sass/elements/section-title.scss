@@ -42,7 +42,7 @@
 
 @media (min-width: $tablet-width) {
   .section-title {
-    padding: 20px 160px 10px 0;
+    padding: 20px 0 10px;
     font-size: 25px;
     line-height: 25px;
   }
@@ -50,5 +50,9 @@
   .section-title[data-shadow]::before {
     font-size: 40px;
     line-height: 40px;
+  }
+
+  .section-title--shadow-top[data-shadow]::before {
+    top: 5px;
   }
 }

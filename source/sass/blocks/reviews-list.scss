@@ -7,10 +7,23 @@
 
 .reviews-list__item {
   width: 290px;
+  min-height: 320px;
   max-height: 484px;
   flex-shrink: 0;
+  overflow-y: scroll;
 
   &:not(:last-of-type) {
     margin-right: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reviews-list {
+    padding: 25px 45px 40px;
+  }
+
+  .reviews-list__item {
+    width: 565px;
+    min-height: 277px;
   }
 }

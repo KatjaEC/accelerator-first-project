@@ -1,5 +1,6 @@
-.advantages {
+.advantages__wrapper {
   padding: 20px 15px 19px;
+  width: 320px;
 }
 
 .advantages__title {
@@ -12,7 +13,18 @@
   display: none;
 }
 
-.advantages__list {
-  width: 290px;
-  margin: 0 auto;
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    padding: 40px 45px;
+    width: 678px;
+  }
+
+  .advantages__title {
+    margin: 0 auto 50px;
+    width: 678px;
+  }
+
+  .advantages__list {
+    width: 678px;
+  }
 }

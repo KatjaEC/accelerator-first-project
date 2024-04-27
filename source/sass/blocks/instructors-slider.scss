@@ -21,3 +21,9 @@
   font-size: 12px;
   line-height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .instructors-slider__item {
+    width: 213px;
+  }
+}

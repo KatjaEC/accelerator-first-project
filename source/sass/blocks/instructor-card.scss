@@ -37,3 +37,18 @@
   width: 24px;
   height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .instructor-card {
+    padding: 14px 15px 14px 14px;
+
+    &--active {
+      order: 1;
+    }
+  }
+
+  .instructor-card__image {
+    width: 182px;
+    height: 200px;
+  }
+}
