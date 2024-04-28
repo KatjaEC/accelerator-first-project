@@ -75,6 +75,7 @@
           url("../img/backgrounds/about-us-background-tablet@1x.webp") type("image/webp") 1x,
           url("../../img/backgrounds/about-us-background-tablet@1x.jpg") type("image/jpeg") 1x);
       background-position: center;
+      background-size: cover;
       z-index: -1;
 
       @media (resolution >= 2dppx) {

@@ -48,3 +48,34 @@
   color: $color-text;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .contacts-list__item {
+    padding: 0 0 0 34px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      background-size: 24px 24px;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts-list__subheading {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .contacts-list__text {
+    line-height: 22px;
+  }
+}

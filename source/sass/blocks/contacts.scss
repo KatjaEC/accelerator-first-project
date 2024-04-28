@@ -37,3 +37,40 @@
   height: 343px;
   object-fit: cover;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding-bottom: 39px;
+  }
+
+  .contacts__content-wrapper {
+    padding: 40px 42px 40px 45px;
+    width: 768px;
+  }
+
+  .contacts__title {
+    margin-bottom: 10px;
+  }
+
+  .contacts__content-wrapper > p {
+    margin: 0 0 41px;
+    padding-right: 198px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .contacts__image-wrapper {
+
+    &::before {
+      top: calc(50% + 12px);
+      right: calc(50% - 43px);
+      width: 42px;
+      height: 42px;
+      background-size: 42px 42px;
+    }
+  }
+
+  .contacts__image {
+    height: 340px;
+  }
+}

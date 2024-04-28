@@ -61,3 +61,37 @@
   text-decoration: none;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .footer__body {
+    padding: 34px 45px 20px;
+    width: 768px;
+  }
+
+  .footer__nav-wrapper {
+    margin-bottom: 34px;
+    display: flex;
+  }
+
+  .footer__logo {
+    margin: 0 42px 0 0;
+    flex-shrink: 0;
+  }
+
+  .footer__nav-list {
+    margin: 0;
+    width: 494px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .footer__nav-item:last-of-type {
+    padding-left: 2px;
+  }
+
+  .footer__socials {
+    margin-bottom: 34px;
+  }
+}

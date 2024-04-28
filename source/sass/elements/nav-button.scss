@@ -8,6 +8,8 @@
   cursor: pointer;
 
   &--next {
+    padding-bottom: 3px;
+    padding-left: 3px;
     transform: rotate(180deg);
   }
 

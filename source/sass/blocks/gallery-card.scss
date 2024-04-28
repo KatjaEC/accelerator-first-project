@@ -11,17 +11,28 @@
 }
 
 .gallery-card__image {
+  height: 266px;
   object-fit: cover;
 
-  &--bigger {
-    height: 266px;
-  }
-
-  &--smaller:first-of-type {
+  &--top-half {
     height: 134px;
   }
 
-  &--smaller:nth-of-type(2n) {
+  &--bottom-half {
     height: 124px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gallery-card__image {
+    height: 418px;
+
+    &--top-half {
+      height: 209px;
+    }
+
+    &--bottom-half {
+      height: 202px;
+    }
   }
 }
