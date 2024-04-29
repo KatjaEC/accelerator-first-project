@@ -27,7 +27,7 @@
 
 .instructor-card__name-wrapper > h4 {
   margin: 0 0 14px;
-  width: 150px;
+  width: 144px;
   line-height: 16px;
   font-weight: 700;
 }
@@ -50,5 +50,15 @@
   .instructor-card__image {
     width: 182px;
     height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instructor-card {
+    padding: 14px;
+  }
+
+  .instructor-card__image {
+    width: 255px;
   }
 }

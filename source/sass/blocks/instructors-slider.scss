@@ -27,3 +27,9 @@
     width: 213px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .instructors-slider__item {
+    width: 285px;
+  }
+}

@@ -10,7 +10,7 @@
   min-height: 320px;
   max-height: 484px;
   flex-shrink: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   &:not(:last-of-type) {
     margin-right: 30px;
@@ -25,5 +25,6 @@
   .reviews-list__item {
     width: 565px;
     min-height: 277px;
+    max-height: 700px;
   }
 }

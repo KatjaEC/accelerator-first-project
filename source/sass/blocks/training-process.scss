@@ -59,6 +59,10 @@
     background-image: url("../../__spritemap#sprite-pine-tree-icon-view");
   }
 
+  &--mountains {
+    padding-right: 28px;
+  }
+
   &--mountains::after {
     background-image: url("../../__spritemap#sprite-mountain-icon-view");
   }
@@ -119,6 +123,70 @@
 
     &--mountains::after {
       left: -1px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .training-process {
+    grid-template-columns: 253px 253px 253px 440px;
+    gap: 0;
+
+    &::before {
+      top: auto;
+      bottom: -10px;
+      left: 22px;
+      display: block;
+      width: calc(100% - 22px);
+      height: 2px;
+    }
+  }
+
+  .training-process__item {
+    padding: 0 0 0 45px;
+    width: 240px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      top: auto;
+      bottom: -16px;
+      left: 20px;
+      display: block;
+    }
+
+    &::after {
+      left: 10px;
+    }
+
+    &--equipment {
+      grid-column: auto;
+    }
+
+    &--equipment::after {
+      top: 3px;
+      left: 11px;
+    }
+
+    &--environment {
+      order: initial;
+    }
+
+    &--environment::before {
+      left: 1px;
+    }
+
+    &--environment::after {
+      top: 3px;
+      left: 12px;
+    }
+
+    &--mountains {
+      padding-right: 0;
+    }
+
+    &--mountains::before {
+      left: 21px;
     }
   }
 }

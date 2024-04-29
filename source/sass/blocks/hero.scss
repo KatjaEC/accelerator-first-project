@@ -14,3 +14,9 @@
     width: 768px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero__slider-wrapper {
+    width: 1440px;
+  }
+}

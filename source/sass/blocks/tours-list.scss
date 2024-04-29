@@ -24,3 +24,13 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .tours-list__item {
+    width: 380px;
+
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+}

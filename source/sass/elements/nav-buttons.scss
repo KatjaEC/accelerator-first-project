@@ -1,0 +1,33 @@
+.nav-buttons {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .nav-buttons {
+    width: 126px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .nav-buttons__button {
+    width: 37px;
+    height: 35px;
+    background-color: $color-secondary;
+    color: $color-primary;
+    border: 1px solid transparent;
+    appearance: none;
+    cursor: pointer;
+
+    &--next {
+      padding-bottom: 3px;
+      padding-left: 3px;
+      transform: rotate(180deg);
+    }
+
+    &--inactive {
+      background-color: #999999;
+    }
+  }
+}

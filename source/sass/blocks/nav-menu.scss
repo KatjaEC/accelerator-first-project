@@ -69,3 +69,29 @@
     left: 45px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .nav-menu__list {
+    padding: 0;
+    margin: 0 auto 0 102px;
+    width: 578px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 31px;
+  }
+
+  .nav-menu__item:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+
+  .nav-menu__link {
+    padding: 14px 0;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+
+  .nav-menu__toggle {
+    display: none;
+  }
+}

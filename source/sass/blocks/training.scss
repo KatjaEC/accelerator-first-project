@@ -47,6 +47,7 @@
 
   .training__title {
     margin-bottom: 24px;
+    padding-right: 160px;
   }
 
   .training__wrapper > p {
@@ -103,5 +104,41 @@
     margin-bottom: 101px;
     font-size: 18px;
     line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .training__wrapper {
+    padding: 43px 120px 37px;
+    width: 1440px;
+  }
+
+  .training__title {
+    margin-bottom: 22px;
+  }
+
+  .training__wrapper > p {
+    margin-bottom: 62px;
+    padding-right: 380px;
+  }
+
+  .training__slider-nav {
+    top: 236px;
+    right: 120px;
+  }
+
+  .training__subtitle {
+    margin-bottom: 16px;
+  }
+
+  .training__slider-wrapper {
+    margin-bottom: 58px;
+    width: 1200px;
+  }
+
+  .training__description-title {
+    margin-bottom: 27px;
+    font-size: 21px;
+    line-height: 21px;
   }
 }

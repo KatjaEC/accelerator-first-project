@@ -54,4 +54,35 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .header__wrapper {
+    padding: 42px 120px 40px;
+    width: 1440px;
+    display: grid;
+    grid-template-columns: 205px 775px 160px;
+    gap: 10px 30px;
+  }
+
+  .header__logo {
+    margin: 0;
+    padding: 0 31px 0 32px;
+    width: 205px;
+  }
+
+  .header__nav {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 774px;
+    height: auto;
+    background-color: $color-secondary;
+    z-index: 0;
+  }
+
+  .header__phone {
+    padding: 13px 0;
+    width: 160px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}

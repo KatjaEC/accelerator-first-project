@@ -56,3 +56,17 @@
     top: 5px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .section-title {
+    padding: 20px 0 10px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .section-title[data-shadow]::before {
+    top: 2px;
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
