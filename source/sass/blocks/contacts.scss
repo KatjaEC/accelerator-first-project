@@ -1,6 +1,5 @@
 .contacts {
   padding-bottom: 19px;
-  border-bottom: 1px solid rgba(45, 56, 63, 0.2);
 }
 
 .contacts__content-wrapper {
@@ -81,6 +80,7 @@
     padding: 100px 120px 94px;
     display: flex;
     flex-wrap: wrap;
+    border-bottom: none;
   }
 
   .contacts__content-wrapper {

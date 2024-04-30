@@ -1094,47 +1094,49 @@
     </section>
   </main>
   <footer class="footer" data-test="footer">
-    <section class="footer__contacts contacts">
-      <div class="contacts__content-wrapper">
-        <h2 class="contacts__title section-title section-title--shadow-top" data-shadow="Контакты">Контакты</h2>
-        <p>
-          Свяжитесь с нами любым удобным для&nbsp;вас способом или&nbsp;приходите к&nbsp;нам&nbsp;в гости. Мы будем рады поделиться
-          увлекательными историями и подобрать для вас тур.
-        </p>
-        <ul class="contacts__list contacts-list">
-          <li class="contacts-list__item contacts-list__item--phone">
-            <p class="contacts-list__subheading">Телефон</p>
-            <a class="contacts-list__text contacts-list__text--phone" href="tel:+79837454545">+7 983 745-45-45</a>
-          </li>
-          <li class="contacts-list__item contacts-list__item--email">
-            <p class="contacts-list__subheading">Email</p>
-            <a class="contacts-list__text contacts-list__text--email"
-              href="mailto:info@lifetour.com">info@lifetour.com</a>
-          </li>
-          <li class="contacts-list__item contacts-list__item--address">
-            <p class="contacts-list__subheading">Адрес</p>
-            <address class="contacts-list__text contacts-list__text--address">г. Москва, пр-т Мира, д.&nbsp;14,&nbsp;офис&nbsp;101
-            </address>
-          </li>
-        </ul>
-      </div>
-      <div class="contacts__image-wrapper">
-        <picture>
-          <source type="image/webp" media="(min-width: 1440px)"
-            srcset="img/maps/map-desktop@1x.webp 1x, img/maps/map-desktop@2x.webp 2x" width="600" height="324">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/maps/map-tablet@1x.webp 1x, img/maps/map-tablet@2x.webp 2x" width="768" height="340">
-          <source type="image/webp" media="(min-width: 320px)"
-            srcset="img/maps/map-mobile@1x.webp 1x, img/maps/map-mobile@2x.webp 2x" width="320" height="343">
-          <source media="(min-width: 1440px)" srcset="img/maps/map-desktop@1x.jpg 1x, img/maps/map-desktop@2x.jpg 2x"
-            type="image/jpeg" width="600" height="324">
-          <source media="(min-width: 768px)" srcset="img/maps/map-tablet@1x.jpg 1x, img/maps/map-tablet@2x.jpg 2x"
-            type="image/jpeg" width="768" height="340">
-          <img class="contacts__image" src="img/maps/map-mobile@1x.jpg" srcset="img/maps/map-mobile@2x.jpg 2x"
-            width="320" height="343" alt="Наше местоположение на карте." loading="lazy">
-        </picture>
-      </div>
-    </section>
+    <div class="footer__wrapper">
+      <section class="footer__contacts contacts">
+        <div class="contacts__content-wrapper">
+          <h2 class="contacts__title section-title section-title--shadow-top" data-shadow="Контакты">Контакты</h2>
+          <p>
+            Свяжитесь с нами любым удобным для&nbsp;вас способом или&nbsp;приходите к&nbsp;нам&nbsp;в гости. Мы будем рады поделиться
+            увлекательными историями и подобрать для вас тур.
+          </p>
+          <ul class="contacts__list contacts-list">
+            <li class="contacts-list__item contacts-list__item--phone">
+              <p class="contacts-list__subheading">Телефон</p>
+              <a class="contacts-list__text contacts-list__text--phone" href="tel:+79837454545">+7 983 745-45-45</a>
+            </li>
+            <li class="contacts-list__item contacts-list__item--email">
+              <p class="contacts-list__subheading">Email</p>
+              <a class="contacts-list__text contacts-list__text--email"
+                href="mailto:info@lifetour.com">info@lifetour.com</a>
+            </li>
+            <li class="contacts-list__item contacts-list__item--address">
+              <p class="contacts-list__subheading">Адрес</p>
+              <address class="contacts-list__text contacts-list__text--address">г. Москва, пр-т Мира, д.&nbsp;14,&nbsp;офис&nbsp;101
+              </address>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/maps/map-desktop@1x.webp 1x, img/maps/map-desktop@2x.webp 2x" width="600" height="324">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/maps/map-tablet@1x.webp 1x, img/maps/map-tablet@2x.webp 2x" width="768" height="340">
+            <source type="image/webp" media="(min-width: 320px)"
+              srcset="img/maps/map-mobile@1x.webp 1x, img/maps/map-mobile@2x.webp 2x" width="320" height="343">
+            <source media="(min-width: 1440px)" srcset="img/maps/map-desktop@1x.jpg 1x, img/maps/map-desktop@2x.jpg 2x"
+              type="image/jpeg" width="600" height="324">
+            <source media="(min-width: 768px)" srcset="img/maps/map-tablet@1x.jpg 1x, img/maps/map-tablet@2x.jpg 2x"
+              type="image/jpeg" width="768" height="340">
+            <img class="contacts__image" src="img/maps/map-mobile@1x.jpg" srcset="img/maps/map-mobile@2x.jpg 2x"
+              width="320" height="343" alt="Наше местоположение на карте." loading="lazy">
+          </picture>
+        </div>
+      </section>
+    </div>
     <div class="footer__body">
       <div class="footer__nav-wrapper">
         <a class="footer__logo logo logo--footer" href="#">
