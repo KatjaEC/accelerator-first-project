@@ -37,7 +37,32 @@
 
 @media (min-width: $tablet-width) {
   .training {
+    position: relative;
     background-color: transparent;
+
+    &::before {
+      position: absolute;
+      bottom: 158px;
+      right: 0;
+      width: 465px;
+      height: 280px;
+      background-image:
+        image-set(
+          url("../../img/backgrounds/training-background-tablet@1x.webp") type("image/webp") 1x,
+          url("../../img/backgrounds/training-background-tablet@1x.jpg") type("image/jpeg") 1x);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      z-index: -1;
+      content: "";
+
+      @media (resolution >= 2dppx) {
+        background-image:
+          image-set(
+            url("../../img/backgrounds/training-background-tablet@2x.webp") type("image/webp") 2x,
+            url("../../img/backgrounds/training-background-tablet@2x.jpg") type("image/jpeg") 2x);
+      }
+    }
   }
 
   .training__wrapper {
@@ -72,34 +97,6 @@
     width: 680px;
   }
 
-  .training__description-wrapper {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      top: -85px;
-      right: -45px;
-      width: 465px;
-      height: 280px;
-      background-image:
-        image-set(
-          url("../../img/backgrounds/training-background-tablet@1x.webp") type("image/webp") 1x,
-          url("../../img/backgrounds/training-background-tablet@1x.jpg") type("image/jpeg") 1x);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      z-index: -1;
-      content: "";
-
-      @media (resolution >= 2dppx) {
-        background-image:
-          image-set(
-            url("../../img/backgrounds/training-background-tablet@2x.webp") type("image/webp") 2x,
-            url("../../img/backgrounds/training-background-tablet@2x.jpg") type("image/jpeg") 2x);
-      }
-    }
-  }
-
   .training__description-title {
     margin-bottom: 101px;
     font-size: 18px;
@@ -108,8 +105,25 @@
 }
 
 @media (min-width: $desktop-width) {
+  .training::before {
+    bottom: -30px;
+    width: 633px;
+    height: 280px;
+    background-image:
+    image-set(
+      url("../../img/backgrounds/training-background-desktop@1x.webp") type("image/webp") 1x,
+      url("../../img/backgrounds/training-background-desktop@1x.jpg") type("image/jpeg") 1x);
+
+    @media (resolution >= 2dppx) {
+      background-image:
+        image-set(
+          url("../../img/backgrounds/training-background-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/backgrounds/training-background-desktop@2x.jpg") type("image/jpeg") 2x);
+      }
+  }
+
   .training__wrapper {
-    padding: 43px 120px 37px;
+    padding: 43px 120px 64px;
     width: 1440px;
   }
 

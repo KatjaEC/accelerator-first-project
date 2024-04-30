@@ -36,3 +36,18 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .gallery-card__image {
+    height: 463px;
+    width: 284px;
+
+    &--top-half {
+      height: 233px;
+    }
+
+    &--bottom-half {
+      height: 223px;
+    }
+  }
+}

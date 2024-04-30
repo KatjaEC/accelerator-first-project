@@ -129,3 +129,60 @@
     border-radius: 6px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form {
+    background-image:
+      image-set(
+        url("../../img/backgrounds/form-background-desktop@1x.webp") type("image/webp") 1x,
+        url("../../img/backgrounds/form-background-desktop@1x.jpg") type("image/jpeg") 1x);
+
+    @media (resolution >= 2dppx) {
+      background-image:
+        image-set(
+          url("../../img/backgrounds/form-background-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/backgrounds/form-background-desktop@2x.jpg") type("image/jpeg") 2x);
+    }
+  }
+
+  .form__wrapper {
+    padding: 296px 240px 292px;
+    width: 1440px;
+  }
+
+  .form__wrapper > p {
+    margin-bottom: 17px;
+    padding-right: 0;
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .form__body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .form__wrapper > p + p {
+    margin-bottom: 40px;
+  }
+
+  .form__inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .form__input-wrapper {
+    margin-bottom: 0;
+  }
+
+  .form__button {
+    width: 180px;
+    border-radius: 0;
+  }
+
+  .form__label {
+    left: 30px;
+  }
+}

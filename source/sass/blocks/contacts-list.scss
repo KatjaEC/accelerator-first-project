@@ -52,6 +52,7 @@
 @media (min-width: $tablet-width) {
   .contacts-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
   }
 
@@ -77,5 +78,34 @@
 
   .contacts-list__text {
     line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-list {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .contacts-list__item {
+    padding: 0 0 0 56px;
+
+    &::before {
+      top: 12px;
+      width: 26px;
+      height: 26px;
+      background-size: 26px 26px;
+    }
+  }
+
+  .contacts-list__subheading {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .contacts-list__text {
+    font-size: 16px;
+    line-height: 24px;
   }
 }

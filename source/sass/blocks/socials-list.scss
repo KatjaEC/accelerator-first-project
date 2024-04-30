@@ -16,3 +16,13 @@
   width: 100%;
   height: 100%;
 }
+
+@media (min-width: $desktop-width) {
+  .socials-list {
+    gap: 15px;
+  }
+
+  .socials-list__item {
+    width: 30px;
+  }
+}
