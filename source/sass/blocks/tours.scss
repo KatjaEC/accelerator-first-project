@@ -66,9 +66,53 @@
     left: calc(100% - 17px);
     width: 10px;
     height: 14px;
-    background: url("../../__spritemap#sprite-arrow-button-next-view") no-repeat center;
-    background-size: 10px 14px;
+    background-color: $color-text;
+    mask: url("../../__spritemap#sprite-arrow-button-next-view");
+    mask-size: 10px 14px;
+    mask-repeat: no-repeat;
+    mask-position: center;
     content: "";
+  }
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:hover::before {
+    background-color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus {
+    color: $color-secondary;
+    outline-color: $color-secondary;
+  }
+
+  &:focus::before {
+    background-color: $color-secondary;
+  }
+
+  &:active {
+    color: $color-secondary-darker;
+  }
+
+  &:active::before {
+    background-color: $color-secondary-darker;
+  }
+
+  &:disabled,
+  &--inactive,
+  &--inactive:hover,
+  &--inactive:focus,
+  &--inactive:active {
+    color: #999999;
+  }
+
+  &:disabled::before,
+  &--inactive::before,
+  &--inactive:hover::before,
+  &--inactive:focus::before,
+  &--inactive:active::before {
+    background-color: #999999;
   }
 }
 

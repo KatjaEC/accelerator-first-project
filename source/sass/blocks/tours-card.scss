@@ -112,7 +112,7 @@
 .tours-card__details-wrapper {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr auto;
+  grid-template-columns: 1fr 1fr 69px;
   gap: 8px;
   padding-top: 16px;
 
@@ -213,6 +213,7 @@
 
   .tours-card__details-wrapper {
     padding-right: 2px;
+    grid-template-columns: 1fr 1fr auto;
     gap: 10px 27px;
   }
 }

@@ -55,4 +55,39 @@
     mask-repeat: no-repeat;
     mask-position: 7px 6px;
   }
+
+  &:hover {
+    border-color: $color-text;
+  }
+
+  &:focus {
+    border-color: transparent;
+    outline-color: $color-secondary-darker;
+  }
+
+  &:active {
+    background-color: $color-secondary;
+  }
+
+  &:active::after {
+    background-color: $color-primary;
+  }
+
+  &:disabled,
+  &--inactive,
+  &--inactive:hover,
+  &--inactive:focus,
+  &--inactiv:active {
+    background-color: $color-primary;
+    border-color: rgba(45, 56, 63, 0.3);
+    outline-color: transparent;
+  }
+
+  &:disabled::after,
+  &--inactive::after,
+  &--inactive:hover::after,
+  &--inactive:focus::after,
+  &--inactive:active::after {
+    background-color: rgba(45, 56, 63, 0.3);
+  }
 }

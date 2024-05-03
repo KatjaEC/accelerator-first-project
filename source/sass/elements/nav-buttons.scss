@@ -1,33 +1,59 @@
 .nav-buttons {
+  width: 126px;
   display: none;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 4px;
+  z-index: 5;
+}
+
+.nav-buttons__button {
+  width: 37px;
+  height: 35px;
+  background-color: $color-secondary;
+  color: $color-primary;
+  border: 1px solid transparent;
+  appearance: none;
+  cursor: pointer;
+
+  &--next {
+    padding-bottom: 3px;
+    padding-left: 3px;
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-secondary-darker;
+    border-color: $color-secondary-darker;
+  }
+
+  &:focus {
+    background-color: $color-primary;
+    color: $color-secondary-darker;
+    border-color: transparent;
+    outline-color: $color-text;
+  }
+
+  &:active {
+    background-color: $color-secondary-darker;
+    color: $color-primary;
+  }
+
+  &:disabled,
+  &--inactive,
+  &--inactive:hover,
+  &--inactive:focus,
+  &--inactive:active {
+    background-color: #999999;
+    color: $color-primary;
+    border-color: transparent;
+    outline: transparent;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .nav-buttons {
-    width: 126px;
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 4px;
-  }
-
-  .nav-buttons__button {
-    width: 37px;
-    height: 35px;
-    background-color: $color-secondary;
-    color: $color-primary;
-    border: 1px solid transparent;
-    appearance: none;
-    cursor: pointer;
-
-    &--next {
-      padding-bottom: 3px;
-      padding-left: 3px;
-      transform: rotate(180deg);
-    }
-
-    &--inactive {
-      background-color: #999999;
-    }
   }
 }

@@ -1,13 +1,15 @@
 .nav-menu__list {
-  display: none;
+  display: block;
   margin: 0;
   width: 320px;
+  max-height: calc(100vh - 40%);
   padding: 15px 188px 50px 15px;
   background-color: $color-secondary;
   list-style: none;
+  overflow-y: scroll;
 
-  &--opened {
-    display: block;
+  &--closed {
+    display: none;
   }
 }
 
@@ -72,12 +74,15 @@
 
 @media (min-width: $desktop-width) {
   .nav-menu__list {
-    padding: 0;
-    margin: 0 auto 0 102px;
-    width: 578px;
+    padding: 11px 0;
+    // margin: 0 97px;
+    // width: 592px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 31px;
+    // gap: 10px 21px;
+
+    width: 100%;
+    gap: 10px 21px;
   }
 
   .nav-menu__item:not(:last-of-type) {
@@ -85,10 +90,35 @@
   }
 
   .nav-menu__link {
-    padding: 14px 0;
+    padding: 2px 4px;
     font-weight: 400;
     letter-spacing: 0;
     text-transform: none;
+    border: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid $color-primary;
+    }
+
+    &:focus {
+      border-color: $color-primary;
+      outline: transparent;
+    }
+
+    &:active {
+      color: $color-secondary-darker;
+      border-color: transparent;
+    }
+
+    &:disabled,
+    &--inactive,
+    &--inactive:hover,
+    &--inactive:focus,
+    &--inactive:active {
+      color: #999999;
+      border-color: transparent;
+      outline: transparent;
+    }
   }
 
   .nav-menu__toggle {

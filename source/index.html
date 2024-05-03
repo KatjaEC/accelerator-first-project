@@ -24,7 +24,7 @@
         <button class="nav-menu__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <ul class="nav-menu__list">
+        <ul class="nav-menu__list nav-menu__list--closed">
           <li class="nav-menu__item">
             <a class="nav-menu__link" href="#">Туры</a>
           </li>
@@ -52,9 +52,9 @@
     <h1 class="visually-hidden">Сайт компании Лайфтур, специализирующейся на организации походов в горы.</h1>
     <section class="hero" data-test="hero">
       <h2 class="visually-hidden">Слайдер с примерами туров.</h2>
-      <div class="hero__slider-wrapper hero-slider">
-        <ol class="hero-slider__list">
-          <li class="hero-slider__item">
+      <div class="hero__slider-wrapper hero-slider swiper">
+        <ol class="hero-slider__list swiper-wrapper">
+          <li class="hero-slider__item swiper-slide">
             <div class="hero-slider__image-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
@@ -92,7 +92,7 @@
               </ul>
             </div>
           </li>
-          <li class="hero-slider__item">
+          <li class="hero-slider__item hero-slider__item--additional-image swiper-slide">
             <div class="hero-slider__image-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
@@ -114,10 +114,10 @@
                   srcset="img/photos/hero-slide-2-mobile@2x.jpg" width="320" height="568" alt="Вид на горы Камчатки.">
               </picture>
             </div>
-            <div class="hero-slider__content-wrapper">
+            <div class="hero-slider__content-wrapper hero-slider__content-wrapper--additional-image">
               <div class="hero-slider__text-wrapper">
                 <h3>Невероятная природа Камчатки</h3>
-                <p>Незабываемое приключение, во&nbsp;время которого вы отправитесь в&nbsp;путешествие по одному из самых
+                <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по одному из самых
                   нетронутых
                   уголков дикой природы в мире.</p>
               </div>
@@ -128,7 +128,7 @@
               </ul>
             </div>
           </li>
-          <li class="hero-slider__item">
+          <li class="hero-slider__item swiper-slide">
             <div class="hero-slider__image-wrapper">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
@@ -164,23 +164,25 @@
             </div>
           </li>
         </ol>
-        <ol class="hero-slider__pagination slider-pagination">
-          <li class="slider-pagination__item">
-            <button class="slider-pagination__button slider-pagination__button--active" type="button">
-              <span class="visually-hidden">Первый экран слайдера.</span>
-            </button>
-          </li>
-          <li class="slider-pagination__item">
-            <button class="slider-pagination__button" type="button">
-              <span class="visually-hidden">Второй экран слайдера.</span>
-            </button>
-          </li>
-          <li class="slider-pagination__item">
-            <button class="slider-pagination__button" type="button">
-              <span class="visually-hidden">Третий экран слайдера.</span>
-            </button>
-          </li>
-        </ol>
+        <div class="hero-slider__pagination-wrapper">
+          <ol class="hero-slider__pagination slider-pagination swiper-pagination">
+            <li class="slider-pagination__item">
+              <button class="slider-pagination__button slider-pagination__button--active" type="button">
+                <span class="visually-hidden">Первый экран слайдера.</span>
+              </button>
+            </li>
+            <li class="slider-pagination__item">
+              <button class="slider-pagination__button" type="button">
+                <span class="visually-hidden">Второй экран слайдера.</span>
+              </button>
+            </li>
+            <li class="slider-pagination__item">
+              <button class="slider-pagination__button" type="button">
+                <span class="visually-hidden">Третий экран слайдера.</span>
+              </button>
+            </li>
+          </ol>
+        </div>
       </div>
     </section>
     <section class="tours" data-test="tours">
@@ -203,9 +205,9 @@
             <span class="visually-hidden">Следующий тур.</span>
           </button>
         </div>
-        <div class="tours__list-wrapper">
-          <ol class="tours__list tours-list">
-            <li class="tours-list__item tours-card">
+        <div class="tours__list-wrapper swiper">
+          <ol class="tours__list tours-list swiper-wrapper">
+            <li class="tours-list__item tours-card swiper-slide">
               <div class="tours-card__image-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -254,7 +256,7 @@
                 </div>
               </div>
             </li>
-            <li class="tours-list__item tours-card">
+            <li class="tours-list__item tours-card swiper-slide">
               <div class="tours-card__image-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -303,7 +305,7 @@
                 </div>
               </div>
             </li>
-            <li class="tours-list__item tours-card">
+            <li class="tours-list__item tours-card swiper-slide">
               <div class="tours-card__image-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -352,7 +354,7 @@
                 </div>
               </div>
             </li>
-            <li class="tours-list__item tours-card">
+            <li class="tours-list__item tours-card swiper-slide">
               <div class="tours-card__image-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -430,9 +432,9 @@
             <span class="visually-hidden">Следующая карточка инструктора.</span>
           </button>
         </div>
-        <div class="training__slider-wrapper">
-          <ul class="training__slider instructors-slider">
-            <li class="instructors-slider__item instructor-card">
+        <div class="training__slider-wrapper swiper">
+          <ul class="training__slider instructors-slider swiper-wrapper">
+            <li class="instructors-slider__item instructor-card swiper-slide">
               <div class="instructor-card__image-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -465,7 +467,7 @@
                 Строгий и внимательный инструктор, весёлый и&nbsp;общительный человек. Любит природу.
               </p>
             </li>
-            <li class="instructors-slider__item instructor-card">
+            <li class="instructors-slider__item instructor-card swiper-slide">
               <div class="instructor-card__image-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -500,7 +502,7 @@
                 назначение жизни.
               </p>
             </li>
-            <li class="instructors-slider__item instructor-card instructor-card--active">
+            <li class="instructors-slider__item instructor-card instructor-card--active swiper-slide">
               <div class="instructor-card__image-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -534,7 +536,7 @@
                 с&nbsp;ней&nbsp;чувствуешь себя спокойно&nbsp;и&nbsp;уверенно.
               </p>
             </li>
-            <li class="instructors-slider__item instructor-card">
+            <li class="instructors-slider__item instructor-card swiper-slide">
               <div class="instructor-card__image-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -569,7 +571,7 @@
                 путешествует по Европе.
               </p>
             </li>
-            <li class="instructors-slider__item instructor-card">
+            <li class="instructors-slider__item instructor-card swiper-slide">
               <div class="instructor-card__image-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -672,9 +674,9 @@
             <span class="visually-hidden">Следующий отзыв.</span>
           </button>
         </div>
-        <div class="reviews__list-wrapper">
-          <ul class="reviews__list reviews-list">
-            <li class="reviews-list__item review-card">
+        <div class="reviews__list-wrapper swiper">
+          <ul class="reviews__list reviews-list swiper-wrapper">
+            <li class="reviews-list__item review-card swiper-slide">
               <div class="review-card__image-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -712,7 +714,7 @@
                 <span class="review-card__user-info">38 лет, Москва</span>
               </div>
             </li>
-            <li class="reviews-list__item review-card">
+            <li class="reviews-list__item review-card swiper-slide">
               <div class="review-card__image-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -750,7 +752,7 @@
                 <span class="review-card__user-info">25 лет, Владивосток</span>
               </div>
             </li>
-            <li class="reviews-list__item review-card">
+            <li class="reviews-list__item review-card swiper-slide">
               <div class="review-card__image-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -787,7 +789,7 @@
                 <span class="review-card__user-info">23 года, Кострома</span>
               </div>
             </li>
-            <li class="reviews-list__item review-card">
+            <li class="reviews-list__item review-card swiper-slide">
               <div class="review-card__image-wrapper">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -847,52 +849,54 @@
             <span class="visually-hidden">Следующее преимущество.</span>
           </button>
         </div>
-        <ul class="advantages__list advantages-list">
-          <li class="advantages-list__item advantages-list__item--safety">
-            <h3>Безопасность</h3>
-            <p>
-              Уделяем внимание безопасности клиентов, внедряя строгие процедуры и&nbsp;протоколы безопасности.
-              Имеем&nbsp;планы
-              действий на&nbsp;случай непредвиденных обстоятельств и&nbsp;даём гарантию полной безопасности
-              во&nbsp;время всего тура.
-            </p>
-          </li>
-          <li class="advantages-list__item advantages-list__item--expertise">
-            <h3>Экспертиза и знания</h3>
-            <p>
-              Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике
-              безопасности.
-              <span>Это гарантирует</span>, что&nbsp;наши клиенты находятся в&nbsp;надёжных руках и могут в&nbsp;полной
-              мере насладиться опытом без&nbsp;опасений.
-            </p>
-          </li>
-          <li class="advantages-list__item advantages-list__item--equipment">
-            <h3>Оборудование и снаряжение</h3>
-            <p>
-              Мы предоставляем клиентам все&nbsp;необходимое&nbsp;оборудование, необходимое&nbsp;для&nbsp;путешествия.
-              Это&nbsp;избавляет клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение,
-              что&nbsp;делает путешествие более удобным и&nbsp;экономически
-              выгодным.
-            </p>
-          </li>
-          <li class="advantages-list__item advantages-list__item--routes">
-            <h3>Индивидуальные маршруты</h3>
-            <p>
-              Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и&nbsp;интересам.
-              Мы&nbsp;также&nbsp;можем
-              адаптировать маршруты к вашим конкретным потребностям и&nbsp;предпочтениям, чтобы&nbsp;вы&nbsp;получили
-              индивидуальный
-              опыт.
-            </p>
-          </li>
-          <li class="advantages-list__item advantages-list__item--environment">
-            <h3>Бережное отношение &nbsp;к&nbsp;природе</h3>
-            <p>
-              Уделяем первостепенное внимание охране окружающей среды и гарантируем,&nbsp;что туры оказывают минимальное
-              воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
-            </p>
-          </li>
-        </ul>
+        <div class="advantages__list-wrapper swiper">
+          <ul class="advantages__list advantages-list swiper-wrapper">
+            <li class="advantages-list__item advantages-list__item--safety swiper-slide">
+              <h3>Безопасность</h3>
+              <p>
+                Уделяем внимание безопасности клиентов, внедряя строгие процедуры и&nbsp;протоколы безопасности.
+                Имеем&nbsp;планы
+                действий на&nbsp;случай непредвиденных обстоятельств и&nbsp;даём гарантию полной безопасности
+                во&nbsp;время всего тура.
+              </p>
+            </li>
+            <li class="advantages-list__item advantages-list__item--expertise swiper-slide">
+              <h3>Экспертиза и знания</h3>
+              <p>
+                Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике
+                безопасности.
+                <span>Это гарантирует</span>, что&nbsp;наши клиенты находятся в&nbsp;надёжных руках и могут в&nbsp;полной
+                мере насладиться опытом без&nbsp;опасений.
+              </p>
+            </li>
+            <li class="advantages-list__item advantages-list__item--equipment swiper-slide">
+              <h3>Оборудование и снаряжение</h3>
+              <p>
+                Мы предоставляем клиентам все&nbsp;необходимое&nbsp;оборудование, необходимое&nbsp;для&nbsp;путешествия.
+                Это&nbsp;избавляет клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение,
+                что&nbsp;делает путешествие более удобным и&nbsp;экономически
+                выгодным.
+              </p>
+            </li>
+            <li class="advantages-list__item advantages-list__item--routes swiper-slide">
+              <h3>Индивидуальные маршруты</h3>
+              <p>
+                Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и&nbsp;интересам.
+                Мы&nbsp;также&nbsp;можем
+                адаптировать маршруты к вашим конкретным потребностям и&nbsp;предпочтениям, чтобы&nbsp;вы&nbsp;получили
+                индивидуальный
+                опыт.
+              </p>
+            </li>
+            <li class="advantages-list__item advantages-list__item--environment swiper-slide">
+              <h3>Бережное отношение &nbsp;к&nbsp;природе</h3>
+              <p>
+                Уделяем первостепенное внимание охране окружающей среды и гарантируем,&nbsp;что туры оказывают минимальное
+                воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="gallery" data-test="gallery">
@@ -917,9 +921,9 @@
             <span class="visually-hidden">Следующее фото.</span>
           </button>
         </div>
-        <div class="gallery__slider-wrapper">
-          <ul class="gallery__slider">
-            <li class="gallery__item gallery-card">
+        <div class="gallery__slider-wrapper swiper">
+          <ul class="gallery__slider swiper-wrapper">
+            <li class="gallery__item gallery-card swiper-slide">
               <div class="gallery-card__image-wrapper gallery-card__image-wrapper--bigger">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -987,7 +991,7 @@
                 </picture>
               </div>
             </li>
-            <li class="gallery__item gallery-card">
+            <li class="gallery__item gallery-card swiper-slide">
               <div class="gallery-card__image-wrapper gallery-card__image-wrapper--bigger">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -1057,7 +1061,7 @@
                 </picture>
               </div>
             </li>
-            <li class="gallery__item gallery-card">
+            <li class="gallery__item gallery-card swiper-slide">
               <div class="gallery-card__image-wrapper gallery-card__image-wrapper--bigger">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -1093,12 +1097,12 @@
         <form class="form__body" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form__inputs">
             <div class="form__input-wrapper">
+              <input class="form__input" type="tel" name="phone" id="phone" pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" required>
               <label class="form__label" for="phone">Телефон</label>
-              <input class="form__input" type="tel" name="phone" id="phone" required>
             </div>
             <div class="form__input-wrapper">
+              <input class="form__input" type="email" name="email" id="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
               <label class="form__label" for="email">Email</label>
-              <input class="form__input" type="email" name="email" id="email" required>
             </div>
           </div>
           <button class="form__button button button--primary" type="submit">Отправить</button>

@@ -42,6 +42,7 @@
 
 .footer__phone {
   display: none;
+  max-width: 200px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 600;
@@ -108,23 +109,37 @@
   }
 
   .footer__body {
-    padding: 32px 120px;
+    padding: 41px 120px 31px;
     width: 1440px;
   }
 
   .footer__nav-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
+    gap: 10px 20px;
   }
 
   .footer__logo {
     margin: 0 0 0 29px;
-    padding-top: 9px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:focus {
+      outline: 1px solid $color-text;
+    }
+
+    &:active {
+      opacity: 0.5;
+      outline: transparent;
+    }
   }
 
   .footer__nav-list {
+    padding: 11px 0;
     margin: 0 auto;
-    width: 600px;
-    gap: 20px 31px;
+    width: 610px;
+    gap: 10px 21px;
   }
 
   .footer__nav-item:last-of-type {
@@ -132,14 +147,62 @@
   }
 
   .footer__nav-link {
-    padding: 22px 0 14px;
+    padding: 2px 4px;
     font-size: 16px;
     line-height: 16px;
+    border: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid $color-text;
+    }
+
+    &:focus {
+      border-color: $color-text;
+      outline: transparent;
+    }
+
+    &:active {
+      color: $color-secondary;
+      border-color: transparent;
+    }
+
+    &:disabled,
+    &--inactive,
+    &--inactive:hover,
+    &--inactive:focus,
+    &--inactive:active {
+      color: #999999;
+      border-color: transparent;
+      outline: transparent;
+    }
   }
 
   .footer__phone {
-    padding: 23px 0 0;
+    padding: 13px 0;
     display: block;
+
+    &:hover {
+      color: rgba(2, 102, 193, 0.1);
+    }
+
+    &:focus {
+      color: $color-secondary;
+      outline: transparent;
+    }
+
+    &:active {
+      color: $color-secondary-darker;
+      outline: transparent;
+    }
+
+    &:disabled,
+    &--inactive,
+    &--inactive:hover,
+    &--inactive:focus,
+    &--inactive:active {
+      color: #999999;
+      outline: transparent;
+    }
   }
 
   .footer__socials {
@@ -147,6 +210,13 @@
   }
 
   .footer__confidentiality {
-    margin-top: 22px;
+    margin: 21px auto 0;
+    width: 300px;
+    border: 1px solid transparent;
+
+    &:focus {
+      border-color: $color-text;
+      outline: transparent;
+    }
   }
 }

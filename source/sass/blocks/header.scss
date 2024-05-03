@@ -13,6 +13,19 @@
   display: block;
   margin: 0 0 16px auto;
   width: 142px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: 1px solid $color-primary;
+  }
+
+  &:active {
+    opacity: 0.5;
+    outline: transparent;
+  }
 }
 
 .header__nav {
@@ -27,12 +40,36 @@
 .header__phone {
   display: block;
   margin-left: auto;
-  width: 142px;
+  min-width: 142px;
+  max-width: 200px;
   line-height: 14px;
   font-weight: 600;
   color: $color-primary;
   text-decoration: none;
   text-align: right;
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus {
+    color: $color-text;
+    outline: transparent;
+  }
+
+  &:active {
+    color: $color-secondary-darker;
+    outline: transparent;
+  }
+
+  &:disabled,
+  &--inactive,
+  &--inactive:hover,
+  &--inactive:focus,
+  &--inactive:active {
+    color: #999999;
+    outline: transparent;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -58,22 +95,21 @@
   .header__wrapper {
     padding: 42px 120px 40px;
     width: 1440px;
-    display: grid;
-    grid-template-columns: 205px 775px 160px;
-    gap: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
   }
 
   .header__logo {
-    margin: 0;
-    padding: 0 31px 0 32px;
-    width: 205px;
+    margin: 0 0 0 32px;
   }
 
   .header__nav {
     position: relative;
     top: auto;
     left: auto;
-    width: 774px;
+    margin: 0 70px 0 138px;
+    width: 610px;
     height: auto;
     background-color: $color-secondary;
     z-index: 0;
