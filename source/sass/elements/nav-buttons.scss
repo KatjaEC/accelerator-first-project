@@ -8,36 +8,66 @@
 }
 
 .nav-buttons__button {
+  position: relative;
   width: 37px;
   height: 35px;
   background-color: $color-secondary;
-  color: $color-primary;
   border: 1px solid transparent;
   appearance: none;
   cursor: pointer;
 
-  &--next {
-    padding-bottom: 3px;
-    padding-left: 3px;
+  &::after {
+    position: absolute;
+    top: calc(50% - 4px);
+    left: calc(50% - 8px);
+    width: 14px;
+    height: 9px;
+    background-color: $color-primary;
+    content: "";
+  }
+
+  &--previous::after {
+    mask: url("../../__spritemap#sprite-arrow-prev-view");
+    mask-size: 15px 8px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  &--next::after {
+    top: calc(50% - 4px);
+    left: calc(50% - 6px);
+    mask: url("../../__spritemap#sprite-arrow-prev-view");
+    mask-size: 15px 8px;
+    mask-repeat: no-repeat;
+    mask-position: center;
     transform: rotate(180deg);
   }
 
   &:hover {
     background-color: $color-primary;
-    color: $color-secondary-darker;
     border-color: $color-secondary-darker;
+  }
+
+  &:hover::after {
+    background-color: $color-secondary-darker;
   }
 
   &:focus {
     background-color: $color-primary;
-    color: $color-secondary-darker;
     border-color: transparent;
     outline-color: $color-text;
   }
 
+  &:focus::after {
+    background-color: $color-secondary-darker;
+  }
+
   &:active {
     background-color: $color-secondary-darker;
-    color: $color-primary;
+  }
+
+  &:active::after {
+    background-color: $color-primary;
   }
 
   &:disabled,
@@ -46,9 +76,16 @@
   &--inactive:focus,
   &--inactive:active {
     background-color: #999999;
-    color: $color-primary;
     border-color: transparent;
     outline: transparent;
+  }
+
+  &:disabled::after,
+  &--inactive::after,
+  &--inactive:hover::after,
+  &--inactive:focus::after,
+  &--inactive:active::after {
+    background-color: $color-primary;
   }
 }
 

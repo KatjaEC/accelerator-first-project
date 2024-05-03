@@ -9,6 +9,10 @@
   position: relative;
   width: 290px;
   flex-shrink: 0;
+
+  &:not(:last-of-type) {
+    margin-right: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {

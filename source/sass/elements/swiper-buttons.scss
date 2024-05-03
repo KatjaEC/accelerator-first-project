@@ -1,0 +1,113 @@
+.nav-buttons > .swiper-button-prev {
+  position: relative;
+  top: 0;
+  left: auto;
+  margin: 0;
+  width: 37px;
+  height: 35px;
+  display: block;
+  background-color: $color-secondary;
+  border: 1px solid transparent;
+  appearance: none;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    border-color: $color-secondary-darker;
+  }
+
+  &:hover::after {
+    background-color: $color-secondary-darker;
+  }
+
+  &:focus {
+    background-color: $color-primary;
+    border-color: transparent;
+    outline-color: $color-text;
+  }
+
+  &:focus::after {
+    background-color: $color-secondary-darker;
+  }
+
+  &:active {
+    background-color: $color-secondary-darker;
+  }
+
+  &:active::after {
+    background-color: $color-primary;
+  }
+
+  &:disabled {
+    background-color: #999999;
+    border-color: transparent;
+    outline: transparent;
+    opacity: 1;
+  }
+
+  &:disabled::after {
+    background-color: $color-primary;
+    opacity: 1;
+  }
+}
+
+.nav-buttons > .swiper-button-next {
+  position: relative;
+  top: 0;
+  right: auto;
+  margin: 0;
+  width: 37px;
+  height: 35px;
+  display: block;
+  background-color: $color-secondary;
+  border: 1px solid transparent;
+  appearance: none;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    border-color: $color-secondary-darker;
+  }
+
+  &:hover::after {
+    background-color: $color-secondary-darker;
+  }
+
+  &:focus {
+    background-color: $color-primary;
+    border-color: transparent;
+    outline-color: $color-text;
+  }
+
+  &:focus::after {
+    background-color: $color-secondary-darker;
+  }
+
+  &:active {
+    background-color: $color-secondary-darker;
+  }
+
+  &:active::after {
+    background-color: $color-primary;
+  }
+
+  &:disabled {
+    background-color: #999999;
+    border-color: transparent;
+    outline: transparent;
+    opacity: 1;
+  }
+
+  &:disabled::after {
+    background-color: $color-primary;
+    opacity: 1;
+  }
+}

@@ -14,16 +14,19 @@ const toursSlider = new Swiper (swiperTours, {
     prevEl: '.tours__slider-nav .swiper-button-prev',
   },
   watchSlidesProgress: true,
-  slidesPerView: 1,
+  initialSlide: 0,
   breakpoints: {
     320: {
       spaceBetween: 20,
+      slidesPerView: 1,
     },
     768: {
       spaceBetween: 18,
+      slidesPerView: 2,
     },
     1440: {
       spaceBetween: 30,
+      slidesPerView: 3,
       simulateTouch: false,
     }
   },
