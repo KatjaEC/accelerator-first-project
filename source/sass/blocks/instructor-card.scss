@@ -2,11 +2,6 @@
   padding: 14px;
   background-color: $color-primary;
   border: 1px solid rgba(2, 102, 193, 0.1);
-  order: 1;
-
-  &--active {
-    order: 0;
-  }
 }
 
 .instructor-card__image-wrapper {
@@ -27,7 +22,7 @@
 
 .instructor-card__name-wrapper > h4 {
   margin: 0 0 14px;
-  width: 144px;
+  width: 140px;
   line-height: 16px;
   font-weight: 700;
 }
@@ -41,10 +36,6 @@
 @media (min-width: $tablet-width) {
   .instructor-card {
     padding: 14px 15px 14px 14px;
-
-    &--active {
-      order: 1;
-    }
   }
 
   .instructor-card__image {

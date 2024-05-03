@@ -1,6 +1,7 @@
 .instructors-slider {
   position: relative;
   display: flex;
+  align-items: stretch;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -8,6 +9,7 @@
 
 .instructors-slider__item {
   width: 290px;
+  min-height: 356px;
   flex-shrink: 0;
 
   &:not(:last-of-type) {
@@ -25,11 +27,13 @@
 @media (min-width: $tablet-width) {
   .instructors-slider__item {
     width: 213px;
+    min-height: 388px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .instructors-slider__item {
     width: 285px;
+    min-height: 356px;
   }
 }
