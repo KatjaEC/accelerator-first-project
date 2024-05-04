@@ -70,7 +70,7 @@
 
 .hero-slider__pagination-wrapper {
   position: absolute;
-  bottom: 32px;
+  bottom: 40px;
   left: 0;
   margin: 0 auto;
   padding: 0 15px;
@@ -129,6 +129,10 @@
     padding: 0 80px;
     font-size: 17px;
     line-height: 24px;
+  }
+
+  .hero-slider__pagination-wrapper {
+    min-height: 20px;
   }
 
   .hero-slider__button {
@@ -199,7 +203,7 @@
   .hero-slider__pagination-wrapper {
     left: auto;
     right: 120px;
-    bottom: 84px;
+    bottom: 92px;
     padding: 0;
     width: 230px;
     min-height: 20px;

@@ -30,6 +30,10 @@ const heroSlider = new Swiper (swiperHero, {
 
 const swiperContainer = document.querySelector('.swiper-wrapper');
 const swiperLinks = swiperContainer.querySelectorAll('a[href]');
+const swiperPaginationList = swiperHero.querySelector('.slider-pagination');
+
+swiperPaginationList.style.top = 0;
+swiperPaginationList.style.bottom = 0;
 
 const setTabIndex = () => heroSlider.slides[heroSlider.activeIndex].querySelector('a').setAttribute('tabindex', '0');
 
