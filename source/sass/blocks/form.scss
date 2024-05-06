@@ -89,7 +89,9 @@
     outline: transparent;
   }
 
-  &--error {
+  &--error,
+  &--error:hover,
+  &--error:focus {
     border-color: #ff121f;
   }
 
