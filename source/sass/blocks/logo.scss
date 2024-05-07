@@ -1,0 +1,30 @@
+.logo {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &--header:focus {
+    outline: 1px solid $color-primary;
+  }
+
+  &--footer:focus {
+    outline: 1px solid $color-text;
+  }
+
+  &:active {
+    opacity: 0.5;
+    outline: transparent;
+  }
+
+  &--inactive:hover {
+    opacity: 1;
+  }
+
+  &--inactive:focus {
+    outline: transparent;
+  }
+
+  &--inactive:active {
+    opacity: 1;
+  }
+}

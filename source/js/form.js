@@ -43,7 +43,7 @@ const emailValid = validityCheck(emailInput);
 
 if (form) {
   form.addEventListener('submit', (evt) => {
-    if (!phoneValid || !emailValid) {
+    if (phoneValid && emailValid) {
       evt.preventDefault();
       submitButton.textContent = SubmitFormText.IDLE;
     }

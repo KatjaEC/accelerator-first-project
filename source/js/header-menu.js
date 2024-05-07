@@ -3,11 +3,13 @@ const navMenuToggle = document.querySelector('.nav-menu__toggle');
 
 const openMenu = () => {
   navMenu.classList.remove('nav-menu__list--closed');
+  navMenuToggle.classList.add('nav-menu__toggle--opened');
   document.body.style.overflow = 'hidden';
 };
 
 const closeMenu = () => {
   navMenu.classList.add('nav-menu__list--closed');
+  navMenuToggle.classList.remove('nav-menu__toggle--opened');
   document.body.style.overflow = 'visible';
 };
 

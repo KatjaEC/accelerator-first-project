@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 const swiperTours = document.querySelector('.tours__list-wrapper.swiper');
+const tourSlides = swiperTours.querySelectorAll('.tours-list__item.swiper-slide');
 
 const toursSlider = new Swiper (swiperTours, {
   speed: DEFAULT_SPEED,
@@ -30,6 +31,10 @@ const toursSlider = new Swiper (swiperTours, {
       simulateTouch: false,
     }
   },
+});
+
+tourSlides.forEach((slide) => {
+  slide.style.height = 'auto';
 });
 
 export { toursSlider };

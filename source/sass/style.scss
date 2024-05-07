@@ -12,10 +12,11 @@
 @import "elements/button";
 @import "elements/section-title";
 @import "elements/nav-buttons";
-@import "elements/swiper-buttons.scss";
+@import "elements/swiper-buttons";
 
 // BLOCKS
 @import "blocks/header";
+@import "blocks/logo";
 @import "blocks/nav-menu";
 @import "blocks/slider-pagination";
 @import "blocks/details-list";

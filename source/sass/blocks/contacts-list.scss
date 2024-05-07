@@ -47,6 +47,22 @@
   font-style: normal;
   color: $color-text;
   text-decoration: none;
+
+  &--phone:hover,
+  &--email:hover {
+    text-decoration: underline;
+  }
+
+  &--phone:focus,
+  &--email:focus {
+    outline: 1px solid $color-text;
+  }
+
+  &--phone:active,
+  &--email:active {
+    opacity: 0.6;
+    outline: transparent;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -111,8 +111,17 @@
     width: 1440px;
   }
 
+  .gallery__slider {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
   .gallery__item {
     width: 284px;
     max-height: 463px;
+
+    &:not(:last-of-type) {
+      margin-right: 0;
+    }
   }
 }

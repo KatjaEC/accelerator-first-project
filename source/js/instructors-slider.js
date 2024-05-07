@@ -24,6 +24,7 @@ const instructorsSlider = new Swiper (swiperInstructors, {
     },
     768: {
       slidesPerView: 3,
+      width: 678,
     },
     1440: {
       slidesPerView: 4,

@@ -16,7 +16,7 @@
 <body class="page__body">
   <header class="header" data-test="header">
     <div class="header__wrapper">
-      <a class="header__logo logo logo--header" href="#">
+      <a class="header__logo logo logo--inactive logo--header" href="#">
         <img class="logo__image" src="img/logos/logo-header.svg" width="142" height="42"
           alt="Логотип компании Лайфтур.">
       </a>
@@ -45,7 +45,9 @@
           </li>
         </ul>
       </nav>
-      <a class="header__phone" href="tel:+78000000000">8 800 000-00-00</a>
+      <div class="header__phone-wrapper">
+        <a class="header__phone" href="tel:+78000000000">8 800 000-00-00</a>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -164,24 +166,7 @@
             </div>
           </li>
         </ol>
-        <div class="hero-slider__pagination-wrapper">
-          <ol class="hero-slider__pagination slider-pagination swiper-pagination">
-            <li class="slider-pagination__item">
-              <button class="slider-pagination__button slider-pagination__button--active" type="button">
-                <span class="visually-hidden">Первый экран слайдера.</span>
-              </button>
-            </li>
-            <li class="slider-pagination__item">
-              <button class="slider-pagination__button" type="button">
-                <span class="visually-hidden">Второй экран слайдера.</span>
-              </button>
-            </li>
-            <li class="slider-pagination__item">
-              <button class="slider-pagination__button" type="button">
-                <span class="visually-hidden">Третий экран слайдера.</span>
-              </button>
-            </li>
-          </ol>
+        <div class="hero-slider__pagination-wrapper slider-pagination swiper-pagination">
         </div>
       </div>
     </section>
@@ -1176,7 +1161,7 @@
     </div>
     <div class="footer__body">
       <div class="footer__nav-wrapper">
-        <a class="footer__logo logo logo--footer" href="#">
+        <a class="footer__logo logo logo--footer" href="index.html">
           <img class="logo__image" src="img/logos/logo-footer.svg" width="142" height="42"
             alt="Логотип компании Лайфтур.">
         </a>
@@ -1200,7 +1185,9 @@
             <a class="footer__nav-link" href="#">Контакты</a>
           </li>
         </ul>
-        <a class="footer__phone" href="tel:+78007253232">8 800 725-32-32</a>
+        <div class="footer__phone-wrapper">
+          <a class="footer__phone" href="tel:+78007253232">8 800 725-32-32</a>
+        </div>
       </div>
       <ul class="footer__socials socials-list">
         <li class="socials-list__item">
