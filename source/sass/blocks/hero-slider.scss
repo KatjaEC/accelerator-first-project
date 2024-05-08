@@ -210,6 +210,10 @@
   .hero-slider__details {
     margin-top: 134px;
     display: flex;
+
+    &:not(:first-of-type) {
+      margin-top: 10px;
+    }
   }
 
   .hero-slider__pagination-wrapper {

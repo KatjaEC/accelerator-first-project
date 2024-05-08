@@ -9,10 +9,17 @@
   width: 320px;
 }
 
-.header__logo {
-  display: block;
+.header__logo-wrapper {
   margin: 0 0 16px auto;
   width: 142px;
+}
+
+.header__logo {
+  display: block;
+
+  &:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
 }
 
 .header__nav {
@@ -70,7 +77,7 @@
     grid-template-columns: 375px 1fr;
   }
 
-  .header__logo {
+  .header__logo-wrapper {
     margin-bottom: 0;
   }
 
@@ -90,7 +97,7 @@
     gap: 10px 20px;
   }
 
-  .header__logo {
+  .header__logo-wrapper {
     margin: 0 0 0 32px;
   }
 

@@ -15,20 +15,34 @@
   object-fit: cover;
 }
 
-.instructor-card__name-wrapper {
+.instructor-card__info-wrapper {
+  margin: 0 0 14px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.instructor-card__name-wrapper > h4 {
-  margin: 0 0 14px;
+.instructor-card__name-wrapper {
   width: 140px;
+}
+
+.instructor-card__name-wrapper > h4 {
+  margin: 0;
   line-height: 16px;
   font-weight: 700;
 }
 
-.instructor-card__social-link {
+.instructor-card__social-wrapper {
   margin-top: -1px;
+  width: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.instructor-card__social-link {
+  display: block;
   width: 24px;
   height: 24px;
 }
@@ -41,6 +55,14 @@
   .instructor-card__image {
     width: 182px;
     height: 200px;
+  }
+
+  .instructor-card__name-wrapper {
+    width: 120px;
+  }
+
+  .instructor-card__social-wrapper {
+    width: 50px;
   }
 }
 
