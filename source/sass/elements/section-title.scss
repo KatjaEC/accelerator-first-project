@@ -21,7 +21,7 @@
   font-weight: 800;
   color: $color-text;
   opacity: 0.03;
-  content: attr(data-shadow);
+  content: attr(data-shadow) / "";
 }
 
 .section-title--shadow-top[data-shadow]::before {
