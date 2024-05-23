@@ -1,0 +1,19 @@
+.header {
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  z-index: 5;
+}
+
+.header__logo-wrapper {
+  padding-top: 1px;
+}
+
+.header__nav {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  margin: 0 auto;
+  width: 290px;
+}

@@ -1,0 +1,25 @@
+.slider-pagination {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+}
+
+.slider-pagination__button {
+  padding: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border: 2px solid $color-primary;
+  border-radius: 50%;
+  appearance: none;
+  cursor: pointer;
+
+  &--active {
+    background-color: #275699;
+    border-color: #275699;
+  }
+}

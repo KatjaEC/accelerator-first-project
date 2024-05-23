@@ -2,3 +2,23 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+// GLOBAL
+@import "global/fonts";
+@import "global/variables";
+@import "global/global";
+@import "global/visually-hidden";
+
+// ELEMENTS
+@import "elements/button";
+
+// BLOCKS
+@import "blocks/page-body";
+@import "blocks/main";
+@import "blocks/hero";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/nav-submenu";
+@import "blocks/nav-menu";
+@import "blocks/slider-pagination";
+@import "blocks/hero-slider";

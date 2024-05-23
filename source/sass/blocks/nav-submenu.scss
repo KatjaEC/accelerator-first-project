@@ -1,0 +1,25 @@
+.nav-submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-submenu__item {
+  padding: 0 16px;
+  opacity: 0.6;
+
+  &:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
+
+  &--current {
+    opacity: 0.9;
+  }
+}
+
+.nav-submenu__link {
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-secondary;
+  text-decoration: none;
+}

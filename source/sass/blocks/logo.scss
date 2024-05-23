@@ -1,0 +1,6 @@
+.logo__image {
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
