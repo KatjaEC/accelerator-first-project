@@ -533,13 +533,13 @@
               <option value="Murmansk">Мурманск</option>
             </select>
             <input class="visually-hidden" type="checkbox" id="personal-data" name="personal-data" required>
-            <label for="personal-data">Я согласен на обработку моих персональных данных</label>
+            <label class="form__checkbox-label" for="personal-data">Я согласен на обработку моих персональных данных</label>
             <button class="form__button button button--primary button--primary-inverse" type="submit">Отправить</button>
           </form>
         </div>
       </section>
     </main>
-    <footer data-test="footer">
+    <footer class="footer" data-test="footer">
       <div class="footer__logo-wrapper logo">
         <img class="logo__image" src="img/logo.svg" width="52" height="52"
         alt="Логотип проекта «Стажировка».">
@@ -588,6 +588,40 @@
         </li>
       </ul>
     </footer>
+    <div class="modal">
+      <div class="modal__body">
+        <h2 class="visually-hidden">Модальное окно формы обратной связи.</h2>
+        <div class="modal__content form">
+          <p class="form__heading form__heading--inverse">Напишите нам</p>
+          <p class="form__text form__text--inverse">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+        </div>
+        <form class="form__body form__body--inverse" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="form__label form__label--inverse" for="name">Имя</label>
+          <input class="form__input form__input--inverse" type="text" name="name" id="name" required>
+          <label class="form__label form__label--inverse" for="phone">Телефон</label>
+          <input class="form__input form__input--inverse" type="tel" name="phone" id="phone" minlength="6" value="+7" pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" required>
+          <label for="choose-city">Выберите город</label>
+          <select class="form__input form__input--select form__input--inverse" name="choose-city" id="choose-city" required>
+            <option value="" selected></option>
+            <option value="Moscow">Москва</option>
+            <option value="Saint-Petersburg">Санкт-Петербург</option>
+            <option value="Yekaterinburg">Екатеринбург</option>
+            <option value="Kazan">Казань</option>
+            <option value="Sochi">Сочи</option>
+            <option value="Novosibirsk">Новосибирск</option>
+            <option value="Krasnoyarsk">Красноярск</option>
+            <option value="Vladivostok">Владивосток</option>
+            <option value="Murmansk">Мурманск</option>
+          </select>
+          <input class="visually-hidden" type="checkbox" id="personal-data" name="personal-data" required>
+          <label class="form__checkbox-label form__checkbox-label--inverse" for="personal-data">Я согласен на обработку моих персональных данных</label>
+          <button class="form__button button button--primary" type="submit">Отправить</button>
+        </form>
+        <button class="modal__button" type="button">
+          <span class="visually-hidden">Кнопка закрытия модального окна.</span>
+        </button>
+      </div>
+    </div>
 
     <!-- пример использования спрайта -->
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
