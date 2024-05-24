@@ -1,0 +1,50 @@
+.about-us {
+  padding: 51px 15px 50px;
+}
+
+.about-us__title {
+  margin-bottom: 14px;
+  padding-left: 1px;
+}
+
+.about-us__general-info {
+  margin-bottom: 41px;
+}
+
+.about-us__general-info p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about-us__details {
+  margin-bottom: 40px;
+}
+
+.about-us__details > p {
+  margin: 0 0 19px;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-primary;
+}
+
+.about-us__details > p + p {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-text;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.about-us__button {
+  margin: 30px auto 0 0;
+  padding-right: 44px;
+  max-width: 223px;
+}
+
+.about-us__list {
+  margin: 0 auto;
+  width: 290px;
+}

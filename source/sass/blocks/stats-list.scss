@@ -1,0 +1,48 @@
+.stats-list {
+  margin: 0;
+  padding: 42px 20px 40px;
+  color: $color-background;
+  background-color: $color-primary;
+  border-radius: 20px;
+  list-style: none;
+}
+
+.stats-list__item {
+  position: relative;
+  padding: 15px 20px;
+  border: 1px solid $color-background;
+  border-radius: 16px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 22px;
+  }
+
+  &::before {
+    position: absolute;
+    top: -23px;
+    left: -21px;
+    width: 42px;
+    height: 42px;
+    background: $color-primary url("../../__spritemap#sprite-star-view") no-repeat center;
+    background-size: 22px 22px;
+    content: "";
+  }
+}
+
+.stats-list__item > h3 {
+  margin: 0 0 15px;
+  color: $color-secondary;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.stats-list__item--grant > h3 {
+  padding-right: 60px;
+}
+
+.stats-list__item > p {
+  margin: 0;
+  font-weight: 300;
+}

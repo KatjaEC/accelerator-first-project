@@ -1,0 +1,39 @@
+.conditions-list {
+  margin: 0;
+  padding: 14px 0 0 15px;
+  color: $color-background;
+  background-color: $color-primary;
+  border-radius: 20px;
+  list-style: none;
+}
+
+.conditions-list__item {
+  position: relative;
+  padding: 24px 23px 24px 25px;
+  border: 1px solid $color-background;
+  border-radius: 16px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+}
+
+.conditions-list__number {
+  position: absolute;
+  top: -5px;
+  left: -13px;
+  display: block;
+  padding: 7px;
+  min-width: 26px;
+  max-width: 42px;
+  height: 31px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  background-color: $color-primary;
+}
+
+.conditions-list__text {
+  margin: 0;
+}

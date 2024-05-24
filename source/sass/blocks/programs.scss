@@ -1,0 +1,31 @@
+.programs {
+  position: relative;
+  padding: 56px 15px 124px;
+}
+
+.programs__title {
+  margin-bottom: 34px;
+  padding-right: 90px;
+}
+
+.programs__button {
+  position: absolute;
+  bottom: 50px;
+  left: 15px;
+  padding-left: 21px;
+  min-width: 205px;
+  max-width: 290px;
+  text-align: center;
+}
+
+.programs__slider-wrapper {
+  overflow: hidden;
+}
+
+.programs__slider-nav {
+  position: absolute;
+  top: 54px;
+  right: 15px;
+  min-width: 52px;
+  max-width: 72px;
+}

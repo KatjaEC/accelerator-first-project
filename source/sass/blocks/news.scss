@@ -1,0 +1,39 @@
+.news {
+  padding: 51px 15px;
+}
+
+.news__title {
+  margin-bottom: 23px;
+  text-align: center;
+}
+
+.news__tabs {
+  margin-bottom: 24px;
+  min-width: 305px;
+  overflow: hidden;
+}
+
+.news__slider-wrapper {
+  max-height: 640px;
+  overflow: hidden;
+}
+
+.news__slider-list {
+  max-height: 606px;
+}
+
+.news__slider-nav {
+  margin-top: 8px;
+}
+
+.news__slider-arrow {
+  margin-top: 2px;
+
+  &--prev {
+    margin-right: 1px;
+  }
+
+  &--next {
+    margin-right: 1px;
+  }
+}

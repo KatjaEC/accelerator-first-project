@@ -1,0 +1,24 @@
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.nav-list__button {
+  min-width: 26px;
+  height: 26px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $color-primary;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  appearance: none;
+
+  &--active {
+    color: $color-secondary;
+    background-color: $color-primary;
+  }
+}

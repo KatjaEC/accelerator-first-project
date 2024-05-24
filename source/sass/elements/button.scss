@@ -1,9 +1,9 @@
 .button {
   position: relative;
-  padding: 16px 59px 16px 21px;
+  padding: 16px 59px 14px 20px;
   display: block;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 12px;
   font-weight: 500;
   letter-spacing: 0.02em;
   background-color: transparent;
@@ -18,7 +18,7 @@
   &::before {
     position: absolute;
     top: calc(50% - 17px);
-    right: 5px;
+    right: 4px;
     width: 34px;
     height: 34px;
     background-color: $color-primary;
@@ -28,16 +28,36 @@
 
   &::after {
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 11px;
+    right: 11px;
     width: 20px;
     height: 20px;
     background-color: $color-secondary;
     mask: url("../../__spritemap#sprite-button-arrow-view");
-    mask-size: 10px 10px;
+    mask-size: 12px 12px;
     mask-repeat: no-repeat;
     mask-position: center;
     transform: rotate(-45deg);
     content: "";
+  }
+
+  &--small {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-color: $color-primary;
+    border-color: transparent;
+
+    &::before {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::after {
+      top: 4px;
+      left: 4px;
+    }
   }
 }
