@@ -11,3 +11,16 @@
     content: "";
   }
 }
+
+.page-body__footer {
+  margin: 0 auto;
+  width: $mobile-width;
+}
+
+.page-body__modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: $overlay-dark;
+  z-index: 20;
+}

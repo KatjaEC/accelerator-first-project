@@ -1,5 +1,11 @@
 .form {
   padding: 83px 0 80px;
+
+  &--inverse {
+    padding: 38px 15px 40px;
+    background-color: $color-secondary;
+    border-radius: 16px;
+  }
 }
 
 .form__wrapper {
@@ -17,11 +23,25 @@
   font-size: 18px;
   line-height: 22px;
   color: $color-secondary;
+
+  &--inverse {
+    margin-bottom: 11px;
+    line-height: 18px;
+    text-align: center;
+    color: $color-primary;
+  }
 }
 
 .form__text {
   margin: 0 0 21px;
   opacity: 0.9;
+
+  &--inverse {
+    margin-bottom: 25px;
+    padding: 0 23px 0 22px;
+    text-align: center;
+    opacity: 1;
+  }
 }
 
 .form__label {
@@ -30,6 +50,12 @@
   font-size: 12px;
   line-height: 14px;
   opacity: 0.8;
+
+  &--inverse {
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .form__input {
@@ -46,6 +72,12 @@
   border-radius: 8px;
   appearance: none;
 
+  &--inverse {
+    margin-bottom: 14px;
+    padding: 11px 56px 12px 20px;
+    border-color: rgba(72, 72, 72, 0.3);
+  }
+
   &--textarea {
     margin-bottom: 16px;
     height: 94px;
@@ -59,12 +91,19 @@
     background-size: 16px 16px;
     cursor: pointer;
   }
+
+  &--select-inverse {
+    margin-bottom: 15px;
+    padding: 14px 56px 14px 20px;
+    background: url("../../../__spritemap#sprite-arrow-down-view") no-repeat calc(100% - 19px) center;
+    background-size: 16px 16px;
+    cursor: pointer;
+  }
 }
 
 .form__checkbox-label {
   position: relative;
   padding-left: 30px;
-  margin-bottom: 19.5px;
   display: block;
   min-height: 42px;
   font-size: 12px;
@@ -82,11 +121,26 @@
     content: "";
   }
 
-  &--styled {
-    display: block;
+  &--inverse {
+    color: rgba(72, 72, 72, 0.9);
+  }
+
+  &--inverse::before {
+    top: 4px;
+    background-color: $color-primary;
   }
 }
 
+.form__checkbox-label > span {
+  display: block;
+}
+
 .form__button {
+  margin-top: 19.5px;
   width: 260px;
+
+  &--modal {
+    margin-top: 11px;
+    width: 100%;
+  }
 }

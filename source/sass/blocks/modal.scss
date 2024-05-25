@@ -1,0 +1,38 @@
+.modal {
+  display: none;
+
+  &--shown {
+    display: block;
+  }
+}
+
+.modal__body {
+  position: relative;
+  top: 23px;
+  margin: 0 auto;
+  width: 290px;
+}
+
+.modal__button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    background: url("../../../__spritemap#sprite-button-close-view") no-repeat center;
+    background-size: 16px 16px;
+    content: "";
+  }
+}

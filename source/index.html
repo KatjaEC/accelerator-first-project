@@ -511,7 +511,7 @@
       </section>
       <section class="main__form form" data-test="form">
         <h2 class="visually-hidden">Форма обратной связи.</h2>
-        <div class="form__wrapper">
+        <div class="form__wrapper form__wrapper">
           <p class="form__heading">Напишите нам</p>
           <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
           <form class="form__body" action="https://echo.htmlacademy.ru/" method="post">
@@ -530,13 +530,13 @@
               <option value="Saint-Petersburg">Санкт-Петербург</option>
             </select>
             <input class="visually-hidden" type="checkbox" id="personal-data" name="personal-data" required>
-            <label class="form__checkbox-label" for="personal-data">Я согласен на обработку моих персональных <span class="form__checkbox-label--styled">данных</span></label>
+            <label class="form__checkbox-label" for="personal-data">Я согласен на обработку моих персональных <span>данных</span></label>
             <button class="form__button button button--inverse" type="submit">Отправить</button>
           </form>
         </div>
       </section>
     </main>
-    <footer class="footer footer__body" data-test="footer">
+    <footer class="page-body__footer footer" data-test="footer">
       <div class="footer__logo-wrapper logo">
         <img class="footer__logo-image logo__image" src="img/site-logo.svg" width="52" height="52"
         alt="Логотип проекта «Стажировка».">
@@ -585,18 +585,18 @@
         </li>
       </ul>
     </footer>
-    <div class="modal">
+    <div class="page-body__modal modal">
       <div class="modal__body form form--inverse">
         <h2 class="visually-hidden">Модальное окно формы обратной связи.</h2>
         <p class="form__heading form__heading--inverse">Напишите нам</p>
-        <p class="form__text form__text--inverse">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+        <p class="form__text form__text--inverse">Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы&nbsp;— мы на них ответим!</p>
         <form class="form__body form__body--inverse" action="https://echo.htmlacademy.ru/" method="post">
           <label class="form__label form__label--inverse" for="modal-name">Имя</label>
           <input class="form__input form__input--inverse" type="text" name="modal-name" id="modal-name" pattern="^[А-Яа-яЁё\s]+$" required>
           <label class="form__label form__label--inverse" for="modal-phone">Телефон</label>
-          <input class="form__input form__input--inverse" type="tel" name="modal-phone" id="modal-phone" minlength="6" value="+7" pattern="^((\+7|)+([0-9]){10})$" required>
+          <input class="form__input form__input--inverse" type="tel" name="modal-phone" id="modal-phone" minlength="6" title="Введите номер телефона в формате +7 XXX XXX XX XX" pattern="^((\+7|)+([0-9]){10})$" required>
           <label class="form__label form__label--inverse" for="modal-choose-city">Выберите город</label>
-          <select class="form__input form__input--select form__input--inverse" name="modal-choose-city" id="modal-choose-city" required>
+          <select class="form__input form__input--select form__input--inverse form__input--select-inverse" name="modal-choose-city" id="modal-choose-city" required>
             <option value="" selected>&nbsp;</option>
             <option value="Saint-Petersburg">Санкт-Петербург</option>
             <option value="Saint-Petersburg">Санкт-Петербург</option>
@@ -605,22 +605,13 @@
           </select>
           <input class="visually-hidden" type="checkbox" id="modal-personal-data" name="modal-personal-data" required>
           <label class="form__checkbox-label form__checkbox-label--inverse" for="modal-personal-data">Я согласен на обработку моих персональных данных</label>
-          <button class="form__button button" type="submit">Отправить</button>
+          <button class="form__button form__button--modal button button--modal" type="submit">Отправить</button>
         </form>
         <button class="modal__button" type="button">
           <span class="visually-hidden">Кнопка закрытия модального окна.</span>
         </button>
       </div>
     </div>
-
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-
-
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
