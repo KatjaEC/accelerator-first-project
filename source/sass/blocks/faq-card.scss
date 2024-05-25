@@ -1,0 +1,85 @@
+.faq-card {
+  padding: 22px 17px 22px 15px;
+  border: 2px solid $color-primary;
+  border-radius: 14px;
+
+  &--active {
+    padding-bottom: 20px;
+    color: $color-background;
+    background-color: $color-primary;
+  }
+
+  &--education,
+  &--registration {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.faq-card__label {
+  position: relative;
+  padding-right: 62px;
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-primary;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 20px);
+    right: -2px;
+    width: 40px;
+    height: 40px;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: calc(50% - 20px);
+    right: -2px;
+    width: 40px;
+    height: 40px;
+    mask: url("../../../__spritemap#sprite-plus-view");
+    mask-size: 20px 20px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $color-secondary;
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+.faq-card > .faq-card__content-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+}
+
+.faq-card input:checked ~ label {
+  color: $color-secondary;
+
+  &::before {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+  }
+
+  &::after {
+    mask: url("../../../__spritemap#sprite-minus-view");
+    mask-size: 20px 20px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $color-primary;
+  }
+}
+
+.faq-card input:checked ~ div {
+  max-height: 1000px;
+}
+
+.faq-card__content-wrapper > p {
+  margin: 22px 0 0;
+}

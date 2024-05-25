@@ -16,24 +16,60 @@
   &:not(:last-of-type) {
     margin-bottom: 15px;
   }
-}
 
-.conditions-list__number {
-  position: absolute;
-  top: -5px;
-  left: -13px;
-  display: block;
-  padding: 7px;
-  min-width: 26px;
-  max-width: 42px;
-  height: 31px;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 500;
-  text-align: center;
-  background-color: $color-primary;
-}
+  &::before {
+    position: absolute;
+    top: -5px;
+    left: -13px;
+    display: block;
+    padding: 7px;
+    min-width: 26px;
+    max-width: 42px;
+    height: 31px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+    background-color: $color-primary;
+  }
 
-.conditions-list__text {
-  margin: 0;
+  &:nth-of-type(1)::before {
+    content: "1";
+  }
+
+  &:nth-of-type(2)::before {
+    content: "2";
+  }
+
+  &:nth-of-type(3)::before {
+    content: "3";
+  }
+
+  &:nth-of-type(4)::before {
+    content: "4";
+  }
+
+  &:nth-of-type(5)::before {
+    content: "5";
+  }
+
+  &:nth-of-type(6)::before {
+    content: "6";
+  }
+
+  &:nth-of-type(7)::before {
+    content: "7";
+  }
+
+  &:nth-of-type(8)::before {
+    content: "8";
+  }
+
+  &:nth-of-type(9)::before {
+    content: "9";
+  }
+
+  &:nth-of-type(10)::before {
+    content: "10";
+  }
 }

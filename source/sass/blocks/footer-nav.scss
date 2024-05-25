@@ -1,0 +1,15 @@
+.footer-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 31px;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer-nav__link {
+  display: block;
+  color: $color-text;
+  text-decoration: none;
+}

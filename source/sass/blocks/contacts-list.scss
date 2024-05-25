@@ -1,0 +1,27 @@
+.contacts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__item {
+
+  &:not(:last-of-type) {
+    margin-bottom: 21px;
+  }
+}
+
+.contacts-list__subheading {
+  margin: 0 0 14px;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: $color-background;
+}
+
+.contacts-list__text {
+  color: $color-secondary;
+  text-decoration: none;
+  font-style: normal;
+}

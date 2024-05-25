@@ -60,4 +60,17 @@
       left: 4px;
     }
   }
+
+  &--inverse {
+    color: $color-secondary;
+    border-color: $color-secondary;
+
+    &::before {
+      background-color: $color-secondary;
+    }
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
 }

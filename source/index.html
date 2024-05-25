@@ -230,26 +230,10 @@
           <div class="grant__conditions-wrapper">
             <p class="grant__conditions-heading">Чтобы получить грант на&nbsp;обучение, вам нужно:</p>
             <ol class="grant__conditions-list conditions-list">
-              <li class="conditions-list__item">
-                <span class="conditions-list__number">1</span>
-                <p class="conditions-list__text">Быть в возрасте от 16 до 30 лет</p>
-              </li>
-              <li class="conditions-list__item">
-                <span class="conditions-list__number">2</span>
-                <p class="conditions-list__text">Иметь оконченное среднее образование</p>
-              </li>
-              <li class="conditions-list__item">
-                <span class="conditions-list__number">3</span>
-                <p class="conditions-list__text">
-                  Иметь документально подтверждённое отсутствие судимости и пройти консульскую проверку
-                </p>
-              </li>
-              <li class="conditions-list__item">
-                <span class="conditions-list__number">4</span>
-                <p class="conditions-list__text">
-                  За последние 2 года быть не&nbsp;больше 3х месяцев подряд непрерывно в одной стране
-                </p>
-              </li>
+              <li class="conditions-list__item">Быть в возрасте от 16 до 30 лет</li>
+              <li class="conditions-list__item">Иметь оконченное среднее образование</li>
+              <li class="conditions-list__item">Иметь документально подтверждённое отсутствие судимости и пройти консульскую проверку</li>
+              <li class="conditions-list__item">За последние 2 года быть не&nbsp;больше 3х месяцев подряд непрерывно в одной стране</li>
             </ol>
           </div>
         </div>
@@ -327,9 +311,9 @@
       <section class="main__faq faq" data-test="FAQ">
         <h2 class="faq__title section-title">Вопросы и ответы</h2>
         <ul class="faq__list faq-list">
-          <li class="faq-list__item faq-card">
-            <input class="visually-hidden" type="checkbox" id="program-details" name="program-details" checked>
-            <label for="program-details">Кто организатор? Какие сроки у программы?</label>
+          <li class="faq-list__item faq-card faq-card--details">
+            <input class="visually-hidden" type="checkbox" id="program-details" name="program-details">
+            <label class="faq-card__label" for="program-details">Кто организатор? Какие сроки у программы?</label>
             <div class="faq-card__content-wrapper">
               <p>
                 Организатором программы является проект «Стажировка» в сотрудничестве с образовательными учреждениями.
@@ -337,9 +321,9 @@
               </p>
             </div>
           </li>
-          <li class="faq-list__item faq-card">
-            <input class="visually-hidden" type="checkbox" id="grant-info" name="grant-info" checked>
-            <label for="grant-info">Что такое грант на обучение?</label>
+          <li class="faq-list__item faq-card faq-card--grant">
+            <input class="visually-hidden" type="checkbox" id="grant-info" name="grant-info">
+            <label class="faq-card__label" for="grant-info">Что такое грант на&nbsp;обучение?</label>
             <div class="faq-card__content-wrapper">
               <p>
                 Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена
@@ -347,20 +331,20 @@
               </p>
             </div>
           </li>
-          <li class="faq-list__item faq-card">
+          <li class="faq-list__item faq-card faq-card--cost faq-card--active">
             <input class="visually-hidden" type="checkbox" id="cost" name="cost" checked>
-            <label for="cost">Как определяется стоимость программы?</label>
+            <label class="faq-card__label faq-card__label--active" for="cost">Как определяется стоимость программы?</label>
             <div class="faq-card__content-wrapper">
               <p>
-                Полная стоимость определяется организаторами в зависимости от направления. В большинстве случаев грант
-                «Стажировка» не покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного
+                Полная стоимость определяется организаторами в зависимости от&nbsp;направления. В большинстве случаев грант
+                «Стажировка» не&nbsp;покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного
                 участия.
               </p>
             </div>
           </li>
-          <li class="faq-list__item faq-card">
-            <input class="visually-hidden" type="checkbox" id="further-education" name="further-education" checked>
-            <label for="further-education">Признаётся ли учёба в рамках проекта для дальнейшего обучения?</label>
+          <li class="faq-list__item faq-card faq-card--education">
+            <input class="visually-hidden" type="checkbox" id="further-education" name="further-education">
+            <label class="faq-card__label" for="further-education">Признаётся ли учёба в&nbsp;рамках проекта для дальнейшего обучения?</label>
             <div class="faq-card__content-wrapper">
               <p>
                 Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей
@@ -368,9 +352,9 @@
               </p>
             </div>
           </li>
-          <li class="faq-list__item faq-card">
-            <input class="visually-hidden" type="checkbox" id="registration" name="registration" checked>
-            <label for="registration">Как выглядит полный процесс регистрации на программу «Стажировка»?</label>
+          <li class="faq-list__item faq-card faq-card--registration">
+            <input class="visually-hidden" type="checkbox" id="registration" name="registration">
+            <label class="faq-card__label" for="registration">Как выглядит полный процесс регистрации на&nbsp;программу «Стажировка»?</label>
             <div class="faq-card__content-wrapper">
               <p>
                 Процесс регистрации на программу обмена включает выбор университета-партнера и программы обмена,
@@ -384,8 +368,8 @@
       </section>
       <section class="main__reviews reviews" data-test="reviews">
         <h2 class="reviews__title section-title">Отзывы</h2>
-        <div class="reviews__slider-wrapper reviews-slider swiper">
-          <ul class="reviews-slider__list swiper-wrapper">
+        <div class="reviews__slider-wrapper swiper">
+          <ul class="reviews__slider-list reviews-slider swiper-wrapper">
             <li class="reviews-slider__item review-card swiper-slide">
               <div class="review-card__user-wrapper">
                 <div class="review-card__avatar-wrapper">
@@ -399,11 +383,14 @@
                     <source media="(min-width: 768px)"
                       srcset="img/photos/reviews-avatar-1@1x.jpg 1x, img/photos/reviews-avatar-1@2x.jpg 2x"
                       type="image/jpeg" width="90" height="90">
-                    <img src="img/photos/reviews-avatar-1@1x.jpg" srcset="img/photos/reviews-avatar-1@2x.jpg"
+                    <img class="review-card__avatar" src="img/photos/reviews-avatar-1@1x.jpg" srcset="img/photos/reviews-avatar-1@2x.jpg"
                       width="60" height="60" alt="Аватар пользователя.">
                   </picture>
                 </div>
-                <span class="review-card__user-name">Лола Алекс</span>
+                <div class="review-card__name-wrapper">
+                  <span class="review-card__name">Лола</span>
+                  <span class="review-card__surname">Алекс</span>
+                </div>
               </div>
               <div class="review-card__program-wrapper">
                 <dl class="review-card__program-info">
@@ -421,8 +408,8 @@
               <div class="review-card__text-wrapper">
                 <p>
                   Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления.
-                  Сочетание путешествий, общения и значимой работы действительно отличает её от других программ,
-                  и ячувствую огромную благодарность за предоставленную мне возможность.
+                  Сочетание путешествий, общения и значимой работы действительно отличает её&nbsp;от&nbsp;других программ,
+                  и я чувствую огромную благодарность за&nbsp;предоставленную мне&nbsp;возможность.
                 </p>
               </div>
             </li>
@@ -439,11 +426,14 @@
                     <source media="(min-width: 768px)"
                       srcset="img/photos/reviews-avatar-2@1x.jpg 1x, img/photos/reviews-avatar-2@2x.jpg 2x"
                       type="image/jpeg" width="90" height="90">
-                    <img src="img/photos/reviews-avatar-2@1x.jpg" srcset="img/photos/reviews-avatar-2@2x.jpg"
+                    <img class="review-card__avatar" src="img/photos/reviews-avatar-2@1x.jpg" srcset="img/photos/reviews-avatar-2@2x.jpg"
                       width="60" height="60" alt="Аватар пользователя.">
                   </picture>
                 </div>
-                <span class="review-card__user-name">Давид Иванов</span>
+                <div class="review-card__name-wrapper">
+                  <span class="review-card__name">Давид</span>
+                  <span class="review-card__surname">Иванов</span>
+                </div>
               </div>
               <div class="review-card__program-wrapper">
                 <dl class="review-card__program-info">
@@ -481,24 +471,26 @@
       </section>
       <section class="main__contacts contacts" data-test="contacts">
         <div class="contacts__wrapper">
-          <div class="contacts__header">
-            <h2 class="contacts__title section-title section-title--inverse">Контакты</h2>
+          <div class="contacts__text-wrapper">
+            <div class="contacts__header">
+              <h2 class="contacts__title section-title section-title--inverse">Контакты</h2>
+            </div>
+            <ul class="contacts__list contacts-list">
+              <li class="contacts-list__item">
+                <p class="contacts-list__subheading">Центральный офис</p>
+                <address class="contacts-list__text">г. Новосибирск, ул. Щетинкина 68, культурный центр</address>
+              </li>
+              <li class="contacts-list__item">
+                <p class="contacts-list__subheading">Телефон</p>
+                <a class="contacts-list__text" href="tel:+796387687676">+7 963 876 876 76</a>
+              </li>
+              <li class="contacts-list__item">
+                <p class="contacts-list__subheading">Email</p>
+                <a class="contacts-list__text"
+                  href="mailto:info@stazh.ru">info@stazh.ru</a>
+              </li>
+            </ul>
           </div>
-          <ul class="contacts__list contacts-list">
-            <li class="contacts-list__item">
-              <p class="contacts-list__subheading">Центральный офис</p>
-              <address class="contacts-list__text">г. Новосибирск, ул. Щетинкина 68, культурный центр</address>
-            </li>
-            <li class="contacts-list__item">
-              <p class="contacts-list__subheading">Телефон</p>
-              <a class="contacts-list__text" href="tel:+796387687676">+7 963 876 876 76</a>
-            </li>
-            <li class="contacts-list__item">
-              <p class="contacts-list__subheading">Email</p>
-              <a class="contacts-list__text"
-                href="mailto:info@stazh.ru">info@stazh.ru</a>
-            </li>
-          </ul>
           <div class="contacts__map-wrapper">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)"
@@ -526,9 +518,9 @@
             <label class="form__label" for="form-name">Имя</label>
             <input class="form__input" type="text" name="form-name" id="form-name" pattern="^[А-Яа-яЁё\s]+$" required>
             <label class="form__label" for="form-phone">Телефон</label>
-            <input class="form__input" type="tel" name="form-phone" id="form-phone" minlength="6" value="+7" pattern="^((\+7|)+([0-9]){10})$" required>
+            <input class="form__input" type="tel" name="form-phone" id="form-phone" minlength="6" title="Введите номер телефона в формате +7 XXX XXX XX XX" pattern="^((\+7|)+([0-9]){10})$" required>
             <label class="form__label" for="form-message">Ваше сообщение</label>
-            <textarea class="form__input" name="form-message" id="form-message" required></textarea>
+            <textarea class="form__input form__input--textarea" name="form-message" id="form-message" required></textarea>
             <label class="form__label" for="form-choose-city">Выберите город</label>
             <select class="form__input form__input--select" name="form-choose-city" id="form-choose-city" required>
               <option value="" selected>&nbsp;</option>
@@ -538,15 +530,15 @@
               <option value="Saint-Petersburg">Санкт-Петербург</option>
             </select>
             <input class="visually-hidden" type="checkbox" id="personal-data" name="personal-data" required>
-            <label class="form__checkbox-label" for="personal-data">Я согласен на обработку моих персональных данных</label>
+            <label class="form__checkbox-label" for="personal-data">Я согласен на обработку моих персональных <span class="form__checkbox-label--styled">данных</span></label>
             <button class="form__button button button--inverse" type="submit">Отправить</button>
           </form>
         </div>
       </section>
     </main>
-    <footer class="footer" data-test="footer">
+    <footer class="footer footer__body" data-test="footer">
       <div class="footer__logo-wrapper logo">
-        <img class="logo__image" src="img/site-logo.svg" width="52" height="52"
+        <img class="footer__logo-image logo__image" src="img/site-logo.svg" width="52" height="52"
         alt="Логотип проекта «Стажировка».">
       </div>
       <div class="footer__nav-wrapper">
@@ -577,17 +569,17 @@
       </div>
       <ul class="footer__socials socials-list">
         <li class="socials-list__item">
-          <a class="socials-list__link socials-link socials-link--vk" href="https://vk.com/">
+          <a class="socials-list__link socials-list__link--vk" href="https://vk.com/">
             <span class="visually-hidden">Мы ВКонтакте.</span>
           </a>
         </li>
         <li class="socials-list__item">
-          <a class="socials-list__link socials-link socials-link--ok" href="https://ok.ru/">
+          <a class="socials-list__link socials-list__link--ok" href="https://ok.ru/">
             <span class="visually-hidden">Мы в Одноклассниках.</span>
           </a>
         </li>
         <li class="socials-list__item">
-          <a class="socials-list__link socials-link socials-link--reddit" href="https://www.reddit.com/">
+          <a class="socials-list__link socials-list__link--reddit" href="https://www.reddit.com/">
             <span class="visually-hidden">Мы на Реддит.</span>
           </a>
         </li>

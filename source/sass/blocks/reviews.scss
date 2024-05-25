@@ -1,0 +1,19 @@
+.reviews {
+  position: relative;
+  padding: 55px 15px 50px;
+}
+
+.reviews__title {
+  margin-bottom: 35px;
+  padding-right: 90px;
+}
+
+.reviews__slider-wrapper {
+  overflow: hidden;
+}
+
+.reviews__slider-nav {
+  position: absolute;
+  top: 54px;
+  right: 16px;
+}

@@ -1,0 +1,46 @@
+.socials-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.socials-list__item {
+  width: 26px;
+  height: 26px;
+  background-color: $color-primary;
+  border-radius: 50%;
+}
+
+.socials-list__link {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-color: $color-secondary;
+  border-radius: 50%;
+
+  &--vk {
+    mask: url("../../../__spritemap#sprite-socials-vk-view");
+    mask-size: 24px 12px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  &--ok {
+    mask: url("../../../__spritemap#sprite-socials-ok-view");
+    mask-size: 24px 11px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $color-secondary;
+  }
+
+  &--reddit {
+    mask: url("../../../__spritemap#sprite-socials-reddit-view");
+    mask-size: 22px 12px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $color-secondary;
+  }
+}

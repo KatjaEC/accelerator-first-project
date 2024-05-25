@@ -1,0 +1,23 @@
+.contacts {
+  background-color: $color-primary;
+}
+
+.contacts__wrapper {
+  margin: 0 auto;
+  padding: 75px 15px 70px;
+  width: $mobile-width;
+}
+
+.contacts__text-wrapper {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.contacts__header {
+  margin-bottom: 36px;
+}
+
+.contacts__image {
+  border-radius: 16px;
+}

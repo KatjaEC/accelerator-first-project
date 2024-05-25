@@ -1,0 +1,12 @@
+.faq-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faq-list__item {
+
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}

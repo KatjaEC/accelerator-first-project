@@ -1,0 +1,70 @@
+.review-card {
+  padding: 29px 15px 31px;
+  border: 2px solid $color-primary;
+  border-radius: 16px;
+}
+
+.review-card__user-wrapper {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.review-card__avatar-wrapper {
+  padding-top: 1px;
+}
+
+.review-card__avatar {
+  border-radius: 50%;
+}
+
+.review-card__name-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review-card__name,
+.review-card__surname {
+  display: block;
+  line-height: 18px;
+  color: $color-primary;
+}
+
+.review-card__program-wrapper {
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.review-card__program-info {
+  margin: 0;
+}
+
+.review-card__program-heading {
+  margin-bottom: 7px;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: $color-primary;
+}
+
+.review-card__program-details {
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.review-card__heading {
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-primary;
+}
+
+.review-card__text-wrapper p {
+  margin: 0;
+}
