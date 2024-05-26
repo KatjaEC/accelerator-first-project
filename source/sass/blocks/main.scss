@@ -4,7 +4,6 @@
 
 .main__hero {
   width: 100%;
-  min-height: 568px;
 }
 
 .main__about-us {
@@ -57,4 +56,7 @@
           url("../../img/photos/form-background-smaller@2x.jpg") type("image/jpeg") 2x);
       }
   }
+}
+
+@media (min-width: $tablet-width) {
 }

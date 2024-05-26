@@ -93,3 +93,23 @@
     transform: rotate(-45deg);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 20px 68px 20px 30px;
+    font-size: 14px;
+    line-height: 14px;
+
+    &::before {
+      top: 4px;
+      right: 4px;
+      width: 46px;
+      height: 46px;
+    }
+
+    &::after {
+      top: 22px;
+      right: 22px;
+    }
+  }
+}

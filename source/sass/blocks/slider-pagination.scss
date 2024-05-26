@@ -23,3 +23,10 @@
     border-color: #275699;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .slider-pagination__button {
+    width: 12px;
+    height: 12px;
+  }
+}

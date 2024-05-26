@@ -17,3 +17,20 @@
   margin: 0 auto;
   width: 290px;
 }
+
+@media (min-width: $tablet-width) {
+  .header {
+    padding: 30px 45px;
+  }
+
+  .header__logo-wrapper {
+    padding-top: 2px;
+  }
+
+  .header__nav {
+    top: 30px;
+    right: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {}
