@@ -22,3 +22,14 @@
     background-color: $color-primary;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .nav-list {
+    gap: 20px;
+  }
+
+  .nav-list__button {
+    width: 32px;
+    height: 32px;
+  }
+}

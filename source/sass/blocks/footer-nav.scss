@@ -13,3 +13,16 @@
   color: $color-text;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .footer-nav {
+    justify-content: flex-end;
+    gap: 15.5px;
+  }
+
+  .footer-nav__link {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 16px;
+  }
+}

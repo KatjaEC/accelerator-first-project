@@ -21,3 +21,18 @@
 .contacts__image {
   border-radius: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding: 100px 45px;
+    width: $tablet-width;
+  }
+
+  .contacts__text-wrapper {
+    padding-bottom: 29.5px;
+  }
+
+  .contacts__header {
+    margin-bottom: 31px;
+  }
+}

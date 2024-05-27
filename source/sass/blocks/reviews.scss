@@ -12,8 +12,40 @@
   overflow: hidden;
 }
 
-.reviews__slider-nav {
+.reviews__nav-wrapper {
   position: absolute;
   top: 54px;
   right: 16px;
+}
+
+.reviews__pagination-wrapper {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding: 50px 0 112px 45px;
+  }
+
+  .reviews__title {
+    margin-bottom: 40px;
+  }
+
+  .reviews__pagination-wrapper {
+    width: 562px;
+    display: block;
+    order: -1;
+    overflow: hidden;
+  }
+
+  .reviews__nav-wrapper {
+    top: auto;
+    bottom: 50px;
+    right: auto;
+    left: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px 62px;
+  }
 }

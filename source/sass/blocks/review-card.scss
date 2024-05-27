@@ -44,7 +44,6 @@
 }
 
 .review-card__program-heading {
-  margin-bottom: 7px;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.01em;
@@ -53,7 +52,7 @@
 }
 
 .review-card__program-details {
-  margin: 0;
+  margin: 7px 0 0;
   font-size: 12px;
   line-height: 14px;
 }
@@ -67,4 +66,54 @@
 
 .review-card__text-wrapper p {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .review-card {
+    padding: 49px 50px 50px;
+  }
+
+  .review-card__header {
+    margin-bottom: 31px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 65px;
+  }
+
+  .review-card__user-wrapper {
+    margin-bottom: 0;
+    gap: 15px;
+  }
+
+  .review-card__name-wrapper {
+    margin-top: 2px;
+  }
+
+  .review-card__name,
+  .review-card__surname {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .review-card__program-wrapper {
+    margin-top: 2px;
+    margin-bottom: 0;
+    align-items: center;
+  }
+
+  .review-card__program-details {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .review-card__heading {
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .review-card__text-wrapper p {
+    font-size: 16px;
+  }
 }

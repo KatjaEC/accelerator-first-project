@@ -7,3 +7,13 @@
   padding-right: 1px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .faq {
+    padding: 50px 45px;
+  }
+
+  .faq__title {
+    margin-bottom: 40px;
+  }
+}

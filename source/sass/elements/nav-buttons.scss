@@ -1,6 +1,7 @@
 .nav-buttons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 7px;
 }
 
@@ -43,4 +44,14 @@
 .nav-buttons__wrapper {
   margin: 0 auto;
   max-width: 162px;
+}
+
+@media (min-width: $tablet-width) {
+  .nav-buttons {
+    gap: 9px;
+  }
+
+  .nav-buttons__wrapper {
+    max-width: 188px;
+  }
 }

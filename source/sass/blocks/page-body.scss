@@ -24,3 +24,9 @@
   background-color: $overlay-dark;
   z-index: 20;
 }
+
+@media (min-width: $tablet-width) {
+  .page-body__footer {
+    width: $tablet-width;
+  }
+}

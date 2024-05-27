@@ -23,3 +23,20 @@
     opacity: 1;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .news-tabs {
+    gap: 7px;
+  }
+
+  .news-tabs__button {
+    padding: 14px 19px 14px 20.5px;
+    font-size: 14px;
+    line-height: 14px;
+
+    &--active {
+      padding-right: 20px;
+      padding-left: 20.5px;
+    }
+  }
+}

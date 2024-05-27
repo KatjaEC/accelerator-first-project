@@ -10,7 +10,8 @@
 .news__tabs {
   margin-bottom: 24px;
   min-width: 305px;
-  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .news__slider-wrapper {
@@ -35,5 +36,36 @@
 
   &--next {
     margin-right: 1px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .news {
+    padding: 50px 45px;
+  }
+
+  .news__title {
+    margin-bottom: 30px;
+  }
+
+  .news__tabs {
+    margin-left: 2px;
+    margin-bottom: 30px;
+  }
+
+  .news__slider-wrapper {
+    max-height: 100%;
+  }
+
+  .news__slider-list {
+    max-height: 100%;
+  }
+
+  .news__slider-nav {
+    margin-top: 30px;
+  }
+
+  .news__slider-arrow {
+    margin-top: 5px;
   }
 }

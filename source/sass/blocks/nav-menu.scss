@@ -102,6 +102,7 @@
       width: 14px;
       height: 14px;
       background-color: $color-secondary;
+      opacity: 0.6;
       mask: url("../../__spritemap#sprite-arrow-down-view");
       mask-size: 12px 12px;
       mask-repeat: no-repeat;
@@ -112,6 +113,7 @@
 
   &--submenu-opened::before {
     transform: rotate(180deg);
+    opacity: 1;
   }
 }
 
@@ -131,8 +133,22 @@
 
 @media (min-width: $tablet-width) {
   .nav-menu__toggle {
+    margin-right: 0;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    &--opened {
+      padding-top: 19px;
+      padding-bottom: 19px;
+      width: 286px;
+    }
+  }
+
+  .nav-menu__list {
+
+    &--shown {
+      width: 286px;
+    }
   }
 }
 

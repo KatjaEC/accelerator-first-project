@@ -44,3 +44,16 @@
     background-color: $color-secondary;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .socials-list__item {
+    width: 36px;
+    height: 36px;
+  }
+
+  .socials-list__link {
+    width: 36px;
+    height: 36px;
+    mask-size: 16px 16px;
+  }
+}

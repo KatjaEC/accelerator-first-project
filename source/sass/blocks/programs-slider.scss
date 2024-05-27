@@ -127,3 +127,44 @@
   top: 18px;
   right: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .programs-slider__item {
+    margin-right: 30px;
+    padding: 285px 20px 10px 20px;
+    width: 324px;
+    min-height: 420px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &--internship {
+      background-position: 23.7% 100%;
+      background-size: 152.5%;
+    }
+
+    &--education {
+      background-position: 97.7% 88.1%;
+      background-size: 122.5% 140%;
+    }
+  }
+
+  .programs-slider__heading {
+    padding-top: 19px;
+    padding-bottom: 5px;
+    max-width: 173px;
+    font-size: 20px;
+    line-height: 14px;
+  }
+
+  .programs-slider__content-wrapper > p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .programs-slider__button {
+    top: 27px;
+    right: 18px;
+  }
+}

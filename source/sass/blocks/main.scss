@@ -59,4 +59,38 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main__about-us {
+    width: $tablet-width;
+  }
+
+  .main__programs {
+    width: $tablet-width;
+    overflow: hidden;
+  }
+
+  .main__news {
+    width: $tablet-width;
+  }
+
+  .main__faq {
+    width: $tablet-width;
+  }
+
+  .main__reviews {
+    width: $tablet-width;
+  }
+
+  .main__form {
+    width: $tablet-width;
+    margin: 0 auto;
+
+    &::before {
+      top: 50px;
+      left: 45px;
+      right: 71px;
+      width: 652px;
+      height: 780px;
+      border-radius: 16px;
+    }
+  }
 }

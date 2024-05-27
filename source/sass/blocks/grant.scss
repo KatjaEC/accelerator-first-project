@@ -52,4 +52,38 @@
   margin: 0 0 15px;
   font-size: 18px;
   line-height: 22px;
+  color: $color-secondary;
+}
+
+@media (min-width: $tablet-width) {
+  .grant__wrapper {
+    padding: 100px 45px;
+    width: $tablet-width;
+  }
+
+  .grant__text-wrapper {
+    padding-bottom: 466px;
+
+    &::before {
+      bottom: 51px;
+      width: 678px;
+      height: 375px;
+    }
+  }
+
+  .grant__title {
+    margin-bottom: 30px;
+  }
+
+  .grant__text-wrapper p {
+    padding-right: 180px;
+    font-size: 16px;
+    color: $color-background;
+  }
+
+  .grant__conditions-heading {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 28px;
+  }
 }

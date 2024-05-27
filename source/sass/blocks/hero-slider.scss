@@ -16,7 +16,7 @@
 
 .hero-slider__item {
   position: relative;
-  min-width: 100%;
+  width: 100%;
   flex-shrink: 0;
   background-color: $color-background;
   background-repeat: no-repeat;
@@ -164,7 +164,7 @@
 
 .hero-slider__pagination-wrapper {
   position: absolute;
-  bottom: calc(100% - 229px);
+  top: 201px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -217,16 +217,37 @@
     border-radius: 0 30px 30px 0;
   }
 
-  .hero-slider__text {
-    padding: 0 270px 35px 40px;
+  .hero-slider__inner-wrapper {
+    position: relative;
+    padding: 0 40px 35px 40px;
+    display: flex;
     width: 593px;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: $color-secondary;
     border-radius: 0 0 30px 30px;
 
     &::before {
+      position: absolute;
+      top: 0;
       right: -26px;
       width: 26px;
       height: 26px;
+      background-color: $color-secondary;
+      mask: url("../../__spritemap#sprite-angle-view");
       mask-size: 26px 26px;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      content: "";
+    }
+  }
+
+  .hero-slider__text {
+    padding: 0 40px 0 0;
+    width: 285px;
+
+    &::before {
+      display: none;
     }
   }
 
@@ -235,13 +256,10 @@
   }
 
   .hero-slider__text > p > span {
-    padding-right: 50px;
+    padding-right: 10px;
   }
 
   .hero-slider__button-wrapper {
-    position: absolute;
-    right: 170px;
-    bottom: 139px;
     padding: 0;
     width: 198px;
 
@@ -267,7 +285,7 @@
   }
 
   .hero-slider__pagination-wrapper {
-    bottom: calc(100% - 687px);
+    top: 647px;
     width: 678px;
   }
 

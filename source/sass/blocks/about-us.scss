@@ -48,3 +48,47 @@
   margin: 0 auto;
   width: 290px;
 }
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding: 50px 45px;
+  }
+
+  .about-us__title {
+    margin-bottom: 31px;
+    padding-left: 0;
+  }
+
+  .about-us__general-info {
+    margin-bottom: 40px;
+  }
+
+  .about-us__list {
+    width: 678px;
+  }
+
+  .about-us__general-info p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .about-us__details {
+    margin-bottom: 60px;
+    width: 498px;
+  }
+
+  .about-us__details > p {
+    margin-bottom: 29px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .about-us__details > p + p {
+    font-size: 16px;
+  }
+
+  .about-us__button {
+    margin-top: 40px;
+    max-width: 279px;
+  }
+}

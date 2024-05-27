@@ -29,7 +29,9 @@
           </div>
           <nav class="header__nav nav-menu">
             <button class="nav-menu__toggle button" type="button">Меню</button>
+            <!-- nav-menu__toggle--opened -->
             <ul class="nav-menu__list">
+              <!-- nav-menu__list--shown -->
               <li class="nav-menu__item">
                 <a class="nav-menu__link" href="#">О проекте</a>
               </li>
@@ -74,39 +76,45 @@
               <li class="hero-slider__item hero-slider__item--education swiper-slide">
                 <div class="hero-slider__content-wrapper">
                   <h3 class="hero-slider__heading">Глобальный профессиональный опыт обучения за&nbsp;рубежом</h3>
-                  <div class="hero-slider__text">
-                    <p>
-                      Погрузитесь в академическую программу, проходя <span>практику</span> в разных городах, ощущая настоящий студенческий стиль жизни!
-                    </p>
-                  </div>
-                  <div class="hero-slider__button-wrapper">
-                    <a class="hero-slider__button button" href="#">Подробнее</a>
+                  <div class="hero-slider__inner-wrapper">
+                    <div class="hero-slider__text">
+                      <p>
+                        Погрузитесь в академическую программу, проходя <span>практику</span> в разных городах, ощущая настоящий студенческий стиль жизни!
+                      </p>
+                    </div>
+                    <div class="hero-slider__button-wrapper">
+                      <a class="hero-slider__button button" href="#">Подробнее</a>
+                    </div>
                   </div>
                 </div>
               </li>
               <li class="hero-slider__item hero-slider__item--volunteering swiper-slide">
                 <div class="hero-slider__content-wrapper">
                   <h3 class="hero-slider__heading">Волонтёрские программы – внесите свой вклад в общество</h3>
-                  <div class="hero-slider__text">
-                    <p>
-                      Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.
-                    </p>
-                  </div>
-                  <div class="hero-slider__button-wrapper">
-                    <a class="hero-slider__button button" href="#">Подробнее</a>
+                  <div class="hero-slider__inner-wrapper">
+                    <div class="hero-slider__text">
+                      <p>
+                        Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.
+                      </p>
+                    </div>
+                    <div class="hero-slider__button-wrapper">
+                      <a class="hero-slider__button button" href="#">Подробнее</a>
+                    </div>
                   </div>
                 </div>
               </li>
               <li class="hero-slider__item hero-slider__item--internship swiper-slide">
                 <div class="hero-slider__content-wrapper">
                   <h3 class="hero-slider__heading">Программы стажировок в крупнейших компаниях мира</h3>
-                  <div class="hero-slider__text">
-                    <p>
-                      Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.
-                    </p>
-                  </div>
-                  <div class="hero-slider__button-wrapper">
-                    <a class="hero-slider__button button" href="#">Подробнее</a>
+                  <div class="hero-slider__inner-wrapper">
+                    <div class="hero-slider__text">
+                      <p>
+                        Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.
+                      </p>
+                    </div>
+                    <div class="hero-slider__button-wrapper">
+                      <a class="hero-slider__button button" href="#">Подробнее</a>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -147,7 +155,7 @@
               Наша деятельность направлена на&nbsp;повышение квалификации
               молодых специалистов на ранних и средних стадиях карьеры,
               предоставляя им&nbsp;инструменты для решения сложных проблем,
-              с которыми сталкиваются в мире. Цель центра — наделить этих
+              с&nbsp;которыми сталкиваются в мире. Цель центра — наделить этих
               людей способностью инициировать значимые изменения.
             </p>
             <a class="about-us__button button" href="#">Подробнее о проекте</a>
@@ -156,14 +164,14 @@
         <ul class="about-us__list stats-list">
           <li class="stats-list__item">
             <h3>Более 250 программ</h3>
-            <p>учебных и рабочих, разной длительностью от 3 месяцев до 1 года</p>
+            <p>учебных и рабочих, разной длительностью от&nbsp;3&nbsp;месяцев до 1 года</p>
           </li>
           <li class="stats-list__item">
             <h3>Более 3000 участников</h3>
-            <p>уже успешно прошли программу от «Стажировка» и&nbsp;остались в разных странах</p>
+            <p>уже успешно прошли программу от&nbsp;«Стажировка» и&nbsp;остались в разных странах</p>
           </li>
           <li class="stats-list__item">
-            <h3>Участники из 60 стран</h3>
+            <h3>Участники из&nbsp;60&nbsp;стран</h3>
             <p>студенты со всего мира приезжают на программу «Стажировки» от 3 месяцев до&nbsp;1&nbsp;года</p>
           </li>
           <li class="stats-list__item stats-list__item--grant">
@@ -189,7 +197,7 @@
             <li class="programs-slider__item programs-slider__item--volunteering swiper-slide">
               <h3 class="programs-slider__heading">Волонтёрство</h3>
               <div class="programs-slider__content-wrapper">
-                <p>Помогайте другим и развивайте свои лидерские качества.</p>
+                <p>Помогайте другим и&nbsp;развивайте свои лидерские&nbsp;качества.</p>
                 <a class="programs-slider__button button button--small" href="#">
                   <span class="visually-hidden">Подробнее о программе.</span>
                 </a>
@@ -206,15 +214,36 @@
             </li>
           </ul>
         </div>
-        <div class="programs__slider-nav nav-buttons">
-          <button
-            class="nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
-            type="button">
-            <span class="visually-hidden">Предыдущая программа.</span>
-          </button>
-          <button class="nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
-            <span class="visually-hidden">Следующая программа.</span>
-          </button>
+        <div class="programs__nav-wrapper">
+          <div class="programs__slider-nav nav-buttons">
+            <button
+              class="nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
+              type="button">
+              <span class="visually-hidden">Предыдущая программа.</span>
+            </button>
+            <button class="nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Следующая программа.</span>
+            </button>
+          </div>
+          <div class="programs__pagination-wrapper">
+            <ol class="programs__pagination slider-pagination slider-pagination--bar swiper-pagination">
+              <li class="slider-pagination__item slider-pagination__item--bar">
+                <button class="slider-pagination__button slider-pagination__button--bar slider-pagination__button--active-bar" type="button">
+                  <span class="visually-hidden">Первый слайд.</span>
+                </button>
+              </li>
+              <li class="slider-pagination__item slider-pagination__item--bar">
+                <button class="slider-pagination__button slider-pagination__button--bar" type="button">
+                  <span class="visually-hidden">Второй слайд.</span>
+                </button>
+              </li>
+              <li class="slider-pagination__item slider-pagination__item--bar">
+                <button class="slider-pagination__button slider-pagination__button--bar" type="button">
+                  <span class="visually-hidden">Третий слайд.</span>
+                </button>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
       <section class="main__grant grant" data-test="grant">
@@ -224,16 +253,16 @@
             <p>
               Свяжитесь с координатором, чтобы узнать полную информацию.
               Вы получите актуальные сведения о доступных программах
-              и городах, в которых можете пройти программу.
+              и&nbsp;городах, в которых можете пройти программу.
             </p>
           </div>
           <div class="grant__conditions-wrapper">
             <p class="grant__conditions-heading">Чтобы получить грант на&nbsp;обучение, вам нужно:</p>
             <ol class="grant__conditions-list conditions-list">
-              <li class="conditions-list__item">Быть в возрасте от 16 до 30 лет</li>
-              <li class="conditions-list__item">Иметь оконченное среднее образование</li>
-              <li class="conditions-list__item">Иметь документально подтверждённое отсутствие судимости и пройти консульскую проверку</li>
-              <li class="conditions-list__item">За последние 2 года быть не&nbsp;больше 3х месяцев подряд непрерывно в одной стране</li>
+              <li class="conditions-list__item conditions-list__item--age">Быть в возрасте от 16 до 30 лет</li>
+              <li class="conditions-list__item conditions-list__item--education">Иметь оконченное среднее образование</li>
+              <li class="conditions-list__item conditions-list__item--check">Иметь документально подтверждённое отсутствие судимости и пройти консульскую проверку</li>
+              <li class="conditions-list__item conditions-list__item--stay">За последние 2 года быть не&nbsp;больше 3х месяцев подряд непрерывно в одной стране</li>
             </ol>
           </div>
         </div>
@@ -251,9 +280,9 @@
           <ul class="news__slider-list news-slider">
             <li class="news-slider__item news-slider__item--interview news-slider__item--active">
               <span class="news-slider__date">23/03/2023</span>
-              <h3 class="news-slider__heading">Интервью с участницей программы стажировки</h3>
+              <h3 class="news-slider__heading">Интервью с&nbsp;участницей программы стажировки</h3>
               <div class="news-slider__content-wrapper">
-                <p>Саша рассказывает, как попала в&nbsp;программу и как прошла 6-месячная стажировка в ISOFound</p>
+                <p>Саша рассказывает, как&nbsp;попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в ISOFound</p>
                 <a class="news-slider__button button button--small" href="#">
                   <span class="visually-hidden">Перейти на страницу новости.</span>
                 </a>
@@ -261,7 +290,7 @@
             </li>
             <li class="news-slider__item news-slider__item--travel">
               <span class="news-slider__date">20/03/2023</span>
-              <h3 class="news-slider__heading">Путешествуем по миру</h3>
+              <h3 class="news-slider__heading">Путешествуем по&nbsp;миру</h3>
               <div class="news-slider__content-wrapper">
                 <p>Какие места посещают наши студенты весной</p>
                 <a class="news-slider__button button button--small" href="#">
@@ -344,7 +373,7 @@
           </li>
           <li class="faq-list__item faq-card faq-card--education">
             <input class="visually-hidden" type="checkbox" id="further-education" name="further-education">
-            <label class="faq-card__label" for="further-education">Признаётся ли учёба в&nbsp;рамках проекта для дальнейшего обучения?</label>
+            <label class="faq-card__label" for="further-education">Признаётся ли учёба в&nbsp;рамках <span>проекта</span> для дальнейшего обучения?</label>
             <div class="faq-card__content-wrapper">
               <p>
                 Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей
@@ -371,36 +400,38 @@
         <div class="reviews__slider-wrapper swiper">
           <ul class="reviews__slider-list reviews-slider swiper-wrapper">
             <li class="reviews-slider__item review-card swiper-slide">
-              <div class="review-card__user-wrapper">
-                <div class="review-card__avatar-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/photos/reviews-avatar-1@1x.webp 1x, img/photos/reviews-avatar-1@2x.webp 2x"
-                      width="90" height="90">
-                    <source type="image/webp"
-                      srcset="img/photos/reviews-avatar-1@1x.webp 1x, img/photos/reviews-avatar-1@2x.webp 2x"
-                      width="60" height="60">
-                    <source media="(min-width: 768px)"
-                      srcset="img/photos/reviews-avatar-1@1x.jpg 1x, img/photos/reviews-avatar-1@2x.jpg 2x"
-                      type="image/jpeg" width="90" height="90">
-                    <img class="review-card__avatar" src="img/photos/reviews-avatar-1@1x.jpg" srcset="img/photos/reviews-avatar-1@2x.jpg"
-                      width="60" height="60" alt="Аватар пользователя.">
-                  </picture>
+              <div class="review-card__header">
+                <div class="review-card__user-wrapper">
+                  <div class="review-card__avatar-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/photos/reviews-avatar-1@1x.webp 1x, img/photos/reviews-avatar-1@2x.webp 2x"
+                        width="90" height="90">
+                      <source type="image/webp"
+                        srcset="img/photos/reviews-avatar-1@1x.webp 1x, img/photos/reviews-avatar-1@2x.webp 2x"
+                        width="60" height="60">
+                      <source media="(min-width: 768px)"
+                        srcset="img/photos/reviews-avatar-1@1x.jpg 1x, img/photos/reviews-avatar-1@2x.jpg 2x"
+                        type="image/jpeg" width="90" height="90">
+                      <img class="review-card__avatar" src="img/photos/reviews-avatar-1@1x.jpg" srcset="img/photos/reviews-avatar-1@2x.jpg"
+                        width="60" height="60" alt="Аватар пользователя.">
+                    </picture>
+                  </div>
+                  <div class="review-card__name-wrapper">
+                    <span class="review-card__name">Лола</span>
+                    <span class="review-card__surname">Алекс</span>
+                  </div>
                 </div>
-                <div class="review-card__name-wrapper">
-                  <span class="review-card__name">Лола</span>
-                  <span class="review-card__surname">Алекс</span>
+                <div class="review-card__program-wrapper">
+                  <dl class="review-card__program-info">
+                    <dt class="review-card__program-heading">Программа</dt>
+                    <dd class="review-card__program-details">Masa Art Challenge</dd>
+                  </dl>
+                  <dl class="review-card__program-info">
+                    <dt class="review-card__program-heading">Дата</dt>
+                    <dd class="review-card__program-details">Осень 2022</dd>
+                  </dl>
                 </div>
-              </div>
-              <div class="review-card__program-wrapper">
-                <dl class="review-card__program-info">
-                  <dt class="review-card__program-heading">Программа</dt>
-                  <dd class="review-card__program-details">Masa Art Challenge</dd>
-                </dl>
-                <dl class="review-card__program-info">
-                  <dt class="review-card__program-heading">Дата</dt>
-                  <dd class="review-card__program-details">Осень 2022</dd>
-                </dl>
               </div>
               <p class="review-card__heading">
                 Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!
@@ -409,41 +440,43 @@
                 <p>
                   Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления.
                   Сочетание путешествий, общения и значимой работы действительно отличает её&nbsp;от&nbsp;других программ,
-                  и я чувствую огромную благодарность за&nbsp;предоставленную мне&nbsp;возможность.
+                  и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную мне&nbsp;возможность.
                 </p>
               </div>
             </li>
             <li class="reviews-slider__item review-card swiper-slide">
-              <div class="review-card__user-wrapper">
-                <div class="review-card__avatar-wrapper">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/photos/reviews-avatar-2@1x.webp 1x, img/photos/reviews-avatar-2@2x.webp 2x"
-                      width="90" height="90">
-                    <source type="image/webp"
-                      srcset="img/photos/reviews-avatar-2@1x.webp 1x, img/photos/reviews-avatar-2@2x.webp 2x"
-                      width="60" height="60">
-                    <source media="(min-width: 768px)"
-                      srcset="img/photos/reviews-avatar-2@1x.jpg 1x, img/photos/reviews-avatar-2@2x.jpg 2x"
-                      type="image/jpeg" width="90" height="90">
-                    <img class="review-card__avatar" src="img/photos/reviews-avatar-2@1x.jpg" srcset="img/photos/reviews-avatar-2@2x.jpg"
-                      width="60" height="60" alt="Аватар пользователя.">
-                  </picture>
+              <div class="review-card__header">
+                <div class="review-card__user-wrapper">
+                  <div class="review-card__avatar-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/photos/reviews-avatar-2@1x.webp 1x, img/photos/reviews-avatar-2@2x.webp 2x"
+                        width="90" height="90">
+                      <source type="image/webp"
+                        srcset="img/photos/reviews-avatar-2@1x.webp 1x, img/photos/reviews-avatar-2@2x.webp 2x"
+                        width="60" height="60">
+                      <source media="(min-width: 768px)"
+                        srcset="img/photos/reviews-avatar-2@1x.jpg 1x, img/photos/reviews-avatar-2@2x.jpg 2x"
+                        type="image/jpeg" width="90" height="90">
+                      <img class="review-card__avatar" src="img/photos/reviews-avatar-2@1x.jpg" srcset="img/photos/reviews-avatar-2@2x.jpg"
+                        width="60" height="60" alt="Аватар пользователя.">
+                    </picture>
+                  </div>
+                  <div class="review-card__name-wrapper">
+                    <span class="review-card__name">Давид</span>
+                    <span class="review-card__surname">Иванов</span>
+                  </div>
                 </div>
-                <div class="review-card__name-wrapper">
-                  <span class="review-card__name">Давид</span>
-                  <span class="review-card__surname">Иванов</span>
+                <div class="review-card__program-wrapper">
+                  <dl class="review-card__program-info">
+                    <dt class="review-card__program-heading">Программа</dt>
+                    <dd class="review-card__program-details">Volunteer Chance</dd>
+                  </dl>
+                  <dl class="review-card__program-info">
+                    <dt class="review-card__program-heading">Дата</dt>
+                    <dd class="review-card__program-details">Лето 2022</dd>
+                  </dl>
                 </div>
-              </div>
-              <div class="review-card__program-wrapper">
-                <dl class="review-card__program-info">
-                  <dt class="review-card__program-heading">Программа</dt>
-                  <dd class="review-card__program-details">Volunteer Chance</dd>
-                </dl>
-                <dl class="review-card__program-info">
-                  <dt class="review-card__program-heading">Дата</dt>
-                  <dd class="review-card__program-details">Лето 2022</dd>
-                </dl>
               </div>
               <p class="review-card__heading">
                 Благодаря опыту стажировки я узнал так много нового о себе и об окружающем мире.
@@ -451,22 +484,38 @@
               <div class="review-card__text-wrapper">
                 <p>
                   Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал
-                  эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем
+                  эту волонтёрскую программу всем, кто ищет значимый и&nbsp;незабываемый опыт. Организация была на высшем
                   уровне. Для меня было честью быть частью такой удивительной инициативы.
                 </p>
               </div>
             </li>
           </ul>
         </div>
-        <div class="reviews__slider-nav nav-buttons">
-          <button
-            class="nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
-            type="button">
-            <span class="visually-hidden">Предыдущий отзыв.</span>
-          </button>
-          <button class="nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
-            <span class="visually-hidden">Следующий отзыв.</span>
-          </button>
+        <div class="reviews__nav-wrapper">
+          <div class="reviews__slider-nav nav-buttons">
+            <button
+              class="nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
+              type="button">
+              <span class="visually-hidden">Предыдущий отзыв.</span>
+            </button>
+            <button class="nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Следующий отзыв.</span>
+            </button>
+          </div>
+          <div class="reviews__pagination-wrapper">
+            <ol class="reviews__pagination slider-pagination slider-pagination--bar swiper-pagination">
+              <li class="slider-pagination__item slider-pagination__item--bar">
+                <button class="slider-pagination__button slider-pagination__button--bar slider-pagination__button--active-bar" type="button">
+                  <span class="visually-hidden">Первый отзыв.</span>
+                </button>
+              </li>
+              <li class="slider-pagination__item slider-pagination__item--bar">
+                <button class="slider-pagination__button slider-pagination__button--bar" type="button">
+                  <span class="visually-hidden">Второй отзыв.</span>
+                </button>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
       <section class="main__contacts contacts" data-test="contacts">
@@ -511,7 +560,7 @@
       </section>
       <section class="main__form form" data-test="form">
         <h2 class="visually-hidden">Форма обратной связи.</h2>
-        <div class="form__wrapper form__wrapper">
+        <div class="form__wrapper">
           <p class="form__heading">Напишите нам</p>
           <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
           <form class="form__body" action="https://echo.htmlacademy.ru/" method="post">
@@ -537,53 +586,57 @@
       </section>
     </main>
     <footer class="page-body__footer footer" data-test="footer">
-      <div class="footer__logo-wrapper logo">
-        <img class="footer__logo-image logo__image" src="img/site-logo.svg" width="52" height="52"
-        alt="Логотип проекта «Стажировка».">
-      </div>
-      <div class="footer__nav-wrapper">
-        <ul class="footer__nav footer-nav">
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">О проекте</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Программы</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Как поехать</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Отзывы</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Новости</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link" href="#">Контакты</a>
-          </li>
-        </ul>
+      <div class="footer__inner-wrapper">
+        <div class="footer__logo-wrapper logo">
+          <img class="footer__logo-image logo__image" src="img/site-logo.svg" width="52" height="52"
+          alt="Логотип проекта «Стажировка».">
+        </div>
+        <div class="footer__nav-wrapper">
+          <ul class="footer__nav footer-nav">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">О проекте</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Программы</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Как поехать</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Отзывы</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Новости</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="footer__legal-wrapper">
         <a class="footer__confidentiality" href="#">Политика конфиденциальности</a>
         <span class="footer__copyright">Стажировка © 2023 Все права защищены</span>
       </div>
-      <ul class="footer__socials socials-list">
-        <li class="socials-list__item">
-          <a class="socials-list__link socials-list__link--vk" href="https://vk.com/">
-            <span class="visually-hidden">Мы ВКонтакте.</span>
-          </a>
-        </li>
-        <li class="socials-list__item">
-          <a class="socials-list__link socials-list__link--ok" href="https://ok.ru/">
-            <span class="visually-hidden">Мы в Одноклассниках.</span>
-          </a>
-        </li>
-        <li class="socials-list__item">
-          <a class="socials-list__link socials-list__link--reddit" href="https://www.reddit.com/">
-            <span class="visually-hidden">Мы на Реддит.</span>
-          </a>
-        </li>
-      </ul>
+      <div class="footer__socials-wrapper">
+        <ul class="footer__socials socials-list">
+          <li class="socials-list__item">
+            <a class="socials-list__link socials-list__link--vk" href="https://vk.com/">
+              <span class="visually-hidden">Мы ВКонтакте.</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link socials-list__link--ok" href="https://ok.ru/">
+              <span class="visually-hidden">Мы в Одноклассниках.</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link socials-list__link--reddit" href="https://www.reddit.com/">
+              <span class="visually-hidden">Мы на Реддит.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
     <div class="page-body__modal modal">
       <div class="modal__body form form--inverse">

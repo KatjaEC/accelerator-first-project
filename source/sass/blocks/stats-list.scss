@@ -46,3 +46,29 @@
   margin: 0;
   font-weight: 300;
 }
+
+@media (min-width: $tablet-width) {
+  .stats-list {
+    padding: 72px 50px 50px 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 253px);
+    gap: 54px 52px;
+  }
+
+  .stats-list__item {
+    padding: 16px 21px 14px 20px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 0;
+    }
+  }
+
+  .stats-list__item > h3 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .stats-list__item > p {
+    font-size: 16px;
+  }
+}
