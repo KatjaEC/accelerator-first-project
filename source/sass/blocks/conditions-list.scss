@@ -78,8 +78,8 @@
 @media (min-width: $tablet-width) {
   .conditions-list {
     padding-left: 20px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 305px);
     gap: 25px 48px;
   }
 
@@ -101,13 +101,19 @@
     &:not(:last-of-type) {
       margin-bottom: 0;
     }
+  }
+}
 
-    &--age {
-      width: 307px;
-    }
+@media (min-width: $desktop-width) {
+  .conditions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
 
-    &--education {
-      width: 303px;
-    }
+  .conditions-list__item {
+    padding: 30px 26px 30px 25px;
+    width: 100%;
+    line-height: 26px;
   }
 }

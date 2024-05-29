@@ -48,3 +48,12 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider-pagination__button {
+
+    &--bar {
+      width: 394px;
+    }
+  }
+}

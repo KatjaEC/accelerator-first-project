@@ -49,3 +49,32 @@
     gap: 20px 62px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding: 65px 100px 122px 100px;
+  }
+
+  .reviews__title {
+    margin-left: 3px;
+    margin-bottom: 45px;
+  }
+
+  .reviews__nav-wrapper {
+    left: 100px;
+    bottom: 60px;
+    gap: 20px 50px;
+  }
+
+  .reviews__pagination-wrapper {
+    width: 1136px;
+  }
+
+  .reviews__pagination-bar {
+    width: 744px;
+
+    &--active {
+      width: 394px;
+    }
+  }
+}

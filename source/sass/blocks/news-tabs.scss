@@ -30,13 +30,23 @@
   }
 
   .news-tabs__button {
-    padding: 14px 19px 14px 20.5px;
+    padding: 13px 20px 15px;
     font-size: 14px;
     line-height: 14px;
 
     &--active {
-      padding-right: 20px;
       padding-left: 20.5px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news-tabs {
+    gap: 29.5px;
+  }
+
+  .news-tabs__button {
+    padding: 14px 2px;
+    min-width: 120px;
   }
 }

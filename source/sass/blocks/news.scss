@@ -49,7 +49,7 @@
   }
 
   .news__tabs {
-    margin-left: 2px;
+    margin-left: 1.5px;
     margin-bottom: 30px;
   }
 
@@ -67,5 +67,28 @@
 
   .news__slider-arrow {
     margin-top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news {
+    padding: 60px 100px;
+  }
+
+  .news__title {
+    margin-bottom: 40px;
+  }
+
+  .news__tabs {
+    margin: 0 auto 40px;
+    width: 720px;
+  }
+
+  .news__slider-wrapper {
+    width: 1240px;
+  }
+
+  .news__slider-nav {
+    margin-top: 40px;
   }
 }

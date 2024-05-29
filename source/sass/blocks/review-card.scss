@@ -74,10 +74,10 @@
   }
 
   .review-card__header {
-    margin-bottom: 31px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 65px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto 230px;
+    gap: 20px;
   }
 
   .review-card__user-wrapper {
@@ -96,9 +96,10 @@
   }
 
   .review-card__program-wrapper {
-    margin-top: 2px;
+    margin-top: 1px;
     margin-bottom: 0;
     align-items: center;
+    justify-content: flex-end;
   }
 
   .review-card__program-details {
@@ -108,12 +109,40 @@
   }
 
   .review-card__heading {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     font-size: 20px;
     line-height: 24px;
   }
 
   .review-card__text-wrapper p {
     font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-card {
+    padding: 49px 46px 50px 50px;
+  }
+
+  .review-card__name,
+  .review-card__surname {
+    font-size: 18px;
+  }
+
+  .review-card__program-wrapper {
+    margin-top: 3px;
+  }
+
+  .review-card__program-details {
+    margin-top: 8px;
+  }
+
+  .review-card__heading {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .review-card__text-wrapper p {
+    line-height: 26px;
   }
 }

@@ -30,3 +30,9 @@
     width: $tablet-width;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-body__footer {
+    width: $desktop-width;
+  }
+}

@@ -34,4 +34,12 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .header {
+    padding: 30px 100px;
+  }
+
+  .header__nav {
+    right: 100px;
+  }
+}

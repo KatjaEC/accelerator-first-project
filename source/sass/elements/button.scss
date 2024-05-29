@@ -96,7 +96,7 @@
 
 @media (min-width: $tablet-width) {
   .button {
-    padding: 20px 68px 20px 30px;
+    padding: 19px 68px 21px 31px;
     font-size: 14px;
     line-height: 14px;
 
@@ -114,8 +114,6 @@
 
     &--small {
       padding: 0;
-      width: 30px;
-      height: 30px;
 
       &::before {
         top: 0;
@@ -128,6 +126,16 @@
         top: 4px;
         right: 4px;
       }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    padding: 19px 68px 21px 30px;
+
+    &--small {
+      padding: 0;
     }
   }
 }

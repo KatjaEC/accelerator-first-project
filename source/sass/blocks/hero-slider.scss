@@ -302,3 +302,59 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .hero-slider__content-wrapper {
+    padding: 433px 372px 60px 100px;
+    width: $desktop-width;
+  }
+
+  .hero-slider__list {
+    min-height: 800px;
+  }
+
+  .hero-slider__heading {
+    padding: 40px 50px 30px 50px;
+    font-size: 54px;
+    line-height: 62px;
+  }
+
+  .hero-slider__inner-wrapper {
+    padding: 0 50px 35px 50px;
+    width: 775px;
+  }
+
+  .hero-slider__text {
+    padding-right: 55px;
+    width: 446px;
+  }
+
+  .hero-slider__text p {
+    line-height: 26px;
+  }
+
+  .hero-slider__text > p > span {
+    padding-right: 0;
+  }
+
+  .hero-slider__button {
+    margin-top: 10px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    width: 199px;
+
+    &::before {
+      right: 5px;
+    }
+
+    &::after {
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  .hero-slider__pagination-wrapper {
+    top: 393px;
+    width: 1240px;
+  }
+}

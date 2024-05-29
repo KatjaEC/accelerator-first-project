@@ -72,8 +72,8 @@
   &--career {
     background-image:
     image-set(
-      url("../../img/photos/news-image-1-full@1x.webp") type("image/webp") 1x,
-      url("../../img/photos/news-image-1-full@1x.jpg") type("image/jpeg") 1x);
+      url("../../img/photos/news-image-4-full@1x.webp") type("image/webp") 1x,
+      url("../../img/photos/news-image-4-full@1x.jpg") type("image/jpeg") 1x);
 
     @media (resolution >= 2dppx) {
       background-image:
@@ -88,7 +88,7 @@
   position: relative;
   padding: 12px 12px 6px 0;
   display: inline-block;
-  max-width: 120px;
+  max-width: min-content;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.01em;
@@ -216,12 +216,8 @@
     }
   }
 
-  .news-slider__date {
-    max-width: min-content;
-  }
-
   .news-slider__heading {
-    padding-top: 11px;
+    padding-top: 10px;
     padding-bottom: 5px;
     max-width: 207px;
     font-size: 20px;
@@ -229,7 +225,7 @@
   }
 
   .news-slider__content-wrapper {
-    padding: 12px 64px 15px 0;
+    padding: 12px 64px 16px 0;
   }
 
   .news-slider__content-wrapper > p {
@@ -240,5 +236,55 @@
   .news-slider__button {
     right: 18px;
     bottom: calc(50% - 14px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news-slider {
+    display: flex;
+    gap: 32px;
+  }
+
+  .news-slider__item {
+    padding-right: 42px;
+    width: 286px;
+    min-height: 400px;
+    flex-shrink: 0;
+
+    &--active {
+      padding-right: 136px;
+      width: 604px;
+    }
+
+    &--travel {
+      background-size: 129.5%;
+      padding-right: 46px;
+    }
+  }
+
+  .news-slider__item--interview > .news-slider__date {
+    padding-bottom: 6px;
+  }
+
+  .news-slider__heading {
+    padding: 10px 18px 4px 0;
+    max-width: 190px;
+    min-height: 66px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .news-slider__item--interview > .news-slider__heading {
+    padding: 18px 18px 6px 0;
+    max-width: 426px;
+  }
+
+  .news-slider__content-wrapper {
+    padding: 11px 64px 16px 0;;
+    max-width: fit-content;
+  }
+
+  .news-slider__content-wrapper > p {
+    line-height: 18px;
   }
 }

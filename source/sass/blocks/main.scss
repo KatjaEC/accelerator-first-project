@@ -85,12 +85,39 @@
     margin: 0 auto;
 
     &::before {
-      top: 50px;
-      left: 45px;
-      right: 71px;
-      width: 652px;
-      height: 780px;
-      border-radius: 16px;
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__about-us {
+    width: $desktop-width;
+  }
+
+  .main__programs {
+    width: $desktop-width
+  }
+
+  .main__news {
+    width: $desktop-width;
+  }
+
+  .main__faq {
+    width: $desktop-width;
+  }
+
+  .main__reviews {
+    width: $desktop-width;
+  }
+
+  .main__form {
+    width: $desktop-width;
+
+    &::before {
+      top: 60px;
+      left: 100px;
+      width: 1240px;
     }
   }
 }

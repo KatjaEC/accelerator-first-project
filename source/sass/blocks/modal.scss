@@ -56,3 +56,10 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .modal__body {
+    top: 90px;
+    width: 510px;
+  }
+}

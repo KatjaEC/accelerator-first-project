@@ -36,3 +36,23 @@
     margin-bottom: 31px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    padding: 120px 100px;
+    width: $desktop-width;
+  }
+
+  .contacts__text-wrapper {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .contacts__list-wrapper {
+    margin-left: auto;
+    width: 604px;
+  }
+}

@@ -75,3 +75,33 @@
     overflow: hidden;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .programs {
+    padding: 62px 100px 122px 100px;
+  }
+
+  .programs__title {
+    margin-bottom: 45px;
+  }
+
+  .programs__button {
+    top: 62px;
+    right: 100px;
+  }
+
+  .programs__nav-wrapper {
+    left: 100px;
+    bottom: 60px;
+    width: 1240px;
+    gap: 20px 50px;
+  }
+
+  .programs__pagination-wrapper {
+    width: 1136px;
+  }
+
+  .programs__slider-nav {
+    max-width: 56px;
+  }
+}

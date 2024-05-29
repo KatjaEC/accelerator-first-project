@@ -14,8 +14,12 @@
 
 @media (min-width: $tablet-width) {
   .hero__header {
-    width: 768px;
+    width: $tablet-width;
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .hero__header {
+    width: $desktop-width;
+  }
+}

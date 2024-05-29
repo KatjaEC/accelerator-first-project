@@ -17,3 +17,13 @@
     margin-bottom: 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .faq {
+    padding: 71px 206px 60px;
+  }
+
+  .faq__title {
+    margin-bottom: 71px;
+  }
+}

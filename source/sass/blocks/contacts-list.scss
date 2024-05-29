@@ -48,3 +48,24 @@
     font-size: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts-list {
+    display: grid;
+    grid-template-columns: 263px 132px 104px;
+    gap: 40px 52px;
+  }
+
+  .contacts-list__subheading {
+    margin-bottom: 24px;
+  }
+
+  .contacts-list__text {
+    line-height: 26px;
+
+    &--tel,
+    &--email {
+      line-height: 17px;
+    }
+  }
+}
