@@ -35,7 +35,48 @@
     transform: rotate(180deg);
   }
 
-  &--inactive::before {
+  &:hover::before {
+    background-color: rgba(49, 109, 194, 0.7);
+  }
+
+  &:focus {
+    background-color: $color-secondary;
+    outline-offset: 4px;
+  }
+
+  &:focus::before {
+    background-color: $color-primary;
+  }
+
+  &:active {
+    background-color: $color-secondary;
+  }
+
+  &:active::before {
+    background-color: rgba(49, 109, 194, 0.7);
+  }
+
+  &:disabled,
+  &:disabled:hover,
+  &:disabled:focus,
+  &:disabled:active,
+  &--inactive,
+  &--inactive:hover,
+  &--inactive:focus,
+  &--inactive:active  {
+    background-color: transparent;
+    pointer-events: none;
+    outline: transparent;
+  }
+
+  &:disabled::before,
+  &:disabled:hover::before,
+  &:disabled:focus::before,
+  &:disabled:active::before,
+  &--inactive::before,
+  &--inactive:hover::before,
+  &--inactive:focus::before,
+  &--inactive:active::before {
     right: -1px;
     background-color: $button-inactive;
   }

@@ -7,60 +7,78 @@
   list-style: none;
 }
 
-.socials-list__item {
+.socials-list__link {
+  position: relative;
+  display: block;
   width: 26px;
   height: 26px;
   background-color: $color-primary;
   border-radius: 50%;
-}
 
-.socials-list__link {
-  display: block;
-  width: 26px;
-  height: 26px;
-  background-color: $color-secondary;
-  border-radius: 50%;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-secondary;
+    border-radius: 50%;
+    content: "";
+  }
 
-  &--vk {
+  &--vk::before {
     mask: url("../../../__spritemap#sprite-socials-vk-view");
     mask-size: 24px 12px;
     mask-repeat: no-repeat;
     mask-position: center;
   }
 
-  &--ok {
+  &--ok::before {
     mask: url("../../../__spritemap#sprite-socials-ok-view");
     mask-size: 24px 11px;
     mask-repeat: no-repeat;
     mask-position: center;
-    background-color: $color-secondary;
   }
 
-  &--reddit {
+  &--reddit::before {
     mask: url("../../../__spritemap#sprite-socials-reddit-view");
     mask-size: 22px 12px;
     mask-repeat: no-repeat;
     mask-position: center;
+  }
+
+  &:hover::before {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  &:focus {
+    background-color: $color-secondary;
+    outline: transparent;
+  }
+
+  &:focus::before {
+    background-color: $color-primary;
+  }
+
+  &:active {
+    background-color: #275699;
+  }
+
+  &:active::before {
     background-color: $color-secondary;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .socials-list__item {
-    width: 36px;
-    height: 36px;
-  }
-
   .socials-list__link {
     width: 36px;
     height: 36px;
-    mask-size: 16px 16px;
+
+    &::before {
+      width: 36px;
+      height: 36px;
+      mask-size: 16px 16px;
+    }
   }
 }
-
-// @media (min-width: $desktop-width) {
-//   .socials-list__item {
-//     display: flex;
-//     align-self: center;
-//   }
-// }

@@ -6,20 +6,25 @@
 
 .nav-submenu__item {
   padding: 0 16px;
-  opacity: 0.6;
 
   &:not(:last-of-type) {
     margin-bottom: 8px;
-  }
-
-  &--current {
-    opacity: 0.9;
   }
 }
 
 .nav-submenu__link {
   font-size: 16px;
   line-height: 16px;
-  color: $color-secondary;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  &--current,
+  &:active {
+    color: rgba(255, 255, 255, 0.9);
+  }
 }

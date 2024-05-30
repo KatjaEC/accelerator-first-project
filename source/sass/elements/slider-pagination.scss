@@ -17,8 +17,20 @@
   border-radius: 50%;
   appearance: none;
   cursor: pointer;
+  transition: all 200ms ease-in-out;
 
-  &--active {
+  &:hover {
+    background-color: rgba(49, 109, 194, 0.7);
+    border-color: $color-secondary;
+  }
+
+  &:focus {
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  &--active,
+  &:active {
     background-color: #275699;
     border-color: #275699;
   }

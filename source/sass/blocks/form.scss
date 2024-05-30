@@ -51,10 +51,18 @@
   line-height: 14px;
   opacity: 0.8;
 
+  &--disabled {
+    opacity: 0.6;
+  }
+
   &--inverse {
     margin-bottom: 9px;
     font-size: 14px;
     line-height: 14px;
+  }
+
+  &--inverse-disabled {
+    color: $button-inactive;
   }
 }
 
@@ -75,6 +83,7 @@
   &--inverse {
     margin-bottom: 14px;
     padding: 11px 56px 12px 20px;
+    color: $color-text;
     border-color: rgba(72, 72, 72, 0.3);
   }
 
@@ -99,6 +108,34 @@
     background-size: 16px 16px;
     cursor: pointer;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $color-secondary;
+    outline: transparent;
+  }
+
+  &:disabled {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  &--error {
+    background-color: rgba(255, 94, 102, 0.2);
+    border-color: #ff5e66;
+  }
+
+  &--inverse:hover,
+  &--inverse:focus,
+  &--inverse:active {
+    border-color: $color-text;
+  }
+
+  &--inverse:disabled {
+    background-color: rgba(169, 175, 183, 0.2);
+    border-color: rgba(169, 175, 183, 0.5);
+  }
 }
 
 .form__checkbox-label {
@@ -109,6 +146,7 @@
   font-size: 12px;
   line-height: 14px;
   color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
 
   &::before {
     position: absolute;
@@ -116,9 +154,26 @@
     left: 0;
     width: 20px;
     height: 20px;
-    background-color: $color-secondary;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 2px;
     content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: $color-primary;
+    mask: url("../../__spritemap#sprite-checkmark-view");
+    mask-size: 10px 10px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    content: "";
+    display: none;
   }
 
   &--inverse {
@@ -127,8 +182,81 @@
 
   &--inverse::before {
     top: 4px;
-    background-color: $color-primary;
+    border-color: $color-primary;
   }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: $color-secondary;
+  }
+
+  &--inverse:hover::before {
+    border-color: #275699;
+  }
+}
+
+.form__checkbox:disabled ~ .form__checkbox-label::before {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-color: $color-secondary;
+}
+
+.form__checkbox--error ~ .form__checkbox-label::before {
+  background-color: rgba(255, 94, 102, 0.2);
+  border-color: rgba(255, 94, 102, 0.7);
+}
+
+.form__checkbox:checked ~ .form__checkbox-label::before {
+  background-color: $color-secondary;
+  border-color: $color-secondary;
+}
+
+.form__checkbox:checked:hover ~ .form__checkbox-label::before,
+.form__checkbox:checked:focus ~ .form__checkbox-label::before {
+  background-color: transparent;
+  border-color: $color-secondary;
+}
+
+.form__checkbox:checked:hover ~ .form__checkbox-label::after,
+.form__checkbox:checked:focus ~ .form__checkbox-label::after {
+  background-color: $color-secondary;
+  display: block;
+}
+
+.form__checkbox:checked:disabled ~ .form__checkbox-label::before {
+  background-color: $button-inactive;
+  border-color: $button-inactive;
+}
+
+.form__checkbox:checked:disabled ~ .form__checkbox-label::after {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: block;
+}
+
+.form__checkbox:focus ~ .form__checkbox-label--inverse::before {
+  background-color: $color-primary;
+  border-color: $color-primary;
+}
+
+.form__checkbox:checked ~ .form__checkbox-label--inverse::before {
+  background-color: $color-primary;
+  border-color: $color-primary;
+}
+
+.form__checkbox:checked ~ .form__checkbox-label--inverse::after {
+  background-color: $color-secondary;
+  display: block;
+}
+
+.form__checkbox:checked:hover ~ .form__checkbox-label--inverse::before,
+.form__checkbox:checked:focus ~ .form__checkbox-label--inverse::before {
+  background-color: transparent;
+  border-color: $color-primary;
+}
+
+.form__checkbox:checked:hover ~ .form__checkbox-label--inverse::after,
+.form__checkbox:checked:focus ~ .form__checkbox-label--inverse::after {
+  background-color: $color-primary;
+  display: block;
 }
 
 .form__checkbox-label > span {

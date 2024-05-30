@@ -14,6 +14,7 @@
   text-decoration: none;
   appearance: none;
   cursor: pointer;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 
   &::before {
     position: absolute;
@@ -23,6 +24,7 @@
     height: 34px;
     background-color: $color-primary;
     border-radius: 44px;
+    transition: all 200ms ease-in-out;
     content: "";
   }
 
@@ -38,6 +40,7 @@
     mask-repeat: no-repeat;
     mask-position: center;
     transform: rotate(-45deg);
+    transition: all 200ms ease-in-out;
     content: "";
   }
 
@@ -61,6 +64,49 @@
     }
   }
 
+  &:hover {
+    color: $color-secondary;
+    background-color: $color-primary;
+  }
+
+  &:hover::before {
+    background-color: $color-secondary;
+  }
+
+  &:hover::after {
+    background-color: $color-primary;
+    transform: rotate(0deg);
+  }
+
+  &:focus {
+    color: $color-primary;
+    background-color: transparent;
+    outline-offset: 4px;
+  }
+
+  &:focus::before {
+    background-color: $color-primary;
+  }
+
+  &:focus::after {
+    background-color: $color-secondary;
+    transform: rotate(0deg);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: $color-primary;
+  }
+
+  &:active::before {
+    background-color: $color-secondary;
+  }
+
+  &:active::after {
+    background-color: rgba(49, 109, 194, 0.7);
+    transform: rotate(0deg);
+  }
+
   &--inverse {
     color: $color-secondary;
     border-color: $color-secondary;
@@ -72,6 +118,53 @@
     &::after {
       background-color: $color-primary;
     }
+  }
+
+  &--inverse:hover {
+    color: $color-primary;
+    background-color: $color-secondary;
+
+    &::before {
+      background-color: $color-primary;
+    }
+
+    &::after {
+      background-color: $color-secondary;
+      transform: rotate(0deg);
+    }
+  }
+
+  &--inverse:focus {
+    color: $color-secondary;
+    background-color: transparent;
+
+    &::before {
+      background-color: $color-secondary;
+    }
+
+    &::after {
+      background-color: $color-primary;
+      transform: rotate(0deg);
+    }
+  }
+
+  &--inverse:active {
+    color: rgba(49, 109, 194, 0.7);
+    background-color: $color-secondary;
+
+    &::before {
+      background-color: $color-primary;
+    }
+
+    &::after {
+      background-color: rgba(255, 255, 255, 0.7);
+      transform: rotate(0deg);
+    }
+  }
+
+  &--small:hover {
+    background-color: $color-secondary;
+    border-color: transparent;
   }
 
   &--modal {
@@ -90,6 +183,43 @@
     mask-size: 15px 15px;
     mask-repeat: no-repeat;
     mask-position: center;
+    transform: rotate(-45deg);
+  }
+
+  &:disabled,
+  &:disabled:hover,
+  &:disabled:focus,
+  &:disabled:active,
+  &--disabled,
+  &--disabled:hover,
+  &--disabled:focus,
+  &--disabled:active {
+    color: $button-inactive;
+    background-color: transparent;
+    border-color: $button-inactive;
+    pointer-events: none;
+  }
+
+  &:disabled::before,
+  &:disabled:hover::before,
+  &:disabled:focus::before,
+  &:disabled:active::before,
+  &--disabled::before,
+  &--disabled:hover::before,
+  &--disabled:focus::before,
+  &--disabled:active::before {
+    background-color: $button-inactive;
+  }
+
+  &:disabled::after,
+  &:disabled:hover::after,
+  &:disabled:focus::after,
+  &:disabled:active::after,
+  &--disabled::after,
+  &--disabled:hover::after,
+  &--disabled:focus::after,
+  &--disabled:active::after {
+    background-color: rgba(255, 255, 255, 0.6);
     transform: rotate(-45deg);
   }
 }

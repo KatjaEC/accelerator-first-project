@@ -21,6 +21,25 @@
     color: $color-secondary;
     background-color: $color-primary;
   }
+
+  &:hover {
+    color: $color-primary;
+    background-color: transparent;
+    border-color: $color-primary;
+  }
+
+  &:focus {
+    color: $color-primary;
+    background-color: $color-secondary;
+    border-color: $color-primary;
+    outline-offset: 5px;
+  }
+
+  &:active {
+    color: $color-secondary;
+    background-color: #275699;
+    border-color: #275699;
+  }
 }
 
 @media (min-width: $tablet-width) {

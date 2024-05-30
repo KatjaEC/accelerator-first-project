@@ -30,17 +30,22 @@
           <nav class="header__nav nav-menu">
             <button class="nav-menu__toggle button" type="button">Меню</button>
             <!-- nav-menu__toggle--opened -->
-            <ul class="nav-menu__list">
+            <ul class="nav-menu__list nav-menu__list--shown">
               <!-- nav-menu__list--shown -->
               <li class="nav-menu__item">
-                <a class="nav-menu__link" href="#">О проекте</a>
+                <a class="nav-menu__link" href="#about-us">О проекте</a>
               </li>
-              <li class="nav-menu__item nav-menu__item--submenu-current">
-                <a class="nav-menu__link nav-menu__link--submenu-title nav-menu__link--submenu-opened" href="#">Программы</a>
+              <li class="nav-menu__item nav-menu__item--submenu-shown">
+                <div class="nav-menu__nav-buttons">
+                  <a class="nav-menu__link nav-menu__link--submenu-title nav-menu__link--submenu-current nav-menu__link--submenu-opened" href="#programs">Программы</a>
+                  <button class="nav-menu__submenu-toggle">
+                    <span class="visually-hidden">Открыть-закрыть подменю.</span>
+                  </button>
+                </div>
                 <div class="nav-menu__submenu-wrapper nav-menu__submenu-wrapper--opened">
                   <ul class="nav-menu__submenu nav-menu__submenu--opened nav-submenu">
-                    <li class="nav-submenu__item nav-submenu__item--current">
-                      <a class="nav-submenu__link" href="#">Стажировки</a>
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link nav-submenu__link--current" href="#">Стажировки</a>
                     </li>
                     <li class="nav-submenu__item">
                       <a class="nav-submenu__link" href="#">Волонтёрство</a>
@@ -55,16 +60,21 @@
                 </div>
               </li>
               <li class="nav-menu__item">
-                <a class="nav-menu__link" href="#">Как поехать</a>
+                <a class="nav-menu__link" href="#participate">Как поехать</a>
               </li>
               <li class="nav-menu__item">
-                <a class="nav-menu__link" href="#">Отзывы</a>
+                <a class="nav-menu__link" href="#reviews">Отзывы</a>
               </li>
               <li class="nav-menu__item">
-                <a class="nav-menu__link nav-menu__link--submenu-title" href="#">Новости</a>
+                <div class="nav-menu__nav-buttons">
+                  <a class="nav-menu__link nav-menu__link--submenu-title" href="#news">Новости</a>
+                  <button class="nav-menu__submenu-toggle">
+                    <span class="visually-hidden">Открыть-закрыть подменю.</span>
+                  </button>
+                </div>
               </li>
               <li class="nav-menu__item">
-                <a class="nav-menu__link" href="#">Контакты</a>
+                <a class="nav-menu__link" href="#contacts">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -141,7 +151,7 @@
           </div>
         </div>
       </section>
-      <section class="main__about-us about-us" data-test="about">
+      <section class="main__about-us about-us" data-test="about" id="about-us">
         <div class="about-us__text-wrapper">
           <div class="about-us__general-info">
             <h2 class="about-us__title section-title">О проекте «Стажировка»</h2>
@@ -180,7 +190,7 @@
           </li>
         </ul>
       </section>
-      <section class="main__programs programs" data-test="programs">
+      <section class="main__programs programs" data-test="programs" id="programs">
         <h2 class="programs__title section-title">Программы</h2>
         <a class="programs__button button" href="#">Все программы</a>
         <div class="programs__slider-wrapper swiper">
@@ -246,7 +256,7 @@
           </div>
         </div>
       </section>
-      <section class="main__grant grant" data-test="grant">
+      <section class="main__grant grant" data-test="grant" id="participate">
         <div class="grant__wrapper">
           <div class="grant__text-wrapper">
             <h2 class="grant__title section-title section-title--inverse">Как поехать</h2>
@@ -267,7 +277,7 @@
           </div>
         </div>
       </section>
-      <section class="main__news news" data-test="news">
+      <section class="main__news news" data-test="news" id="news">
         <h2 class="news__title section-title">Новости и материалы</h2>
         <div class="news__tabs news-tabs">
           <button class="news-tabs__button news-tabs__button--active" type="button">Общее</button>
@@ -340,7 +350,7 @@
       <section class="main__faq faq" data-test="FAQ">
         <h2 class="faq__title section-title">Вопросы и ответы</h2>
         <ul class="faq__list faq-list">
-          <li class="faq-list__item faq-card faq-card--details">
+          <li class="faq-list__item faq-card faq-card--details" focusable="true">
             <input class="visually-hidden" type="checkbox" id="program-details" name="program-details">
             <label class="faq-card__label" for="program-details">Кто организатор? Какие сроки у программы?</label>
             <div class="faq-card__content-wrapper">
@@ -395,7 +405,7 @@
           </li>
         </ul>
       </section>
-      <section class="main__reviews reviews" data-test="reviews">
+      <section class="main__reviews reviews" data-test="reviews" id="reviews">
         <h2 class="reviews__title section-title">Отзывы</h2>
         <div class="reviews__slider-wrapper swiper">
           <ul class="reviews__slider-list reviews-slider swiper-wrapper">
@@ -518,7 +528,7 @@
           </div>
         </div>
       </section>
-      <section class="main__contacts contacts" data-test="contacts">
+      <section class="main__contacts contacts" data-test="contacts" id="contacts">
         <div class="contacts__wrapper">
           <div class="contacts__text-wrapper">
             <div class="contacts__header">
@@ -580,7 +590,7 @@
               <option value="Saint-Petersburg">Санкт-Петербург</option>
               <option value="Saint-Petersburg">Санкт-Петербург</option>
             </select>
-            <input class="visually-hidden" type="checkbox" id="personal-data" name="personal-data" required>
+            <input class="form__checkbox visually-hidden" type="checkbox" id="personal-data" name="personal-data" required>
             <label class="form__checkbox-label" for="personal-data">Я согласен на обработку моих персональных <span>данных</span></label>
             <button class="form__button button button--inverse" type="submit">Отправить</button>
           </form>
@@ -596,22 +606,22 @@
         <div class="footer__nav-wrapper">
           <ul class="footer__nav footer-nav">
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">О проекте</a>
+              <a class="footer-nav__link" href="#about-us">О проекте</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Программы</a>
+              <a class="footer-nav__link" href="#programs">Программы</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Как поехать</a>
+              <a class="footer-nav__link" href="#participate">Как поехать</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Отзывы</a>
+              <a class="footer-nav__link" href="#reviews">Отзывы</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Новости</a>
+              <a class="footer-nav__link" href="#news">Новости</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Контакты</a>
+              <a class="footer-nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </div>
@@ -627,17 +637,17 @@
       <div class="footer__socials-wrapper">
         <ul class="footer__socials socials-list">
           <li class="socials-list__item">
-            <a class="socials-list__link socials-list__link--vk" href="https://vk.com/">
+            <a class="socials-list__link socials-list__link--vk" href="https://vk.com/" target="_blank">
               <span class="visually-hidden">Мы ВКонтакте.</span>
             </a>
           </li>
           <li class="socials-list__item">
-            <a class="socials-list__link socials-list__link--ok" href="https://ok.ru/">
+            <a class="socials-list__link socials-list__link--ok" href="https://ok.ru/" target="_blank">
               <span class="visually-hidden">Мы в Одноклассниках.</span>
             </a>
           </li>
           <li class="socials-list__item">
-            <a class="socials-list__link socials-list__link--reddit" href="https://www.reddit.com/">
+            <a class="socials-list__link socials-list__link--reddit" href="https://www.reddit.com/" target="_blank">
               <span class="visually-hidden">Мы на Реддит.</span>
             </a>
           </li>
@@ -663,7 +673,7 @@
             <option value="Saint-Petersburg">Санкт-Петербург</option>
             <option value="Saint-Petersburg">Санкт-Петербург</option>
           </select>
-          <input class="visually-hidden" type="checkbox" id="modal-personal-data" name="modal-personal-data" required>
+          <input class="form__checkbox visually-hidden" type="checkbox" id="modal-personal-data" name="modal-personal-data" required checked>
           <label class="form__checkbox-label form__checkbox-label--inverse" for="modal-personal-data">Я согласен на обработку моих персональных данных</label>
           <button class="form__button form__button--modal button button--modal" type="submit">Отправить</button>
         </form>

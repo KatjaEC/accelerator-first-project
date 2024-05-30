@@ -14,6 +14,20 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $color-secondary;
+  }
+
+  &--active:hover,
+  &--active:focus {
+    background-color: $color-primary;
+  }
+
+  &--active:active {
+    background-color: #275699;
+  }
 }
 
 .faq-card__label {
@@ -51,6 +65,50 @@
     border-radius: 50%;
     content: "";
   }
+
+  &:hover::before {
+    background-color: transparent;
+  }
+
+  &:hover::after {
+    background-color: $color-primary;
+  }
+
+  &:active::before {
+    background-color: #275699;
+    border-color: #275699;
+  }
+
+  &:active::after {
+    background-color: $color-secondary;
+  }
+}
+
+.faq-card input:focus ~ label {
+
+  &::before {
+    background-color: transparent;
+  }
+
+  &::after {
+    background-color: $color-primary;
+  }
+}
+
+.faq-card input:active ~ label {
+  color: #275699;
+}
+
+.faq-card input:disabled ~ label {
+
+  &::before {
+    background-color: $button-inactive;
+    border-color: $button-inactive;
+  }
+
+  &::after {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .faq-card__content-wrapper {
@@ -73,6 +131,42 @@
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: $color-primary;
+  }
+}
+
+.faq-card input:checked:hover ~ label {
+
+  &::before {
+    background-color: transparent;
+    border-color: $color-secondary;
+  }
+
+  &::after {
+    background-color: $color-secondary;
+  }
+}
+
+.faq-card input:checked:focus ~ label {
+
+  &::before {
+    background-color: transparent;
+    border-color: $color-secondary;
+  }
+
+  &::after {
+    background-color: $color-secondary;
+  }
+}
+
+.faq-card input:checked:active ~ label {
+
+  &::before {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+  }
+
+  &::after {
+    background-color: #275699;
   }
 }
 

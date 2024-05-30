@@ -7,7 +7,7 @@
 .contacts-list__item {
 
   &:not(:last-of-type) {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
 }
 
@@ -24,6 +24,25 @@
   color: $color-secondary;
   text-decoration: none;
   font-style: normal;
+  border-bottom: 1px solid transparent;
+
+  &--tel:hover,
+  &--email:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &--tel:focus,
+  &--email:focus {
+    color: $color-text;
+    border-color: $color-text;
+    outline-offset: 4px;
+  }
+
+  &--tel:active,
+  &--email:active {
+    color: $color-secondary;
+    border-color: $color-secondary;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -12,6 +12,19 @@
   display: block;
   color: $color-text;
   text-decoration: none;
+
+  &:hover {
+    color: rgba(49, 109, 194, 0.7);
+  }
+
+  &:focus {
+    color: $color-primary;
+    outline-offset: 4px;
+  }
+
+  &:active {
+    color: #275699;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -21,16 +34,15 @@
   }
 
   .footer-nav__link {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     font-size: 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer-nav {
-    width: 610px;
     justify-content: flex-start;
-    gap: 10px 30.5px;
+    gap: 0 30.5px;
   }
 }
