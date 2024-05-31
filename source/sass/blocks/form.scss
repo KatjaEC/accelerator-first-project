@@ -162,7 +162,7 @@
 
   &::after {
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
     width: 20px;
     height: 20px;
@@ -208,6 +208,10 @@
 .form__checkbox:checked ~ .form__checkbox-label::before {
   background-color: $color-secondary;
   border-color: $color-secondary;
+}
+
+.form__checkbox:checked ~ .form__checkbox-label::after {
+  display: block;
 }
 
 .form__checkbox:checked:hover ~ .form__checkbox-label::before,
@@ -385,6 +389,10 @@
     line-height: 12px;
 
     &::before {
+      top: 0;
+    }
+
+    &::after {
       top: 0;
     }
   }

@@ -93,6 +93,35 @@
     transform: rotate(0deg);
   }
 
+  &:focus:not(:focus-visible) {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: $color-primary;
+  }
+
+  &:focus:not(:focus-visible)::before {
+    background-color: $color-secondary;
+  }
+
+  &:focus:not(:focus-visible)::after {
+    background-color: rgba(49, 109, 194, 0.7);
+    transform: rotate(0deg);
+  }
+
+  &:focus-visible {
+    color: $color-primary;
+    background-color: transparent;
+    outline-offset: 4px;
+  }
+
+  &:focus-visible::before {
+    background-color: $color-primary;
+  }
+
+  &:focus-visible::after {
+    background-color: $color-secondary;
+    transform: rotate(0deg);
+  }
+
   &:active {
     color: rgba(255, 255, 255, 0.7);
     background-color: $color-primary;
@@ -147,6 +176,38 @@
       transform: rotate(0deg);
     }
   }
+
+  // need to check
+
+  &--inverse:focus:not(:focus-visible) {
+    color: rgba(49, 109, 194, 0.7);
+    background-color: $color-secondary;
+  }
+
+  &--inverse:focus:not(:focus-visible)::before {
+    background-color: $color-primary;
+  }
+
+  &--inverse:focus:not(:focus-visible)::after {
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: rotate(0deg);
+  }
+
+  &--inverse:focus-visible {
+    color: $color-secondary;
+    background-color: transparent;
+  }
+
+  &--inverse:focus-visible::before {
+    background-color: $color-secondary;
+  }
+
+  &--inverse:focus-visible::after {
+    background-color: $color-primary;
+    transform: rotate(0deg);
+  }
+
+  //
 
   &--inverse:active {
     color: rgba(49, 109, 194, 0.7);

@@ -1,7 +1,7 @@
 .page-body {
   position: relative;
 
-  &--nav-shown::before {
+  &::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -9,6 +9,12 @@
     height: 100%;
     background-color: $overlay-dark;
     content: "";
+    z-index: 10;
+    display: none;
+  }
+
+  &--nav-shown::before {
+    display: block;
   }
 }
 

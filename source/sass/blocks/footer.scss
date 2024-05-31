@@ -1,5 +1,7 @@
 .footer {
   padding: 40px 15px 39.5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__logo-wrapper {
@@ -51,6 +53,10 @@
   font-size: 12px;
   line-height: 14px;
   opacity: 0.6;
+}
+
+.footer__socials-wrapper {
+  order: 1;
 }
 
 .footer__socials {
@@ -125,6 +131,7 @@
   .footer {
     padding: 60px 100px 40px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 25px;
   }
@@ -174,6 +181,7 @@
   .footer__socials-wrapper {
     margin-left: auto;
     width: 152px;
+    order: 0;
     // align-content: center;
   }
 

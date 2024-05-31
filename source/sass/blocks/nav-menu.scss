@@ -2,8 +2,8 @@
   flex-grow: 1;
 }
 
-.nav-menu__submenu--opened:last-child {
-  margin-bottom: 21px;
+.nav-menu__submenu {
+  padding: 10px 0 0;
 }
 
 .nav-menu__toggle {
@@ -61,7 +61,7 @@
 
 .nav-menu__list {
   margin: 4px 0 0;
-  padding: 32px 25px 31px;
+  padding: 32px 25px;
   display: none;
   width: 100%;
   background-color: $color-primary;
@@ -75,10 +75,9 @@
 
 .nav-menu__item {
   position: relative;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
-  &:last-of-type,
-  &--submenu-shown {
+  &:last-of-type {
     margin-bottom: 0;
   }
 }
@@ -97,7 +96,7 @@
     color: $color-secondary;
   }
 
-  &--submenu-current,
+  &--submenu-opened,
   &:active {
     color: $color-secondary;
   }
@@ -157,10 +156,6 @@
   &--opened {
     max-height: 1000px;
   }
-}
-
-.nav-menu__submenu {
-  margin-top: 14px;
 }
 
 @media (min-width: $tablet-width) {

@@ -5,14 +5,16 @@
 }
 
 .nav-submenu__item {
-  padding: 0 16px;
+  padding: 4px 16px;
+  // padding: 0 16px;
 
-  &:not(:last-of-type) {
-    margin-bottom: 8px;
-  }
+  // &:not(:last-of-type) {
+  //   margin-bottom: 8px;
+  // }
 }
 
 .nav-submenu__link {
+  display: inline-block;
   font-size: 16px;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.6);

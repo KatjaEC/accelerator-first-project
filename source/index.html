@@ -29,20 +29,18 @@
           </div>
           <nav class="header__nav nav-menu">
             <button class="nav-menu__toggle button" type="button">Меню</button>
-            <!-- nav-menu__toggle--opened -->
-            <ul class="nav-menu__list nav-menu__list--shown">
-              <!-- nav-menu__list--shown -->
+            <ul class="nav-menu__list">
               <li class="nav-menu__item">
                 <a class="nav-menu__link" href="#about-us">О проекте</a>
               </li>
-              <li class="nav-menu__item nav-menu__item--submenu-shown">
+              <li class="nav-menu__item nav-menu__item--has-submenu">
                 <div class="nav-menu__nav-buttons">
-                  <a class="nav-menu__link nav-menu__link--submenu-title nav-menu__link--submenu-current nav-menu__link--submenu-opened" href="#programs">Программы</a>
+                  <a class="nav-menu__link nav-menu__link--submenu-title" href="#programs">Программы</a>
                   <button class="nav-menu__submenu-toggle">
                     <span class="visually-hidden">Открыть-закрыть подменю.</span>
                   </button>
                 </div>
-                <div class="nav-menu__submenu-wrapper nav-menu__submenu-wrapper--opened">
+                <div class="nav-menu__submenu-wrapper">
                   <ul class="nav-menu__submenu nav-menu__submenu--opened nav-submenu">
                     <li class="nav-submenu__item">
                       <a class="nav-submenu__link nav-submenu__link--current" href="#">Стажировки</a>
@@ -65,12 +63,31 @@
               <li class="nav-menu__item">
                 <a class="nav-menu__link" href="#reviews">Отзывы</a>
               </li>
-              <li class="nav-menu__item">
+              <li class="nav-menu__item nav-menu__item--has-submenu">
                 <div class="nav-menu__nav-buttons">
                   <a class="nav-menu__link nav-menu__link--submenu-title" href="#news">Новости</a>
                   <button class="nav-menu__submenu-toggle">
                     <span class="visually-hidden">Открыть-закрыть подменю.</span>
                   </button>
+                </div>
+                <div class="nav-menu__submenu-wrapper">
+                  <ul class="nav-menu__submenu nav-menu__submenu--opened nav-submenu">
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link nav-submenu__link--current" href="#">Общее</a>
+                    </li>
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link" href="#">Волонтёрство</a>
+                    </li>
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link" href="#">Стажировки</a>
+                    </li>
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link" href="#">Карьера</a>
+                    </li>
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link" href="#">Путешествия</a>
+                    </li>
+                  </ul>
                 </div>
               </li>
               <li class="nav-menu__item">
@@ -590,7 +607,7 @@
               <option value="Saint-Petersburg">Санкт-Петербург</option>
               <option value="Saint-Petersburg">Санкт-Петербург</option>
             </select>
-            <input class="form__checkbox visually-hidden" type="checkbox" id="personal-data" name="personal-data" required>
+            <input class="form__checkbox visually-hidden" type="checkbox" id="personal-data" name="personal-data" required checked>
             <label class="form__checkbox-label" for="personal-data">Я согласен на обработку моих персональных <span>данных</span></label>
             <button class="form__button button button--inverse" type="submit">Отправить</button>
           </form>
@@ -626,14 +643,6 @@
           </ul>
         </div>
       </div>
-      <div class="footer__legal-wrapper">
-        <div class="footer__confidentiality-wrapper">
-          <a class="footer__confidentiality" href="#">Политика конфиденциальности</a>
-        </div>
-        <div class="footer__copyright-wrapper">
-          <span class="footer__copyright">Стажировка © 2023 Все права защищены</span>
-        </div>
-      </div>
       <div class="footer__socials-wrapper">
         <ul class="footer__socials socials-list">
           <li class="socials-list__item">
@@ -652,6 +661,14 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="footer__legal-wrapper">
+        <div class="footer__confidentiality-wrapper">
+          <a class="footer__confidentiality" href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__copyright-wrapper">
+          <span class="footer__copyright">Стажировка © 2023 Все права защищены</span>
+        </div>
       </div>
     </footer>
     <div class="page-body__modal modal">
