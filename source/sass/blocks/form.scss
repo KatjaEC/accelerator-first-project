@@ -109,6 +109,16 @@
     cursor: pointer;
   }
 
+  &--select:focus-within {
+    background: url("../../../__spritemap#sprite-arrow-up-view") no-repeat calc(100% - 20px) center;
+    background-size: 16px 16px;
+  }
+
+  &--select-inverse:focus-within {
+    background: url("../../../__spritemap#sprite-arrow-up-inverse-view") no-repeat calc(100% - 19px) center;
+    background-size: 16px 16px;
+  }
+
   &:hover,
   &:focus,
   &:active {
@@ -155,6 +165,9 @@
     width: 20px;
     height: 20px;
     background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10px 10px;
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 2px;
     content: "";
@@ -162,16 +175,13 @@
 
   &::after {
     position: absolute;
-    top: 10px;
-    left: 0;
-    width: 20px;
-    height: 20px;
+    top: -4px;
+    left: -4px;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border: 1px solid $color-secondary;
     border-radius: 2px;
-    background-color: $color-primary;
-    mask: url("../../__spritemap#sprite-checkmark-view");
-    mask-size: 10px 10px;
-    mask-repeat: no-repeat;
-    mask-position: center;
     content: "";
     display: none;
   }
@@ -185,8 +195,11 @@
     border-color: $color-primary;
   }
 
-  &:hover::before,
-  &:focus::before {
+  &--inverse::after {
+    border-color: #275699;
+  }
+
+  &:hover::before {
     border-color: $color-secondary;
   }
 
@@ -195,45 +208,54 @@
   }
 }
 
-.form__checkbox:disabled ~ .form__checkbox-label::before {
-  background-color: rgba(255, 255, 255, 0.6);
-  border-color: $color-secondary;
-}
-
-.form__checkbox--error ~ .form__checkbox-label::before {
-  background-color: rgba(255, 94, 102, 0.2);
-  border-color: rgba(255, 94, 102, 0.7);
-}
-
 .form__checkbox:checked ~ .form__checkbox-label::before {
   background-color: $color-secondary;
+  background-image: url("../../__spritemap#sprite-checkmark-default-view");
   border-color: $color-secondary;
 }
 
-.form__checkbox:checked ~ .form__checkbox-label::after {
+.form__checkbox:focus ~ .form__checkbox-label::before {
+  border-color: $color-secondary;
+}
+
+.form__checkbox:focus ~ .form__checkbox-label::after {
+  display: block;
+}
+
+.form__checkbox:focus:not(:focus-visible) ~ .form__checkbox-label::before {
+  background-color: transparent;
+  border-color: $color-secondary;
+}
+
+.form__checkbox:focus:not(:focus-visible) ~ .form__checkbox-label::after {
+  display: none;
+}
+
+.form__checkbox:focus-visible ~ .form__checkbox-label::before {
+  border-color: $color-secondary;
+}
+
+.form__checkbox:focus-visible ~ .form__checkbox-label::after {
   display: block;
 }
 
 .form__checkbox:checked:hover ~ .form__checkbox-label::before,
 .form__checkbox:checked:focus ~ .form__checkbox-label::before {
   background-color: transparent;
+  background-image: url("../../__spritemap#sprite-checkmark-inverse-view");
   border-color: $color-secondary;
 }
 
-.form__checkbox:checked:hover ~ .form__checkbox-label::after,
-.form__checkbox:checked:focus ~ .form__checkbox-label::after {
+.form__checkbox:checked:focus:not(:focus-visible) ~ .form__checkbox-label::before {
   background-color: $color-secondary;
-  display: block;
+  background-image: url("../../__spritemap#sprite-checkmark-default-view");
+  border-color: $color-secondary;
 }
 
-.form__checkbox:checked:disabled ~ .form__checkbox-label::before {
-  background-color: $button-inactive;
-  border-color: $button-inactive;
-}
-
-.form__checkbox:checked:disabled ~ .form__checkbox-label::after {
-  background-color: rgba(255, 255, 255, 0.7);
-  display: block;
+.form__checkbox:checked:focus-visible ~ .form__checkbox-label::before {
+  background-color: transparent;
+  background-image: url("../../__spritemap#sprite-checkmark-inverse-view");
+  border-color: $color-secondary;
 }
 
 .form__checkbox:focus ~ .form__checkbox-label--inverse::before {
@@ -241,26 +263,64 @@
   border-color: $color-primary;
 }
 
-.form__checkbox:checked ~ .form__checkbox-label--inverse::before {
-  background-color: $color-primary;
+.form__checkbox:focus ~ .form__checkbox-label--inverse::after {
+  display: block;
+}
+
+.form__checkbox:focus:not(:focus-visible) ~ .form__checkbox-label--inverse::before {
+  background-color: transparent;
   border-color: $color-primary;
 }
 
-.form__checkbox:checked ~ .form__checkbox-label--inverse::after {
-  background-color: $color-secondary;
-  display: block;
+.form__checkbox:focus-visible ~ .form__checkbox-label--inverse::before {
+  background-color: transparent;
+  border-color: $color-primary;
+}
+
+.form__checkbox:checked ~ .form__checkbox-label--inverse::before {
+  background-color: $color-primary;
+  background-image: url("../../__spritemap#sprite-checkmark-inverse-view");
+  border-color: $color-primary;
 }
 
 .form__checkbox:checked:hover ~ .form__checkbox-label--inverse::before,
 .form__checkbox:checked:focus ~ .form__checkbox-label--inverse::before {
   background-color: transparent;
+  background-image: url("../../__spritemap#sprite-checkmark-default-view");
   border-color: $color-primary;
 }
 
-.form__checkbox:checked:hover ~ .form__checkbox-label--inverse::after,
-.form__checkbox:checked:focus ~ .form__checkbox-label--inverse::after {
+.form__checkbox:checked:focus:not(:focus-visible) ~ .form__checkbox-label--inverse::before {
   background-color: $color-primary;
-  display: block;
+  background-image: url("../../__spritemap#sprite-checkmark-inverse-view");
+  border-color: $color-primary;
+}
+
+.form__checkbox:checked:focus-visible ~ .form__checkbox-label--inverse::before {
+  background-color: transparent;
+  background-image: url("../../__spritemap#sprite-checkmark-default-view");
+  border-color: $color-primary;
+}
+
+.form__checkbox:disabled ~ .form__checkbox-label::before {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-color: $color-secondary;
+}
+
+.form__checkbox:disabled ~ .form__checkbox-label--inverse::before {
+  background-color: rgba(49, 109, 194, 0.6);
+  border-color: #275699;
+}
+
+.form__checkbox:checked:disabled ~ .form__checkbox-label::before {
+  background-color: $button-inactive;
+  background-image: url("../../__spritemap#sprite-checkmark-disabled-view");
+  border-color: $button-inactive;
+}
+
+.form__checkbox--error ~ .form__checkbox-label::before {
+  background-color: rgba(255, 94, 102, 0.2);
+  border-color: rgba(255, 94, 102, 0.7);
 }
 
 .form__checkbox-label > span {
@@ -392,9 +452,9 @@
       top: 0;
     }
 
-    &::after {
-      top: 0;
-    }
+    // &::after {
+    //   top: 0;
+    // }
   }
 
   .form__checkbox-label > span {

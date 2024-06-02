@@ -5,3 +5,4 @@
 
 import './nav-menu';
 import './modal';
+import './hero-slider';

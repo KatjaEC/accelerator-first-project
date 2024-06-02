@@ -96,9 +96,39 @@
             </ul>
           </nav>
         </header>
-        <div class="hero__slider-wrapper hero-slider swiper">
+        <div class="hero__slider-wrapper hero-slider">
           <h2 class="visually-hidden">Промо-блок с нашими предложениями.</h2>
-          <div class="hero-slider__list-wrapper">
+          <div class="hero-slider__list-wrapper swiper">
+            <div class="hero-slider__pagination-wrapper swiper-pagination">
+              <div class="hero-slider__pagination slider-pagination swiper-pagination">
+                <button class="slider-pagination__button slider-pagination__button--active" type="button">
+                  <span class="visually-hidden">Первый экран промо-блока.</span>
+                </button>
+                <button class="slider-pagination__button" type="button">
+                  <span class="visually-hidden">Второй экран промо-блока.</span>
+                </button>
+                <button class="slider-pagination__button" type="button">
+                  <span class="visually-hidden">Третий экран промо-блока.</span>
+                </button>
+              </div>
+              <!-- <ol class="hero-slider__pagination slider-pagination">
+                <li class="slider-pagination__item">
+                  <button class="slider-pagination__button slider-pagination__button--active" type="button">
+                    <span class="visually-hidden">Первый экран промо-блока.</span>
+                  </button>
+                </li>
+                <li class="slider-pagination__item">
+                  <button class="slider-pagination__button" type="button">
+                    <span class="visually-hidden">Второй экран промо-блока.</span>
+                  </button>
+                </li>
+                <li class="slider-pagination__item">
+                  <button class="slider-pagination__button" type="button">
+                    <span class="visually-hidden">Третий экран промо-блока.</span>
+                  </button>
+                </li>
+              </ol> -->
+            </div>
             <ol class="hero-slider__list swiper-wrapper">
               <li class="hero-slider__item hero-slider__item--education swiper-slide">
                 <div class="hero-slider__content-wrapper">
@@ -147,25 +177,7 @@
               </li>
             </ol>
           </div>
-          <div class="hero-slider__pagination-wrapper">
-            <ol class="hero-slider__pagination slider-pagination swiper-pagination">
-              <li class="slider-pagination__item">
-                <button class="slider-pagination__button slider-pagination__button--active" type="button">
-                  <span class="visually-hidden">Первый экран промо-блока.</span>
-                </button>
-              </li>
-              <li class="slider-pagination__item">
-                <button class="slider-pagination__button" type="button">
-                  <span class="visually-hidden">Второй экран промо-блока.</span>
-                </button>
-              </li>
-              <li class="slider-pagination__item">
-                <button class="slider-pagination__button" type="button">
-                  <span class="visually-hidden">Третий экран промо-блока.</span>
-                </button>
-              </li>
-            </ol>
-          </div>
+
         </div>
       </section>
       <section class="main__about-us about-us" data-test="about" id="about-us">
@@ -596,7 +608,7 @@
             <label class="form__label" for="form-name">Имя</label>
             <input class="form__input" type="text" name="form-name" id="form-name" pattern="^[А-Яа-яЁё\s]+$" required>
             <label class="form__label" for="form-phone">Телефон</label>
-            <input class="form__input" type="tel" name="form-phone" id="form-phone" minlength="6" title="Введите номер телефона в формате +7 XXX XXX XX XX" pattern="^((\+7|)+([0-9]){10})$" required>
+            <input class="form__input" type="tel" name="form-phone" id="form-phone" minlength="6" title="Введите номер телефона в формате +7 XXX XXX XX XX" pattern="^(\+7|)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" required>
             <label class="form__label" for="form-message">Ваше сообщение</label>
             <textarea class="form__input form__input--textarea" name="form-message" id="form-message" required></textarea>
             <label class="form__label" for="form-choose-city">Выберите город</label>
@@ -607,7 +619,7 @@
               <option value="Saint-Petersburg">Санкт-Петербург</option>
               <option value="Saint-Petersburg">Санкт-Петербург</option>
             </select>
-            <input class="form__checkbox visually-hidden" type="checkbox" id="personal-data" name="personal-data" required checked>
+            <input class="form__checkbox visually-hidden" type="checkbox" id="personal-data" name="personal-data" required>
             <label class="form__checkbox-label" for="personal-data">Я согласен на обработку моих персональных <span>данных</span></label>
             <button class="form__button button button--inverse" type="submit">Отправить</button>
           </form>
@@ -672,7 +684,6 @@
       </div>
     </footer>
     <div class="page-body__modal modal">
-      <!-- modal--shown -->
       <div class="modal__body form form--inverse">
         <h2 class="visually-hidden">Модальное окно формы обратной связи.</h2>
         <p class="form__heading form__heading--inverse">Напишите нам</p>
@@ -681,7 +692,7 @@
           <label class="form__label form__label--inverse" for="modal-name">Имя</label>
           <input class="form__input form__input--inverse" type="text" name="modal-name" id="modal-name" pattern="^[А-Яа-яЁё\s]+$" required>
           <label class="form__label form__label--inverse" for="modal-phone">Телефон</label>
-          <input class="form__input form__input--inverse" type="tel" name="modal-phone" id="modal-phone" minlength="6" title="Введите номер телефона в формате +7 XXX XXX XX XX" pattern="^((\+7|)+([0-9]){10})$" required>
+          <input class="form__input form__input--inverse" type="tel" name="modal-phone" id="modal-phone" minlength="6" title="Введите номер телефона в формате +7 XXX XXX XX XX" pattern="^(\+7|)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" required>
           <label class="form__label form__label--inverse" for="modal-choose-city">Выберите город</label>
           <select class="form__input form__input--select form__input--inverse form__input--select-inverse" name="modal-choose-city" id="modal-choose-city" required>
             <option value="" selected>&nbsp;</option>
@@ -690,7 +701,7 @@
             <option value="Saint-Petersburg">Санкт-Петербург</option>
             <option value="Saint-Petersburg">Санкт-Петербург</option>
           </select>
-          <input class="form__checkbox visually-hidden" type="checkbox" id="modal-personal-data" name="modal-personal-data" required checked>
+          <input class="form__checkbox visually-hidden" type="checkbox" id="modal-personal-data" name="modal-personal-data" required>
           <label class="form__checkbox-label form__checkbox-label--inverse" for="modal-personal-data">Я согласен на обработку моих персональных данных</label>
           <button class="form__button form__button--modal button button--modal" type="submit">Отправить</button>
         </form>
