@@ -18,11 +18,8 @@
   background-position: center;
   border-radius: 12px;
 
-  &:not(:last-of-type) {
-    margin-bottom: 20px;
-  }
-
-  &--active {
+  &--active,
+  &--bigger {
     padding-top: 186px;
     min-height: 330px;
   }
@@ -242,14 +239,18 @@
 @media (min-width: $desktop-width) {
   .news-slider {
     display: flex;
-    gap: 32px;
   }
 
   .news-slider__item {
+    margin-right: 32px;
     padding-right: 42px;
     width: 286px;
     min-height: 400px;
     flex-shrink: 0;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
 
     &--active {
       padding-right: 136px;

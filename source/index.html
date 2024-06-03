@@ -111,23 +111,6 @@
                   <span class="visually-hidden">Третий экран промо-блока.</span>
                 </button>
               </div>
-              <!-- <ol class="hero-slider__pagination slider-pagination">
-                <li class="slider-pagination__item">
-                  <button class="slider-pagination__button slider-pagination__button--active" type="button">
-                    <span class="visually-hidden">Первый экран промо-блока.</span>
-                  </button>
-                </li>
-                <li class="slider-pagination__item">
-                  <button class="slider-pagination__button" type="button">
-                    <span class="visually-hidden">Второй экран промо-блока.</span>
-                  </button>
-                </li>
-                <li class="slider-pagination__item">
-                  <button class="slider-pagination__button" type="button">
-                    <span class="visually-hidden">Третий экран промо-блока.</span>
-                  </button>
-                </li>
-              </ol> -->
             </div>
             <ol class="hero-slider__list swiper-wrapper">
               <li class="hero-slider__item hero-slider__item--education swiper-slide">
@@ -177,7 +160,6 @@
               </li>
             </ol>
           </div>
-
         </div>
       </section>
       <section class="main__about-us about-us" data-test="about" id="about-us">
@@ -222,6 +204,25 @@
       <section class="main__programs programs" data-test="programs" id="programs">
         <h2 class="programs__title section-title">Программы</h2>
         <a class="programs__button button" href="#">Все программы</a>
+        <div class="programs__nav-wrapper">
+          <div class="programs__slider-nav nav-buttons">
+            <button
+              class="nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
+              type="button">
+              <span class="visually-hidden">Предыдущая программа.</span>
+            </button>
+            <button class="nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Следующая программа.</span>
+            </button>
+          </div>
+          <div class="programs__pagination-wrapper">
+            <div class="programs__pagination slider-pagination slider-pagination--bar swiper-scrollbar">
+              <button class="slider-pagination__active-bar swiper-scrollbar-drag" type="button">
+                <span class="visually-hidden">Активный элемент скроллбара.</span>
+              </button>
+            </div>
+          </div>
+        </div>
         <div class="programs__slider-wrapper swiper">
           <ul class="programs__slider-list programs-slider swiper-wrapper">
             <li class="programs-slider__item programs-slider__item--internship swiper-slide">
@@ -251,38 +252,25 @@
                 </a>
               </div>
             </li>
+            <li class="programs-slider__item programs-slider__item--volunteering swiper-slide">
+              <h3 class="programs-slider__heading">Волонтёрство</h3>
+              <div class="programs-slider__content-wrapper">
+                <p>Помогайте другим и&nbsp;развивайте свои лидерские&nbsp;качества.</p>
+                <a class="programs-slider__button button button--small" href="#">
+                  <span class="visually-hidden">Подробнее о программе.</span>
+                </a>
+              </div>
+            </li>
+            <li class="programs-slider__item programs-slider__item--internship swiper-slide">
+              <h3 class="programs-slider__heading">Стажировки</h3>
+              <div class="programs-slider__content-wrapper">
+                <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                <a class="programs-slider__button button button--small" href="#">
+                  <span class="visually-hidden">Подробнее о программе.</span>
+                </a>
+              </div>
+            </li>
           </ul>
-        </div>
-        <div class="programs__nav-wrapper">
-          <div class="programs__slider-nav nav-buttons">
-            <button
-              class="nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
-              type="button">
-              <span class="visually-hidden">Предыдущая программа.</span>
-            </button>
-            <button class="nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
-              <span class="visually-hidden">Следующая программа.</span>
-            </button>
-          </div>
-          <div class="programs__pagination-wrapper">
-            <ol class="programs__pagination slider-pagination slider-pagination--bar swiper-pagination">
-              <li class="slider-pagination__item slider-pagination__item--bar">
-                <button class="slider-pagination__button slider-pagination__button--bar slider-pagination__button--active-bar" type="button">
-                  <span class="visually-hidden">Первый слайд.</span>
-                </button>
-              </li>
-              <li class="slider-pagination__item slider-pagination__item--bar">
-                <button class="slider-pagination__button slider-pagination__button--bar" type="button">
-                  <span class="visually-hidden">Второй слайд.</span>
-                </button>
-              </li>
-              <li class="slider-pagination__item slider-pagination__item--bar">
-                <button class="slider-pagination__button slider-pagination__button--bar" type="button">
-                  <span class="visually-hidden">Третий слайд.</span>
-                </button>
-              </li>
-            </ol>
-          </div>
         </div>
       </section>
       <section class="main__grant grant" data-test="grant" id="participate">
@@ -315,9 +303,29 @@
           <button class="news-tabs__button" type="button">Карьера</button>
           <button class="news-tabs__button" type="button">Путешествия</button>
         </div>
+        <div class="news__nav-wrapper">
+          <div class="news__slider-nav nav-buttons">
+            <button
+              class="news__slider-arrow news__slider-arrow--prev nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
+              type="button">
+              <span class="visually-hidden">Предыдущая новость.</span>
+            </button>
+            <button class="news__slider-arrow news__slider-arrow--next nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Следующая новость.</span>
+            </button>
+          </div>
+          <div class="nav-buttons__wrapper nav-list swiper-pagination">
+            <button class="nav-list__button nav-list__button--active" type="button">1</button>
+            <button class="nav-list__button" type="button">2</button>
+            <button class="nav-list__button" type="button">3</button>
+            <button class="nav-list__button" type="button">4</button>
+          </div>
+        </div>
         <div class="news__slider-wrapper swiper">
-          <ul class="news__slider-list news-slider">
-            <li class="news-slider__item news-slider__item--interview news-slider__item--active">
+          <!-- swiper -->
+          <ul class="news__slider-list news-slider swiper-wrapper">
+            <!-- swiper-wrapper -->
+            <li class="news-slider__item news-slider__item--interview news-slider__item--active news-slider__item--bigger swiper-slide">
               <span class="news-slider__date">23/03/2023</span>
               <h3 class="news-slider__heading">Интервью с&nbsp;участницей программы стажировки</h3>
               <div class="news-slider__content-wrapper">
@@ -327,7 +335,7 @@
                 </a>
               </div>
             </li>
-            <li class="news-slider__item news-slider__item--travel">
+            <li class="news-slider__item news-slider__item--travel swiper-slide">
               <span class="news-slider__date">20/03/2023</span>
               <h3 class="news-slider__heading">Путешествуем по&nbsp;миру</h3>
               <div class="news-slider__content-wrapper">
@@ -337,7 +345,7 @@
                 </a>
               </div>
             </li>
-            <li class="news-slider__item news-slider__item--new-program">
+            <li class="news-slider__item news-slider__item--new-program news-slider__item--bigger swiper-slide">
               <span class="news-slider__date">17/03/2023</span>
               <h3 class="news-slider__heading">Новая программа волонтёрства</h3>
               <div class="news-slider__content-wrapper">
@@ -347,7 +355,7 @@
                 </a>
               </div>
             </li>
-            <li class="news-slider__item news-slider__item--career">
+            <li class="news-slider__item news-slider__item--career swiper-slide">
               <span class="news-slider__date">10/03/2023</span>
               <h3 class="news-slider__heading">Построй свою карьеру</h3>
               <div class="news-slider__content-wrapper">
@@ -358,22 +366,6 @@
               </div>
             </li>
           </ul>
-        </div>
-        <div class="news__slider-nav nav-buttons">
-          <button
-            class="news__slider-arrow news__slider-arrow--prev nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
-            type="button">
-            <span class="visually-hidden">Предыдущая новость.</span>
-          </button>
-          <div class="nav-buttons__wrapper nav-list">
-            <button class="nav-list__button nav-list__button--active" type="button">1</button>
-            <button class="nav-list__button" type="button">2</button>
-            <button class="nav-list__button" type="button">3</button>
-            <button class="nav-list__button" type="button">4</button>
-          </div>
-          <button class="news__slider-arrow news__slider-arrow--next nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
-            <span class="visually-hidden">Следующая новость.</span>
-          </button>
         </div>
       </section>
       <section class="main__faq faq" data-test="FAQ">

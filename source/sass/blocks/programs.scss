@@ -25,7 +25,8 @@
 .programs__nav-wrapper {
   position: absolute;
   top: 54px;
-  right: 15px;
+  right: 16px;
+  min-height: 22px;
 }
 
 .programs__slider-nav {
@@ -34,6 +35,8 @@
 }
 
 .programs__pagination-wrapper {
+  position: relative;
+  height: 12px;
   display: none;
 }
 
@@ -91,9 +94,11 @@
   }
 
   .programs__nav-wrapper {
+    top: auto;
     left: 100px;
     bottom: 60px;
     width: 1240px;
+    min-height: 22px;
     gap: 20px 50px;
   }
 
@@ -103,5 +108,6 @@
 
   .programs__slider-nav {
     max-width: 56px;
+    min-height: 22px;
   }
 }

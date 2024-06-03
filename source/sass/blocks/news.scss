@@ -1,4 +1,5 @@
 .news {
+  position: relative;
   padding: 50px 15px;
 }
 
@@ -14,17 +15,28 @@
   scrollbar-width: none;
 }
 
+.news__nav-wrapper {
+  position: absolute;
+  bottom: 16px;
+  left: 15px;
+  margin: 0 auto;
+  width: 290px;
+  min-height: 26px;
+}
+
 .news__slider-wrapper {
-  max-height: 640px;
+  max-height: 650px;
   overflow: hidden;
 }
 
 .news__slider-list {
-  max-height: 606px;
+  max-height: 610px;
 }
 
 .news__slider-nav {
-  margin-top: 8px;
+  margin-top: 2px;
+  margin-right: 1px;
+  justify-content: space-between;
 }
 
 .news__slider-arrow {

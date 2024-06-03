@@ -38,34 +38,57 @@
 
 @media (min-width: $tablet-width) {
   .slider-pagination--bar {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+    height: 100%;
     flex-wrap: nowrap;
     gap: 0;
+    background: transparent;
+    border-bottom: 2px solid rgba(49, 109, 194, 0.5);
+    border-radius: 0;
+    cursor: pointer;
+  }
+
+  .slider-pagination__active-bar {
+    position: absolute;
+    top: 2px;
+    width: 326px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $color-primary;
+    border-radius: 0;
+    appearance: none;
+    cursor: pointer;
   }
 
   .slider-pagination__button {
     width: 12px;
     height: 12px;
 
-    &--bar {
-      width: 326px;
-      height: 2px;
-      background-color: $color-primary;
-      border: none;
-      border-radius: 0;
-      opacity: 0.36;
-    }
+    // &--bar {
+    //   width: 326px;
+    //   height: 2px;
+    //   border-bottom: 2px solid $color-primary;
+    //   border: none;
+    //   border-radius: 0;
+    //   opacity: 0.36;
+    // }
 
-    &--active-bar {
-      opacity: 1;
-    }
+    // &--bar-active {
+    //   height: 100%;
+    //   background-color: transparent;
+    //   border-bottom: 2px solid $color-primary;
+    //   border-radius: 0;
+    // }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .slider-pagination__button {
-
-    &--bar {
-      width: 394px;
-    }
+  .slider-pagination__active-bar {
+    width: 394px;
   }
 }

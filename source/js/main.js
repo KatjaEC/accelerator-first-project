@@ -6,3 +6,6 @@
 import './nav-menu';
 import './modal';
 import './hero-slider';
+import './programs-slider';
+import './news-slider';
+import './reviews-slider';

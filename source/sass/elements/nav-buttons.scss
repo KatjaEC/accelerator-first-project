@@ -5,8 +5,12 @@
   gap: 7px;
 }
 
-.nav-buttons__button {
+.nav-buttons > .nav-buttons__button {
   position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  margin: 0;
   width: 22px;
   height: 22px;
   background-color: transparent;
@@ -29,6 +33,10 @@
     mask-repeat: no-repeat;
     mask-position: center;
     content: "";
+  }
+
+  &::after {
+    display: none;
   }
 
   &--previous::before {
@@ -83,6 +91,10 @@
 }
 
 .nav-buttons__wrapper {
+  position: absolute;
+  top: 0;
+  left: 69px;
+  right: 68px;
   margin: 0 auto;
   max-width: 162px;
 }

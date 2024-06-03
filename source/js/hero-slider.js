@@ -6,17 +6,6 @@ import 'swiper/css/pagination';
 const swiperHero = document.querySelector('.hero-slider__list-wrapper.swiper');
 const swiperSlides = swiperHero.querySelectorAll('.hero-slider__item');
 const swiperLinks = swiperHero.querySelectorAll('.hero-slider__button');
-const paginationWrapper = swiperHero.querySelector('.hero-slider__pagination-wrapper');
-const sliderPagination = paginationWrapper.querySelector('.slider-pagination');
-
-swiperSlides.forEach((slide) => {
-  const paginationCopy = paginationWrapper.cloneNode(true);
-  slide.append(paginationCopy);
-  const buttons = paginationCopy.querySelectorAll('.slider-pagination__button');
-  buttons.forEach((button) => button.setAttribute('tabindex', '-1'));
-  slide.style.height = 'auto';
-  paginationCopy.style.zIndex = '5';
-});
 
 const heroSlider = new Swiper (swiperHero, {
   modules: [Pagination],
@@ -40,10 +29,6 @@ const heroSlider = new Swiper (swiperHero, {
   },
 });
 
-sliderPagination.style.top = 'auto';
-sliderPagination.style.bottom = 'auto';
-sliderPagination.style.width = 'auto';
-
 const setTabIndex = () => {
   swiperLinks.forEach((link) => {
     link.setAttribute('tabindex', '-1');
@@ -65,6 +50,22 @@ const addButtonDescription = () => {
 };
 
 addButtonDescription();
+
+const paginationWrapper = swiperHero.querySelector('.hero-slider__pagination-wrapper');
+const sliderPagination = paginationWrapper.querySelector('.slider-pagination');
+
+sliderPagination.style.top = 'auto';
+sliderPagination.style.bottom = 'auto';
+sliderPagination.style.width = 'auto';
+
+swiperSlides.forEach((slide) => {
+  const paginationCopy = paginationWrapper.cloneNode(true);
+  slide.append(paginationCopy);
+  paginationCopy.style.zIndex = '5';
+  const buttons = paginationCopy.querySelectorAll('.slider-pagination__button');
+  buttons.forEach((button) => button.setAttribute('tabindex', '-1'));
+  slide.style.height = 'auto';
+});
 
 /* eslint-disable */
 
