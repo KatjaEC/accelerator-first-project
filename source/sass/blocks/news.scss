@@ -16,27 +16,65 @@
 }
 
 .news__nav-wrapper {
-  position: absolute;
-  bottom: 16px;
-  left: 15px;
-  margin: 0 auto;
+  position: relative;
+  // bottom: 0;
+  // left: 15px;
+  margin: 24px auto 0;
   width: 290px;
   min-height: 26px;
 }
 
 .news__slider-wrapper {
-  max-height: 650px;
+  // max-height: 650px;
   overflow: hidden;
 }
 
-.news__slider-list {
-  max-height: 610px;
+// .news__slider-list {
+//   // max-height: 610px;
+// }
+
+.news__slider-list.news-slider.swiper-wrapper {
+  gap: 0;
 }
 
 .news__slider-nav {
-  margin-top: 2px;
   margin-right: 1px;
   justify-content: space-between;
+}
+
+.news__pagination-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 168px;
+  min-height: 28px;
+  overflow: hidden;
+}
+
+.news__pagination-container > .news__pagination-wrapper.nav-list.swiper-pagination {
+  position: absolute;
+  top: 0;
+  left: -33px;
+  bottom: 0;
+  right: 0;
+  max-width: 184px;
+  min-height: 28px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  transform: translateX(0);
+  overflow: hidden;
+}
+
+.news__pagination-wrapper.swiper-pagination-horizontal.swiper-pagination-bullets > .swiper-pagination-bullet  {
+  margin: 0 8px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .news__slider-arrow {
@@ -65,16 +103,38 @@
     margin-bottom: 30px;
   }
 
-  .news__slider-wrapper {
-    max-height: 100%;
-  }
+  // .news__slider-wrapper {
+  //   max-height: 100%;
+  // }
 
-  .news__slider-list {
-    max-height: 100%;
+  // .news__slider-list {
+  //   max-height: 100%;
+  // }
+
+  .news__nav-wrapper {
+    margin-top: 30px;
+    width: 100%;
   }
 
   .news__slider-nav {
-    margin-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .news__pagination-container > .news__pagination-wrapper.nav-list.swiper-pagination {
+    left: -46px;
+    max-width: 244px;
+  }
+
+  .news__pagination-container {
+    width: 214px;
+    min-height: 32px;
+  }
+
+  .news__pagination-wrapper.swiper-pagination-horizontal.swiper-pagination-bullets > .swiper-pagination-bullet  {
+    margin: 0 10px;
   }
 
   .news__slider-arrow {
@@ -100,7 +160,21 @@
     width: 1240px;
   }
 
+  .news__nav-wrapper {
+    margin-top: 35px;
+  }
+
   .news__slider-nav {
-    margin-top: 40px;
+    margin-top: 5px;
+  }
+
+  .news__pagination-container {
+    min-height: 42px;
+  }
+
+  .news__pagination-container > .news__pagination-wrapper.nav-list.swiper-pagination {
+    left: -101px;
+    max-width: 344px;
+    justify-content: flex-start;
   }
 }

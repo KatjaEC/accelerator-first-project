@@ -1,5 +1,7 @@
 .review-card {
   padding: 29px 15px 31px;
+  display: flex;
+  flex-direction: column;
   border: 2px solid $color-primary;
   border-radius: 16px;
 }

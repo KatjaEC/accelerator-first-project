@@ -6,7 +6,16 @@ import 'swiper/css';
 
 const swiperPrograms = document.querySelector('.programs__slider-wrapper');
 // const swiperProgramsList = swiperPrograms.querySelector('.programs__slider-list');
-const swiperProgramsSlides = swiperPrograms.querySelectorAll('.programs-slider__item');
+
+const addClonedSlides = () => {
+  const slidesList = swiperPrograms.querySelector('.programs__slider-list');
+  const slideCopy1 = swiperPrograms.querySelector('.programs-slider__item--volunteering').cloneNode(true);
+  const slideCopy2 = swiperPrograms.querySelector('.programs-slider__item--education').cloneNode(true);
+  slidesList.append(slideCopy1);
+  slidesList.append(slideCopy2);
+};
+
+addClonedSlides();
 
 const programsSlider = new Swiper (swiperPrograms, {
   modules: [Scrollbar, Navigation],
@@ -16,8 +25,8 @@ const programsSlider = new Swiper (swiperPrograms, {
     dragClass: 'slider-pagination__active-bar swiper-scrollbar-drag',
   },
   navigation: {
-    nextEl: '.nav-buttons__button.swiper-button-next',
-    prevEl: '.nav-buttons__button.swiper-button-prev',
+    nextEl: '.programs__slider-nav .swiper-button-next',
+    prevEl: '.programs__slider-nav .swiper-button-prev',
     disabledClass: 'nav-buttons__button--inactive',
   },
   autoplay: false,
@@ -50,6 +59,8 @@ const programsSlider = new Swiper (swiperPrograms, {
     }
   },
 });
+
+const swiperProgramsSlides = swiperPrograms.querySelectorAll('.programs-slider__item');
 
 swiperProgramsSlides.forEach((slide) => {
   slide.style.display = 'flex';

@@ -7,7 +7,7 @@
 
 .nav-buttons > .nav-buttons__button {
   position: relative;
-  top: auto;
+  top: 2px;
   left: auto;
   right: auto;
   margin: 0;
@@ -90,21 +90,16 @@
   }
 }
 
-.nav-buttons__wrapper {
-  position: absolute;
-  top: 0;
-  left: 69px;
-  right: 68px;
-  margin: 0 auto;
-  max-width: 162px;
-}
-
 @media (min-width: $tablet-width) {
   .nav-buttons {
     gap: 9px;
   }
 
-  .nav-buttons__wrapper {
-    max-width: 188px;
+  .nav-buttons > .nav-buttons__button {
+    top: 5px;
+
+    &--next {
+      right: 1px;
+    }
   }
 }

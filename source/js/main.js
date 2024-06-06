@@ -8,4 +8,5 @@ import './modal';
 import './hero-slider';
 import './programs-slider';
 import './news-slider';
+import './faq';
 import './reviews-slider';

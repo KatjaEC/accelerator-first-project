@@ -16,13 +16,30 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-within {
     background-color: $color-secondary;
   }
 
-  &--active:hover,
-  &--active:focus {
+  &:hover label::before,
+  &:focus label::before,
+  &:hover input:checked ~ label::before,
+  &:focus input:checked ~ label::before {
+    background-color: transparent;
+  }
+
+  &:hover label::after,
+  &:focus label::after {
     background-color: $color-primary;
+  }
+
+  &--active:hover,
+  &--active:focus-within {
+    background-color: $color-primary;
+  }
+
+  &:hover input:checked ~ label::after,
+  &:focus input:checked ~ label::after {
+    background-color: $color-secondary;
   }
 
   &--active:active {
@@ -66,13 +83,13 @@
     content: "";
   }
 
-  &:hover::before {
-    background-color: transparent;
-  }
+  // &:hover::before {
+  //   background-color: transparent;
+  // }
 
-  &:hover::after {
-    background-color: $color-primary;
-  }
+  // &:hover::after {
+  //   background-color: $color-primary;
+  // }
 
   &:active::before {
     background-color: #275699;
@@ -84,7 +101,8 @@
   }
 }
 
-.faq-card input:focus ~ label {
+.faq-card input:focus ~ label,
+.faq-card--focused ~ label {
 
   &::before {
     background-color: transparent;
@@ -95,11 +113,13 @@
   }
 }
 
-.faq-card input:active ~ label {
+.faq-card input:active ~ label,
+.faq-card--active ~ label {
   color: #275699;
 }
 
-.faq-card input:disabled ~ label {
+.faq-card input:disabled ~ label,
+.faq-card--disabled ~ label  {
 
   &::before {
     background-color: $button-inactive;

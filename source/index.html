@@ -252,24 +252,6 @@
                 </a>
               </div>
             </li>
-            <li class="programs-slider__item programs-slider__item--volunteering swiper-slide">
-              <h3 class="programs-slider__heading">Волонтёрство</h3>
-              <div class="programs-slider__content-wrapper">
-                <p>Помогайте другим и&nbsp;развивайте свои лидерские&nbsp;качества.</p>
-                <a class="programs-slider__button button button--small" href="#">
-                  <span class="visually-hidden">Подробнее о программе.</span>
-                </a>
-              </div>
-            </li>
-            <li class="programs-slider__item programs-slider__item--internship swiper-slide">
-              <h3 class="programs-slider__heading">Стажировки</h3>
-              <div class="programs-slider__content-wrapper">
-                <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
-                <a class="programs-slider__button button button--small" href="#">
-                  <span class="visually-hidden">Подробнее о программе.</span>
-                </a>
-              </div>
-            </li>
           </ul>
         </div>
       </section>
@@ -303,29 +285,9 @@
           <button class="news-tabs__button" type="button">Карьера</button>
           <button class="news-tabs__button" type="button">Путешествия</button>
         </div>
-        <div class="news__nav-wrapper">
-          <div class="news__slider-nav nav-buttons">
-            <button
-              class="news__slider-arrow news__slider-arrow--prev nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
-              type="button">
-              <span class="visually-hidden">Предыдущая новость.</span>
-            </button>
-            <button class="news__slider-arrow news__slider-arrow--next nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
-              <span class="visually-hidden">Следующая новость.</span>
-            </button>
-          </div>
-          <div class="nav-buttons__wrapper nav-list swiper-pagination">
-            <button class="nav-list__button nav-list__button--active" type="button">1</button>
-            <button class="nav-list__button" type="button">2</button>
-            <button class="nav-list__button" type="button">3</button>
-            <button class="nav-list__button" type="button">4</button>
-          </div>
-        </div>
         <div class="news__slider-wrapper swiper">
-          <!-- swiper -->
           <ul class="news__slider-list news-slider swiper-wrapper">
-            <!-- swiper-wrapper -->
-            <li class="news-slider__item news-slider__item--interview news-slider__item--active news-slider__item--bigger swiper-slide">
+            <li class="news-slider__item news-slider__item--interview news-slider__item--active swiper-slide swiper-slide-active">
               <span class="news-slider__date">23/03/2023</span>
               <h3 class="news-slider__heading">Интервью с&nbsp;участницей программы стажировки</h3>
               <div class="news-slider__content-wrapper">
@@ -345,7 +307,7 @@
                 </a>
               </div>
             </li>
-            <li class="news-slider__item news-slider__item--new-program news-slider__item--bigger swiper-slide">
+            <li class="news-slider__item news-slider__item--new-program swiper-slide">
               <span class="news-slider__date">17/03/2023</span>
               <h3 class="news-slider__heading">Новая программа волонтёрства</h3>
               <div class="news-slider__content-wrapper">
@@ -366,6 +328,26 @@
               </div>
             </li>
           </ul>
+        </div>
+        <div class="news__nav-wrapper">
+          <div class="news__slider-nav nav-buttons">
+            <button
+              class="news__slider-arrow news__slider-arrow--prev nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
+              type="button">
+              <span class="visually-hidden">Предыдущая новость.</span>
+            </button>
+            <button class="news__slider-arrow news__slider-arrow--next nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Следующая новость.</span>
+            </button>
+          </div>
+          <div class="news__pagination-container">
+            <div class="news__pagination-wrapper nav-list swiper-pagination">
+              <button class="nav-list__button nav-list__button--active" type="button">1</button>
+              <button class="nav-list__button" type="button">2</button>
+              <button class="nav-list__button" type="button">3</button>
+              <button class="nav-list__button" type="button">4</button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="main__faq faq" data-test="FAQ">
@@ -520,9 +502,73 @@
                 </p>
               </div>
             </li>
+            <li class="reviews-slider__item review-card swiper-slide">
+              <div class="review-card__header">
+                <div class="review-card__user-wrapper">
+                  <div class="review-card__avatar-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/photos/reviews-avatar-2@1x.webp 1x, img/photos/reviews-avatar-2@2x.webp 2x"
+                        width="90" height="90">
+                      <source type="image/webp"
+                        srcset="img/photos/reviews-avatar-2@1x.webp 1x, img/photos/reviews-avatar-2@2x.webp 2x"
+                        width="60" height="60">
+                      <source media="(min-width: 768px)"
+                        srcset="img/photos/reviews-avatar-2@1x.jpg 1x, img/photos/reviews-avatar-2@2x.jpg 2x"
+                        type="image/jpeg" width="90" height="90">
+                      <img class="review-card__avatar" src="img/photos/reviews-avatar-2@1x.jpg" srcset="img/photos/reviews-avatar-2@2x.jpg"
+                        width="60" height="60" alt="Аватар пользователя.">
+                    </picture>
+                  </div>
+                  <div class="review-card__name-wrapper">
+                    <span class="review-card__name">Давид</span>
+                    <span class="review-card__surname">Иванов</span>
+                  </div>
+                </div>
+                <div class="review-card__program-wrapper">
+                  <dl class="review-card__program-info">
+                    <dt class="review-card__program-heading">Программа</dt>
+                    <dd class="review-card__program-details">Volunteer Chance</dd>
+                  </dl>
+                  <dl class="review-card__program-info">
+                    <dt class="review-card__program-heading">Дата</dt>
+                    <dd class="review-card__program-details">Лето 2022</dd>
+                  </dl>
+                </div>
+              </div>
+              <p class="review-card__heading">
+                Благодаря опыту стажировки я узнал так&nbsp;много нового о себе и об окружающем мире.
+              </p>
+              <div class="review-card__text-wrapper">
+                <p>
+                  Каждый день был возможностью оказать ощутимое влияние на&nbsp;жизнь других людей. Я бы очень рекомендовал
+                  эту&nbsp;волонтёрскую программу всем, кто ищет значимый и&nbsp;незабываемый опыт. Организация была на высшем
+                  уровне. Для&nbsp;меня было честью быть частью такой удивительной инициативы.
+                </p>
+              </div>
+            </li>
           </ul>
         </div>
         <div class="reviews__nav-wrapper">
+          <div class="reviews__slider-nav nav-buttons">
+            <button
+              class="nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
+              type="button">
+              <span class="visually-hidden">Предыдущий отзыв.</span>
+            </button>
+            <button class="nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Следующий отзыв.</span>
+            </button>
+          </div>
+          <div class="reviews__pagination-wrapper">
+            <div class="reviews__pagination slider-pagination slider-pagination--bar swiper-scrollbar">
+              <button class="slider-pagination__active-bar swiper-scrollbar-drag" type="button">
+                <span class="visually-hidden">Активный элемент скроллбара.</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="reviews__nav-wrapper">
           <div class="reviews__slider-nav nav-buttons">
             <button
               class="nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
@@ -547,7 +593,7 @@
               </li>
             </ol>
           </div>
-        </div>
+        </div> -->
       </section>
       <section class="main__contacts contacts" data-test="contacts" id="contacts">
         <div class="contacts__wrapper">
