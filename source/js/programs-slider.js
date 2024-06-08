@@ -1,11 +1,8 @@
 import Swiper from 'swiper';
 import { Scrollbar, Navigation } from 'swiper/modules';
 import 'swiper/css';
-// import 'swiper/css/scrollbar';
-// import 'swiper/css/navigation';
 
 const swiperPrograms = document.querySelector('.programs__slider-wrapper');
-// const swiperProgramsList = swiperPrograms.querySelector('.programs__slider-list');
 
 const addClonedSlides = () => {
   const slidesList = swiperPrograms.querySelector('.programs__slider-list');
@@ -69,15 +66,5 @@ swiperProgramsSlides.forEach((slide) => {
 const scrollbarButton = document.querySelector('.programs__pagination-wrapper .slider-pagination__active-bar');
 
 scrollbarButton.setAttribute('tabindex', '-1');
-
-// const addScrollbarDescription = () => {
-//   const paginationScrollbar = document.querySelector('.swiper-scrollbar-drag');
-//   const descriptionElement = document.createElement('span');
-//   descriptionElement.classList.add('visually-hidden');
-//   descriptionElement.textContent = 'Активный элемент скроллбара.';
-//   paginationScrollbar.append(descriptionElement);
-// };
-
-// addScrollbarDescription();
 
 export { programsSlider };

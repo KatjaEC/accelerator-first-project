@@ -10,3 +10,6 @@ import './programs-slider';
 import './news-slider';
 import './faq';
 import './reviews-slider';
+import './select-dropdown';
+import './form';
+import './phone-mask';
