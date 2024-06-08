@@ -145,7 +145,8 @@
   }
 
   &--select {
-    padding: 18px 56px 18px 18px;
+    margin-bottom: 21px;
+    padding: 15px 56px 15px 18px;
     width: 260px;
     background: url("../../../__spritemap#sprite-arrow-down-white-view") no-repeat calc(100% - 20px) center;
     background-size: 16px 16px;
@@ -498,7 +499,7 @@
 
     &--select {
       margin-bottom: 19.5px;
-      padding-top: 19px;
+      padding-top: 17px;
       width: 100%;
     }
 
