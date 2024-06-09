@@ -72,3 +72,5 @@ function onRandomClick(evt) {
     closeModal();
   }
 }
+
+export { closeModal };

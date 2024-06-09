@@ -1,3 +1,5 @@
+import { closeModal } from './modal';
+import { sendData } from './api';
 const forms = document.querySelectorAll('.form__body');
 
 forms.forEach((form) => {
@@ -42,4 +44,33 @@ forms.forEach((form) => {
       checkboxInput.classList.remove('form__checkbox--error');
     }
   });
+
+  const formInputs = form.querySelectorAll('.form__input');
+
+  const resetOnSubmit = () => {
+    form.reset();
+    formInputs.forEach((input) => input.classList.remove('form__input--error'));
+    if (form.classList.contains('form__body--modal')) {
+      closeModal();
+    }
+  };
+
+  const setFormSubmit = (onSuccess) => {
+    form.addEventListener('submit', (evt) => {
+      evt.preventDefault();
+
+      const isValid = form.checkValidity();
+      if (isValid) {
+        sendData(new FormData(evt.target))
+          .then(onSuccess)
+          .catch(() => {
+            throw new Error('Не удалось отправить форму. Попробуйте ещё раз');
+          }
+          )
+          .finally(resetOnSubmit());
+      }
+    });
+  };
+
+  setFormSubmit();
 });

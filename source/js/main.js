@@ -3,6 +3,7 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 
+// import './api';
 import './nav-menu';
 import './modal';
 import './hero-slider';
