@@ -28,6 +28,7 @@
 
   &::after {
     top: 16px;
+    top: calc(50% - 11px);
     right: 17px;
     mask: url("../../__spritemap#sprite-menu-open-view");
     mask-size: 18px 15px;
@@ -171,7 +172,6 @@
   }
 
   .nav-menu__list {
-
     &--shown {
       width: 100%;
     }

@@ -10,10 +10,10 @@ forms.forEach((form) => {
   const checkboxInput = form.querySelector('.form__checkbox');
   const formSubmitButton = form.querySelector('.form__button');
 
-  const phoneValid = phoneInput.checkValidity();
-  const nameValid = nameInput.checkValidity();
-
   formSubmitButton.addEventListener('click', (evt) => {
+    const phoneValid = phoneInput.checkValidity();
+    const nameValid = nameInput.checkValidity();
+
     if (!phoneValid) {
       phoneInput.classList.add('form__input--error');
     } else {
@@ -25,8 +25,7 @@ forms.forEach((form) => {
       nameInput.classList.remove('form__input--error');
     }
     if (messageInput) {
-      const messageChecked = messageInput.checkValidity();
-      if (!messageChecked) {
+      if (messageInput.value.length < 2) {
         messageInput.classList.add('form__input--error');
       } else {
         messageInput.classList.remove('form__input--error');

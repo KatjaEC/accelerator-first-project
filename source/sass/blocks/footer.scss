@@ -154,11 +154,13 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
     gap: 40px 100px;
     order: 1;
   }
 
   .footer__confidentiality-wrapper {
+    grid-column: 2/-1;
     order: 1;
   }
 
@@ -168,6 +170,10 @@
     width: 212px;
     font-size: 14px;
     line-height: 18px;
+  }
+
+  .footer__copyright-wrapper {
+    grid-column: 1/2;
   }
 
   .footer__copyright {
@@ -182,16 +188,11 @@
     margin-left: auto;
     width: 152px;
     order: 0;
-    // align-content: center;
   }
 
   .footer__socials {
     margin-top: 8px;
     width: 100%;
     gap: 20px;
-
-    // &:not(:last-of-type) {
-    //   margin-bottom: 20px;
-    // }
   }
 }

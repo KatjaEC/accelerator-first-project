@@ -103,7 +103,6 @@
 
 .faq-card input:focus ~ label,
 .faq-card--focused ~ label {
-
   &::before {
     background-color: transparent;
   }
@@ -119,8 +118,7 @@
 }
 
 .faq-card input:disabled ~ label,
-.faq-card--disabled ~ label  {
-
+.faq-card--disabled ~ label {
   &::before {
     background-color: $button-inactive;
     border-color: $button-inactive;
@@ -155,7 +153,6 @@
 }
 
 .faq-card input:checked:hover ~ label {
-
   &::before {
     background-color: transparent;
     border-color: $color-secondary;
@@ -167,7 +164,6 @@
 }
 
 .faq-card input:checked:focus ~ label {
-
   &::before {
     background-color: transparent;
     border-color: $color-secondary;
@@ -179,7 +175,6 @@
 }
 
 .faq-card input:checked:active ~ label {
-
   &::before {
     background-color: $color-secondary;
     border-color: $color-secondary;

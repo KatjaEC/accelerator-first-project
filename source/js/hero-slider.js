@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 const swiperHero = document.querySelector('.hero-slider__list-wrapper.swiper');
 const swiperSlides = swiperHero.querySelectorAll('.hero-slider__item');
 const swiperLinks = swiperHero.querySelectorAll('.hero-slider__button');
+const desktopWidth = 1440;
 
 const heroSlider = new Swiper (swiperHero, {
   modules: [Pagination],
@@ -21,7 +22,6 @@ const heroSlider = new Swiper (swiperHero, {
   watchSlidesProgress: true,
   spaceBetween: 0,
   slidesPerView: 1,
-  autoHeight: true,
   breakpoints: {
     1440: {
       simulateTouch: false,
@@ -59,11 +59,13 @@ sliderPagination.style.bottom = 'auto';
 sliderPagination.style.width = 'auto';
 
 swiperSlides.forEach((slide) => {
+  const slideTextWrapper = slide.querySelector('.hero-slider__content-wrapper');
   const paginationCopy = paginationWrapper.cloneNode(true);
-  slide.append(paginationCopy);
+  slideTextWrapper.append(paginationCopy);
   paginationCopy.style.zIndex = '5';
   const buttons = paginationCopy.querySelectorAll('.slider-pagination__button');
   buttons.forEach((button) => button.setAttribute('tabindex', '-1'));
+  slide.style.display = 'flex';
   slide.style.height = 'auto';
 });
 
@@ -85,7 +87,9 @@ heroSlider.on('slideChange', function () {
 heroSlider.on('slideChangeTransitionEnd', function() {
   const activePaginationButton = sliderPagination.querySelector('.slider-pagination__button--active');
   setTabIndex();
-  activePaginationButton.focus();
+  if (document.body.clientWidth >= desktopWidth) {
+    activePaginationButton.focus();
+  }
 });
 
 /* eslint-enable */

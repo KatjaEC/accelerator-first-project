@@ -13,6 +13,8 @@ const slide2 = swiperNewsList.querySelector('.news-slider__item--travel');
 const slide3 = swiperNewsList.querySelector('.news-slider__item--new-program');
 const slide4 = swiperNewsList.querySelector('.news-slider__item--career');
 const slide1Clone = slide1.cloneNode(true);
+slide1Clone.classList.remove('news-slider__item--active');
+slide1Clone.classList.remove('swiper-slide-active');
 const slide2Clone = slide2.cloneNode(true);
 const slide3Clone = slide3.cloneNode(true);
 const slide4Clone = slide4.cloneNode(true);
@@ -34,8 +36,6 @@ const clonedList2 = [slide4Clone2, slide1Clone2, slide2Clone2, slide3Clone2];
 const clonedList3 = [slide1Clone3, slide2Clone3, slide3Clone3, slide4Clone3, slide1Clone4, slide2Clone4];
 
 const changeSlidesOrder = () => {
-  slide1Clone.classList.remove('news-slider__item--active');
-  slide1Clone.classList.remove('swiper-slide-active');
   swiperNewsList.append(...newList, ...clonedList, ...clonedList2);
 };
 
@@ -72,7 +72,6 @@ const newsSlider = new Swiper (swiperNews, {
   },
   slideActiveClass: 'news-slider__item--active',
   autoplay: false,
-  autoHeight: true,
   direction: 'horizontal',
   loop: false,
   watchSlidesProgress: true,
@@ -83,7 +82,7 @@ const newsSlider = new Swiper (swiperNews, {
       slidesPerView: 1,
       slidesPerGroup: 1,
       spaceBetween: 20,
-      autoHeight: false,
+      // autoHeight: false,
       observer: true,
       observeParents: true,
       grid: {
@@ -93,7 +92,7 @@ const newsSlider = new Swiper (swiperNews, {
     },
     768: {
       width: 678,
-      autoHeight: false,
+      // autoHeight: false,
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 30,

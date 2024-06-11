@@ -18,6 +18,13 @@
   margin-bottom: 36px;
 }
 
+.contacts__list {
+
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+}
+
 .contacts__image {
   border-radius: 16px;
 }
@@ -41,6 +48,10 @@
   .contacts__wrapper {
     padding: 120px 100px;
     width: $desktop-width;
+  }
+
+  .contacts__header {
+    width: 590px;
   }
 
   .contacts__text-wrapper {

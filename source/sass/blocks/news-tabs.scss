@@ -34,6 +34,7 @@
 
 @media (min-width: $tablet-width) {
   .news-tabs {
+    flex-wrap: wrap;
     gap: 7px;
   }
 

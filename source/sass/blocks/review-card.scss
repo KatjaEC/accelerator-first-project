@@ -79,12 +79,14 @@
     margin-bottom: 30px;
     display: grid;
     grid-template-columns: auto 230px;
+    grid-auto-flow: dense;
     gap: 20px;
   }
 
   .review-card__user-wrapper {
     margin-bottom: 0;
     gap: 15px;
+    grid-column: 1/2;
   }
 
   .review-card__name-wrapper {
@@ -102,6 +104,7 @@
     margin-bottom: 0;
     align-items: center;
     justify-content: flex-end;
+    grid-column: 2/-1;
   }
 
   .review-card__program-details {

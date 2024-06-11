@@ -71,7 +71,7 @@
   &--inactive,
   &--inactive:hover,
   &--inactive:focus,
-  &--inactive:active  {
+  &--inactive:active {
     background-color: transparent;
     pointer-events: none;
     outline: transparent;
@@ -92,7 +92,7 @@
 
 @media (min-width: $tablet-width) {
   .nav-buttons {
-    gap: 9px;
+    gap: 10px;
   }
 
   .nav-buttons > .nav-buttons__button {

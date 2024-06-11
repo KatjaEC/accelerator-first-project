@@ -45,7 +45,6 @@
 }
 
 .form__body {
-
   &:focus,
   &:focus-within,
   &:focus-visible {
@@ -96,6 +95,7 @@
   margin-bottom: 20px;
   padding: 15px 56px 14px 18px;
   width: 100%;
+  height: 50px;
   font-family: "Manrope", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -106,27 +106,9 @@
   border-radius: 8px;
   appearance: none;
 
-  // &:-webkit-autofill,
-  &:-webkit-autofill,
-  &--textarea:-webkit-autofill,
-  &--select:-webkit-autofill {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    -webkit-text-fill-color: $color-background;
-    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-    transition: background-color 5000s ease-in-out 0s;
-    // background: transparent;
-  }
-
   &:hover,
   &:focus,
-  &:active,
-  &--select:-webkit-autofill:hover,
-  &--select:-webkit-autofill:focus,
-  &--textarea:-webkit-autofill:hover,
-  &--textarea:-webkit-autofill:focus,
-  &:-webkit-autofill:hover,
-  &:-webkit-autofill:focus {
-    // background: transparent;
+  &:active {
     border-color: $color-secondary;
     outline: transparent;
   }
@@ -134,6 +116,7 @@
   &--inverse {
     margin-bottom: 14px;
     padding: 11px 56px 12px 20px;
+    height: 44px;
     color: $color-text;
     border-color: rgba(72, 72, 72, 0.3);
   }
@@ -145,9 +128,10 @@
   }
 
   &--select {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     padding: 15px 56px 15px 18px;
     width: 260px;
+    height: 52px;
     background: url("../../../__spritemap#sprite-arrow-down-white-view") no-repeat calc(100% - 20px) center;
     background-size: 16px 16px;
     cursor: pointer;
@@ -156,26 +140,16 @@
   &--select-inverse {
     margin-bottom: 15px;
     padding: 14px 56px 14px 20px;
+    height: 44px;
     background: url("../../../__spritemap#sprite-arrow-down-view") no-repeat calc(100% - 19px) center;
     background-size: 16px 16px;
     cursor: pointer;
   }
 
-  // &--select:focus-within,
   &--select-shown {
     background: url("../../../__spritemap#sprite-arrow-up-view") no-repeat calc(100% - 20px) center;
     background-size: 16px 16px;
   }
-
-  // &--select:focus-within ~ .form__select-dropdown {
-  //   display: block;
-  // }
-
-  // &--select-inverse:focus-within,
-  // &--select-inverse--shown {
-  //   background: url("../../../__spritemap#sprite-arrow-up-inverse-view") no-repeat calc(100% - 19px) center;
-  //   background-size: 16px 16px;
-  // }
 
   &:disabled {
     background-color: rgba(255, 255, 255, 0.2);
@@ -191,12 +165,7 @@
 
   &--inverse:hover,
   &--inverse:focus,
-  &--inverse:active,
-  &--select-inverse:-webkit-autofill:hover,
-  &--select-inverse:-webkit-autofill:focus,
-  &--inverse:-webkit-autofill:hover,
-  &--inverse:-webkit-autofill:focus {
-    // background: transparent;
+  &--inverse:active {
     border-color: $color-text;
     color: $color-text;
   }
@@ -204,14 +173,6 @@
   &--inverse:disabled {
     background-color: rgba(169, 175, 183, 0.2);
     border-color: rgba(169, 175, 183, 0.5);
-  }
-
-  &--inverse:-webkit-autofill,
-  &--textarea-inverse:-webkit-autofill,
-  &--select-inverse:-webkit-autofill {
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    -webkit-text-fill-color: $color-text;
-    border-color: rgba(72, 72, 72, 0.3);
   }
 }
 
@@ -419,7 +380,7 @@
   }
 
   .form__wrapper {
-    padding: 30px 40px 36px 40px;
+    padding: 30px 40px 36px;
     width: 442px;
     border-radius: 16px;
 
@@ -438,16 +399,16 @@
       background-position: center;
       background-size: cover;
       background-image:
-      image-set(
-        url("../../img/photos/form-background-smaller@1x.webp") type("image/webp") 1x,
-        url("../../img/photos/form-background-smaller@1x.jpg") type("image/jpeg") 1x);
+        image-set(
+          url("../../img/photos/form-background-smaller@1x.webp") type("image/webp") 1x,
+          url("../../img/photos/form-background-smaller@1x.jpg") type("image/jpeg") 1x);
 
       @media (resolution >= 2dppx) {
         background-image:
           image-set(
             url("../../img/photos/form-background-smaller@2x.webp") type("image/webp") 2x,
             url("../../img/photos/form-background-smaller@2x.jpg") type("image/jpeg") 2x);
-        }
+      }
     }
   }
 
@@ -491,7 +452,6 @@
   }
 
   .form__input {
-
     &--textarea {
       margin-bottom: 15px;
       height: 88px;
@@ -507,6 +467,7 @@
       margin-bottom: 20px;
       padding-top: 14px;
       padding-bottom: 15px;
+      height: 50px;
     }
 
     &--select-inverse {
@@ -523,10 +484,6 @@
     &::before {
       top: 0;
     }
-
-    // &::after {
-    //   top: 0;
-    // }
   }
 
   .form__checkbox-label > span {
@@ -534,24 +491,24 @@
   }
 
   .form__button {
-    margin-top: 18px;
+    margin-top: 19px;
+    padding: 20px 80px 20px 31px;
     padding-right: 80px;
     width: 352px;
 
     &--modal {
       margin: 8px auto 0;
-      padding-top: 18.5px;
-      padding-bottom: 19.5px;
+      padding: 19px 80px 19px 30px;
       max-width: 194px;
     }
 
     &--modal::before {
-      top: 3px;
+      top: calc(50% - 23px);
       right: 3px;
     }
 
     &--modal::after {
-      top: 16px;
+      top: calc(50% - 10px);
       right: 16px;
     }
   }
@@ -568,23 +525,23 @@
 
   .form__wrapper {
     margin: 0 auto 0 0;
-    padding: 32px 70px 41px;
+    padding: 32px 70px 40px;
     width: 490px;
 
     &::before {
       right: 100px;
       width: 1240px;
       background-image:
-      image-set(
-        url("../../img/photos/form-background-full@1x.webp") type("image/webp") 1x,
-        url("../../img/photos/form-background-full@1x.jpg") type("image/jpeg") 1x);
+        image-set(
+          url("../../img/photos/form-background-full@1x.webp") type("image/webp") 1x,
+          url("../../img/photos/form-background-full@1x.jpg") type("image/jpeg") 1x);
 
       @media (resolution >= 2dppx) {
         background-image:
           image-set(
             url("../../img/photos/form-background-full@2x.webp") type("image/webp") 2x,
             url("../../img/photos/form-background-full@2x.jpg") type("image/jpeg") 2x);
-        }
+      }
     }
   }
 
@@ -637,6 +594,11 @@
   }
 
   .form__button {
+    margin-top: 18px;
     width: 100%;
+
+    &--modal {
+      margin-top: 7.5px;
+    }
   }
 }

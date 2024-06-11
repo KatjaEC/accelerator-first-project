@@ -61,10 +61,10 @@
   }
 
   .programs__nav-wrapper {
+    position: relative;
     top: auto;
-    bottom: 50px;
     right: auto;
-    left: 45px;
+    margin-top: 35px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -72,6 +72,7 @@
   }
 
   .programs__pagination-wrapper {
+    margin-top: 10px;
     width: 562px;
     display: block;
     order: -1;
@@ -81,7 +82,7 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    padding: 62px 100px 122px 100px;
+    padding: 62px 100px 122px;
   }
 
   .programs__title {
@@ -94,9 +95,6 @@
   }
 
   .programs__nav-wrapper {
-    top: auto;
-    left: 100px;
-    bottom: 60px;
     width: 1240px;
     min-height: 22px;
     gap: 20px 50px;

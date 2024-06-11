@@ -47,6 +47,10 @@
 .about-us__list {
   margin: 0 auto;
   width: 290px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -89,6 +93,7 @@
 
   .about-us__button {
     margin-top: 40px;
+    padding-right: 64px;
     max-width: 279px;
   }
 }

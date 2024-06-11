@@ -30,7 +30,7 @@
 
   &::after {
     position: absolute;
-    top: 11px;
+    top: calc(50% - 10px);
     right: 11px;
     width: 20px;
     height: 20px;
@@ -50,18 +50,18 @@
     height: 30px;
     background-color: $color-primary;
     border-color: transparent;
+  }
 
-    &::before {
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
+  &--small::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
-    &::after {
-      top: 4px;
-      left: 4px;
-    }
+  &--small::after {
+    top: 4px;
+    left: 4px;
   }
 
   &:hover {
@@ -139,45 +139,43 @@
   &--inverse {
     color: $color-secondary;
     border-color: $color-secondary;
+  }
 
-    &::before {
-      background-color: $color-secondary;
-    }
+  &--inverse::before {
+    background-color: $color-secondary;
+  }
 
-    &::after {
-      background-color: $color-primary;
-    }
+  &--inverse::after {
+    background-color: $color-primary;
   }
 
   &--inverse:hover {
     color: $color-primary;
     background-color: $color-secondary;
+  }
 
-    &::before {
-      background-color: $color-primary;
-    }
+  &--inverse:hover::before {
+    background-color: $color-primary;
+  }
 
-    &::after {
-      background-color: $color-secondary;
-      transform: rotate(0deg);
-    }
+  &--inverse:hover::after {
+    background-color: $color-secondary;
+    transform: rotate(0deg);
   }
 
   &--inverse:focus {
     color: $color-secondary;
     background-color: transparent;
-
-    &::before {
-      background-color: $color-secondary;
-    }
-
-    &::after {
-      background-color: $color-primary;
-      transform: rotate(0deg);
-    }
   }
 
-  // need to check
+  &--inverse:focus::before {
+    background-color: $color-secondary;
+  }
+
+  &--inverse:focus::after {
+    background-color: $color-primary;
+    transform: rotate(0deg);
+  }
 
   &--inverse:focus:not(:focus-visible) {
     color: rgba(49, 109, 194, 0.7);
@@ -207,20 +205,18 @@
     transform: rotate(0deg);
   }
 
-  //
-
   &--inverse:active {
     color: rgba(49, 109, 194, 0.7);
     background-color: $color-secondary;
+  }
 
-    &::before {
-      background-color: $color-primary;
-    }
+  &--inverse:active::before {
+    background-color: $color-primary;
+  }
 
-    &::after {
-      background-color: rgba(255, 255, 255, 0.7);
-      transform: rotate(0deg);
-    }
+  &--inverse:active::after {
+    background-color: rgba(255, 255, 255, 0.7);
+    transform: rotate(0deg);
   }
 
   &--small:hover {
@@ -292,31 +288,30 @@
     line-height: 14px;
 
     &::before {
-      top: 4px;
+      top: calc(50% - 23px);
       right: 4px;
       width: 46px;
       height: 46px;
     }
 
     &::after {
-      top: 17px;
       right: 17px;
     }
 
     &--small {
       padding: 0;
+    }
 
-      &::before {
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-      }
+    &--small::before {
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-      &::after {
-        top: 4px;
-        right: 4px;
-      }
+    &--small::after {
+      top: 4px;
+      right: 4px;
     }
   }
 }

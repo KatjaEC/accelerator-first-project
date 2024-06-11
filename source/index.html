@@ -36,7 +36,7 @@
               <li class="nav-menu__item nav-menu__item--has-submenu">
                 <div class="nav-menu__nav-buttons">
                   <a class="nav-menu__link nav-menu__link--submenu-title" href="#programs">Программы</a>
-                  <button class="nav-menu__submenu-toggle">
+                  <button class="nav-menu__submenu-toggle" type="button">
                     <span class="visually-hidden">Открыть-закрыть подменю.</span>
                   </button>
                 </div>
@@ -66,7 +66,7 @@
               <li class="nav-menu__item nav-menu__item--has-submenu">
                 <div class="nav-menu__nav-buttons">
                   <a class="nav-menu__link nav-menu__link--submenu-title" href="#news">Новости</a>
-                  <button class="nav-menu__submenu-toggle">
+                  <button class="nav-menu__submenu-toggle" type="button">
                     <span class="visually-hidden">Открыть-закрыть подменю.</span>
                   </button>
                 </div>
@@ -118,9 +118,7 @@
                   <h3 class="hero-slider__heading">Глобальный профессиональный опыт обучения за&nbsp;рубежом</h3>
                   <div class="hero-slider__inner-wrapper">
                     <div class="hero-slider__text">
-                      <p>
-                        Погрузитесь в академическую программу, проходя <span>практику</span> в разных городах, ощущая настоящий студенческий стиль жизни!
-                      </p>
+                      <p>Погрузитесь в академическую программу, проходя <span>практику</span> в разных городах, ощущая настоящий студенческий стиль жизни!</p>
                     </div>
                     <div class="hero-slider__button-wrapper">
                       <a class="hero-slider__button button" href="#">Подробнее</a>
@@ -204,25 +202,6 @@
       <section class="main__programs programs" data-test="programs" id="programs">
         <h2 class="programs__title section-title">Программы</h2>
         <a class="programs__button button" href="#">Все программы</a>
-        <div class="programs__nav-wrapper">
-          <div class="programs__slider-nav nav-buttons">
-            <button
-              class="nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
-              type="button">
-              <span class="visually-hidden">Предыдущая программа.</span>
-            </button>
-            <button class="nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
-              <span class="visually-hidden">Следующая программа.</span>
-            </button>
-          </div>
-          <div class="programs__pagination-wrapper">
-            <div class="programs__pagination slider-pagination slider-pagination--bar swiper-scrollbar">
-              <button class="slider-pagination__active-bar swiper-scrollbar-drag" type="button">
-                <span class="visually-hidden">Активный элемент скроллбара.</span>
-              </button>
-            </div>
-          </div>
-        </div>
         <div class="programs__slider-wrapper swiper">
           <ul class="programs__slider-list programs-slider swiper-wrapper">
             <li class="programs-slider__item programs-slider__item--internship swiper-slide">
@@ -253,6 +232,25 @@
               </div>
             </li>
           </ul>
+        </div>
+        <div class="programs__nav-wrapper">
+          <div class="programs__slider-nav nav-buttons">
+            <button
+              class="nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
+              type="button">
+              <span class="visually-hidden">Предыдущая программа.</span>
+            </button>
+            <button class="nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Следующая программа.</span>
+            </button>
+          </div>
+          <div class="programs__pagination-wrapper">
+            <div class="programs__pagination slider-pagination slider-pagination--bar swiper-scrollbar">
+              <button class="slider-pagination__active-bar swiper-scrollbar-drag" type="button">
+                <span class="visually-hidden">Активный элемент скроллбара.</span>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="main__grant grant" data-test="grant" id="participate">
@@ -672,17 +670,17 @@
       <div class="footer__socials-wrapper">
         <ul class="footer__socials socials-list">
           <li class="socials-list__item">
-            <a class="socials-list__link socials-list__link--vk" href="https://vk.com/" target="_blank">
+            <a class="socials-list__link socials-list__link--vk" href="https://vk.com/" target="_blank" rel="noopener noreferrer">
               <span class="visually-hidden">Мы ВКонтакте.</span>
             </a>
           </li>
           <li class="socials-list__item">
-            <a class="socials-list__link socials-list__link--ok" href="https://ok.ru/" target="_blank">
+            <a class="socials-list__link socials-list__link--ok" href="https://ok.ru/" target="_blank" rel="noopener noreferrer">
               <span class="visually-hidden">Мы в Одноклассниках.</span>
             </a>
           </li>
           <li class="socials-list__item">
-            <a class="socials-list__link socials-list__link--reddit" href="https://www.reddit.com/" target="_blank">
+            <a class="socials-list__link socials-list__link--reddit" href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer">
               <span class="visually-hidden">Мы на Реддит.</span>
             </a>
           </li>

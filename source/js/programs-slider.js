@@ -31,7 +31,6 @@ const programsSlider = new Swiper (swiperPrograms, {
   watchSlidesProgress: true,
   spaceBetween: 20,
   slidesPerView: 'auto',
-  autoHeight: true,
   breakpoints: {
     320: {
       width: 290,
@@ -61,7 +60,25 @@ const swiperProgramsSlides = swiperPrograms.querySelectorAll('.programs-slider__
 
 swiperProgramsSlides.forEach((slide) => {
   slide.style.display = 'flex';
+  slide.style.height = 'auto';
 });
+
+const setTabIndex = (item, value) => {
+  item.setAttribute('tabindex', value);
+};
+
+const setLinksFocus = () => {
+  swiperProgramsSlides.forEach((slide) => {
+    const button = slide.querySelector('.programs-slider__button');
+    if (slide.classList.contains('swiper-slide-fully-visible')) {
+      setTabIndex(button, '0');
+    } else {
+      setTabIndex(button, '-1');
+    }
+  });
+};
+
+setLinksFocus();
 
 const scrollbarButton = document.querySelector('.programs__pagination-wrapper .slider-pagination__active-bar');
 

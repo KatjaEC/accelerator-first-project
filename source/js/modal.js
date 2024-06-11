@@ -2,6 +2,7 @@ const aboutUsButton = document.querySelector('.about-us__button');
 const modal = document.querySelector('.modal');
 const modalButton = modal.querySelector('.modal__button');
 const formBody = modal.querySelector('.form__body');
+const desktopWidth = 1440;
 
 let winX = null;
 let winY = null;
@@ -33,17 +34,25 @@ const showModal = () => {
   modal.classList.add('modal--shown');
   document.addEventListener('keydown', onDocumentKeydown);
   modal.addEventListener('click', onRandomClick);
-  disableScroll();
   formBody.setAttribute('tabindex', '0');
   formBody.focus();
+  if (document.body.clientWidth >= desktopWidth) {
+    disableScroll();
+  } else {
+    document.body.style.overflow = 'hidden';
+  }
 };
 
 const closeModal = () => {
   modal.classList.remove('modal--shown');
   document.removeEventListener('keydown', onDocumentKeydown);
   modal.removeEventListener('click', onRandomClick);
-  enableScroll();
   aboutUsButton.focus();
+  if (document.body.clientWidth >= desktopWidth) {
+    enableScroll();
+  } else {
+    document.body.style.overflow = 'visible';
+  }
 };
 
 if (aboutUsButton) {
