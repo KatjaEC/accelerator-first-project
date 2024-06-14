@@ -19,13 +19,13 @@
 }
 
 .contacts__list {
-
   &:not(:last-of-type) {
     margin-bottom: 30px;
   }
 }
 
 .contacts__image {
+  background-color: #f3efd9;
   border-radius: 16px;
 }
 

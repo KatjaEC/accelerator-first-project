@@ -24,13 +24,6 @@
   transform: scale(1);
   opacity: 1;
 
-  // &:not(:last-of-type) {
-  //   margin: 0 16px 0 0;
-  // }
-  // &:last-of-type {
-  //   margin: 0;
-  // }
-
   &--active {
     color: $color-secondary;
     background-color: $color-primary;

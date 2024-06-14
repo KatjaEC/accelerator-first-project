@@ -4,16 +4,16 @@
   flex-direction: column;
 }
 
+.footer__inner-wrapper {
+  margin-bottom: 17px;
+}
+
 .footer__logo-wrapper {
   margin-bottom: 19.5px;
 }
 
 .footer__logo-image {
   margin: 0 auto;
-}
-
-.footer__nav-wrapper {
-  margin-bottom: 21px;
 }
 
 .footer__legal-wrapper {
@@ -24,8 +24,8 @@
 .footer__confidentiality {
   margin: 0 auto 7px;
   padding-bottom: 1.5px;
-  display: block;
-  width: 182px;
+  display: inline-block;
+  max-width: 182px;
   color: $color-text;
   font-size: 12px;
   line-height: 14px;
@@ -63,6 +63,10 @@
   margin: 0 auto;
   padding-left: 2px;
   width: 102px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -70,10 +74,11 @@
     padding: 40px 45px 36px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 20px 30px;
   }
 
   .footer__inner-wrapper {
+    margin-bottom: 0;
     width: 678px;
     display: flex;
     flex-wrap: wrap;
@@ -115,12 +120,13 @@
   }
 
   .footer__socials-wrapper {
+    margin-top: 5.5px;
     grid-column: 2/-1;
     justify-self: flex-end;
   }
 
   .footer__socials {
-    margin: 1.5px 0 0;
+    margin: 0;
     padding: 0;
     width: 136px;
     justify-content: flex-end;
@@ -129,11 +135,11 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 60px 100px 40px;
+    padding: 60px 100px 39px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 24px 40px;
   }
 
   .footer__inner-wrapper {
@@ -161,18 +167,21 @@
 
   .footer__confidentiality-wrapper {
     grid-column: 2/-1;
+    text-align: right;
     order: 1;
   }
 
   .footer__confidentiality {
     margin: 0 0 0 auto;
     padding-bottom: 2px;
-    width: 212px;
+    display: inline-block;
+    max-width: 212px;
     font-size: 14px;
     line-height: 18px;
   }
 
   .footer__copyright-wrapper {
+    margin-top: 1px;
     grid-column: 1/2;
   }
 
@@ -185,13 +194,13 @@
   }
 
   .footer__socials-wrapper {
+    margin-top: 8px;
     margin-left: auto;
     width: 152px;
     order: 0;
   }
 
   .footer__socials {
-    margin-top: 8px;
     width: 100%;
     gap: 20px;
   }

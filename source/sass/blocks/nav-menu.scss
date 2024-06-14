@@ -27,7 +27,6 @@
   }
 
   &::after {
-    top: 16px;
     top: calc(50% - 11px);
     right: 17px;
     mask: url("../../__spritemap#sprite-menu-open-view");

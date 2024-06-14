@@ -22,9 +22,11 @@ const heroSlider = new Swiper (swiperHero, {
   watchSlidesProgress: true,
   spaceBetween: 0,
   slidesPerView: 1,
+  updateOnWindowResize: true,
   breakpoints: {
     1440: {
       simulateTouch: false,
+      allowTouchMove: false,
     }
   },
 });
@@ -39,7 +41,7 @@ const setTabIndex = () => {
 setTabIndex();
 
 const addButtonDescription = () => {
-  const numbers = ['Первый', 'Второй', 'Третий', 'Четвертый', 'Пятый', 'Шестой'];
+  const numbers = ['Первый', 'Второй', 'Третий', 'Четвертый', 'Пятый', 'Шестой', 'Седьмой', 'Восьмой'];
   const paginationButtons = swiperHero.querySelectorAll('.hero-slider__pagination .slider-pagination__button');
   for (let i = 0; i < paginationButtons.length; i++) {
     const descriptionElement = document.createElement('span');
@@ -64,7 +66,10 @@ swiperSlides.forEach((slide) => {
   slideTextWrapper.append(paginationCopy);
   paginationCopy.style.zIndex = '5';
   const buttons = paginationCopy.querySelectorAll('.slider-pagination__button');
+  const buttonDescriptions = paginationCopy.querySelectorAll('.slider-pagination__button > span');
   buttons.forEach((button) => button.setAttribute('tabindex', '-1'));
+  buttons.forEach((button) => button.setAttribute('aria-hidden', 'true'));
+  buttonDescriptions.forEach((description) => description.setAttribute('aria-hidden', 'true'));
   slide.style.display = 'flex';
   slide.style.height = 'auto';
 });

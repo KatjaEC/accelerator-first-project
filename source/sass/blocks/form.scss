@@ -132,7 +132,7 @@
     padding: 15px 56px 15px 18px;
     width: 260px;
     height: 52px;
-    background: url("../../../__spritemap#sprite-arrow-down-white-view") no-repeat calc(100% - 20px) center;
+    background: url("../../__spritemap#sprite-arrow-down-white-view") no-repeat calc(100% - 20px) center;
     background-size: 16px 16px;
     cursor: pointer;
   }
@@ -141,13 +141,13 @@
     margin-bottom: 15px;
     padding: 14px 56px 14px 20px;
     height: 44px;
-    background: url("../../../__spritemap#sprite-arrow-down-view") no-repeat calc(100% - 19px) center;
+    background: url("../../__spritemap#sprite-arrow-down-view") no-repeat calc(100% - 19px) center;
     background-size: 16px 16px;
     cursor: pointer;
   }
 
   &--select-shown {
-    background: url("../../../__spritemap#sprite-arrow-up-view") no-repeat calc(100% - 20px) center;
+    background: url("../../__spritemap#sprite-arrow-up-view") no-repeat calc(100% - 20px) center;
     background-size: 16px 16px;
   }
 
@@ -177,7 +177,7 @@
 }
 
 .form__input--select-inverse.form__input--select-shown {
-  background: url("../../../__spritemap#sprite-arrow-up-inverse-view") no-repeat calc(100% - 19px) center;
+  background: url("../../__spritemap#sprite-arrow-up-inverse-view") no-repeat calc(100% - 19px) center;
   background-size: 16px 16px;
 }
 
@@ -400,14 +400,14 @@
       background-size: cover;
       background-image:
         image-set(
-          url("../../img/photos/form-background-smaller@1x.webp") type("image/webp") 1x,
-          url("../../img/photos/form-background-smaller@1x.jpg") type("image/jpeg") 1x);
+          url("../img/photos/form-background-smaller@1x.webp") type("image/webp") 1x,
+          url("../img/photos/form-background-smaller@1x.jpg") type("image/jpeg") 1x);
 
       @media (resolution >= 2dppx) {
         background-image:
           image-set(
-            url("../../img/photos/form-background-smaller@2x.webp") type("image/webp") 2x,
-            url("../../img/photos/form-background-smaller@2x.jpg") type("image/jpeg") 2x);
+            url("../img/photos/form-background-smaller@2x.webp") type("image/webp") 2x,
+            url("../img/photos/form-background-smaller@2x.jpg") type("image/jpeg") 2x);
       }
     }
   }
@@ -533,14 +533,14 @@
       width: 1240px;
       background-image:
         image-set(
-          url("../../img/photos/form-background-full@1x.webp") type("image/webp") 1x,
-          url("../../img/photos/form-background-full@1x.jpg") type("image/jpeg") 1x);
+          url("../img/photos/form-background-full@1x.webp") type("image/webp") 1x,
+          url("../img/photos/form-background-full@1x.jpg") type("image/jpeg") 1x);
 
       @media (resolution >= 2dppx) {
         background-image:
           image-set(
-            url("../../img/photos/form-background-full@2x.webp") type("image/webp") 2x,
-            url("../../img/photos/form-background-full@2x.jpg") type("image/jpeg") 2x);
+            url("../img/photos/form-background-full@2x.webp") type("image/webp") 2x,
+            url("../img/photos/form-background-full@2x.jpg") type("image/jpeg") 2x);
       }
     }
   }

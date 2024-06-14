@@ -1,6 +1,6 @@
 .news {
   position: relative;
-  padding: 50px 15px;
+  padding: 50px 15px 48px;
 }
 
 .news__title {
@@ -19,7 +19,7 @@
   position: relative;
   margin: 24px auto 0;
   width: 290px;
-  min-height: 26px;
+  min-height: 28px;
 }
 
 .news__slider-wrapper {
@@ -40,7 +40,7 @@
   top: 0;
   left: 0;
   right: 0;
-  margin: 0 auto;
+  margin: -1px auto 0;
   width: 168px;
   min-height: 28px;
   overflow: hidden;
@@ -49,7 +49,7 @@
 .news__pagination-container > .news__pagination-wrapper.nav-list.swiper-pagination {
   position: absolute;
   top: 0;
-  left: -33px;
+  left: -12px;
   bottom: 0;
   right: 0;
   max-width: 184px;
@@ -71,6 +71,7 @@
 }
 
 .news__slider-arrow {
+  top: 3px;
   margin-top: 2px;
 
   &--prev {
@@ -94,28 +95,31 @@
   .news__tabs {
     margin-left: 1.5px;
     margin-bottom: 30px;
+    width: 680px;
   }
 
   .news__nav-wrapper {
-    margin-top: 30px;
+    margin-top: 25px;
     width: 100%;
+    min-height: 32px;
   }
 
   .news__slider-nav {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 0;
     width: 100%;
   }
 
   .news__pagination-container > .news__pagination-wrapper.nav-list.swiper-pagination {
-    left: -46px;
+    left: -20px;
     max-width: 244px;
   }
 
   .news__pagination-container {
+    margin: 0 auto;
     width: 214px;
-    min-height: 32px;
+    min-height: 42px;
   }
 
   .news__pagination-wrapper.swiper-pagination-horizontal.swiper-pagination-bullets > .swiper-pagination-bullet {
@@ -147,14 +151,6 @@
 
   .news__nav-wrapper {
     margin-top: 35px;
-  }
-
-  .news__slider-nav {
-    margin-top: 5px;
-  }
-
-  .news__pagination-container {
-    min-height: 42px;
   }
 
   .news__pagination-container > .news__pagination-wrapper.nav-list.swiper-pagination {

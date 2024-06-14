@@ -1,8 +1,6 @@
 import Swiper from 'swiper';
 import { Scrollbar, Navigation } from 'swiper/modules';
 import 'swiper/css';
-// import 'swiper/css/scrollbar';
-// import 'swiper/css/navigation';
 
 const swiperReviews = document.querySelector('.reviews__slider-wrapper.swiper');
 
@@ -25,6 +23,7 @@ const reviewsSlider = new Swiper (swiperReviews, {
   watchSlidesProgress: true,
   spaceBetween: 20,
   slidesPerView: 'auto',
+  updateOnWindowResize: true,
   breakpoints: {
     320: {
       width: 290,

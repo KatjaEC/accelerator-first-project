@@ -13,6 +13,14 @@ const openNavMenu = () => {
   document.addEventListener('click', onRandomClick);
 };
 
+const closeNavMenu = () => {
+  document.body.classList.remove('page-body--nav-shown');
+  menuToggle.classList.remove('nav-menu__toggle--opened');
+  menuList.classList.remove('nav-menu__list--shown');
+  document.removeEventListener('keydown', onDocumentKeydown);
+  document.removeEventListener('click', onRandomClick);
+};
+
 if (submenuLiElements) {
   submenuLiElements.forEach((li) => {
     const submenuTitle = li.querySelector('.nav-menu__link--submenu-title');
@@ -39,14 +47,6 @@ if (submenuLiElements) {
     });
   });
 }
-
-const closeNavMenu = () => {
-  document.body.classList.remove('page-body--nav-shown');
-  menuToggle.classList.remove('nav-menu__toggle--opened');
-  menuList.classList.remove('nav-menu__list--shown');
-  document.removeEventListener('keydown', onDocumentKeydown);
-  document.removeEventListener('click', onRandomClick);
-};
 
 if (menuToggle) {
   menuToggle.addEventListener('click', (evt) => {

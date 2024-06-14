@@ -35,6 +35,7 @@
   &--active:hover,
   &--active:focus-within {
     background-color: $color-primary;
+    border-color: $color-secondary;
   }
 
   &:hover input:checked ~ label::after,
@@ -44,6 +45,7 @@
 
   &--active:active {
     background-color: #275699;
+    border-color: #275699;
   }
 }
 
@@ -74,7 +76,7 @@
     right: -2px;
     width: 40px;
     height: 40px;
-    mask: url("../../../__spritemap#sprite-plus-view");
+    mask: url("../../__spritemap#sprite-plus-view");
     mask-size: 20px 20px;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -82,14 +84,6 @@
     border-radius: 50%;
     content: "";
   }
-
-  // &:hover::before {
-  //   background-color: transparent;
-  // }
-
-  // &:hover::after {
-  //   background-color: $color-primary;
-  // }
 
   &:active::before {
     background-color: #275699;
@@ -117,8 +111,28 @@
   color: #275699;
 }
 
+.faq-card input:active ~ label::before {
+  background-color: #275699;
+  border-color: #275699;
+}
+
+.faq-card input:active ~ label::after {
+  background-color: $color-secondary;
+}
+
+.faq-card--disabled:hover,
+.faq-card--disabled:focus-within {
+  border-color: $color-primary;
+}
+
 .faq-card input:disabled ~ label,
+.faq-card input:checked:disabled ~ label,
+.faq-card input:checked:disabled:hover ~ label,
+.faq-card input:checked:disabled:focus ~ label,
+.faq-card input:checked:disabled:active ~ label,
 .faq-card--disabled ~ label {
+  pointer-events: none;
+
   &::before {
     background-color: $button-inactive;
     border-color: $button-inactive;
@@ -144,7 +158,7 @@
   }
 
   &::after {
-    mask: url("../../../__spritemap#sprite-minus-view");
+    mask: url("../../__spritemap#sprite-minus-view");
     mask-size: 20px 20px;
     mask-repeat: no-repeat;
     mask-position: center;

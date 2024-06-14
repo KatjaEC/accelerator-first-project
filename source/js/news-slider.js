@@ -65,7 +65,7 @@ const newsSlider = new Swiper (swiperNews, {
     bulletElement: 'button',
     clickable: true,
     dynamicBullets: true,
-    dynamicMainBullets: 3,
+    dynamicMainBullets: 4,
     renderBullet: function (index, className) {
       return `<button class="nav-list__button ${className}">${index + 1}</button>`;
     },
@@ -76,13 +76,16 @@ const newsSlider = new Swiper (swiperNews, {
   loop: false,
   watchSlidesProgress: true,
   slidesPerView: 'auto',
+  updateOnWindowResize: true,
+  observer: true,
+  observeParents: true,
+  loopAddBlankSlides: true,
   breakpoints: {
     320: {
       width: 290,
       slidesPerView: 1,
       slidesPerGroup: 1,
       spaceBetween: 20,
-      // autoHeight: false,
       observer: true,
       observeParents: true,
       grid: {
@@ -92,7 +95,6 @@ const newsSlider = new Swiper (swiperNews, {
     },
     768: {
       width: 678,
-      // autoHeight: false,
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 30,
@@ -119,7 +121,7 @@ const setTabIndex = (item, value) => {
 const setLinksFocus = () => {
   swiperNewsSlides.forEach((slide) => {
     const button = slide.querySelector('.news-slider__button');
-    if (slide.classList.contains('swiper-slide-fully-visible')) {
+    if (slide.classList.contains('swiper-slide-fully-visible') && !slide.classList.contains('swiper-slide-prev')) {
       setTabIndex(button, '0');
     } else {
       setTabIndex(button, '-1');
@@ -129,12 +131,13 @@ const setLinksFocus = () => {
 
 setLinksFocus();
 
+const paginationWrapper = document.querySelector('.news__pagination-wrapper');
+const paginationButtons = paginationWrapper.querySelectorAll('.nav-list .nav-list__button');
+
 const setPaginationFocus = () => {
-  const paginationWrapper = document.querySelector('.news__pagination-wrapper');
-  const paginationButtons = paginationWrapper.querySelectorAll('.nav-list .nav-list__button');
   const activeButtonCurrent = paginationWrapper.querySelector('.swiper-pagination-bullet--active');
   paginationButtons.forEach((button) => {
-    if (button !== activeButtonCurrent && !button.classList.contains('swiper-pagination-bullet--active-main') && !button.classList.contains('swiper-pagination-bullet--active-next') && !button.classList.contains('swiper-pagination-bullet--active-prev')) {
+    if (button !== activeButtonCurrent && !button.classList.contains('swiper-pagination-bullet--active-main')) {
       setTabIndex(button, '-1');
     } else {
       setTabIndex(button, '0');
@@ -151,11 +154,46 @@ swiperNewsSlides.forEach((slide) => {
 
 /* eslint-disable */
 
-newsSlider.on('slideChange', function () {
-  setLinksFocus();
+newsSlider.on('slideChange', function() {
   setPaginationFocus();
+  const activeBullet = paginationWrapper.querySelector('.swiper-pagination-bullet--active.swiper-pagination-bullet--active-main');
+  const visibleBullets = paginationWrapper.querySelectorAll('.swiper-pagination-bullet--active-main');
+  const nextBullet = paginationWrapper.querySelector('.swiper-pagination-bullet--active-next');
+  const previousBullet = paginationWrapper.querySelector('.swiper-pagination-bullet--active-prev');
+  const currentTransitionValue = parseInt(`${activeBullet.style.left}`, 10);
+
+  paginationButtons.forEach((button) => {
+    for (let i = 0; i < visibleBullets.length; i++) {
+      const findActiveBullet = (item) => item.classList.contains('swiper-pagination-bullet--active');
+      const activeBulletIndex = [...visibleBullets].findIndex(findActiveBullet);
+      if (document.body.clientWidth >= tabletWidth) {
+        if ([...visibleBullets].indexOf(visibleBullets[3]) <= activeBulletIndex && activeBullet !== paginationButtons[paginationButtons.length - 1] && activeBullet !== paginationButtons[0]) {
+          button.style.left = `${currentTransitionValue - 52}px`;
+          setTabIndex(nextBullet, 0);
+          setTabIndex(visibleBullets[0], '-1');
+        } else if ([...visibleBullets].indexOf(visibleBullets[0]) >= activeBulletIndex && activeBullet !== paginationButtons[0]) {
+          button.style.left = `${currentTransitionValue + 52}px`;
+          setTabIndex(previousBullet, 0);
+          setTabIndex(visibleBullets[visibleBullets.length - 1], '-1');
+        }
+      } else {
+        if ([...visibleBullets].indexOf(visibleBullets[2]) < activeBulletIndex && activeBullet !== paginationButtons[paginationButtons.length - 1] && activeBullet !== paginationButtons[0]) {
+          button.style.left = `${currentTransitionValue - 42}px`;
+        } else if ([...visibleBullets].indexOf(visibleBullets[0]) === activeBulletIndex && activeBullet !== paginationButtons[0]) {
+          button.style.left = `${currentTransitionValue + 42}px`;
+        }
+      }
+    }
+  });
+});
+
+newsSlider.on('slideChangeTransitionEnd', function() {
+  swiperNewsSlides.forEach((slide) => {
+    if (slide.classList.contains('swiper-slide-prev')) {
+      slide.classList.remove('swiper-slide-fully-visible');
+    }
+    setLinksFocus();
+  });
 });
 
 /* eslint-enable */
-
-export { newsSlider };

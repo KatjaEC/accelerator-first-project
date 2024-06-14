@@ -31,6 +31,7 @@ const programsSlider = new Swiper (swiperPrograms, {
   watchSlidesProgress: true,
   spaceBetween: 20,
   slidesPerView: 'auto',
+  updateOnWindowResize: true,
   breakpoints: {
     320: {
       width: 290,
@@ -49,6 +50,7 @@ const programsSlider = new Swiper (swiperPrograms, {
       slidesPerView: 3,
       spaceBetween: 32,
       simulateTouch: false,
+      allowTouchMove: false,
       scrollbar: {
         dragSize: '394px',
       }
@@ -83,5 +85,13 @@ setLinksFocus();
 const scrollbarButton = document.querySelector('.programs__pagination-wrapper .slider-pagination__active-bar');
 
 scrollbarButton.setAttribute('tabindex', '-1');
+
+/* eslint-disable */
+
+programsSlider.on('slideChangeTransitionEnd', function() {
+  setLinksFocus();
+});
+
+/* eslint-enable */
 
 export { programsSlider };
