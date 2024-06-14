@@ -1,0 +1,29 @@
+.faq {
+  padding: 51px 15px 50px;
+}
+
+.faq__title {
+  margin-bottom: 29px;
+  padding-right: 1px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .faq {
+    padding: 50px 45px;
+  }
+
+  .faq__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .faq {
+    padding: 71px 206px 60px;
+  }
+
+  .faq__title {
+    margin-bottom: 71px;
+  }
+}

@@ -1,0 +1,264 @@
+.faq-card {
+  padding: 22px 17px 22px 15px;
+  border: 2px solid $color-primary;
+  border-radius: 14px;
+
+  &--active {
+    padding-bottom: 20px;
+    color: $color-background;
+    background-color: $color-primary;
+  }
+
+  &--education,
+  &--registration {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &:hover,
+  &:focus-within {
+    background-color: $color-secondary;
+  }
+
+  &:hover label::before,
+  &:focus label::before,
+  &:hover input:checked ~ label::before,
+  &:focus input:checked ~ label::before {
+    background-color: transparent;
+  }
+
+  &:hover label::after,
+  &:focus label::after {
+    background-color: $color-primary;
+  }
+
+  &--active:hover,
+  &--active:focus-within {
+    background-color: $color-primary;
+    border-color: $color-secondary;
+  }
+
+  &:hover input:checked ~ label::after,
+  &:focus input:checked ~ label::after {
+    background-color: $color-secondary;
+  }
+
+  &--active:active {
+    background-color: #275699;
+    border-color: #275699;
+  }
+}
+
+.faq-card__label {
+  position: relative;
+  padding-right: 62px;
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-primary;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 20px);
+    right: -2px;
+    width: 40px;
+    height: 40px;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: calc(50% - 20px);
+    right: -2px;
+    width: 40px;
+    height: 40px;
+    mask: url("../../__spritemap#sprite-plus-view");
+    mask-size: 20px 20px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $color-secondary;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &:active::before {
+    background-color: #275699;
+    border-color: #275699;
+  }
+
+  &:active::after {
+    background-color: $color-secondary;
+  }
+}
+
+.faq-card input:focus ~ label,
+.faq-card--focused ~ label {
+  &::before {
+    background-color: transparent;
+  }
+
+  &::after {
+    background-color: $color-primary;
+  }
+}
+
+.faq-card input:active ~ label,
+.faq-card--active ~ label {
+  color: #275699;
+}
+
+.faq-card input:active ~ label::before {
+  background-color: #275699;
+  border-color: #275699;
+}
+
+.faq-card input:active ~ label::after {
+  background-color: $color-secondary;
+}
+
+.faq-card--disabled:hover,
+.faq-card--disabled:focus-within {
+  border-color: $color-primary;
+}
+
+.faq-card input:disabled ~ label,
+.faq-card input:checked:disabled ~ label,
+.faq-card input:checked:disabled:hover ~ label,
+.faq-card input:checked:disabled:focus ~ label,
+.faq-card input:checked:disabled:active ~ label,
+.faq-card--disabled ~ label {
+  pointer-events: none;
+
+  &::before {
+    background-color: $button-inactive;
+    border-color: $button-inactive;
+  }
+
+  &::after {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.faq-card__content-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+}
+
+.faq-card input:checked ~ label {
+  color: $color-secondary;
+
+  &::before {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+  }
+
+  &::after {
+    mask: url("../../__spritemap#sprite-minus-view");
+    mask-size: 20px 20px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $color-primary;
+  }
+}
+
+.faq-card input:checked:hover ~ label {
+  &::before {
+    background-color: transparent;
+    border-color: $color-secondary;
+  }
+
+  &::after {
+    background-color: $color-secondary;
+  }
+}
+
+.faq-card input:checked:focus ~ label {
+  &::before {
+    background-color: transparent;
+    border-color: $color-secondary;
+  }
+
+  &::after {
+    background-color: $color-secondary;
+  }
+}
+
+.faq-card input:checked:active ~ label {
+  &::before {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+  }
+
+  &::after {
+    background-color: #275699;
+  }
+}
+
+.faq-card input:checked ~ div {
+  max-height: 1000px;
+}
+
+.faq-card__content-wrapper > p {
+  margin: 22px 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .faq-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+
+    &--education > label {
+      padding-right: 190px;
+    }
+  }
+
+  .faq-card__label {
+    padding-right: 100px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    line-height: 26px;
+
+    &::before {
+      top: 0;
+      right: 0;
+    }
+
+    &::after {
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .faq-card__content-wrapper > p {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .faq-card {
+    padding: 40px;
+
+    &--education > label {
+      padding-right: 100px;
+    }
+  }
+
+  .faq-card__label {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .faq-card__content-wrapper > p {
+    line-height: 26px;
+  }
+}

@@ -157,31 +157,34 @@ swiperNewsSlides.forEach((slide) => {
 newsSlider.on('slideChange', function() {
   setPaginationFocus();
   const activeBullet = paginationWrapper.querySelector('.swiper-pagination-bullet--active.swiper-pagination-bullet--active-main');
-  const visibleBullets = paginationWrapper.querySelectorAll('.swiper-pagination-bullet--active-main');
   const nextBullet = paginationWrapper.querySelector('.swiper-pagination-bullet--active-next');
   const previousBullet = paginationWrapper.querySelector('.swiper-pagination-bullet--active-prev');
+  const visibleBullets = paginationWrapper.querySelectorAll('.swiper-pagination-bullet--active-main');
+  const findActiveBullet = (item) => item.classList.contains('swiper-pagination-bullet--active');
+  const activeBulletIndex = [...visibleBullets].findIndex(findActiveBullet);
   const currentTransitionValue = parseInt(`${activeBullet.style.left}`, 10);
 
   paginationButtons.forEach((button) => {
-    for (let i = 0; i < visibleBullets.length; i++) {
-      const findActiveBullet = (item) => item.classList.contains('swiper-pagination-bullet--active');
-      const activeBulletIndex = [...visibleBullets].findIndex(findActiveBullet);
-      if (document.body.clientWidth >= tabletWidth) {
-        if ([...visibleBullets].indexOf(visibleBullets[3]) <= activeBulletIndex && activeBullet !== paginationButtons[paginationButtons.length - 1] && activeBullet !== paginationButtons[0]) {
-          button.style.left = `${currentTransitionValue - 52}px`;
+    if (document.body.clientWidth >= tabletWidth) {
+      if (activeBulletIndex === 3 && activeBullet !== paginationButtons[paginationButtons.length - 1]) {
+        button.style.left = `${currentTransitionValue - 52}px`;
+        setTabIndex(visibleBullets[0], '-1');
+        if (nextBullet) {
           setTabIndex(nextBullet, 0);
-          setTabIndex(visibleBullets[0], '-1');
-        } else if ([...visibleBullets].indexOf(visibleBullets[0]) >= activeBulletIndex && activeBullet !== paginationButtons[0]) {
-          button.style.left = `${currentTransitionValue + 52}px`;
+        }
+      } else if (activeBulletIndex < 1 && activeBullet !== paginationButtons[0]) {
+        button.style.left = `${currentTransitionValue + 52}px`;
+        setTabIndex(visibleBullets[visibleBullets.length - 1], '-1');
+        if (previousBullet) {
           setTabIndex(previousBullet, 0);
-          setTabIndex(visibleBullets[visibleBullets.length - 1], '-1');
         }
-      } else {
-        if ([...visibleBullets].indexOf(visibleBullets[2]) < activeBulletIndex && activeBullet !== paginationButtons[paginationButtons.length - 1] && activeBullet !== paginationButtons[0]) {
-          button.style.left = `${currentTransitionValue - 42}px`;
-        } else if ([...visibleBullets].indexOf(visibleBullets[0]) === activeBulletIndex && activeBullet !== paginationButtons[0]) {
-          button.style.left = `${currentTransitionValue + 42}px`;
-        }
+      }
+      console.log(activeBulletIndex);
+    } else {
+      if (activeBulletIndex > 2 && activeBullet !== paginationButtons[paginationButtons.length - 1]) {
+        button.style.left = `${currentTransitionValue - 42}px`;
+      } else if (activeBulletIndex < 1 && activeBullet !== paginationButtons[0]) {
+        button.style.left = `${currentTransitionValue + 42}px`;
       }
     }
   });
