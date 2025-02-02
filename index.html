@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ru" data-validate="html">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект «Стажировка»</title>
+    <meta name="description" content="Программа «Стажировка» - программы стажировок и волонтерства по всему миру.">
+    <link rel="icon" href="./assets/favicon-BjErjwbV.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32-Bf-ixIFV.png">
+    <link rel="apple-touch-icon" href="./assets/apple-icon-180x180-2cYcBAmT.png">
+    <link rel="manifest" href="./assets/manifest-gEqpcp0b.webmanifest">
+    <link rel="preload" href="./assets/Manrope-ExtraLight-BKqWwnD_.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./assets/Manrope-Light-CLTNphSN.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./assets/Manrope-Regular-DFKAVQ9U.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./assets/Manrope-Medium-6W_4vo-v.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./assets/Manrope-SemiBold-sLEkJ7wz.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./assets/Manrope-Bold-BV9Dd4mE.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./assets/Manrope-ExtraBold-CtHiOQny.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <script type="module" crossorigin src="./assets/index-BfEgr3Qn.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C14fU_wJ.css">
+  </head>
+  <body class="page-body">
+    <main class="main">
+      <section class="main__hero hero" data-test="hero">
+        <h1 class="visually-hidden">Сайт проекта «Стажировка», специализирующегося на программах стажировок и волонтерства.</h1>
+        <header class="hero__header header">
+          <div class="header__logo-wrapper logo">
+            <img class="logo__image" src="data:image/svg+xml,%3csvg%20width='52'%20height='52'%20viewBox='0%200%2052%2052'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20width='52'%20height='52'%20rx='26'%20fill='white'/%3e%3cpath%20d='M11.9184%2019.8006C11.0667%2020.4073%2010.5675%2021.6921%2011.5085%2023.2283C12.4495%2024.7645%2025.8931%2035.1336%2026.3859%2035.4215C26.8789%2035.7097%2027.3721%2035.7576%2028.6264%2034.7496C29.8813%2033.7413%2040.3653%2025.8656%2040.6358%2025.6287C41.0663%2025.2518%2041.1735%2024.3325%2040.6358%2023.9003C40.6358%2023.9003%2027.9346%2033.4052%2027.5188%2033.7895C27.1031%2034.1735%2026.4561%2033.5495%2026.5776%2032.7335C26.6996%2031.9172%2026.7894%2031.8211%2028.4026%2030.5731C30.0158%2029.3248%2039.1622%2022.3928%2039.5772%2022.0864C40.0471%2021.7391%2040.0584%2021.1258%2039.2887%2020.5834C38.2185%2019.8294%2026.6538%2011.6047%2026.2669%2011.3168C25.879%2011.0287%2025.3421%2010.7669%2024.5356%2011.3429C23.7291%2011.919%2013.4831%2018.6858%2011.9184%2019.8006Z'%20fill='%23316DC2'/%3e%3cpath%20d='M26.3859%2036.4333C26.0624%2036.2442%2020.1639%2031.7154%2015.8795%2028.1892V35.5413C15.8762%2040.9082%2030.9969%2043.7757%2036.0062%2037.1781V30.1512C32.9289%2032.4764%2029.3294%2035.1965%2028.6264%2035.7611C27.3721%2036.7692%2026.8789%2036.7212%2026.3859%2036.4333Z'%20fill='%23316DC2'/%3e%3cpath%20d='M32.7845%2028.3718C32.7845%2028.3718%2035.0327%2029.5021%2035.1926%2034.0505L34.1034%2033.7503L33.232%2035.6014C32.8633%2030.6207%2030.8557%2029.8985%2030.8557%2029.8985L32.7845%2028.3718Z'%20fill='%2398B8E6'/%3e%3c/svg%3e" width="52" height="52"
+            alt="Логотип проекта «Стажировка».">
+          </div>
+          <nav class="header__nav nav-menu">
+            <button class="nav-menu__toggle button" type="button">Меню</button>
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="#about-us">О проекте</a>
+              </li>
+              <li class="nav-menu__item nav-menu__item--has-submenu">
+                <div class="nav-menu__nav-buttons">
+                  <a class="nav-menu__link nav-menu__link--submenu-title" href="#programs">Программы</a>
+                  <button class="nav-menu__submenu-toggle" type="button">
+                    <span class="visually-hidden">Открыть-закрыть подменю.</span>
+                  </button>
+                </div>
+                <div class="nav-menu__submenu-wrapper">
+                  <ul class="nav-menu__submenu nav-menu__submenu--opened nav-submenu">
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link nav-submenu__link--current" href="#">Стажировки</a>
+                    </li>
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link" href="#">Волонтёрство</a>
+                    </li>
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link" href="#">Учёба</a>
+                    </li>
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link" href="#">Религия</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="#participate">Как поехать</a>
+              </li>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="nav-menu__item nav-menu__item--has-submenu">
+                <div class="nav-menu__nav-buttons">
+                  <a class="nav-menu__link nav-menu__link--submenu-title" href="#news">Новости</a>
+                  <button class="nav-menu__submenu-toggle" type="button">
+                    <span class="visually-hidden">Открыть-закрыть подменю.</span>
+                  </button>
+                </div>
+                <div class="nav-menu__submenu-wrapper">
+                  <ul class="nav-menu__submenu nav-menu__submenu--opened nav-submenu">
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link nav-submenu__link--current" href="#">Общее</a>
+                    </li>
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link" href="#">Волонтёрство</a>
+                    </li>
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link" href="#">Стажировки</a>
+                    </li>
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link" href="#">Карьера</a>
+                    </li>
+                    <li class="nav-submenu__item">
+                      <a class="nav-submenu__link" href="#">Путешествия</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="hero__slider-wrapper hero-slider">
+          <h2 class="visually-hidden">Промо-блок с нашими предложениями.</h2>
+          <div class="hero-slider__list-wrapper swiper">
+            <div class="hero-slider__pagination-wrapper swiper-pagination">
+              <div class="hero-slider__pagination slider-pagination swiper-pagination">
+                <button class="slider-pagination__button slider-pagination__button--active" type="button">
+                  <span class="visually-hidden">Первый экран промо-блока.</span>
+                </button>
+                <button class="slider-pagination__button" type="button">
+                  <span class="visually-hidden">Второй экран промо-блока.</span>
+                </button>
+                <button class="slider-pagination__button" type="button">
+                  <span class="visually-hidden">Третий экран промо-блока.</span>
+                </button>
+              </div>
+            </div>
+            <ol class="hero-slider__list swiper-wrapper">
+              <li class="hero-slider__item hero-slider__item--education swiper-slide">
+                <div class="hero-slider__content-wrapper">
+                  <h3 class="hero-slider__heading">Глобальный профессиональный опыт обучения за&nbsp;рубежом</h3>
+                  <div class="hero-slider__inner-wrapper">
+                    <div class="hero-slider__text">
+                      <p>Погрузитесь в академическую программу, проходя <span>практику</span> в разных городах, ощущая настоящий студенческий стиль жизни!</p>
+                    </div>
+                    <div class="hero-slider__button-wrapper">
+                      <a class="hero-slider__button button" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="hero-slider__item hero-slider__item--volunteering swiper-slide">
+                <div class="hero-slider__content-wrapper">
+                  <h3 class="hero-slider__heading">Волонтёрские программы – внесите свой вклад в общество</h3>
+                  <div class="hero-slider__inner-wrapper">
+                    <div class="hero-slider__text">
+                      <p>
+                        Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни и другое.
+                      </p>
+                    </div>
+                    <div class="hero-slider__button-wrapper">
+                      <a class="hero-slider__button button" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="hero-slider__item hero-slider__item--internship swiper-slide">
+                <div class="hero-slider__content-wrapper">
+                  <h3 class="hero-slider__heading">Программы стажировок в крупнейших компаниях мира</h3>
+                  <div class="hero-slider__inner-wrapper">
+                    <div class="hero-slider__text">
+                      <p>
+                        Получите незаменимый опыт работы в ведущих мировых компаниях и государственных организациях.
+                      </p>
+                    </div>
+                    <div class="hero-slider__button-wrapper">
+                      <a class="hero-slider__button button" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="main__about-us about-us" data-test="about" id="about-us">
+        <div class="about-us__text-wrapper">
+          <div class="about-us__general-info">
+            <h2 class="about-us__title section-title">О проекте «Стажировка»</h2>
+            <p>
+              «Стажировка» — совместный проект правительств и волонтёрских бригад.
+            </p>
+          </div>
+          <div class="about-us__details">
+            <p>Наша цель</p>
+            <p>
+              Наша деятельность направлена на&nbsp;повышение квалификации
+              молодых специалистов на ранних и средних стадиях карьеры,
+              предоставляя им&nbsp;инструменты для решения сложных проблем,
+              с&nbsp;которыми сталкиваются в мире. Цель центра — наделить этих
+              людей способностью инициировать значимые изменения.
+            </p>
+            <a class="about-us__button button" href="#">Подробнее о проекте</a>
+          </div>
+        </div>
+        <ul class="about-us__list stats-list">
+          <li class="stats-list__item">
+            <h3>Более 250 программ</h3>
+            <p>учебных и рабочих, разной длительностью от&nbsp;3&nbsp;месяцев до 1 года</p>
+          </li>
+          <li class="stats-list__item">
+            <h3>Более 3000 участников</h3>
+            <p>уже успешно прошли программу от&nbsp;«Стажировка» и&nbsp;остались в разных странах</p>
+          </li>
+          <li class="stats-list__item">
+            <h3>Участники из&nbsp;60&nbsp;стран</h3>
+            <p>студенты со всего мира приезжают на программу «Стажировки» от&nbsp;3&nbsp;месяцев до&nbsp;1&nbsp;года</p>
+          </li>
+          <li class="stats-list__item stats-list__item--grant">
+            <h3>От&nbsp;4&nbsp;200&nbsp;$ до&nbsp;8&nbsp;400&nbsp;$</h3>
+            <p>грант всем участникам для&nbsp;комфортного прохождения программы</p>
+          </li>
+        </ul>
+      </section>
+      <section class="main__programs programs" data-test="programs" id="programs">
+        <h2 class="programs__title section-title">Программы</h2>
+        <a class="programs__button button" href="#">Все программы</a>
+        <div class="programs__slider-wrapper swiper">
+          <ul class="programs__slider-list programs-slider swiper-wrapper">
+            <li class="programs-slider__item programs-slider__item--internship swiper-slide">
+              <h3 class="programs-slider__heading">Стажировки</h3>
+              <div class="programs-slider__content-wrapper">
+                <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                <a class="programs-slider__button button button--small" href="#">
+                  <span class="visually-hidden">Подробнее о программе.</span>
+                </a>
+              </div>
+            </li>
+            <li class="programs-slider__item programs-slider__item--volunteering swiper-slide">
+              <h3 class="programs-slider__heading">Волонтёрство</h3>
+              <div class="programs-slider__content-wrapper">
+                <p>Помогайте другим и&nbsp;развивайте свои лидерские&nbsp;качества.</p>
+                <a class="programs-slider__button button button--small" href="#">
+                  <span class="visually-hidden">Подробнее о программе.</span>
+                </a>
+              </div>
+            </li>
+            <li class="programs-slider__item programs-slider__item--education swiper-slide">
+              <h3 class="programs-slider__heading">Учёба</h3>
+              <div class="programs-slider__content-wrapper">
+                <p>Получите образование и&nbsp;измените своё будущее.</p>
+                <a class="programs-slider__button button button--small" href="#">
+                  <span class="visually-hidden">Подробнее о программе.</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="programs__nav-wrapper">
+          <div class="programs__slider-nav nav-buttons">
+            <button
+              class="nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
+              type="button">
+              <span class="visually-hidden">Предыдущая программа.</span>
+            </button>
+            <button class="nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Следующая программа.</span>
+            </button>
+          </div>
+          <div class="programs__pagination-wrapper">
+            <div class="programs__pagination slider-pagination slider-pagination--bar swiper-scrollbar">
+              <button class="slider-pagination__active-bar swiper-scrollbar-drag" type="button">
+                <span class="visually-hidden">Активный элемент скроллбара.</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__grant grant" data-test="grant" id="participate">
+        <div class="grant__wrapper">
+          <div class="grant__text-wrapper">
+            <h2 class="grant__title section-title section-title--inverse">Как поехать</h2>
+            <p>
+              Свяжитесь с координатором, чтобы узнать полную информацию.
+              Вы получите актуальные сведения о доступных программах
+              и&nbsp;городах, в которых можете пройти программу.
+            </p>
+          </div>
+          <div class="grant__conditions-wrapper">
+            <p class="grant__conditions-heading">Чтобы получить грант на&nbsp;обучение, вам нужно:</p>
+            <ol class="grant__conditions-list conditions-list">
+              <li class="conditions-list__item">Быть в возрасте от 16 до 30 лет</li>
+              <li class="conditions-list__item">Иметь оконченное среднее образование</li>
+              <li class="conditions-list__item">Иметь документально подтверждённое отсутствие судимости и пройти консульскую проверку</li>
+              <li class="conditions-list__item">За последние 2 года быть не&nbsp;больше 3х месяцев подряд непрерывно в одной стране</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="main__news news" data-test="news" id="news">
+        <h2 class="news__title section-title">Новости и материалы</h2>
+        <div class="news__tabs news-tabs">
+          <button class="news-tabs__button news-tabs__button--active" type="button">Общее</button>
+          <button class="news-tabs__button" type="button">Волонтёрство</button>
+          <button class="news-tabs__button" type="button">Стажировки</button>
+          <button class="news-tabs__button" type="button">Карьера</button>
+          <button class="news-tabs__button" type="button">Путешествия</button>
+        </div>
+        <div class="news__slider-wrapper swiper">
+          <ul class="news__slider-list news-slider swiper-wrapper">
+            <li class="news-slider__item news-slider__item--interview news-slider__item--active swiper-slide swiper-slide-active">
+              <span class="news-slider__date">23/03/2023</span>
+              <h3 class="news-slider__heading">Интервью с&nbsp;участницей программы стажировки</h3>
+              <div class="news-slider__content-wrapper">
+                <p>Саша рассказывает, как&nbsp;попала в&nbsp;программу и&nbsp;как прошла 6-месячная стажировка в ISOFound</p>
+                <a class="news-slider__button button button--small" href="#">
+                  <span class="visually-hidden">Перейти на страницу новости.</span>
+                </a>
+              </div>
+            </li>
+            <li class="news-slider__item news-slider__item--travel swiper-slide">
+              <span class="news-slider__date">20/03/2023</span>
+              <h3 class="news-slider__heading">Путешествуем по&nbsp;миру</h3>
+              <div class="news-slider__content-wrapper">
+                <p>Какие места посещают наши студенты весной</p>
+                <a class="news-slider__button button button--small" href="#">
+                  <span class="visually-hidden">Перейти на страницу новости.</span>
+                </a>
+              </div>
+            </li>
+            <li class="news-slider__item news-slider__item--new-program swiper-slide">
+              <span class="news-slider__date">17/03/2023</span>
+              <h3 class="news-slider__heading">Новая программа волонтёрства</h3>
+              <div class="news-slider__content-wrapper">
+                <p>Программа помощи детям длительностью 4 месяца</p>
+                <a class="news-slider__button button button--small" href="#">
+                  <span class="visually-hidden">Перейти на страницу новости.</span>
+                </a>
+              </div>
+            </li>
+            <li class="news-slider__item news-slider__item--career swiper-slide">
+              <span class="news-slider__date">10/03/2023</span>
+              <h3 class="news-slider__heading">Построй свою карьеру</h3>
+              <div class="news-slider__content-wrapper">
+                <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                <a class="news-slider__button button button--small" href="#">
+                  <span class="visually-hidden">Перейти на страницу новости.</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="news__nav-wrapper">
+          <div class="news__slider-nav nav-buttons">
+            <button
+              class="news__slider-arrow news__slider-arrow--prev nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
+              type="button">
+              <span class="visually-hidden">Предыдущая новость.</span>
+            </button>
+            <button class="news__slider-arrow news__slider-arrow--next nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Следующая новость.</span>
+            </button>
+          </div>
+          <div class="news__pagination-container">
+            <div class="news__pagination-wrapper nav-list swiper-pagination">
+              <button class="nav-list__button nav-list__button--active" type="button">1</button>
+              <button class="nav-list__button" type="button">2</button>
+              <button class="nav-list__button" type="button">3</button>
+              <button class="nav-list__button" type="button">4</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__faq faq" data-test="FAQ">
+        <h2 class="faq__title section-title">Вопросы и ответы</h2>
+        <ul class="faq__list faq-list">
+          <li class="faq-list__item faq-card faq-card--details">
+            <input class="visually-hidden" type="checkbox" id="program-details" name="program-details">
+            <label class="faq-card__label" for="program-details">Кто организатор? Какие сроки у программы?</label>
+            <div class="faq-card__content-wrapper">
+              <p>
+                Организатором программы является проект «Стажировка» в сотрудничестве с образовательными учреждениями.
+                Сроки программы обмена могут варьироваться от одного семестра до года.
+              </p>
+            </div>
+          </li>
+          <li class="faq-list__item faq-card faq-card--grant">
+            <input class="visually-hidden" type="checkbox" id="grant-info" name="grant-info">
+            <label class="faq-card__label" for="grant-info">Что такое грант на&nbsp;обучение?</label>
+            <div class="faq-card__content-wrapper">
+              <p>
+                Грант на обучение — это финансовая поддержка, которую предоставляет организатор программы обмена
+                студентами для оплаты учебных расходов.
+              </p>
+            </div>
+          </li>
+          <li class="faq-list__item faq-card faq-card--cost faq-card--active">
+            <input class="visually-hidden" type="checkbox" id="cost" name="cost" checked>
+            <label class="faq-card__label faq-card__label--active" for="cost">Как определяется стоимость программы?</label>
+            <div class="faq-card__content-wrapper">
+              <p>
+                Полная стоимость определяется организаторами в зависимости от&nbsp;направления. В большинстве случаев грант
+                «Стажировка» не&nbsp;покрывает полную стоимость программы, и поэтому предусматривается определённая доля личного
+                участия.
+              </p>
+            </div>
+          </li>
+          <li class="faq-list__item faq-card faq-card--education">
+            <input class="visually-hidden" type="checkbox" id="further-education" name="further-education">
+            <label class="faq-card__label" for="further-education">Признаётся ли учёба в&nbsp;рамках проекта для дальнейшего обучения?</label>
+            <div class="faq-card__content-wrapper">
+              <p>
+                Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей
+                профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того, многие университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.
+              </p>
+            </div>
+          </li>
+          <li class="faq-list__item faq-card faq-card--registration">
+            <input class="visually-hidden" type="checkbox" id="registration" name="registration">
+            <label class="faq-card__label" for="registration">Как выглядит полный процесс регистрации на&nbsp;программу «Стажировка»?</label>
+            <div class="faq-card__content-wrapper">
+              <p>
+                Процесс регистрации на программу обмена включает выбор университета-партнера и программы обмена,
+                общение с координатором программы, заполнение заявления и предоставление необходимых документов,
+                прохождение интервью, оформление визы, жилья и страховки, обучение по безопасности за границей и
+                подписание договора об участии в программе. Подробнее можно узнать позвонив в центр.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="main__reviews reviews" data-test="reviews" id="reviews">
+        <h2 class="reviews__title section-title">Отзывы</h2>
+        <div class="reviews__slider-wrapper swiper">
+          <ul class="reviews__slider-list reviews-slider swiper-wrapper">
+            <li class="reviews-slider__item review-card swiper-slide">
+              <div class="review-card__header">
+                <div class="review-card__user-wrapper">
+                  <div class="review-card__avatar-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="data:image/webp;base64,UklGRjwIAABXRUJQVlA4IDAIAACwIQCdASpaAFoAPm0skkYkIqGhK5O+QIANiWMAxNBj0p7axKYEdlX0/bfnzAebV54u/AQKVpO+24bHSXmT/Kvx7jKZRzsLZDqoK6xqfkkfcNjP4MtaeWLXsWjAAAt2j3HsUb7MIAWvxyI0Yx8QtmZJriR2QxnsOxujD1d36kEL8wDR4qOmLADEUBpMotMEdMZx+ayZJ2qqtg9vYrPImpfzq3Vnm3fH21nFT4ZzrjXernXn7ENG1RCXBE3tA0OTwNKoS++z2riMQcQs0KOZsppSmJRfRni0MDLKF0T/sy4wGcgVYTWsXqIxVWq2N6giApZQpB4pHDOqsLBj/5L2KX9SonhD9BpXpJsO31CM7uy9lQpmsLOYUAD+/73BIzHPAogPusWQRyqMGzm7KEwnlFqermiT2Vj8ZlPwHM/ln7ZisgX0phv+5+OTxoEpv1hkUuFuXe4V5mHVDx2tHZL8Li82sjEG59QGA2Vxd0+adR3fobE3sw19pzJO+PXLxEd1YwTPOY27sfX/GJr+HlmriJQpAgRyUaP8Gf4+Dpo3pev32qzo9nGfQ48IALzeSPxZXbxZCRRIKKSD6DlU1SX9PEzHeIWzUtT0gXVGXz5b7u47C7CprAyK4U5qXMXex0FiqlMs27rZS1KDFyxsvoaKmmjULTkPNFIf2RgnmN3mWqzVrO3fEs4LOOx6sxrW9v4mp5bcvhGJ+0IywgKMaF2qRa+smjwSvWnbNBCWf732DHxSWIKYs/8gd5h7nLBjXIcZP4OCUM5MvQB4EV7qJwB7oTvGmaUJuS7pwwcZac1biWATodESL2ZEKetSqbLnxUXcxfopOuhUSHKzhWehKqdcm9n+DpReTH78QEPPQnat2rxGT6/sSyRLAM0Og3beI3JZtZENNKBEDPhDshK3wzxapuMHgf6uHU1UTt/2EsZ6wVGCGK3ZtuT8xkb3nva/nzQ9iUiXIQ3GA/TLcv2Gg+OwmnNLImk6fO/XGehhxvIgt6vV1srIc9GFcvLhvzjO6RTbgZE9knF6TXzMHulyf2Pv/YMybsFet2gwS8utSGAH1zf4ZB9zZe7cNZhv7MibjJQjQLBl27vRvTaWjaP8SvgEg+v13a/BAiqoxEDndrp2XAqiU73Vc6R6zrHIV8SYI89m5frycAvqUiY7NmJ3eqyU4lWewhKZ+DV6UcD4kskaucV5A8QNT5CNdl+g3r80uuXgdz2gR19Ln2ij9T7ssBq3XVAGkcedeYdUmDajoUQ4RpVFe1+2lQCHmdgY53TJ5z4f+5yeRLASYOc41eopl96en3P0KI5Q7P4M+MyrR8uAlRpUqDikl49f/pb0XmbAeVTYitDneHFfDBfJS0iTOHNnZ4BZGE/VjJbEtWU/ArExoQNW56BpbxXq5iW8RfYCdKfjOJN8GWvWUmL4iU8058QkVdDLSgMTjYqUClfgGva7L1uT8FBTxADZEO30JBXAUfHX81fD126Uz0xd7e1hjSKoXmYv+Ppn+VXRNzmQ6pCREm2kj69HyyMeUOy5pUvnYhegQ9jTTnWAUAouPib+0WQ62JvzG8OamPoHL/uEdngg1gav1ZzrKGzgligEl0zUxRgQ6Y1dEBXGShfobyC8FzlcR7Yl14xwhrn00wTttXQaHJ8yM6GkD7FVA69oHpb6OcZH4H0ufe2697ORyB1+QLgsudmwSIOFgOavPB5WxrbGgJs3SjB1rU8JaKLRf6e6KFG0FZqmrcoR+e7+C91LkL4tsTnjpr7/MjuA6IPMlmN/jkm+eEvi0P/kDAaGetTZx2y+8+p43mVe40xWgaAyjuPCYaYmj1A7dlcL1jKyP2wfnIfcsOCL6yx+YLS2VIrvqU92ZNKRZuUZSACEXlQkdQ5+9YugWtDKLtP/dijNKjNgUX6PvhKOlpJmcByDqIu3kCnjC322Lvm58ShY7YMGCLZXuXvtPPF2Ink4eE2jeoPw2oX49biR9Mo+uUAz7J6hUrAkeEKx4vhVGDnAfja1k7SZzsKg4HHpgJmQnpcsa/41uUOSd3bP1w9KYn/gtDdIj3VK4UucynaW/bKqlk1c88wFMTN5ce+uomH8/MyIlnLGIXyI1HMZ49CVRbcLlxu4F9z6YhAsuVTlDpHDBcm9Z5QZgK8n2fyRm7TOo+RAszJN9wtMxzi2KiVlF0tLvN//R5lszfWXin2ePHpSL5rV2d7xAWYzunoTmjUDqWvkp+1apBdq+Iu+jjLxOWJL5bAIZy+XSxKRFufbnzWAqqkwrySiVWBu2rw5brY7V0j3pMDNnG6UwzoyIBHzKim+7m1foAkShgV3D8pu47HWKV6EKyzsv428n3q7lF+Uzq7fid4gHr16EeI+SfI/oOB5gTrukjrpc48KICGvHI0l0CAdLpjmVEU8W1zF8cvuT6XhWUbqQyIv9jZhq66QfaUGTfx7h8bGhEeykfixlA9o9kTk4qruRx5lcykzmrQEvdaw63UBwEMRBx9shmAhwNOwjHJB2XA7mOHCpt37ZnzKTJZ7X6X9487a6EZpBbw5F1MU4bKqJEopceS8nyq+M2GYwMOgGHSLu5UAjvCpBaZocLfC83dmUMNqefRCRdIw31+rcBa+ZeCc1QGbhSwBF6QgxNiEoDatJ5gEPrnsvIzPtIa0DElWTN/kaT6Q6n0P5VhfYOpjoR1FEHb8EVTAIcPF4LV/Vd+4G/d2C3k0aw/gygkkhr/ohZ3mILgvVTUoZQaSULxAij3Est2KI7JB8hifJwQmeftA8ZSgDTNxQ6ZOIJsi1BAdMsZ+qu7XayWIEh3PwA+gycYAAA== 1x, ./assets/reviews-avatar-1@2x-DvkVTffh.webp 2x"
+                        width="90" height="90">
+                      <source type="image/webp"
+                        srcset="data:image/webp;base64,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 1x, ./assets/reviews-avatar-1@2x-DvkVTffh.webp 2x"
+                        width="60" height="60">
+                      <source media="(min-width: 768px)"
+                        srcset="./assets/reviews-avatar-1@1x-CsGJsuE9.jpg 1x, ./assets/reviews-avatar-1@2x--2pwZn1C.jpg 2x"
+                        type="image/jpeg" width="90" height="90">
+                      <img class="review-card__avatar" src="./assets/reviews-avatar-1@1x-CsGJsuE9.jpg" srcset="./assets/reviews-avatar-1@2x--2pwZn1C.jpg"
+                        width="60" height="60" alt="Аватар пользователя.">
+                    </picture>
+                  </div>
+                  <div class="review-card__name-wrapper">
+                    <span class="review-card__name">Лола</span>
+                    <span class="review-card__surname">Алекс</span>
+                  </div>
+                </div>
+                <div class="review-card__program-wrapper">
+                  <dl class="review-card__program-info">
+                    <dt class="review-card__program-heading">Программа</dt>
+                    <dd class="review-card__program-details">Masa Art Challenge</dd>
+                  </dl>
+                  <dl class="review-card__program-info">
+                    <dt class="review-card__program-heading">Дата</dt>
+                    <dd class="review-card__program-details">Осень 2022</dd>
+                  </dl>
+                </div>
+              </div>
+              <p class="review-card__heading">
+                Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в&nbsp;жизни!
+              </p>
+              <div class="review-card__text-wrapper">
+                <p>
+                  Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления.
+                  Сочетание путешествий, общения и значимой работы действительно отличает её&nbsp;от&nbsp;других программ,
+                  и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную мне&nbsp;возможность.
+                </p>
+              </div>
+            </li>
+            <li class="reviews-slider__item review-card swiper-slide">
+              <div class="review-card__header">
+                <div class="review-card__user-wrapper">
+                  <div class="review-card__avatar-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="data:image/webp;base64,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 1x, data:image/webp;base64,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 2x"
+                        width="90" height="90">
+                      <source type="image/webp"
+                        srcset="data:image/webp;base64,UklGRjYGAABXRUJQVlA4ICoGAACQHQCdASpaAFoAPmkskkWkIqGWqzc4QAaEoAvgQmEy6xh6gKcE/b23czvQle1Y1uf0QYmbgzm1MP9OW0af9rMApEq6DzKDabenL4k8DUS1OAkyHhYguX0NhCeAIXE+xr/PR5+0odpM+DNHZ5wPs1tsfRWQqx5sgWUk7EoAzCdzoLc9oo+e3UwNhFD0M05ElBuChIJeE8O1KazGFfpCmLN4yP677TZlxuuSQCW8PxfW31+vEWPS89e7toEY6RUbqw45k+DsqbQmIlx6r+lnNu24vmDqhg1RMNB63bOidzFH21SkcNXtk4zx38qSLG56zPhaxLLbsAD+/xIKzFtDaHLzCPuL/eTexMia9jxPwL/qgEDgDolNqv/vhxtU/TtSYZJ3FlPt9inqCdhZS97mXPvJzznChZT4Rd5pgnhHBKSvC7emhprdy/aT9W7D8H9O9yAoAG9kOsplIannV7MqTzSKB+d3b5irkVzWofOYH1qNFNdd73mGttUMH8UoQGzIm7a3jthybWvrQdm4AqBkVCAWEfT2+AeW88LDHIg3JWfs3iCIUhJR90VPCHngKu1eOiOLFNhsXlA2O+MdrS9lggmkeg6LWJ+DXXYXYUsAOLDw6pa0H4NucC4Zpe6c2rsqKiSb9ig21nHqdR5xNG+61CeXyUG1csWEgCrajxPLPsJMAcitYXFXhxDp0KXR7fbOw5Hyoi+636AMVhfY8YWPxZZTMNI5/fPKgBRpiijYJuQNm8JBEdyK6xNcwc0DQ9LGKWHAb3433iqwSlRJbD129wlSWoVBWKDGjHv6PBzwyPC8yhiJpuHilIxixzROrlYSLXcqVDD3pBY/h+715n36ggXLIiwleTa+hx78xT3M5YaqZiDv+g5X6IcvDXQvAf5u6FeYfCohs7k5BvsA7VZEjfGpm8KUeraNic8pnJxM1zI77VFHTVSW8k0xpzJ+WhO9egTfQY3Ldz44VYt2TVxDOdcPtEOASFxz20BuhNZ26KDrumwem+i/qK1JZfZoSWxLf9+G9CpF5Kj6T38XrA+OlvxrqcNJlcEwNt8Qkdrebgs9/H0guM6IYjIH7ilDhXzq/w/U3amM5gYmbKOgy7OAT6HnEh/vVuI2SttQ+DBtPT830JR/v58e7CqkYUY7u+x5GUcaRcnbT38ZZXnwkS9T4fsOeruevuK11yMddZHYz4AQmKjxRNY7KEYczUCQLzE7bgvTF7+23Nluc5chJy3q/mRB2EQHpVBUI79jrBfGdeD/GAaxcL7QLvf8m7DYzxuX4KeVUj963sfFdaRWcfgtjaIpF46F4wKY6ZU5WfFEYuiUUoPMnUwu44tOOymrhCaZWCxMP9PfLPNiJwtC8eCHxh3k0O+y1tZpwmMqfPcdAvAPLUSGCT/iPwn2UzKiYpqoGhN6tU1J0P5qRo2fCWJ9PQ89KuR0EkzAJxN9Ud4uB7qJ9EL9VD37Zwg2A+kGZ1KzCxYOAUC/Kuo1e+L7Rx+oYR+vS3qA+9GyFHwUFIgpQ56nw46bFJ0GziOz5eY6Q0KtcpWgAYJ9FlBsD2qlO71LlGq9wWx1+lsE8xS01DHqFsarOD2C9JffpB4yfJvbydAFvWPxJOtAYpImKrNkw0xYB+QJSkPNA38dch+Y6gPReDut/0VvkTlLgqpAeBPUytpqNg5dQpSyeXsSgZwoZ4MNaJLC0/L2pxNa/Be6me53o8TU9GNR0Ux6a5vnYMwBwjQPlDfWfvVyqYPjDNzV1F6v6Zp1KcOe3VTEtD8csNlNlayjh0aCaxK6bzt+DT7Nokzyhmu4xHzMDOai6R4gPuI2ROVpXcqZkCLWJN2lbaJO2ixEb/PsVBsfraHewHrHCc8beiwN1TcRAudThw3k09CCBEPBsM9xP88fwNi9eAQ/eO7iLpHiknnztcOvegACVqD03lCHGNY3U1rWogQUoBJf2XhMQWrrEhow7Xwq9UkI5WwtM3IBFLN1vAThKfA6LtIgbKop4ulNXworkmDKPlWR5Z17flJ63N5QVa+BO+ErsWiqaf3utMmQzcjJnaHxFYOw8h+OSkqhxHoPyleikMsCFjXtyBQ61IYh3AaEIAUNzsJLHkgpij83WgYjAAA= 1x, data:image/webp;base64,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 2x"
+                        width="60" height="60">
+                      <source media="(min-width: 768px)"
+                        srcset="./assets/reviews-avatar-2@1x-BKd_PR9O.jpg 1x, ./assets/reviews-avatar-2@2x-6d4HBXCL.jpg 2x"
+                        type="image/jpeg" width="90" height="90">
+                      <img class="review-card__avatar" src="./assets/reviews-avatar-2@1x-BKd_PR9O.jpg" srcset="./assets/reviews-avatar-2@2x-6d4HBXCL.jpg"
+                        width="60" height="60" alt="Аватар пользователя.">
+                    </picture>
+                  </div>
+                  <div class="review-card__name-wrapper">
+                    <span class="review-card__name">Давид</span>
+                    <span class="review-card__surname">Иванов</span>
+                  </div>
+                </div>
+                <div class="review-card__program-wrapper">
+                  <dl class="review-card__program-info">
+                    <dt class="review-card__program-heading">Программа</dt>
+                    <dd class="review-card__program-details">Volunteer Chance</dd>
+                  </dl>
+                  <dl class="review-card__program-info">
+                    <dt class="review-card__program-heading">Дата</dt>
+                    <dd class="review-card__program-details">Лето 2022</dd>
+                  </dl>
+                </div>
+              </div>
+              <p class="review-card__heading">
+                Благодаря опыту стажировки я узнал так&nbsp;много нового о себе и об окружающем мире.
+              </p>
+              <div class="review-card__text-wrapper">
+                <p>
+                  Каждый день был возможностью оказать ощутимое влияние на&nbsp;жизнь других людей. Я бы очень рекомендовал
+                  эту&nbsp;волонтёрскую программу всем, кто ищет значимый и&nbsp;незабываемый опыт. Организация была на высшем
+                  уровне. Для&nbsp;меня было честью быть частью такой удивительной инициативы.
+                </p>
+              </div>
+            </li>
+            <li class="reviews-slider__item review-card swiper-slide">
+              <div class="review-card__header">
+                <div class="review-card__user-wrapper">
+                  <div class="review-card__avatar-wrapper">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="data:image/webp;base64,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 1x, data:image/webp;base64,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 2x"
+                        width="90" height="90">
+                      <source type="image/webp"
+                        srcset="data:image/webp;base64,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 1x, data:image/webp;base64,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 2x"
+                        width="60" height="60">
+                      <source media="(min-width: 768px)"
+                        srcset="./assets/reviews-avatar-2@1x-BKd_PR9O.jpg 1x, ./assets/reviews-avatar-2@2x-6d4HBXCL.jpg 2x"
+                        type="image/jpeg" width="90" height="90">
+                      <img class="review-card__avatar" src="./assets/reviews-avatar-2@1x-BKd_PR9O.jpg" srcset="./assets/reviews-avatar-2@2x-6d4HBXCL.jpg"
+                        width="60" height="60" alt="Аватар пользователя.">
+                    </picture>
+                  </div>
+                  <div class="review-card__name-wrapper">
+                    <span class="review-card__name">Павел</span>
+                    <span class="review-card__surname">Смирнов</span>
+                  </div>
+                </div>
+                <div class="review-card__program-wrapper">
+                  <dl class="review-card__program-info">
+                    <dt class="review-card__program-heading">Программа</dt>
+                    <dd class="review-card__program-details">Volunteer Chance</dd>
+                  </dl>
+                  <dl class="review-card__program-info">
+                    <dt class="review-card__program-heading">Дата</dt>
+                    <dd class="review-card__program-details">Весна 2022</dd>
+                  </dl>
+                </div>
+              </div>
+              <p class="review-card__heading">
+                Благодаря опыту стажировки я узнал много нового об окружающем мире.
+              </p>
+              <div class="review-card__text-wrapper">
+                <p>
+                  Каждый день был возможностью оказать ощутимое влияние на&nbsp;жизнь других людей. Я бы очень рекомендовал
+                  эту&nbsp;волонтёрскую программу всем, кто ищет значимый и&nbsp;незабываемый опыт.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="reviews__nav-wrapper">
+          <div class="reviews__slider-nav nav-buttons">
+            <button
+              class="nav-buttons__button nav-buttons__button--previous nav-buttons__button--inactive swiper-button-prev"
+              type="button">
+              <span class="visually-hidden">Предыдущий отзыв.</span>
+            </button>
+            <button class="nav-buttons__button nav-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Следующий отзыв.</span>
+            </button>
+          </div>
+          <div class="reviews__pagination-wrapper">
+            <div class="reviews__pagination slider-pagination slider-pagination--bar swiper-scrollbar">
+              <button class="slider-pagination__active-bar swiper-scrollbar-drag" type="button">
+                <span class="visually-hidden">Активный элемент скроллбара.</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__contacts contacts" data-test="contacts" id="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__text-wrapper">
+            <div class="contacts__header">
+              <h2 class="contacts__title section-title section-title--inverse">Контакты</h2>
+            </div>
+            <div class="contacts__list-wrapper">
+              <ul class="contacts__list contacts-list">
+                <li class="contacts-list__item contacts-list__item--address">
+                  <p class="contacts-list__subheading">Центральный офис</p>
+                  <address class="contacts-list__text contacts-list__text--address">г. Новосибирск, ул.&nbsp;Щетинкина&nbsp;68, культурный центр</address>
+                </li>
+                <li class="contacts-list__item contacts-list__item--tel">
+                  <p class="contacts-list__subheading">Телефон</p>
+                  <a class="contacts-list__text contacts-list__text--tel" href="tel:+796387687676">+7 963 876 876 76</a>
+                </li>
+                <li class="contacts-list__item contacts-list__item--email">
+                  <p class="contacts-list__subheading">Email</p>
+                  <a class="contacts-list__text contacts-list__text--email"
+                    href="mailto:info@stazh.ru">info@stazh.ru</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contacts__map-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="./assets/map-desktop@1x-C5z8qdD1.webp 1x, ./assets/map-desktop@2x-BuPWM8IQ.webp 2x" width="1240" height="486">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./assets/map-tablet@1x-7B8-FByD.webp 1x, ./assets/map-tablet@2x-YsnIbINo.webp 2x" width="678" height="500">
+              <source type="image/webp" media="(min-width: 320px)"
+                srcset="./assets/map-mobile@1x-BD7SbmEl.webp 1x, ./assets/map-mobile@2x-CIsV40yI.webp 2x" width="290" height="240">
+              <source media="(min-width: 1440px)" srcset="./assets/map-desktop@1x-DDLe7-Aq.jpg 1x, ./assets/map-desktop@2x-CPZ95VHR.jpg 2x"
+                type="image/jpeg" width="1240" height="486">
+              <source media="(min-width: 768px)" srcset="./assets/map-tablet@1x-ZD6Q8QkO.jpg 1x, ./assets/map-tablet@2x-CUc8tIBa.jpg 2x"
+                type="image/jpeg" width="678" height="500">
+              <img class="contacts__image" src="./assets/map-mobile@1x-Csx_aQPx.jpg" srcset="./assets/map-mobile@2x-0mTqZSic.jpg 2x"
+                width="290" height="240" alt="Наше местоположение на карте." loading="lazy">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="main__form form" data-test="form">
+        <h2 class="visually-hidden">Форма обратной связи.</h2>
+        <div class="form__wrapper">
+          <p class="form__heading">Напишите нам</p>
+          <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+          <form class="form__body form__body--main" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="form__label" for="form-name">Имя</label>
+            <input class="form__input form__input--name" type="text" name="form-name" id="form-name" pattern="^[А-Яа-яЁё\s]+$" required>
+            <label class="form__label" for="form-phone">Телефон</label>
+            <input class="form__input form__input--phone" type="tel" name="form-phone" id="form-phone" minlength="6" maxlength="18" pattern="^(\+7)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" required>
+            <label class="form__label" for="form-message">Ваше сообщение</label>
+            <textarea class="form__input form__input--textarea" name="form-message" id="form-message" required></textarea>
+            <div class="form__input-wrapper">
+              <label class="form__label" for="form-select-main">Выберите город</label>
+              <input class="form__input form__input--select" id="form-select-main" name="form-user-city" type="text" minlength="2" value=" " readonly>
+              <ul class="form__select-dropdown select-list" id="select-dropdown-main">
+                <li class="select-list__item">&nbsp;</li>
+                <li class="select-list__item">Санкт-Петербург</li>
+                <li class="select-list__item">Санкт-Петербург</li>
+                <li class="select-list__item">Санкт-Петербург</li>
+                <li class="select-list__item">Санкт-Петербург</li>
+              </ul>
+            </div>
+            <input class="form__checkbox visually-hidden" type="checkbox" id="personal-data" name="form-personal-data" required>
+            <label class="form__checkbox-label" for="personal-data">Я согласен на обработку моих персональных <span>данных</span></label>
+            <button class="form__button button button--inverse" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-body__footer footer" data-test="footer">
+      <div class="footer__inner-wrapper">
+        <div class="footer__logo-wrapper logo">
+          <img class="footer__logo-image logo__image" src="data:image/svg+xml,%3csvg%20width='52'%20height='52'%20viewBox='0%200%2052%2052'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20width='52'%20height='52'%20rx='26'%20fill='white'/%3e%3cpath%20d='M11.9184%2019.8006C11.0667%2020.4073%2010.5675%2021.6921%2011.5085%2023.2283C12.4495%2024.7645%2025.8931%2035.1336%2026.3859%2035.4215C26.8789%2035.7097%2027.3721%2035.7576%2028.6264%2034.7496C29.8813%2033.7413%2040.3653%2025.8656%2040.6358%2025.6287C41.0663%2025.2518%2041.1735%2024.3325%2040.6358%2023.9003C40.6358%2023.9003%2027.9346%2033.4052%2027.5188%2033.7895C27.1031%2034.1735%2026.4561%2033.5495%2026.5776%2032.7335C26.6996%2031.9172%2026.7894%2031.8211%2028.4026%2030.5731C30.0158%2029.3248%2039.1622%2022.3928%2039.5772%2022.0864C40.0471%2021.7391%2040.0584%2021.1258%2039.2887%2020.5834C38.2185%2019.8294%2026.6538%2011.6047%2026.2669%2011.3168C25.879%2011.0287%2025.3421%2010.7669%2024.5356%2011.3429C23.7291%2011.919%2013.4831%2018.6858%2011.9184%2019.8006Z'%20fill='%23316DC2'/%3e%3cpath%20d='M26.3859%2036.4333C26.0624%2036.2442%2020.1639%2031.7154%2015.8795%2028.1892V35.5413C15.8762%2040.9082%2030.9969%2043.7757%2036.0062%2037.1781V30.1512C32.9289%2032.4764%2029.3294%2035.1965%2028.6264%2035.7611C27.3721%2036.7692%2026.8789%2036.7212%2026.3859%2036.4333Z'%20fill='%23316DC2'/%3e%3cpath%20d='M32.7845%2028.3718C32.7845%2028.3718%2035.0327%2029.5021%2035.1926%2034.0505L34.1034%2033.7503L33.232%2035.6014C32.8633%2030.6207%2030.8557%2029.8985%2030.8557%2029.8985L32.7845%2028.3718Z'%20fill='%2398B8E6'/%3e%3c/svg%3e" width="52" height="52"
+          alt="Логотип проекта «Стажировка».">
+        </div>
+        <div class="footer__nav-wrapper">
+          <ul class="footer__nav footer-nav">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#about-us">О проекте</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#programs">Программы</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#participate">Как поехать</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#news">Новости</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__socials-wrapper">
+        <ul class="footer__socials socials-list">
+          <li class="socials-list__item">
+            <a class="socials-list__link socials-list__link--vk" href="https://vk.com/" target="_blank" rel="noopener noreferrer">
+              <span class="visually-hidden">Мы ВКонтакте.</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link socials-list__link--ok" href="https://ok.ru/" target="_blank" rel="noopener noreferrer">
+              <span class="visually-hidden">Мы в Одноклассниках.</span>
+            </a>
+          </li>
+          <li class="socials-list__item">
+            <a class="socials-list__link socials-list__link--reddit" href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer">
+              <span class="visually-hidden">Мы на Реддит.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__legal-wrapper">
+        <div class="footer__confidentiality-wrapper">
+          <a class="footer__confidentiality" href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__copyright-wrapper">
+          <span class="footer__copyright">Стажировка © 2023 Все права защищены</span>
+        </div>
+      </div>
+    </footer>
+    <div class="page-body__modal modal">
+      <div class="modal__body form form--inverse">
+        <h2 class="visually-hidden">Модальное окно формы обратной связи.</h2>
+        <p class="form__heading form__heading--inverse">Напишите нам</p>
+        <p class="form__text form__text--inverse">Оставьте ваши контакты, если&nbsp;у&nbsp;вас остались вопросы&nbsp;— мы на них ответим!</p>
+        <form class="form__body form__body--inverse form__body--modal" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="form__label form__label--inverse" for="modal-name">Имя</label>
+          <input class="form__input form__input--name form__input--inverse" type="text" name="modal-name" id="modal-name" pattern="^[А-Яа-яЁё\s]+$" required>
+          <label class="form__label form__label--inverse" for="modal-phone">Телефон</label>
+          <input class="form__input form__input--phone form__input--inverse" type="tel" name="modal-phone" id="modal-phone" minlength="6" maxlength="18" pattern="^(\+7)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" required>
+          <div class="form__input-wrapper">
+            <label class="form__label form__label--inverse" for="form-select-modal">Выберите город</label>
+            <input class="form__input form__input--select form__input--inverse form__input--select-inverse" id="form-select-modal" name="modal-user-city" type="text" minlength="2" value=" " readonly>
+            <ul class="form__select-dropdown form__select-dropdown--inverse select-list select-list--inverse" id="select-dropdown-modal">
+              <li class="select-list__item">&nbsp;</li>
+              <li class="select-list__item select-list__item--inverse">Санкт-Петербург</li>
+              <li class="select-list__item select-list__item--inverse">Санкт-Петербург</li>
+              <li class="select-list__item select-list__item--inverse">Санкт-Петербург</li>
+              <li class="select-list__item select-list__item--inverse">Санкт-Петербург</li>
+            </ul>
+          </div>
+          <input class="form__checkbox visually-hidden" type="checkbox" id="modal-personal-data" name="modal-personal-data" required>
+          <label class="form__checkbox-label form__checkbox-label--inverse" for="modal-personal-data">Я согласен на обработку моих персональных данных</label>
+          <button class="form__button form__button--modal button button--modal" type="submit">Отправить</button>
+        </form>
+        <button class="modal__button" type="button">
+          <span class="visually-hidden">Кнопка закрытия модального окна.</span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
