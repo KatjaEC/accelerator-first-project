@@ -1,0 +1,142 @@
+.about-us {
+  padding: 50px 15px 51px;
+}
+
+.about-us__title {
+  margin-bottom: 15px;
+  padding-left: 1px;
+}
+
+.about-us__general-info {
+  margin-bottom: 41px;
+}
+
+.about-us__general-info p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about-us__details {
+  margin-bottom: 40px;
+}
+
+.about-us__details > p {
+  margin: 0 0 19px;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-primary;
+}
+
+.about-us__details > p + p {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-text;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.about-us__button {
+  margin: 30px auto 0 0;
+  padding-right: 44px;
+  max-width: 223px;
+}
+
+.about-us__list {
+  margin: 0 auto;
+  width: 290px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    padding: 50px 45px;
+  }
+
+  .about-us__title {
+    margin-bottom: 30px;
+    padding-left: 0;
+  }
+
+  .about-us__general-info {
+    margin-bottom: 40px;
+  }
+
+  .about-us__list {
+    width: 678px;
+  }
+
+  .about-us__general-info p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .about-us__details {
+    margin-bottom: 60px;
+    width: 498px;
+  }
+
+  .about-us__details > p {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .about-us__details > p + p {
+    font-size: 16px;
+  }
+
+  .about-us__button {
+    margin-top: 40px;
+    padding-right: 64px;
+    max-width: 279px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    padding: 70px 100px 60px;
+  }
+
+  .about-us__title {
+    margin-bottom: 29px;
+  }
+
+  .about-us__text-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .about-us__general-info {
+    width: 702px;
+  }
+
+  .about-us__general-info p {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .about-us__details > p {
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .about-us__details > p + p {
+    line-height: 26px;
+  }
+
+  .about-us__list {
+    width: 1240px;
+  }
+
+  .about-us__button {
+    margin-top: 50px;
+  }
+}

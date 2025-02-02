@@ -1,0 +1,105 @@
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px;
+}
+
+.nav-buttons > .nav-buttons__button {
+  position: relative;
+  top: 2px;
+  left: auto;
+  right: auto;
+  margin: 0;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  appearance: none;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: $color-primary;
+    mask: url("../../__spritemap#sprite-button-arrow-view");
+    mask-size: 12px 12px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    content: "";
+  }
+
+  &::after {
+    display: none;
+  }
+
+  &--previous::before {
+    transform: rotate(180deg);
+  }
+
+  &:hover::before {
+    background-color: rgba(49, 109, 194, 0.7);
+  }
+
+  &:focus {
+    background-color: $color-secondary;
+    outline-offset: 4px;
+  }
+
+  &:focus::before {
+    background-color: $color-primary;
+  }
+
+  &:active {
+    background-color: $color-secondary;
+  }
+
+  &:active::before {
+    background-color: rgba(49, 109, 194, 0.7);
+  }
+
+  &:disabled,
+  &:disabled:hover,
+  &:disabled:focus,
+  &:disabled:active,
+  &--inactive,
+  &--inactive:hover,
+  &--inactive:focus,
+  &--inactive:active {
+    background-color: transparent;
+    pointer-events: none;
+    outline: transparent;
+  }
+
+  &:disabled::before,
+  &:disabled:hover::before,
+  &:disabled:focus::before,
+  &:disabled:active::before,
+  &--inactive::before,
+  &--inactive:hover::before,
+  &--inactive:focus::before,
+  &--inactive:active::before {
+    right: -1px;
+    background-color: $button-inactive;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .nav-buttons {
+    gap: 10px;
+  }
+
+  .nav-buttons > .nav-buttons__button {
+    top: 5px;
+
+    &--next {
+      right: 1px;
+    }
+  }
+}

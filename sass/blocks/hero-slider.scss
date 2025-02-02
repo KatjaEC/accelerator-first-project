@@ -1,0 +1,414 @@
+.hero-slider {
+  position: relative;
+}
+
+.hero-slider__list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-slider__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.hero-slider__item {
+  position: relative;
+  padding: 229px 15px 20px;
+  width: 100%;
+  min-height: 568px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  background-color: $color-background;
+  background-repeat: no-repeat;
+  background-position: 52.6% 50%;
+  background-size: cover;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $overlay-blue;
+    content: "";
+  }
+
+  &--education {
+    background-image:
+      image-set(
+        url("../img/photos/hero-image-1-full@1x.webp") type("image/webp") 1x,
+        url("../img/photos/hero-image-1-full@1x.jpg") type("image/jpeg") 1x);
+
+    @media (resolution >= 2dppx) {
+      background-image:
+        image-set(
+          url("../img/photos/hero-image-1-full@2x.webp") type("image/webp") 2x,
+          url("../img/photos/hero-image-1-full@2x.jpg") type("image/jpeg") 2x);
+    }
+  }
+
+  &--volunteering {
+    background-image:
+      image-set(
+        url("../img/photos/hero-image-2-full@1x.webp") type("image/webp") 1x,
+        url("../img/photos/hero-image-2-full@1x.jpg") type("image/jpeg") 1x);
+
+    @media (resolution >= 2dppx) {
+      background-image:
+        image-set(
+          url("../img/photos/hero-image-2-full@2x.webp") type("image/webp") 2x,
+          url("../img/photos/hero-image-2-full@2x.jpg") type("image/jpeg") 2x);
+    }
+  }
+
+  &--internship {
+    background-image:
+      image-set(
+        url("../img/photos/hero-image-3-full@1x.webp") type("image/webp") 1x,
+        url("../img/photos/hero-image-3-full@1x.jpg") type("image/jpeg") 1x);
+
+    @media (resolution >= 2dppx) {
+      background-image:
+        image-set(
+          url("../img/photos/hero-image-3-full@2x.webp") type("image/webp") 2x,
+          url("../img/photos/hero-image-3-full@2x.jpg") type("image/jpeg") 2x);
+    }
+  }
+}
+
+.hero-slider__content-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hero-slider__heading {
+  margin: 0;
+  padding: 20px 15px 16px 14px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $color-primary;
+  background-color: $color-secondary;
+  border-radius: 0 16px 16px 0;
+}
+
+.hero-slider__text {
+  position: relative;
+  padding: 0 40px 15px 14px;
+  width: 267px;
+  background-color: $color-secondary;
+  border-radius: 0 0 14px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: $color-secondary;
+    mask: url("../../__spritemap#sprite-angle-view");
+    mask-size: 10px 10px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    content: "";
+  }
+}
+
+.hero-slider__text p {
+  margin: 0;
+}
+
+.hero-slider__button-wrapper {
+  position: relative;
+  padding: 10px 15px;
+  width: 184px;
+  background-color: $color-secondary;
+  border-radius: 0 0 14px 14px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: $color-secondary;
+    mask: url("../../__spritemap#sprite-angle-view");
+    mask-size: 10px 10px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    content: "";
+  }
+}
+
+.hero-slider__button {
+  width: 154px;
+
+  &::before {
+    right: 4px;
+  }
+
+  &::after {
+    top: calc(50% - 5px);
+    right: 16px;
+    width: 10px;
+    height: 10px;
+    mask: url("../../__spritemap#sprite-arrow-slim-view");
+    mask-size: 10px 10px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transform: rotate(0deg);
+  }
+}
+
+.hero-slider__pagination-wrapper {
+  position: absolute;
+  top: 201px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 290px;
+  display: flex;
+  z-index: 5;
+}
+
+.hero-slider__item--education > .hero-slider__pagination-wrapper {
+  top: 201px;
+}
+
+.hero-slider__item--volunteering > .hero-slider__pagination-wrapper {
+  top: 228px;
+}
+
+.hero-slider__item--internship > .hero-slider__pagination-wrapper {
+  top: 248px;
+}
+
+.hero-slider__pagination {
+  position: relative;
+  padding: 7px 13px;
+  max-width: 190px;
+  min-width: 80px;
+  background-color: $color-secondary;
+  border-radius: 12px 12px 0 0;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: $color-secondary;
+    mask: url("../../__spritemap#sprite-angle-view");
+    mask-size: 10px 10px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transform: rotate(-90deg);
+    content: "";
+  }
+}
+
+.hero-slider__content-wrapper > .hero-slider__pagination-wrapper {
+  top: -28px;
+}
+
+@media (min-width: $tablet-width) {
+  .hero-slider__item {
+    padding: 687px 64px 60px 45px;
+    min-height: 1024px;
+    background-position: 48.5% 50%;
+  }
+
+  .hero-slider__content-wrapper {
+    width: 659px;
+  }
+
+  .hero-slider__heading {
+    padding: 31px 69px 23px 40px;
+    font-size: 36px;
+    line-height: 44px;
+    border-radius: 0 30px 30px 0;
+  }
+
+  .hero-slider__inner-wrapper {
+    position: relative;
+    padding: 0 40px 35px;
+    display: flex;
+    width: 593px;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: $color-secondary;
+    border-radius: 0 0 30px 30px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: -26px;
+      width: 26px;
+      height: 26px;
+      background-color: $color-secondary;
+      mask: url("../../__spritemap#sprite-angle-view");
+      mask-size: 26px 26px;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      content: "";
+    }
+  }
+
+  .hero-slider__text {
+    padding: 0 40px 0 0;
+    width: 285px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .hero-slider__text p {
+    font-size: 16px;
+  }
+
+  .hero-slider__text > p > span {
+    padding-right: 10px;
+  }
+
+  .hero-slider__button-wrapper {
+    padding: 0;
+    width: 198px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .hero-slider__button {
+    width: 198px;
+
+    &::after {
+      top: calc(50% - 8px);
+      right: 19px;
+      width: 16px;
+      height: 16px;
+      mask: url("../../__spritemap#sprite-button-arrow-view");
+      mask-size: 13px 14px;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .hero-slider__pagination-wrapper {
+    top: 647px;
+    width: 678px;
+  }
+
+  .hero-slider__item--education > .hero-slider__pagination-wrapper {
+    top: 648px;
+  }
+
+  .hero-slider__item--volunteering > .hero-slider__pagination-wrapper {
+    top: 648px;
+  }
+
+  .hero-slider__item--internship > .hero-slider__pagination-wrapper {
+    top: 668px;
+  }
+
+  .hero-slider__pagination {
+    padding: 9px 15px 10px;
+    min-width: 100px;
+    max-width: 400px;
+    border-radius: 20px 20px 0 0;
+
+    &::before {
+      bottom: 1px;
+      right: -20px;
+      width: 20px;
+      height: 20px;
+      mask-size: 20px 20px;
+    }
+  }
+
+  .hero-slider__content-wrapper > .hero-slider__pagination-wrapper {
+    top: -40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero-slider__item {
+    padding: 433px 372px 60px 100px;
+    min-height: 800px;
+  }
+
+  .hero-slider__content-wrapper {
+    width: 968px;
+  }
+
+  .hero-slider__heading {
+    padding: 40px 50px 30px;
+    font-size: 54px;
+    line-height: 62px;
+  }
+
+  .hero-slider__inner-wrapper {
+    padding: 0 50px 35px;
+    width: 775px;
+  }
+
+  .hero-slider__text {
+    padding-right: 55px;
+    width: 446px;
+  }
+
+  .hero-slider__text p {
+    line-height: 26px;
+  }
+
+  .hero-slider__text > p > span {
+    padding-right: 0;
+  }
+
+  .hero-slider__button {
+    margin-top: 10px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    width: 199px;
+
+    &::before {
+      right: 5px;
+    }
+
+    &::after {
+      right: 20px;
+    }
+  }
+
+  .hero-slider__pagination-wrapper {
+    top: 393px;
+    width: 1240px;
+  }
+
+  .hero-slider__item--education > .hero-slider__pagination-wrapper {
+    top: 393px;
+  }
+
+  .hero-slider__item--volunteering > .hero-slider__pagination-wrapper {
+    top: 393px;
+  }
+
+  .hero-slider__item--internship > .hero-slider__pagination-wrapper {
+    top: 393px;
+  }
+
+  .hero-slider__pagination {
+    max-width: 600px;
+  }
+}

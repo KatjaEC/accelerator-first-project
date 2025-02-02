@@ -1,0 +1,153 @@
+.review-card {
+  padding: 29px 15px 31px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $color-primary;
+  border-radius: 16px;
+}
+
+.review-card__user-wrapper {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.review-card__avatar-wrapper {
+  padding-top: 1px;
+}
+
+.review-card__avatar {
+  border-radius: 50%;
+}
+
+.review-card__name-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review-card__name,
+.review-card__surname {
+  display: block;
+  line-height: 18px;
+  color: $color-primary;
+}
+
+.review-card__program-wrapper {
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.review-card__program-info {
+  margin: 0;
+}
+
+.review-card__program-heading {
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: $color-primary;
+}
+
+.review-card__program-details {
+  margin: 7px 0 0;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.review-card__heading {
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-primary;
+}
+
+.review-card__text-wrapper p {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .review-card {
+    padding: 49px 50px 50px;
+  }
+
+  .review-card__header {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto 230px;
+    grid-auto-flow: dense;
+    gap: 20px;
+  }
+
+  .review-card__user-wrapper {
+    margin-bottom: 0;
+    gap: 15px;
+    grid-column: 1/2;
+  }
+
+  .review-card__name-wrapper {
+    margin-top: 2px;
+  }
+
+  .review-card__name,
+  .review-card__surname {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .review-card__program-wrapper {
+    margin-top: 1px;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 2/-1;
+  }
+
+  .review-card__program-details {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .review-card__heading {
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .review-card__text-wrapper p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-card {
+    padding: 49px 46px 50px 50px;
+  }
+
+  .review-card__name,
+  .review-card__surname {
+    font-size: 18px;
+  }
+
+  .review-card__program-wrapper {
+    margin-top: 3px;
+  }
+
+  .review-card__program-details {
+    margin-top: 8px;
+  }
+
+  .review-card__heading {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .review-card__text-wrapper p {
+    line-height: 26px;
+  }
+}

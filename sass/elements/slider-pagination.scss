@@ -1,0 +1,103 @@
+.slider-pagination {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+
+.slider-pagination__button {
+  position: relative;
+  padding: 0;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 50%;
+  appearance: none;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    border: 2px solid $color-primary;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &:hover::before {
+    background-color: rgba(49, 109, 194, 0.7);
+    border-color: $color-secondary;
+  }
+
+  &:focus::before {
+    background-color: $color-primary;
+    border-color: $color-primary;
+  }
+
+  &--active::before,
+  &:active::before {
+    background-color: #275699;
+    border-color: #275699;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider-pagination {
+    gap: 2px;
+  }
+
+  .slider-pagination--bar {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+    gap: 0;
+    background: transparent;
+    border-bottom: 2px solid rgba(49, 109, 194, 0.5);
+    border-radius: 0;
+    cursor: pointer;
+  }
+
+  .slider-pagination__active-bar {
+    position: absolute;
+    top: 2px;
+    width: 326px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $color-primary;
+    border-radius: 0;
+    appearance: none;
+    cursor: pointer;
+  }
+
+  .slider-pagination__button {
+    width: 22px;
+    height: 22px;
+
+    &::before {
+      top: 5px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider-pagination__active-bar {
+    width: 394px;
+  }
+}
